@@ -8,7 +8,10 @@ const { body, validationResult } = require('express-validator');
 const { v4: uuidv4 } = require('uuid'); // Import UUID library
 
 const app = express();
-const port = 3000;
+let port = process.env.PORT;
+if (port == null || port == "") {
+    port = 8000;
+}
 
 // Connect to MongoDB
 mongoose.connect('mongodb://localhost:27017/unesco_application');
