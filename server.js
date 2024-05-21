@@ -1,23 +1,17 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
 const { body, validationResult } = require('express-validator');
 const { v4: uuidv4 } = require('uuid'); // Import UUID library
+const mongoose = require('./mongodb');
 
 const app = express();
 let port = process.env.PORT;
 if (port == null || port == "") {
     port = 8000;
 }
-
-// Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/unesco_application');
-const db = mongoose.connection;
-db.on('error', () => console.log("Error in Connecting to Database"));
-db.once('open', () => console.log("Connected to Database"));
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -129,6 +123,6 @@ app.post('/submit', upload.fields([
     }
 });
 
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Server running at http://0.0.0.0:${port}`);
 });
