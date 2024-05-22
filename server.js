@@ -1,11 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const multer = require('multer');
-const path = require('path');
 const fs = require('fs');
+const path = require('path');
 const { body, validationResult } = require('express-validator');
 const { v4: uuidv4 } = require('uuid'); // Import UUID library
 const mongoose = require('./mongodb');
+const { promisify } = require('util');
+const readFile = promisify(fs.readFile);
 
 const app = express();
 let port = process.env.PORT;
@@ -18,20 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Set up multer storage
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        const folderName = req.body.first_name || req.body.passport_name || 'Unknown';
-        const uploadPath = path.join('uploads', folderName);
-        if (!fs.existsSync(uploadPath)) {
-            fs.mkdirSync(uploadPath, { recursive: true }); // Ensure directory exists
-        }
-        cb(null, uploadPath);
-    },
-    filename: (req, file, cb) => {
-        cb(null, Date.now() + path.extname(file.originalname));
-    }
-});
-
+const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
 // Define the Student model
@@ -52,6 +41,12 @@ const handleArrayValue = (value) => {
     return value;
 };
 
+const fileToBase64 = async (fileBuffer) => {
+    const { fileTypeFromBuffer } = await import('file-type');
+    const type = await fileTypeFromBuffer(fileBuffer);
+    return `data:${type.mime};base64,${fileBuffer.toString('base64')}`;
+};
+
 // Route to handle form submission
 app.post('/submit', upload.fields([
     { name: 'student_certificate' },
@@ -67,6 +62,21 @@ app.post('/submit', upload.fields([
     // Generate UUID for the form submission
     const submissionId = uuidv4();
 
+    // Convert files to Base64 strings
+    let studentCertificateBase64 = '';
+    let photoBase64 = '';
+    let passportCopyBase64 = '';
+
+    if (req.files['student_certificate']) {
+        studentCertificateBase64 = await fileToBase64(req.files['student_certificate'][0].buffer);
+    }
+    if (req.files['photo']) {
+        photoBase64 = await fileToBase64(req.files['photo'][0].buffer);
+    }
+    if (req.files['passport_copy']) {
+        passportCopyBase64 = await fileToBase64(req.files['passport_copy'][0].buffer);
+    }
+
     // Create a new Student instance and save to the database
     try {
         const newStudent = new Student({
@@ -78,8 +88,8 @@ app.post('/submit', upload.fields([
                 tshirtSize: req.body.tshirt_size,
                 nationality: req.body.Nationality,
                 placeOfBirth: req.body.place_of_birth,
-                studentCertificate: req.files['student_certificate'] ? req.files['student_certificate'][0].path : '',
-                photo: req.files['photo'] ? req.files['photo'][0].path : '',
+                studentCertificate: studentCertificateBase64,
+                photo: photoBase64,
             },
             contactInformation: {
                 homeAddress: handleArrayValue(req.body.home_address),
@@ -99,7 +109,7 @@ app.post('/submit', upload.fields([
                 givenPlace: req.body.given_place,
                 passportNumber: req.body.passport_name_2,
                 expiryDate: req.body.given_place_2,
-                passportCopy: req.files['passport_copy'] ? req.files['passport_copy'][0].path : ''
+                passportCopy: passportCopyBase64
             },
             courseSelection: {
                 course: Array.isArray(req.body.course) ? req.body.course.join(', ') : req.body.course
