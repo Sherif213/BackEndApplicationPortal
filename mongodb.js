@@ -8,10 +8,7 @@ const dbName = 'unesco_application';
 // Updated URI with ssl=true parameter
 const uri = `mongodb+srv://${username}:${password}@${clusterUrl}/${dbName}?retryWrites=true&w=majority&appName=Cluster0&ssl=true`;
 
-mongoose.connect(uri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-}).then(() => {
+mongoose.connect(uri).then(() => {
     console.log("Connected to MongoDB Atlas");
 }).catch(err => {
     console.error("Error connecting to MongoDB Atlas", err);

@@ -13,12 +13,10 @@ const studentSchema = new mongoose.Schema({
         tshirtSize: { type: String},
         nationality: { type: String, required: true },
         placeOfBirth: String,
-        studentCertificate: String,
-        photo: String,
     },
     contactInformation: {
         homeAddress: String,
-        email: { type: String, required: true}, // Unique email addresses
+        email: { type: String, required: true}, 
         telephone: { type: String, required: true },
     },
     emergencyContact: {
@@ -34,7 +32,6 @@ const studentSchema = new mongoose.Schema({
         givenPlace: String,
         passportNumber: String,
         expiryDate: String,
-        passportCopy: String,
     },
     courseSelection: {
         course: { type: String, required: true },
