@@ -9,7 +9,7 @@ body, html {
     justify-content: center;
 }
 
-  /* Wrapper Styles */
+/* Wrapper Styles */
 .wrapper {
     width: 100%;
     height: 100%;
@@ -18,7 +18,7 @@ body, html {
     align-items: flex-start;
 }
 
-  /* Container Styles */
+/* Container Styles */
 .container {
     width: 55%;
     height: fit-content;
@@ -33,11 +33,9 @@ body, html {
 .top-section {
     display: flex;
     padding: 20px 50px;
-    justify-content: space-between; /* Align items with equal space between them */
+    justify-content: space-between;
     align-items: center;
-    
 }
-
 
 /* Logo Section Styles */
 .logo-section {
@@ -51,6 +49,7 @@ body, html {
     max-width: 100%;
     height: auto;
 }
+
 .sponsor-logo {
     display: flex;
     justify-content: flex-start;
@@ -58,42 +57,41 @@ body, html {
     width: 40%;
     padding-top: 25px;
 }
+
 .sponsor-logo img{
     max-width: 100%;
     height: auto;
 }
-  /* Text Section Styles */
+
+/* Text Section Styles */
 .text-section {
     margin-bottom: 20px;
 }
 
 /* Navbar Styles */
 .separator {
-    width: 100%; /* Make the separator fill the width */
-    background-color: #393E46; /* Set background color */
-    color: white; /* Set text color */
-    padding: 0px 10px; /* Add padding top and bottom */
+    width: 100%;
+    background-color: #393E46;
+    color: white;
+    padding: 0px 10px;
     border-radius: 2px;
 }
 
 .separator p {
-    margin: 0; /* Remove default margins */
-    font-size: 18px; /* Set font size */
-    font-weight: bold; /* Set font weight */
-    padding-left: 20px; /* Add padding to the left */
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .top-menu p {
-    margin: 0; /* Remove default margins */
-    font-size: 18px; /* Set font size */
-    font-weight: bold; /* Set font weight */
-    padding: 10px 20px; /* Add padding */
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
 }
-
-
-
 
 .text-section h3{
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -101,18 +99,17 @@ body, html {
     line-height: 1.42857143;
     padding: 10px 30px 0px 30px;
 }
-.information-container {
-    /* Add styles for the information container here */
-    background-color: #f0f0f0; /* Set background color */
-    padding: 100px; /* Add padding */
-    margin: 20px;
-    border-radius: 10px; /* Add border radius */
 
+.information-container {
+    background-color: #f0f0f0;
+    padding: 100px;
+    margin: 20px;
+    border-radius: 10px;
 }
 
 /* Additional Info Container Styles */
 .info-container {
-    margin-top: 20px; /* Add some space between information container and additional info container */
+    margin-top: 20px;
 }
 
 /* Buttons Styles */
@@ -120,33 +117,32 @@ body, html {
     display: flex;
     justify-content: center;
 }
+
 #courseText {
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat font family */
-    margin-top: -30px; /* Place the text 20% from the top of the container */
-    margin-bottom: 80px; /* Place the text 80% from the bottom of the container */
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -30px;
+    margin-bottom: 80px;
 }
 
 .button {
-    padding: 15px 30px; /* Increase padding for a bigger button */
-    background-color: #43766C; /* Set background color */
-    color: white; /* Set text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Increase border radius for a more rounded shape */
-    cursor: pointer; /* Add cursor pointer */
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat font family */
+    padding: 15px 30px;
+    background-color: #43766C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
-    flex-wrap: wrap; /* Allow buttons to wrap to the next line if necessary */
+    flex-wrap: wrap;
     justify-content: center;
     text-decoration: none;
-    
 }
-
 
 .button:hover {
-    background-color: #0056b3; /* Darker background color on hover */
+    background-color: #0056b3;
 }
 
-#summer{
+#summer {
     padding: 15px 25px;
     font-size: 16px;
     background-color: #FEB941;
@@ -158,6 +154,7 @@ body, html {
     overflow: hidden;
     font-weight: bold;
 }
+
 #summer::after {
     content: "";
     position: absolute;
@@ -169,23 +166,23 @@ body, html {
     background-size: cover;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    z-index: 0; 
+    z-index: 0;
 }
+
 #summer:hover::after {
-    opacity: 0.5; /* Adjust the opacity to control the frosting effect */
+    opacity: 0.5;
 }
 
 .button:nth-child(2) {
-    margin-left: 80px; /* Adjust the margin between buttons */
+    margin-left: 80px;
 }
 
-.bottomSection{
+.bottomSection {
     display: flex;
     justify-content: flex-start;
     padding: 5px 50px;
     max-width: 100%;
 }
-
 
 #winter {
     padding: 15px 25px;
@@ -197,9 +194,8 @@ body, html {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    z-index: 1; /* Ensure button text remains above the frosty overlay */
+    z-index: 1;
     font-weight: bold;
-    
 }
 
 #winter::after {
@@ -213,13 +209,12 @@ body, html {
     background-size: cover;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    z-index: 0; /* Ensure the frosty overlay stays below the button text */
+    z-index: 0;
 }
 
 #winter:hover::after {
-    opacity: 0.5; /* Adjust the opacity to control the frosting effect */
+    opacity: 0.5;
 }
-
 
 /* Sponsors Section Styles */
 .sponsors-section {
@@ -228,11 +223,10 @@ body, html {
     padding: 20px 50px;
 }
 
-
-  /* Media Query for Mobile Devices */
+/* Media Query for Mobile Devices */
 @media only screen and (max-width: 600px) {
     .container {
-    width: 80%;
-    padding: 20px;
+        width: 80%;
+        padding: 20px;
     }
 }

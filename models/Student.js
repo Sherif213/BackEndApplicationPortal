@@ -46,7 +46,7 @@ const studentSchema = new mongoose.Schema({
     PaymentMethod: {
         iban: { type: String, required: true },
     }
-}, { timestamps: true }); // Add timestamps for createdAt and updatedAt fields
+}, { timestamps: true }); //timestamps for createdAt and updatedAt fields
 
 
 

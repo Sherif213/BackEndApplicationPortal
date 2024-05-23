@@ -34,7 +34,7 @@ body, html {
 .top-section     {
     display: flex;
     padding: 20px 50px;
-    justify-content: space-between; /* Align items with equal space between them */
+    justify-content: space-between; 
     align-items: center;
     
 }
@@ -70,27 +70,27 @@ body, html {
 
 /* Navbar Styles */
 .separator {
-    width: 100%; /* Make the separator fill the width */
-    background-color: #393E46; /* Set background color */
-    color: white; /* Set text color */
-    padding: 0px 10px; /* Add padding top and bottom */
+    width: 100%; 
+    background-color: #393E46; 
+    color: white; 
+    padding: 0px 10px; 
     border-radius: 2px;
 }
 
 .separator p {
-    margin: 0; /* Remove default margins */
-    font-size: 18px; /* Set font size */
-    font-weight: bold; /* Set font weight */
-    padding-left: 20px; /* Add padding to the left */
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    margin: 0; 
+    font-size: 18px; 
+    font-weight: bold; 
+    padding-left: 20px; 
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .top-menu p {
-    margin: 0; /* Remove default margins */
-    font-size: 18px; /* Set font size */
-    font-weight: bold; /* Set font weight */
-    padding: 10px 20px; /* Add padding */
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    margin: 0; 
+    font-size: 18px; 
+    font-weight: bold; 
+    padding: 10px 20px; 
+    font-family: 'Montserrat', sans-serif; 
 }
 
 
@@ -106,12 +106,12 @@ body, html {
 .information-container,.information-container2,.information-container3
 ,.information-container4,.information-container5,.information-container6,
 .information-container7,.information-container8 {
-    background-color: #f0f0f0; /* Set background color */
-    padding: 20px; /* Add padding */
+    background-color: #f0f0f0; 
+    padding: 20px; 
     margin: 20px;
-    border-radius: 10px; /* Add border radius */
-    display: flex; /* Use flexbox layout */
-    flex-wrap: wrap; /* Allow sections to wrap */
+    border-radius: 10px; 
+    display: flex; 
+    flex-wrap: wrap; 
 }
 
 
@@ -137,13 +137,13 @@ body, html {
 /* Styles for the headline */
 
 .container-headline,.container-headline1 {
-    background-color: #43766C; /* Background color for the headline */
-    color: white; /* Text color for the headline */
-    padding: 20px; /* Padding for the headline */
+    background-color: #43766C; 
+    color: white; 
+    padding: 20px; 
     border-radius: 10px 10px 0 0;
-    width: 100%; /* Full width */
-    text-align: center; /* Center text */
-    margin-bottom: 20px; /* Add margin below the headline */
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 20px; 
 }
 .container-headline1{
     background-size: cover;
@@ -155,28 +155,28 @@ body, html {
     
 }
 .headline1 {
-    position: relative; /* Ensure proper positioning */
-    display: inline-block; /* Allow for dynamic width */
-    overflow: hidden; /* Hide overflow from children */
+    position: relative; 
+    display: inline-block; 
+    overflow: hidden; 
     display: flex;
     justify-content: center;
 }
 
 .texture-image1,.texture-image2 {
-    position: absolute; /* Position the image */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the container */
-    filter: brightness(40%); /* Adjust brightness of the image */
+    object-fit: cover; 
+    filter: brightness(40%); 
 }
 
 
 
 .textured-headline::before {
-    content: ''; /* Add a pseudo-element for the background overlay */
-    position: absolute; /* Position the overlay */
+    content: ''; 
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
@@ -185,12 +185,12 @@ body, html {
 }
 
 .textured-headline h2 {
-    position: relative; /* Ensure proper stacking */
-    color: white; /* Text color */
-    z-index: 1; /* Place text above the background */
-    margin: 0; /* Remove default margin */
-    padding: 20px; /* Add padding */
-    font-size: 24px; /* Adjust font size */
+    position: relative; 
+    color: white; 
+    z-index: 1; 
+    margin: 0; 
+    padding: 20px; 
+    font-size: 24px; 
 }
 
 
@@ -202,21 +202,21 @@ body, html {
 .right-section2,
 .left-section3,
 .right-section3 {
-    width:calc(50% - 10px) ; /* Set width for the left and right sections */
-    margin-right: 10px; /* Add margin between sections */
+    width:calc(50% - 10px) ; 
+    margin-right: 10px; 
 }
 .left-section2,
 .right-section2 {
-    width:calc(50% - 40px) ; /* Set width for the left and right sections */
+    width:calc(50% - 40px) ; 
 }
 
 
 /* Styles for each section */
 .section , .section2 {
-    background-color: #f0f0f0; /* Background color for sections */
-    padding: 20px; /* Padding for sections */
-    border-radius: 10px; /* Rounded corners for the sections */
-    margin-bottom: 20px; /* Add margin between sections */
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
 }
 .section {
     background-color: #ffffff;
@@ -240,25 +240,25 @@ body, html {
 .left-section2 {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Add some space between sections */
+    gap: 15px; 
 }
 
 /* Right Section 2 */
 .right-section2 {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Add some space between sections */
+    gap: 15px; 
 }
 
 /* Section 2 */
 .section2 {
     display: flex;
     align-items: center;
-    gap: 15px; /* Add some space between label and input/select */
+    gap: 15px; 
 }
 /* Label styles */
 .section2 label {
-    flex: 0 0 30%; /* Adjust the width of the label as needed */
+    flex: 0 0 30%; 
     text-align: right;
     margin-right: 10px;
     margin-bottom: 5px;
@@ -270,7 +270,7 @@ body, html {
 .section2 input[type="text"],
 .section2 input[type="date"],
 .section2 select {
-    flex: 0 0 70%; /* Adjust the width of the input/select as needed */
+    flex: 0 0 70%; 
     border-radius: 5px;
     padding: 8px;
     border: 1px solid #ccc;
@@ -279,18 +279,18 @@ body, html {
 
 /* Styles for section headings */
 .section h3 {
-    font-size: 18px; /* Set font size for section headings */
-    font-weight: bold; /* Make section headings bold */
+    font-size: 18px; 
+    font-weight: bold; 
 }
 
 /* Styles for section content */
 .section p , .section2 p {
-    font-size: 16px; /* Set font size for section content */
+    font-size: 16px; 
 }
 
 /* Additional Info Container Styles */
 .info-container {
-    margin-top: 20px; /* Add some space between information container and additional info container */
+    margin-top: 20px; 
 }
 /* Styles for the top section */
 .top-section3 {
@@ -358,21 +358,21 @@ body, html {
     justify-content: center;
 }
 #courseText {
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat font family */
-    margin-top: -30px; /* Place the text 20% from the top of the container */
-    margin-bottom: 80px; /* Place the text 80% from the bottom of the container */
+    font-family: 'Montserrat', sans-serif; 
+    margin-top: -30px; 
+    margin-bottom: 80px; 
 }
 
 .button {
-    padding: 15px 30px; /* Increase padding for a bigger button */
-    background-color: #43766C; /* Set background color */
-    color: white; /* Set text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Increase border radius for a more rounded shape */
-    cursor: pointer; /* Add cursor pointer */
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat font family */
+    padding: 15px 30px; 
+    background-color: #43766C; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-family: 'Montserrat', sans-serif; 
     display: flex;
-    flex-wrap: wrap; /* Allow buttons to wrap to the next line if necessary */
+    flex-wrap: wrap; 
     justify-content: center;
     text-decoration: none;
     
@@ -380,13 +380,13 @@ body, html {
 
 
 .button:hover {
-    background-color: #0056b3; /* Darker background color on hover */
+    background-color: #0056b3; 
 }
 
 
 
 .button:nth-child(2) {
-    margin-left: 80px; /* Adjust the margin between buttons */
+    margin-left: 80px; 
 }
 
 .bottomSection{
@@ -517,12 +517,12 @@ body, html {
 
 /* Apply the same styles as Information Container 5 */
 .information-container7 {
-    background-color: #f0f0f0; /* Set background color */
-    padding: 20px; /* Add padding */
-    margin: 20px; /* Add margin */
-    border-radius: 10px; /* Add border radius */
-    display: flex; /* Use flexbox layout */
-    flex-wrap: wrap; /* Allow sections to wrap */
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    margin: 20px; 
+    border-radius: 10px; 
+    display: flex; 
+    flex-wrap: wrap; 
 }
 
 .information-container7 .top-section5 {
@@ -581,8 +581,8 @@ input[type="checkbox"] {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
-    width: 33%; /* Width of the modal */
-    height: 50%; /* Height of the modal */
+    width: 33%; 
+    height: 50%; 
     max-height: 80%;
 }
 .modal-content h2{
