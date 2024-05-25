@@ -1,23 +1,21 @@
 // studentController.js
-const Student = require('./models/Student');
-const image = require('./models/attachment');
+const Student = require('./models/student');
+const Attachment = require('./models/attachment');
 
 const createNewStudent = async (studentData) => {
     try {
-        const newStudent = new Student(studentData);
-        await newStudent.save();
+        const newStudent = await Student.create(studentData);
         return newStudent;
     } catch (error) {
         throw new Error(error.message);
     }
 };
 
-const createNewAttachment=async(imageData)=>{
-    try{
-        const newAttachment=new image(imageData);
-        await newAttachment.save();
+const createNewAttachment = async (imageData) => {
+    try {
+        const newAttachment = await Attachment.create(imageData);
         return newAttachment;
-    }catch (error){
+    } catch (error) {
         throw new Error(error.message);
     }
 }

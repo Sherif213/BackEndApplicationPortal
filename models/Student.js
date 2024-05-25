@@ -1,53 +1,106 @@
-const mongoose = require('mongoose');
+// models/student.js
+const { DataTypes } = require('sequelize');
+const sequelize = require('../mysql');
 
-const studentSchema = new mongoose.Schema({
+const Student = sequelize.define('Student', {
     submissionId: {
-        type: String,
-        required: true,
+        type: DataTypes.STRING,
+        allowNull: false,
         unique: true
     },
-    personalInformation: {
-        firstName: { type: String, required: true },
-        dateOfBirth: { type: Date, required: true },
-        gender: { type: String },
-        tshirtSize: { type: String},
-        nationality: { type: String, required: true },
-        placeOfBirth: String,
+    // Personal Information
+    firstName: {
+        type: DataTypes.STRING,
+        allowNull: false
     },
-    contactInformation: {
-        homeAddress: String,
-        email: { type: String, required: true}, 
-        telephone: { type: String, required: true },
+    dateOfBirth: {
+        type: DataTypes.DATE,
+        allowNull: false
     },
-    emergencyContact: {
-        fathersFullName: String,
-        fathersEmail: String,
-        fathersTelephone: String,
-        mothersFullName: String,
-        mothersEmail: String,
-        mothersTelephone: String,
+    gender: {
+        type: DataTypes.STRING
     },
-    passportInfo: {
-        passportName: String,
-        givenPlace: String,
-        passportNumber: String,
-        expiryDate: String,
+    tshirtSize: {
+        type: DataTypes.STRING
     },
-    courseSelection: {
-        course: { type: String, required: true },
+    nationality: {
+        type: DataTypes.STRING,
+        defaultValue: 'Unknown'
     },
-    universityInformation: {
-        institutionName: { type: String, required: true },
-        department: String,
-        institutionAddress: String,
-        institutionEmail: String,
-        institutionTelephone: String,
+    placeOfBirth: {
+        type: DataTypes.STRING
     },
-    PaymentMethod: {
-        iban: { type: String, required: true },
+    // Contact Information
+    homeAddress: {
+        type: DataTypes.STRING
+    },
+    email: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    telephone: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    // Emergency Contact
+    fathersFullName: {
+        type: DataTypes.STRING
+    },
+    fathersEmail: {
+        type: DataTypes.STRING
+    },
+    fathersTelephone: {
+        type: DataTypes.STRING
+    },
+    mothersFullName: {
+        type: DataTypes.STRING
+    },
+    mothersEmail: {
+        type: DataTypes.STRING
+    },
+    mothersTelephone: {
+        type: DataTypes.STRING
+    },
+    // Passport Information
+    passportName: {
+        type: DataTypes.STRING
+    },
+    givenPlace: {
+        type: DataTypes.STRING
+    },
+    passportNumber: {
+        type: DataTypes.STRING
+    },
+    expiryDate: {
+        type: DataTypes.STRING
+    },
+    // Course Selection
+    course: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    // University Information
+    institutionName: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    department: {
+        type: DataTypes.STRING
+    },
+    institutionAddress: {
+        type: DataTypes.STRING
+    },
+    institutionEmail: {
+        type: DataTypes.STRING
+    },
+    institutionTelephone: {
+        type: DataTypes.STRING
+    },
+    // Payment Method
+    iban: {
+        type: DataTypes.STRING,
+        allowNull: false
     }
-}, { timestamps: true }); //timestamps for createdAt and updatedAt fields
+}, { timestamps: true });
 
-
-
-module.exports = mongoose.model('Student', studentSchema);
+module.exports = Student;

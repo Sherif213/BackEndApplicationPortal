@@ -1,15 +1,35 @@
-const mongoose = require('mongoose');
+// models/attachment.js
+const { DataTypes } = require('sequelize');
+const sequelize = require('../mysql');
 
-const attachmentSchema = new mongoose.Schema({
-    personalInformation: {
-        firstName: { type: String, required: true },
-        studentCertificate: { type: String, required: true }, 
-        photo: { type: String, required: true }
+const Attachment = sequelize.define('Attachment', {
+    submissionId: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true
     },
-    passportInfo: {
-        passportName: { type: String, required: true },
-        passportCopy: { type: String, required: true } 
+    // Personal Information
+    firstName: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    studentCertificate: {
+        type: DataTypes.TEXT,  // Assuming large text for Base64 data
+        allowNull: false
+    },
+    photo: {
+        type: DataTypes.TEXT,  // Assuming large text for Base64 data
+        allowNull: false
+    },
+    // Passport Information
+    passportName: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    passportCopy: {
+        type: DataTypes.TEXT,  // Assuming large text for Base64 data
+        allowNull: false
     }
 }, { timestamps: true });
 
-module.exports = mongoose.model('Attachment', attachmentSchema);
+module.exports = Attachment;

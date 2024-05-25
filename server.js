@@ -1,14 +1,15 @@
+// server.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
 const { body, validationResult } = require('express-validator');
-const { v4: uuidv4 } = require('uuid'); // Import UUID library
-const mongoose = require('./mongodb');
+const { v4: uuidv4 } = require('uuid');
+const sequelize = require('./mysql');
 const { promisify } = require('util');
 const readFile = promisify(fs.readFile);
-const { createNewStudent } = require('./studentController');
+const { createNewStudent, createNewAttachment } = require('./studentController');
 const formRoutes = require('./formRoutes');
 
 const app = express();
@@ -25,8 +26,16 @@ app.use(bodyParser.json());
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
-// Define the Student model
-const Student = require('./models/Student');
+// Define the Student and Attachment models
+const Student = require('./models/student');
+const Attachment = require('./models/attachment');
+
+// Sync models with database
+sequelize.sync().then(() => {
+    console.log("All models were synchronized successfully.");
+}).catch((error) => {
+    console.error('Error synchronizing models:', error);
+});
 
 // Import routes
 const dataEntryRoutes = require('./routes/dataEntry');
@@ -58,7 +67,6 @@ const fileToBase64 = async (fileBuffer) => {
 
 // Route to handle form submission
 app.use('/', formRoutes);
-
 
 app.use('/', dataEntryRoutes);
 app.use('/', errorRoutes);
