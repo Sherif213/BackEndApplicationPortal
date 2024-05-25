@@ -27,7 +27,7 @@ const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
 // Define the Student and Attachment models
-const Student = require('./models/student');
+const Student = require('./models/Student');
 const Attachment = require('./models/attachment');
 
 // Sync models with database

@@ -1,5 +1,5 @@
 // studentController.js
-const Student = require('./models/student');
+const Student = require('./models/Student');
 const Attachment = require('./models/attachment');
 
 const createNewStudent = async (studentData) => {
