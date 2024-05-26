@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UNESCO APPLICATION FORM</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link rel="stylesheet" href="dataEntry.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
@@ -48,15 +48,29 @@
                 <!-- Left Section -->
                 <div class="left-section">
                     <!-- Program Dates Section -->
-                    <div class="section">
+                    <div class="section" style="min-height: 48%;">
                         <h3>PROGRAM DATES</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida nisl lorem.</p>
+                        <div class="programDatesContent">
+                            <p>Arrival of International Participants: <strong>6th and 7th July</strong>.<span>&#9992;</span></p>
+                            <p>Orientation Day: <strong>8th July</strong> </p>
+                            <p>Program Courses and activities: <strong>9th July till 18th July</strong></p>
+                            <p>Closing Ceremony: <strong>19th July</strong></p>
+                            <p>Departure of International Participants: <strong>20th July</strong></p>
+                        </div>
                     </div>
-                    
-                    <!-- Courses Section -->
+                    <!-- Payment Method Section -->
                     <div class="section">
-                        <h3>COURSES</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida nisl lorem.</p>
+                        <h3>PAYMENT DETAILS</h3>
+                        <div class="programDatesContent">
+                            <p>After your application has been reviewed, you will receive the payment details along with your acceptance letter.</p>
+                        </div>
+                    </div>
+                    <!-- Schedule Section -->
+                    <div class="section">
+                        <h3>SCHEDULE</h3>
+                        <div class="programDatesContent">
+                            <strong><p>You can check Schedule <a href="#" id="openSchedule" class="terms-link">HERE</a> !</p></strong>
+                        </div>
                     </div>
                     
                 </div>
@@ -64,25 +78,37 @@
                 <!-- Right Section -->
                 <div class="right-section">
                     <!-- Registration Deadline Section -->
-                    <div class="section">
+                    <div class="section" style="min-height: 22.5%;">
                         <h3>REGISTRATION DEADLINES</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida nisl lorem.</p>
+                        <div class="programDatesContent">
+                            <p>Registration Deadline: <strong>17th June</strong></p>
+                        </div>
                     </div>
-                    
+                    <!-- Courses Section -->
+                    <div class="section" style="min-height: 22%;">
+                        <h3>COURSES</h3>
+                        <div class="programDatesContent">
+                            <p>Will be revealed soon!</p>
+                        </div>
+                    </div>
                     <!-- Fees Section -->
-                    <div class="section">
+                    <div class="section" style="min-height: 47%;">
                         <h3>FEES</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida nisl lorem.</p>
-                    </div>
+                        <div class="programDatesContent">
+                            <p>Program Fee: <strong>$590</strong></p>
+                            <p>Optional Accommodation Fee: <strong>$600</strong></p>
+                            <p>Total cost with accommodation: <strong>$1190</strong></p>
+                        </div> 
+                        <div class="alert alert-warning" role="alert">
+                            <i class="fa-solid fa-circle-info"></i>&nbsp;
+                            A reciept is required to confirm application!
+                        </div>
+                    </div>                    
                     
                     
                 </div>
                 <div class="bottom-section1">
-                    <!-- Payment Method Section -->
-                    <div class="section-bottom">
-                        <h3 style="margin-bottom: 20px;">PAYMENT DETAILS</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida nisl lorem.</p>
-                    </div>
+                    
                 </div>
             </div>
             <form id="myForm" action="/submit" method="POST" enctype="multipart/form-data">
@@ -522,7 +548,89 @@
                 <br><br> I authorize IAU staff to make relevant enquiries to verify my application, and should I be approved to go on the program, to provide the necessary information to the required institutions for the purpose of arranging my participation.
                 <br><br> I am aware that I have the right to either transfer to another course or receive a full refund if my course selection is either no longer available or has been cancelled by IAU.’ 
                 <div class="clear"><br><br></div>
+                </div>
             </div>
+            <div id="scheduleDetails">
+                <div class="schedule-content">
+                        <h2>Program Schedule</h2>
+                        <div class="schedule-item">
+                            <strong>July 6th (Saturday)</strong>
+                            <p>Arrival of International Participants to Istanbul - No scheduled activities</p>
+                        </div>
+                        <div class="schedule-item">
+                            <strong>July 7th (Sunday)</strong>
+                            <p>Arrival of International Participants to Istanbul - No scheduled activities</p>
+                        </div>
+                        <div class="schedule-item">
+                            <strong>July 8th (Monday) - Day 1: Introduction</strong>
+                            <p><span class="time">09:00 - 12:30:</span> Orientation, UNESCO overview, Mission and Values, Peace Education, Introduction to International Organizations (UNESCO, UN, History)</p>
+                            <p><span class="time">12:30 - 14:00:</span> Lunch break</p>
+                            <p><span class="time">14:00 - 18:00:</span> Campus Tour</p>
+                        </div>
+                        <div class="schedule-item">
+                            <strong>July 9th (Tuesday) - Day 2: Intercultural Integration</strong>
+                            <p><span class="time">09:00 - 12:30:</span> Intercultural integration workshop</p>
+                            <p><span class="time">12:30 - 14:00:</span> Lunch break</p>
+                            <p><span class="time">14:00 - 18:00:</span> Counselling session & Volleyball</p>
+                        </div>
+                        <div class="schedule-item">
+                            <strong>July 10th (Wednesday) - Day 3: Cross-cultural Communication</strong>
+                            <p><span class="time">09:00 - 12:30:</span> Understanding and managing intercultural conflicts</p>
+                            <p><span class="time">12:30 - 14:00:</span> Lunch break</p>
+                            <p><span class="time">14:00 - 18:00:</span> Istanbul Aquarium Tour</p>
+                        </div>
+                        <div class="schedule-item">
+                            <strong>July 11th (Thursday) - Day 4: International Relations</strong>
+                            <p><span class="time">09:00 - 12:30:</span> Concepts of International Relations</p>
+                            <p><span class="time">12:30 - 14:00:</span> Lunch break</p>
+                            <p><span class="time">14:00 - 18:00:</span> Counselling session & Table Tennis/Basketball</p>
+                        </div>
+                        <div class="schedule-item">
+                            <strong>July 12th (Friday) - Day 5: International Relations</strong>
+                            <p><span class="time">09:00 - 12:30:</span> Theories of International Relations</p>
+                            <p><span class="time">12:30 - 14:00:</span> Lunch break</p>
+                            <p><span class="time">14:00 - 18:00:</span> Koç Museum and Pierre Loti Tour</p>
+                        </div>
+                        <div class="schedule-item">
+                            <strong>July 13th (Saturday) - Weekend 1: Historical Peninsula Tour</strong>
+                            <p>Full day tour</p>
+                        </div>
+                        <div class="schedule-item">
+                            <strong>July 14th (Sunday) - Weekend 2: Bosphorus Boat Tour</strong>
+                            <p>Full day tour</p>
+                        </div>
+                        <div class="schedule-item">
+                            <strong>July 15th (Monday) - Day 6: Exploring Values</strong>
+                            <p><span class="time">09:00 - 12:30:</span> Human Dignity, Freedom</p>
+                            <p><span class="time">12:30 - 14:00:</span> Lunch break</p>
+                            <p><span class="time">14:00 - 18:00:</span> VIALAND Themepark Tour</p>
+                        </div>
+                        <div class="schedule-item">
+                            <strong>July 16th (Tuesday) - Day 7: Appreciation of Democratic Values</strong>
+                            <p><span class="time">09:00 - 12:30:</span> Democracy and Equality</p>
+                            <p><span class="time">12:30 - 14:00:</span> Lunch break</p>
+                            <p><span class="time">14:00 - 18:00:</span> Sports Activity</p>
+                        </div>
+                        <div class="schedule-item">
+                            <strong>July 17th (Wednesday) - Day 8: Emphasis on Legal and Human Rights</strong>
+                            <p><span class="time">09:00 - 12:30:</span> Rule of Law, Human Rights</p>
+                            <p><span class="time">12:30 - 14:00:</span> Lunch break</p>
+                            <p><span class="time">14:00 - 18:00:</span> Çamlıca Mosque and Tower Tour</p>
+                        </div>
+                        <div class="schedule-item">
+                            <strong>July 18th (Thursday) - Day 9: Student Presentations</strong>
+                            <p><span class="time">09:00 - 12:30:</span> Presentations on Education and Peace</p>
+                            <p><span class="time">12:30 - 14:00:</span> Lunch break</p>
+                            <p><span class="time">14:00 - 18:00:</span> Sports Activity</p>
+                        </div>
+                        <div class="schedule-item">
+                            <strong>July 19th (Friday) - Day 10: Graduation Day</strong>
+                            <p><span class="time">09:00 - 12:30:</span> University Life / Faculties overview</p>
+                            <p><span class="time">12:30 - 14:00:</span> Lunch break</p>
+                            <p><span class="time">14:00 - 18:00:</span> Graduation Ceremony</p>
+                        </div>
+                <div class="clear"><br><br></div>
+                </div>
             </div>
             </form>
             
@@ -533,6 +641,7 @@
             </div>
         </div>
     </div>
+    <script src="js/schedule.js"></script>
     <script src="js/termsConditions.js"></script>
     </body>
 </html>
