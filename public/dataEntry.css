@@ -102,6 +102,21 @@ body, html {
     line-height: 1.42857143;
     padding: 10px 30px 0px 30px;
 }
+.programDatesContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start;     
+    text-align: left;            
+    padding: 0;                  
+    margin: 0;
+    margin-top: 10px;                   
+}
+.alert-warning{
+    text-align: left;
+    margin: 0;
+    margin-top:15px ;
+}
 /* Styles for the information container */
 .information-container,.information-container2,.information-container3
 ,.information-container4,.information-container5,.information-container6,
@@ -201,7 +216,8 @@ body, html {
 .left-section2 ,
 .right-section2,
 .left-section3,
-.right-section3 {
+.right-section3,
+.bottom-section1 {
     width:calc(50% - 10px) ; 
     margin-right: 10px; 
 }
@@ -226,17 +242,10 @@ body, html {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    height: fit-content;
+    overflow: auto;
 }
-.section-bottom{
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+
 .left-section2 {
     display: flex;
     flex-direction: column;
@@ -313,10 +322,7 @@ body, html {
     box-sizing: border-box;
     
 }
-.bottom-section1{
-    width: 100%;
-    margin-right: 10px;
-}
+
 
 /* Styles for the bottom section */
 .bottom-section3 {
@@ -560,6 +566,52 @@ input[type="checkbox"] {
     margin-right: 5px;
     vertical-align: middle;
 }
+.schedule-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+.schedule-content h2 {
+    color: #43766C;
+    text-align: center;
+}
+.schedule-item {
+    margin-bottom: 20px;
+}
+.schedule-item strong {
+    color: #333;
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+.clear {
+    clear: both;
+}
+.time {
+    font-weight: bold;
+    color: #43766C;
+}
+.activity {
+    margin-left: 20px;
+}
+#scheduleDetails{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    overflow: auto;
+}
+
 #modal {
     display: none;
     justify-content: center;
@@ -588,6 +640,7 @@ input[type="checkbox"] {
 .modal-content h2{
     margin-bottom: 20px;
 }
+
 .checkbox-container {
     display: inline-block;
     position: relative;
