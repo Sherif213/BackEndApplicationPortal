@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['username']) && isset(
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #0A2853;
             font-family: Arial, sans-serif;
         }
         .container {
@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['username']) && isset(
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .card-header {
-            background-color: #007bff;
+            background-color: #43766C;
             color: white;
             border-radius: 10px 10px 0 0;
         }
@@ -82,14 +82,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['username']) && isset(
             font-weight: bold;
         }
         .btn-primary {
-            background-color: #007bff;
+            background-color: #43766C;
             border: none;
             border-radius: 5px;
             padding: 10px 20px;
             transition: background-color 0.3s ease;
         }
         .btn-primary:hover {
-            background-color: #0056b3;
+            background-color: #0A2853;
         }
     </style>
 </head>
