@@ -1,0 +1,174 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#0A2853;
+    display: flex;
+    justify-content: center;
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Wrapper Styles */
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Container Styles */
+.container {
+    width: 55%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.top-section {
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Section Styles */
+.logo-section {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    width: 35%;
+}
+
+.logo-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sponsor-logo {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    width: 40%;
+    padding-top: 25px;
+}
+
+.sponsor-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Text Section Styles */
+.text-section {
+    margin-bottom: 0px;
+}
+
+/* Navbar Styles */
+.separator {
+    width: 100%;
+    background-color: #393E46;
+    color: white;
+    padding: 0px 10px;
+    border-radius: 2px;
+}
+
+.separator p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top-menu p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-section h3 {
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    padding: 30px 30px 0px 30px;
+}
+
+.information-container {
+    background-color: #f0f0f0;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Information Text Styles */
+.information-text p {
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Additional Info Container Styles */
+.info-container {
+    margin-top: 20px;
+}
+
+/* Buttons Styles */
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#courseText {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -30px;
+    margin-bottom: 80px;
+}
+
+.button {
+    padding: 15px 30px;
+    background-color: #43766C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.bottomSection {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 50px;
+    max-width: 100%;
+}
+
+/* Sponsors Section Styles */
+.sponsors-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+}
