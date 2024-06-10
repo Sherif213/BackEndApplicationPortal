@@ -62,13 +62,13 @@
                     <div class="section" style="min-height: 47%;">
                         <h3>FEES</h3>
                         <div class="programDatesContent">
-                            <p>Program Fee: <strong>$590</strong></p>
-                            <p>Optional Accommodation Fee: <strong>$600</strong></p>
-                            <p>Total cost with accommodation: <strong>$1190</strong></p>
+                            <p>The fee will be communicated to you via <strong>email</strong>after your application has been reviewed.</p>
+                            <p>This process ensures that you receive all necessary information regarding the cost of the program.</p>
+                            
                         </div>
                         <div class="alert alert-warning" role="alert">
                             <i class="fa-solid fa-circle-info"></i>&nbsp;
-                            A receipt is required to confirm application!
+                            After payment, share receipt for confirmation.
                         </div>
                     </div>
 
@@ -581,20 +581,43 @@
                 <div id="modal">
                     <div class="modal-content">
                         <!-- Your terms and conditions content goes here -->
-                        <h2>Terms and Conditions</h2>
-                        ‘IAU will not be liable in any way for any loss, injury, sickness or damage that might be caused
-                        by third parties that I may suffer while participating in the program, or which results in any
-                        way during my participation in the program.
-                        <br><br> I am aware and accept that IAU is not responsible for any other liabilities other than
-                        organizing and conducting this program. I declare that the information presented in this
-                        application and the accompanying documentation is true and correct. I understand that the IAU
-                        Academic Relations Office may terminate my application or nomination for the program if I have
-                        misrepresented my past and/or present circumstances.
-                        <br><br> I authorize IAU staff to make relevant enquiries to verify my application, and should I
-                        be approved to go on the program, to provide the necessary information to the required
-                        institutions for the purpose of arranging my participation.
-                        <br><br> I am aware that I have the right to either transfer to another course or receive a full
-                        refund if my course selection is either no longer available or has been cancelled by IAU.’
+                        <h2>UNESCO JUNIOR DIPLOMACY PROGRAM TERMS AND CONDITIONS</h2>
+                        <strong>1. Eligibility:</strong>
+                        - The program is open to all participants ages 14 and above, including international students.
+                        - Participants must submit a personal statement, a letter of recommendation, and a valid ID or passport.
+                        - Students under 18 years of age require the consent of a legal guardian to participate
+                        <br><br> 
+                        <strong>2. Accommodation:</strong>
+                        - Accommodation will be provided only for students arriving from outside of Istanbul.
+                        - Participants must adhere to the accommodation rules and regulations set forth by the organizers.
+                        <br><br> 
+                        <strong>3. Program Activities:</strong>
+                        - The program will include trips and educational activities organized by the UNESCO Chair at Istanbul Aydin University.
+                        <br><br> 
+                        <strong>4. Code of Conduct:</strong>
+                        - Participants must conduct themselves in a respectful and professional manner at all times.
+                        - Any misdemeanor may result in immediate termination from the program without refund.
+                        <br><br> 
+                        <strong>5. Health and Safety:</strong>
+                        - Participants are responsible for their own health insurance coverage for the duration of the program.
+                        - Emergency contact information must be provided upon registration.
+                        - Any medical conditions or special requirements must be disclosed to the organizers in advance.
+                        <br><br> 
+                        <strong>6. Payment:</strong>
+                        - Payment for the program is non-refundable, except in exceptional circumstances at the discretion of the organizing committee.
+                        <br><br> 
+                        <strong>7. Liability:</strong>
+                        - Istanbul Aydin University and the UNESCO Chair are not liable for any loss, damage, or injury sustained during the program, including during scheduled trips.
+                        - Participants are responsible for their personal belongings and valuables.
+                        <br><br> 
+                        <strong>8. Changes and Cancellations:</strong>
+                        - The organizers reserve the right to make changes to the program itinerary or schedule if necessary.
+                        - In the event of program cancellation by the organizers, participants will be notified as soon as possible, and any fees paid will be refunded
+                        <br><br> 
+                        <strong>9. Agreement:</strong>
+                        - By submitting an application, participants agree to abide by these terms and conditions.
+                        <br><br>
+                        By participating in the UNESCO Junior Diplomacy Program, participants acknowledge that they have read, understood, and agree to comply with these terms and conditions.
                         <div class="clear"><br><br></div>
                     </div>
                 </div>
