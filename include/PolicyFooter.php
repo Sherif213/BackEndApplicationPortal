@@ -10,7 +10,7 @@
     <br><br> Taking place in the vibrant city of Istanbul, Turkey, this program offers an immersive
     experience designed to empower youth to become active agents of positive change in their communities and
     beyond. I understand that the IAU Academic Relations Office
-    <br><br>The UNESCO Junior Peace Program is open to young individuals between the ages of 16 and 25 who
+    <br><br>The UNESCO Junior Peace Program is open to young individuals who
     are passionate about peace, education, and intercultural dialogue. Whether you're a student, activist,
     aspiring leader, or changemaker, this program provides a platform for you to develop your potential and
     make a meaningful impact on the world.

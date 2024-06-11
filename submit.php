@@ -12,6 +12,24 @@ use App\Models\Attachment;
 // Define the path to the log file
 $logFile = __DIR__ . '/debug.log';
 
+
+
+
+// Function to retrieve country name based on nationality value
+function getCountryName($nationalityValue)
+{
+    global $capsule; // Assuming $capsule contains the Eloquent Capsule
+
+    // Use Eloquent to query the database
+    $country = $capsule->getConnection()->table('Countries')->where('id', $nationalityValue)->first();
+
+    if ($country) {
+        return $country->name;
+    } else {
+        return null; 
+    }
+}
+
 function createNewStudent($studentData)
 {
     try {
@@ -39,13 +57,19 @@ function createNewAttachment($imageData)
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     writeToLog("Processing form submission...\n");
 
+    // Establish database connection
+    require_once __DIR__ . '/config/database.php';
+
+    $nationalityValue = $_POST['Nationality'];
+    $countryName = getCountryName($nationalityValue);
+
     $studentData = [
         'submissionId' => uniqid(),
         'firstName' => $_POST['first_name'],
         'dateOfBirth' => $_POST['date_of_birth'],
         'gender' => $_POST['gender'],
         'tshirtSize' => $_POST['tshirt_size'],
-        'nationality' => $_POST['Nationality'],
+        'nationality' => $countryName,
         'placeOfBirth' => $_POST['place_of_birth'],
         'homeAddress' => $_POST['home_address'],
         'email' => $_POST['email'],
@@ -76,10 +100,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'photo' => $_FILES['photo']['name'],
         'passportName' => $_POST['passport_name'],
         'passportCopy' => $_FILES['passport_copy']['name'],
-        'RecommendationLetter' => $_FILES['Recommendation_Letter']['name'],
-        'MotivationLetter' => $_FILES['Motivation_Letter']['name']
+        'Recommendation_Letter' => $_FILES['Recommendation_Letter']['name'], 
+        'Motivation_Letter' => $_FILES['Motivation_Letter']['name'] 
     ];
-
+    
     try {
         $passportName = $_POST['passport_name'];
 
@@ -105,6 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         move_uploaded_file($_FILES['Motivation_Letter']['tmp_name'], $uploadDir . $_FILES['Motivation_Letter']['name']);
 
         writeToLog("Data insertion successful.\n");
+        
 
         // Redirect to success page
         header('Location: signUpSuccessful.php');

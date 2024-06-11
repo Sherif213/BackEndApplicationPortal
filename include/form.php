@@ -48,7 +48,7 @@
         <div class="section" style="min-height: 22.5%;">
             <h3>REGISTRATION DEADLINES</h3>
             <div class="programDatesContent">
-                <p>Registration Deadline: <strong>17th June</strong></p>
+                <p>Registration Deadline: <strong>25th June</strong></p>
             </div>
         </div>
         <!-- Courses Section -->
@@ -410,15 +410,15 @@
             <div class="left-section2">
                 <label for="Recommendation_Letter"><strong>Recommendation Letter</strong></label>
                 <div class="input-group mb-3">
-
-                    <input type="file" class="form-control" id="inputGroupFile01" id="Recommendation_Letter"
+                <label for="Recommendation_Letter"></label>
+                    <input type="file" class="form-control"  id="Recommendation_Letter"
                         name="Recommendation_Letter" required>
                 </div>
             </div>
             <div class="right-section2">
-                <label for="Recommendation_Letter"><strong>Motivation Letter</strong></label>
+                <label for="Motivation_Letter"><strong>Motivation Letter</strong></label>
                 <div class="input-group mb-3">
-
+                    <label for="Motivation_Letter"></label>
                     <input type="file" class="form-control" id="Motivation_Letter" name="Motivation_Letter" required>
                 </div>
             </div>

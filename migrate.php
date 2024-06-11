@@ -1,6 +1,5 @@
 <?php
 require __DIR__.'/vendor/autoload.php';
-require_once __DIR__.'/config/database.php';
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 // Define the path to the log file
@@ -14,6 +13,18 @@ error_reporting(E_ALL);
 try {
     // Create a new Capsule Manager instance
     $capsule = new Capsule;
+
+    // Set the database connection
+    $capsule->addConnection([
+        'driver'    => 'mysql',
+        'host'      => 'localhost',
+        'database'  => 'unescodb',
+        'username'  => 'root',
+        'password'  => '1532910',
+        'charset'   => 'utf8',
+        'collation' => 'utf8_unicode_ci',
+        'prefix'    => '',
+    ]);
 
     // Set the Capsule Manager instance as global
     $capsule->setAsGlobal();
@@ -89,3 +100,4 @@ try {
     // Output a generic error message to the console
     echo "An error occurred. Please see the log file for details.\n";
 }
+?>
