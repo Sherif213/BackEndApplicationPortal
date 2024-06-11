@@ -18,9 +18,9 @@ try {
     $capsule->addConnection([
         'driver'    => 'mysql',
         'host'      => 'localhost',
-        'database'  => 'unescodb',
-        'username'  => 'root',
-        'password'  => '1532910',
+        'database'  => 'unesco_app',
+        'username'  => 'unesco_admin',
+        'password'  => 'kfNhTW3vNqh',
         'charset'   => 'utf8',
         'collation' => 'utf8_unicode_ci',
         'prefix'    => '',

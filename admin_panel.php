@@ -106,12 +106,11 @@ $students = Capsule::table('students')->get();
                             <td><?php echo $student->institutionEmail; ?></td>
                             <td><?php echo $student->institutionTelephone; ?></td>
                             <td><?php echo $student->iban; ?></td>
-                            <td><?php echo isset($attachment->studentCertificate) ? $attachment->studentCertificate : ''; ?>
-                            </td>
-                            <td><?php echo isset($attachment->photo) ? $attachment->photo : ''; ?></td>
-                            <td><?php echo isset($attachment->passportCopy) ? $attachment->passportCopy : ''; ?></td>
-                            <td><?php echo isset($attachment->RecommendationLetter) ? $attachment->RecommendationLetter : ''; ?></td>
-                            <td><?php echo isset($attachment->MotivationLetter) ? $attachment->MotivationLetter : ''; ?></td>
+                            <td><a href="/uploads/<?php echo $student->passportName."/". $attachment->studentCertificate; ?>"><?php echo isset($attachment->studentCertificate) ? $attachment->studentCertificate : ''; ?></a></td>
+                            <td><a href="/uploads/<?php echo $student->passportName."/". $attachment->photo; ?>"><?php echo isset($attachment->photo) ? $attachment->photo : ''; ?></a></td>
+                            <td><a href="/uploads/<?php echo $student->passportName."/". $attachment->passportCopy; ?>"><?php echo isset($attachment->passportCopy) ? $attachment->passportCopy : ''; ?></a></td>
+                            <td><a href="/uploads/<?php echo $student->passportName."/". $attachment->RecommendationLetter; ?>"><?php echo isset($attachment->RecommendationLetter) ? $attachment->RecommendationLetter : ''; ?></td>
+                            <td><a href="/uploads/<?php echo $student->passportName."/". $attachment->MotivationLetter; ?>"><?php echo isset($attachment->MotivationLetter) ? $attachment->MotivationLetter : ''; ?></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
