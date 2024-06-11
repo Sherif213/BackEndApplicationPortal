@@ -55,7 +55,7 @@
         <div class="section" style="min-height: 22%;">
             <h3>COURSES</h3>
             <div class="programDatesContent">
-                <p>Will be revealed soon!</p>
+                <p>International Relations and Intercultural Competence</p>
             </div>
         </div>
         <!-- Fees Section -->
