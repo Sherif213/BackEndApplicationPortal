@@ -116,11 +116,13 @@ body, html {
     text-align: left;
     margin: 0;
     margin-top:15px ;
+    
+    
 }
 /* Styles for the information container */
 .information-container,.information-container2,.information-container3
 ,.information-container4,.information-container5,.information-container6,
-.information-container7,.information-container8 {
+.information-container7,.information-container8,.information-container9 {
     background-color: #f0f0f0; 
     padding: 20px; 
     margin: 20px;
@@ -128,7 +130,24 @@ body, html {
     display: flex; 
     flex-wrap: wrap; 
 }
-
+.information-container9{
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+.top-section6{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.left-section6{
+    padding: 16px;
+}
+.alert-warning {
+    margin-top: 0px;
+}
 
 .top-section3, .bottom-section3 {
     margin-bottom: 20px;
@@ -325,11 +344,17 @@ body, html {
 
 
 /* Styles for the bottom section */
-.bottom-section3 {
+.bottom-section3{
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
+.bottom-section2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 
 /* Styles for the left and right sections within the bottom section */
 .left-section3,
@@ -475,49 +500,63 @@ body, html {
 }
 
 /* Style for Information Container 5 */
-  
+
   /* Top Section */
-  .information-container5 .top-section5 {
+.information-container5 .top-section5 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     width: 100%;
-  }
-  
-  .information-container5 .left-section5,
-  .information-container5 .right-section5 {
+}
+
+.information-container5 .left-section5,
+.information-container5 .right-section5 {
     width: 48%;
-  }
-  .left-section5 label,
-  .right-section5 label,
-  .bottom-section5 label{
+}
+.left-section5 label,
+.right-section5 label,
+.bottom-section5 label{
     font-weight: bold;
     color: #333;
-  }
-  .information-container5 .left-section5 input,
-  .information-container5 .right-section5 input {
+}
+.bottom-section5 label{
+    margin: 0;
+}
+.information-container5 .left-section5 input,
+.information-container5 .right-section5 input {
     width: 100%;
     padding: 8px;
     margin-top: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
+}
+
   /* Second Section */
-  .information-container5 .second-section5 {
+.information-container5 .second-section5 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     width: 100%;
-  }
-  
+}
+.information-container5 .third-section5 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.input-group-text {
+    display: block;
+    margin-bottom: 5px;
+    background: none;
+    border: none;
+}
   /* Bottom Section */
-  
-  .information-container5 .bottom-section5 input[type="file"] {
-    margin-top: 20px;
-    margin-left: 30px;
-    align-items: center;
-  }
+
+
+#passport_copy{
+    margin: 0;
+}
+
 
 
 
@@ -623,24 +662,39 @@ input[type="checkbox"] {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
+    overflow: auto;
 }
 
 .modal-content {
     background-color: #fefefe;
-    display: flex;
-    margin-left: 35%;
     padding: 20px;
+    margin-left: 35%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
-    width: 33%; 
-    height: 50%; 
+    width: 80%; 
+    max-width: 600px; 
     max-height: 80%;
+    text-align: left;
 }
-.modal-content h2{
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.terms-section {
     margin-bottom: 20px;
 }
 
+.terms-section strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.terms-section p {
+    margin: 5px 0;
+}
 .checkbox-container {
     display: inline-block;
     position: relative;

@@ -75,7 +75,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'studentCertificate' => $_FILES['student_certificate']['name'],
         'photo' => $_FILES['photo']['name'],
         'passportName' => $_POST['passport_name'],
-        'passportCopy' => $_FILES['passport_copy']['name']
+        'passportCopy' => $_FILES['passport_copy']['name'],
+        'RecommendationLetter' => $_FILES['Recommendation_Letter']['name'],
+        'MotivationLetter' => $_FILES['Motivation_Letter']['name']
     ];
 
     try {
@@ -99,6 +101,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         move_uploaded_file($_FILES['student_certificate']['tmp_name'], $uploadDir . $_FILES['student_certificate']['name']);
         move_uploaded_file($_FILES['photo']['tmp_name'], $uploadDir . $_FILES['photo']['name']);
         move_uploaded_file($_FILES['passport_copy']['tmp_name'], $uploadDir . $_FILES['passport_copy']['name']);
+        move_uploaded_file($_FILES['Recommendation_Letter']['tmp_name'], $uploadDir . $_FILES['Recommendation_Letter']['name']);
+        move_uploaded_file($_FILES['Motivation_Letter']['tmp_name'], $uploadDir . $_FILES['Motivation_Letter']['name']);
 
         writeToLog("Data insertion successful.\n");
 

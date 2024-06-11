@@ -67,6 +67,8 @@ $students = Capsule::table('students')->get();
                         <th>Student Certificate</th>
                         <th>Photo</th>
                         <th>Passport Copy</th>
+                        <th>Recommendation Letter</th>
+                        <th>Motivation Letter</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -108,6 +110,8 @@ $students = Capsule::table('students')->get();
                             </td>
                             <td><?php echo isset($attachment->photo) ? $attachment->photo : ''; ?></td>
                             <td><?php echo isset($attachment->passportCopy) ? $attachment->passportCopy : ''; ?></td>
+                            <td><?php echo isset($attachment->RecommendationLetter) ? $attachment->RecommendationLetter : ''; ?></td>
+                            <td><?php echo isset($attachment->MotivationLetter) ? $attachment->MotivationLetter : ''; ?></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
