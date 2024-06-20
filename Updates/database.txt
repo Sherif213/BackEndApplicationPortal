@@ -252,3 +252,8 @@ INSERT INTO Countries (value, name) VALUES
 (250, 'ZIMBABWE');
 
 select * from countries
+
+
+
+Changing in submit the value of getting data from id to value 
+changing routing and making index.php for routing data

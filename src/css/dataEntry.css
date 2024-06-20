@@ -283,6 +283,7 @@ body, html {
     display: flex;
     align-items: center;
     gap: 15px; 
+    width: 100%;
 }
 /* Label styles */
 .section2 label {
@@ -772,9 +773,41 @@ input[type="checkbox"] {
 
 /* Media query for small screens */
 @media (max-width: 600px) {
+    .top-section{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .logo-section{
+        width: 100%;
+    }
+    .sponsor-logo{
+        width: 100%;
+    }
     .modal-content {
         width: 80%;
         margin: 20px auto;
+    }
+    .information-container,.information-container2,.information-container9{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .information-container8{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .button-section{
+        width: 100%;
+        flex-direction: column;
+    }
+    .btn-success{
+        width: 100%;
+    }
+    .btn-danger{
+        width: 100%;
+    }
+    .left-section,.right-section,.left-section2,.right-section2{
+        width: 100%;
+        flex-wrap: wrap;
     }
 }
 

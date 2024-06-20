@@ -399,13 +399,13 @@
 
         </div>
     </div>
-    <div class="information-container3">
-        <!-- Headline -->
+    <!-- <div class="information-container3">
+        
         <div class="container-headline1">
             <img src="images/Letter.jpg" alt="Texture Image" class="texture-image2">
             <h2 class="headline1">DOCUMENTS</h2>
         </div>
-        <!-- Recommendation Letter and Motivation Letter -->
+        
         <div class="bottom-section2">
             <div class="left-section2">
                 <label for="Recommendation_Letter"><strong>Recommendation Letter</strong></label>
@@ -423,7 +423,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="information-container3">
         <!-- Headline -->
         <div class="container-headline1">
@@ -463,7 +463,7 @@
         <div class="bottom-section4">
             <div class="left-section4">
                 <label for="email2">Email</label>
-                <input type="email" id="email2" name="fathers_email" class="form-control" required>
+                <input type="email" id="email2" name="fathers_email" class="form-control" required >
             </div>
             <div class="right-section4">
                 <label for="telephone2">Telephone</label>
@@ -607,6 +607,9 @@
         </div>
         </div>
 
+    </div>
+    <div class="information-container8">
+        <div class="g-recaptcha" data-sitekey="6LdqOvspAAAAAN2h0gs6rDQ9sg6yVwOSoXTJCf1l"></div>
     </div>
     <div class="information-container8">
         <div class="button-section">

@@ -21,7 +21,7 @@ function getCountryName($nationalityValue)
     global $capsule; // Assuming $capsule contains the Eloquent Capsule
 
     // Use Eloquent to query the database
-    $country = $capsule->getConnection()->table('Countries')->where('id', $nationalityValue)->first();
+    $country = $capsule->getConnection()->table('Countries')->where('value', $nationalityValue)->first();
 
     if ($country) {
         return $country->name;
@@ -100,8 +100,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'photo' => $_FILES['photo']['name'],
         'passportName' => $_POST['passport_name'],
         'passportCopy' => $_FILES['passport_copy']['name'],
-        'Recommendation_Letter' => $_FILES['Recommendation_Letter']['name'], 
-        'Motivation_Letter' => $_FILES['Motivation_Letter']['name'] 
+        // 'Recommendation_Letter' => $_FILES['Recommendation_Letter']['name'], 
+        // 'Motivation_Letter' => $_FILES['Motivation_Letter']['name'] 
     ];
     
     try {
@@ -125,14 +125,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         move_uploaded_file($_FILES['student_certificate']['tmp_name'], $uploadDir . $_FILES['student_certificate']['name']);
         move_uploaded_file($_FILES['photo']['tmp_name'], $uploadDir . $_FILES['photo']['name']);
         move_uploaded_file($_FILES['passport_copy']['tmp_name'], $uploadDir . $_FILES['passport_copy']['name']);
-        move_uploaded_file($_FILES['Recommendation_Letter']['tmp_name'], $uploadDir . $_FILES['Recommendation_Letter']['name']);
-        move_uploaded_file($_FILES['Motivation_Letter']['tmp_name'], $uploadDir . $_FILES['Motivation_Letter']['name']);
+        // move_uploaded_file($_FILES['Recommendation_Letter']['tmp_name'], $uploadDir . $_FILES['Recommendation_Letter']['name']);
+        // move_uploaded_file($_FILES['Motivation_Letter']['tmp_name'], $uploadDir . $_FILES['Motivation_Letter']['name']);
 
         writeToLog("Data insertion successful.\n");
         
 
         // Redirect to success page
-        header('Location: signUpSuccessful.php');
+        header('Location: /SuccessfulRegisteration');
         exit;
     } catch (Exception $e) {
         // Log the error and display a generic error message
@@ -141,7 +141,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 } else {
     // Redirect back to the form page if the request method is not POST
-    header('Location: index.php');
+    header('Location: /');
     exit;
 }
 

@@ -1,47 +1,67 @@
 <?php
-session_start();
+
+// Define a constant for the base directory
+define('BASE_DIR', __DIR__);
+
+// Generate a new AuthKey
+$authKey = bin2hex(random_bytes(4));
+
+// Sanitize and normalize the request URI
+$requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$requestUri = rtrim($requestUri, '/');
+$requestUri = filter_var($requestUri, FILTER_SANITIZE_URL);
+
+// Initialize query parameters array
+$queryParams = [];
+
+// Check if QUERY_STRING is set
+if (isset($_SERVER['QUERY_STRING'])) {
+    // Parse query parameters
+    parse_str($_SERVER['QUERY_STRING'], $queryParams);
+}
+
+// If AuthKey is not present in the query parameters, append it and redirect
+if (!isset($queryParams['AuthKey'])) {
+    $queryParams['AuthKey'] = $authKey;
+    $newQuery = http_build_query($queryParams);
+    header("Location: $requestUri?$newQuery");
+    exit;
+}
+
+// Allowed routes
+$routes = [
+    '' => 'mainPage.php',
+    '/' => 'mainPage.php',
+    'unescoPeaceProgramInfo' => 'JuniorPeacePolicy.php',
+    'unescoSummerProgramInfo' => 'SummerDiplomacyPolicy.php',
+    'JuniorPeaceFormApplication' => 'JuniorPeace.php',
+    'SummerDiplomacyFormApplication' => 'SummerDiplomacy.php',
+    'SuccessfulRegisteration' => 'signUpSuccessful.php',
+    'secretAdmin' => 'login.php',
+    'applicationFormAdminPanel' => 'admin_panel.php',
+    'JuniorPeace' => 'JuniorPeace.php',
+    'contact' => 'contact.php',
+];
+
+// Function to include the appropriate file if it exists
+function includeFile($file) {
+    if (file_exists($file)) {
+        require $file;
+    } else {
+        http_response_code(404);
+        require BASE_DIR . '/error404.php';
+    }
+}
+
+// Check if the request is in the allowed routes
+$route = ltrim($requestUri, '/');
+if (array_key_exists($route, $routes)) {
+    $fileToInclude = BASE_DIR . '/' . $routes[$route];
+    includeFile($fileToInclude);
+} else {
+    http_response_code(404);
+    require BASE_DIR . '/error404.php';
+}
+
+
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNESCO APPLICATION FORM</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="src/css/selectionWindow.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="wrapper">
-        <div class="container">
-            <?php include "include/SummerDiplomacy.php" ?>
-
-
-            <!-- Text Section -->
-            <div class="text-section">
-                <h1></h1>
-            </div>
-
-            <!-- Information Container -->
-            <div class="information-container">
-                <h3 id="courseText">CHOOSE YOUR PROGRAM</h3>
-                <div class="buttons">
-                    <a href="JuniorPeacePolicy.php" class="button" id="winter">Junior Peace</a>
-                    <a href="SummerDiplomacyPolicy.php" class="button" id="summer">Summer Diplomacy</a>
-                </div>
-            </div>
-
-            <div class="bottomSection">
-
-            </div>
-            <?php include "include/footer.php"?>
-        </div>
-    </div>
-
-</body>
-
-</html>

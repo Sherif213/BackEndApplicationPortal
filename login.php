@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['username']) && isset(
         $_SESSION['timeout'] = time() + $session_expire;
 
         // Redirect to prevent form resubmission
-        header("Location: admin_panel.php"); 
+        header("Location: /applicationFormAdminPanel"); 
         exit;
     }
 }

@@ -14,8 +14,8 @@ class Attachment extends Model {
         'photo',
         'passportName',
         'passportCopy',
-        'Recommendation_Letter',
-        'Motivation_Letter'
+        // 'Recommendation_Letter',
+        // 'Motivation_Letter'
     ];
 
     public $timestamps = true; // Enable timestamps (created_at and updated_at)

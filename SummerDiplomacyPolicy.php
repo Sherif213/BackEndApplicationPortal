@@ -3,8 +3,8 @@
             <?php include "include/SummerDiplomacy.php" ?>
 
             <?php include "include/PolicyFooter.php" ?>
-                <a href="SummerDiplomacy.php"><button type="submit" class="btn btn-success">Okay, I agree</button></a>
-                &nbsp; <a href="index.php"><button type="button" class="btn btn-danger">Cancel</button></a>
+                <a href="/SummerDiplomacyFormApplication"><button type="submit" class="btn btn-success">Continue</button></a>
+                &nbsp; <a href="/"><button type="button" class="btn btn-danger">Cancel</button></a>
             </div>
 
             <?php include "include/footer.php" ?>
