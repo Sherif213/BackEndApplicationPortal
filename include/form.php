@@ -90,46 +90,14 @@
         </div>
 
         <!-- Left Section -->
-        <div class="left-section2">
-            <!-- First Name -->
-            <div class="section2">
+
+        <div class="bottom-section3">
+            <div class="left-section3">
                 <label for="first_name">Full Name</label>
                 <input type="text" aria-label="First Name" class="form-control" id="first_name" name="first_name"
                     required>
             </div>
-
-            <!-- Date of Birth -->
-            <div class="section2">
-                <label for="date_of_birth">Date of Birth</label>
-                <input type="date" id="date_of_birth" name="date_of_birth" required>
-            </div>
-
-            <!-- Gender -->
-            <div class="section2">
-                <label for="gender">Gender</label>
-                <select id="gender" name="gender" required>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-            </div>
-
-            <!-- T-Shirt Size -->
-            <div class="section2">
-                <label for="tshirt_size">T-Shirt Size</label>
-                <select id="tshirt_size" name="tshirt_size" required>
-                    <option value="option">--Select Size--</option>
-                    <option value="small">S</option>
-                    <option value="medium">M</option>
-                    <option value="large">L</option>
-                    <option value="Xlarge">XL</option>
-                </select>
-            </div>
-        </div>
-
-        <!-- Right Section -->
-        <div class="right-section2">
-            <!-- Nationality -->
-            <div class="section2">
+            <div class="right-section3">
                 <label for="nationality">Nationality</label>
                 <select name="Nationality" class="form-control" required>
                     <option value="">-- Select Country --</option>
@@ -376,28 +344,72 @@
                     <option value="250">ZIMBABWE</option>
                 </select>
             </div>
-
+        </div>
+        <div class="bottom-section3">
+            <div class="left-section3">
+                <label for="date_of_birth">Date of Birth</label>
+                <input class="form-control" type="date" id="date_of_birth" name="date_of_birth" required>
+            </div>
             <!-- Place of Birth -->
-            <div class="section2">
+            <div class="right-section3">
                 <label for="place_of_birth">Place of Birth</label>
                 <input type="text" aria-label="Place of birth" class="form-control" id="place_of_birth"
                     name="place_of_birth" required>
             </div>
 
-            <div class="section2">
+        </div>
+        <div class="bottom-section3">
+            <!-- T-Shirt Size -->
+            <div class="left-section3">
+                <label for="tshirt_size">T-Shirt Size</label>
+                <select class="form-control" id="tshirt_size" name="tshirt_size" required>
+                    <option value="option">--Select Size--</option>
+                    <option value="small">S</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                    <option value="Xlarge">XL</option>
+                </select>
+            </div>
+            <div class="right-section3">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="bottom-section3">
+            <div class="left-section3">
                 <label for="student_certificate">Student Certificate</label>
                 <input type="file" class="form-control" id="student_certificate" name="student_certificate" required>
             </div>
 
 
             <!-- Photo Upload -->
-            <div class="section2">
+            <div class="right-section3">
                 <label for="photo">Your Photo</label>
                 <input type="file" class="form-control" id="photo" name="photo" required>
             </div>
-
-
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
     <!-- <div class="information-container3">
         
@@ -463,7 +475,7 @@
         <div class="bottom-section4">
             <div class="left-section4">
                 <label for="email2">Email</label>
-                <input type="email" id="email2" name="fathers_email" class="form-control" required >
+                <input type="email" id="email2" name="fathers_email" class="form-control" required>
             </div>
             <div class="right-section4">
                 <label for="telephone2">Telephone</label>
@@ -593,18 +605,18 @@
 
     <div class="information-container9">
         <div class="top-section6">
-        <div class="left-section6">
-            <label class="checkbox-container">
-                <input type="checkbox" id="agreeCheckbox" required class="checkbox-input" required>
-                <span class="checkmark"></span>
-                <span class="checkbox-text">I agree to the <a href="#" id="openModal" class="terms-link">Terms
-                        and Conditions</a></span>
-            </label>
-        </div>
-        <div class="alert alert-warning" role="alert">
+            <div class="left-section6">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="agreeCheckbox" required class="checkbox-input" required>
+                    <span class="checkmark"></span>
+                    <span class="checkbox-text">I agree to the <a href="#" id="openModal" class="terms-link">Terms
+                            and Conditions</a></span>
+                </label>
+            </div>
+            <div class="alert alert-warning" role="alert">
                 <i class="fa-solid fa-circle-info"></i>&nbsp;
                 Read terms and conditions before proceeding!
-        </div>
+            </div>
         </div>
 
     </div>

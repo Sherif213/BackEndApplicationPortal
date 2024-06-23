@@ -805,9 +805,12 @@ input[type="checkbox"] {
     .btn-danger{
         width: 100%;
     }
-    .left-section,.right-section,.left-section2,.right-section2{
+    .left-section,.right-section,.left-section2,.right-section2,.left-section3,.right-section3{
         width: 100%;
         flex-wrap: wrap;
+    }
+    .bottom-section3{
+        flex-direction: column;
     }
 }
 
