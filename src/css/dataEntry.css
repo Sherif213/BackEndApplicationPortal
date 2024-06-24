@@ -787,14 +787,16 @@ input[type="checkbox"] {
         width: 80%;
         margin: 20px auto;
     }
-    .information-container,.information-container2,.information-container9{
+    .information-container,.information-container2,.information-container9,.top-section6{
         flex-direction: column;
         flex-wrap: wrap;
     }
     .information-container8{
         flex-direction: column;
         flex-wrap: wrap;
+        overflow: auto;
     }
+    
     .button-section{
         width: 100%;
         flex-direction: column;
@@ -811,7 +813,9 @@ input[type="checkbox"] {
     }
     .bottom-section3{
         flex-direction: column;
+        align-items: center;
     }
+    .
 }
 
 

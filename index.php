@@ -11,6 +11,10 @@ $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $requestUri = rtrim($requestUri, '/');
 $requestUri = filter_var($requestUri, FILTER_SANITIZE_URL);
 
+if ($requestUri === '' || $requestUri === '/index.php') {
+    $requestUri = '/';
+}
+
 // Initialize query parameters array
 $queryParams = [];
 
