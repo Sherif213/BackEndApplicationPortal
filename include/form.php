@@ -650,6 +650,7 @@
                 <strong>3. Program Activities:</strong>
                 <p>- The program will include trips and educational activities organized by the UNESCO Chair at Istanbul
                     Aydin University.</p>
+              	<p>- Program activity details such as time and location maybe subject to change.</p>
             </div>
             <div class="terms-section">
                 <strong>4. Code of Conduct:</strong>
@@ -665,7 +666,7 @@
             </div>
             <div class="terms-section">
                 <strong>6. Payment:</strong>
-                <p>- Payment for the program is non-refundable, except in exceptional circumstances at the discretion of
+                <p>- Payment for the program is non-refundable, other than in exceptional circumstances at the discretion of
                     the organizing committee.</p>
             </div>
             <div class="terms-section">
@@ -685,7 +686,7 @@
                 <strong>9. Agreement:</strong>
                 <p>- By submitting an application, participants agree to abide by these terms and conditions.</p>
             </div>
-            <p>By participating in the UNESCO Junior Diplomacy Program, participants acknowledge that they have read,
+            <p>By participating in the UNESCO Junior Peace Program, participants acknowledge that they have read,
                 understood, and agree to comply with these terms and conditions.</p>
         </div>
     </div>
@@ -744,7 +745,7 @@
             </div>
             <div class="schedule-item">
                 <strong>July 15th (Monday) - Day 6: Exploring Values</strong>
-                <p><span class="time">09:00 - 12:30:</span> Human Dignity, Freedom</p>
+                <p><span class="time">09:00 - 12:30:</span> Human Dignity and Freedom</p>
                 <p><span class="time">12:30 - 14:00:</span> Lunch break</p>
                 <p><span class="time">14:00 - 18:00:</span> VIALAND Themepark Tour</p>
             </div>
@@ -756,7 +757,7 @@
             </div>
             <div class="schedule-item">
                 <strong>July 17th (Wednesday) - Day 8: Emphasis on Legal and Human Rights</strong>
-                <p><span class="time">09:00 - 12:30:</span> Rule of Law, Human Rights</p>
+                <p><span class="time">09:00 - 12:30:</span> Rule of Law and Human Rights</p>
                 <p><span class="time">12:30 - 14:00:</span> Lunch break</p>
                 <p><span class="time">14:00 - 18:00:</span> Çamlıca Mosque and Tower Tour</p>
             </div>
@@ -771,6 +772,10 @@
                 <p><span class="time">09:00 - 12:30:</span> University Life / Faculties overview</p>
                 <p><span class="time">12:30 - 14:00:</span> Lunch break</p>
                 <p><span class="time">14:00 - 18:00:</span> Graduation Ceremony</p>
+            </div>
+          	<div class="schedule-item">
+                <strong>July 20th (Saturday)</strong>
+                <p>Departure of International Participants- No scheduled activities</p>
             </div>
             <div class="clear"><br><br></div>
         </div>
