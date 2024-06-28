@@ -776,12 +776,14 @@ input[type="checkbox"] {
     .top-section{
         flex-direction: column;
         flex-wrap: wrap;
+
     }
     .logo-section{
         width: 100%;
     }
     .sponsor-logo{
         width: 100%;
+        padding-top: 30px;
     }
     .modal-content {
         width: 80%;

@@ -232,6 +232,17 @@ body, html {
 
 /* Media Query for Mobile Devices */
 @media (max-width: 1307px) {
+    .top-section{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .logo-section{
+        width: 100%;
+    }
+    .sponsor-logo{
+        width: 100%;
+    }
+
     .information-container {
         flex-direction: column;
     }
@@ -243,6 +254,20 @@ body, html {
 
 /* Media Query for Small Screens */
 @media (max-width: 600px) {
+    .container{
+        width: 80%;
+    }
+    .top-section{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px 23px;
+    }
+    .logo-section{
+        width: 100%;
+    }
+    .sponsor-logo{
+        width: 100%;
+    }
     #courseText{
         margin-top:0;
     }
