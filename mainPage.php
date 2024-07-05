@@ -34,8 +34,10 @@ session_start();
                 </div>
                 <div class="section">
                     <div class="buttons">
-                        <a href="/unescoPeaceProgramInfo" class="button" id="winter">Junior Peace</a>
-                        <a href="/unescoSummerProgramInfo" class="button" id="summer">Summer Diplomacy</a>
+                        <a href="/unescoPeaceProgramInfo" class="button" id="Peace">Junior Peace</a>
+                        <a href="/unescoSummerProgramInfo" class="button" id="Diplomacy">Summer Diplomacy</a>
+                        <a href="/unescoMedicalProgramInfo" class="button" id="Medical">Summer Medical</a>
+                        <a href="/unescoDentalProgramInfo" class="button" id="Dental">Summer Dental</a>
                     </div>
                 </div>
 

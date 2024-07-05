@@ -17,7 +17,22 @@
 <body>
     <div class="wrapper">
         <div class="container">
-            <?php include "include/SummerDiplomacy.php" ?>
+            <!-- Logo Section -->
+            <div class="top-section">
+                <div class="logo-section">
+                    <a href="/"><img src="images/logo.png" alt="Logo"></a>
+                </div>
+                <div class="sponsor-logo">
+                    <img src="images/Dental.png" alt="Sponsor 1">
+                </div>
+            </div>
+            <div class="top-menu">
+                <nav class="separator">
+                    <div class="separator-collapse">
+                        <p>Application Portal</p>
+                    </div>
+                </nav>
+            </div>
             <!-- Text Section -->
             <div class="text-section">
                 <h1></h1>
@@ -55,11 +70,10 @@
                     </div>
                     <!-- Schedule Section -->
                     <div class="section">
-                        <h3>SCHEDULE</h3>
+                        <h3>NOTE</h3>
                         <div class="programDatesContent">
                             <strong>
-                                <p>You can check Schedule <a href="#" id="openSchedule" class="terms-link">HERE</a> !
-                                </p>
+                            <p>All Fields Are Mandatory!</p>
                             </strong>
                         </div>
                     </div>
@@ -79,7 +93,7 @@
                     <div class="section" style="min-height: 22%;">
                         <h3>COURSES</h3>
                         <div class="programDatesContent">
-                            <p>Summer Diplomacy</p>
+                            <p>Introduction to Dentistry</p>
                         </div>
                     </div>
                     <!-- Fees Section -->
@@ -197,7 +211,7 @@
     </div>
     <div id="modal">
         <div class="modal-content">
-            <h2>UNESCO JUNIOR DIPLOMACY PROGRAM TERMS AND CONDITIONS</h2>
+            <h2>UNESCO SUMMER DENTAL PROGRAM TERMS AND CONDITIONS</h2>
             <div class="terms-section">
                 <strong>1. Eligibility:</strong>
                 <p>- The program is open to all university students ages 18 and above, including international students.</p>
