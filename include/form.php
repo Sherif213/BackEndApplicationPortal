@@ -1,4 +1,3 @@
-
 <form id="myForm" action="/submit.php" method="POST" enctype="multipart/form-data">
     <!-- Information Container 2 -->
     <div class="information-container2">
@@ -309,7 +308,7 @@
     </div>
     <div id="modal">
         <div class="modal-content">
-            <h2>UNESCO JUNIOR DIPLOMACY PROGRAM TERMS AND CONDITIONS</h2>
+            <h2>UNESCO JUNIOR PEACE PROGRAM TERMS AND CONDITIONS</h2>
             <div class="terms-section">
                 <strong>1. Eligibility:</strong>
                 <p>- The program is open to all participants ages 14 and above, including international students.</p>
@@ -328,7 +327,7 @@
                 <strong>3. Program Activities:</strong>
                 <p>- The program will include trips and educational activities organized by the UNESCO Chair at Istanbul
                     Aydin University.</p>
-              	<p>- Program activity details such as time and location maybe subject to change.</p>
+                <p>- Program activity details such as time and location maybe subject to change.</p>
             </div>
             <div class="terms-section">
                 <strong>4. Code of Conduct:</strong>
@@ -344,7 +343,8 @@
             </div>
             <div class="terms-section">
                 <strong>6. Payment:</strong>
-                <p>- Payment for the program is non-refundable, other than in exceptional circumstances at the discretion of
+                <p>- Payment for the program is non-refundable, other than in exceptional circumstances at the
+                    discretion of
                     the organizing committee.</p>
             </div>
             <div class="terms-section">
@@ -451,7 +451,7 @@
                 <p><span class="time">12:30 - 14:00:</span> Lunch break</p>
                 <p><span class="time">14:00 - 18:00:</span> Graduation Ceremony</p>
             </div>
-          	<div class="schedule-item">
+            <div class="schedule-item">
                 <strong>July 20th (Saturday)</strong>
                 <p>Departure of International Participants- No scheduled activities</p>
             </div>

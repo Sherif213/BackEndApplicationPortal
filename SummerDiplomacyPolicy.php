@@ -1,8 +1,7 @@
-
 <?php include "include/PolicyHeader.php" ?>
             <?php include "include/SummerDiplomacy.php" ?>
 
-            <?php include "include/PolicyFooter.php" ?>
+            <?php include "include/summerPolicyFooter.php" ?>
                 <a href="/SummerDiplomacyFormApplication"><button type="submit" class="btn btn-success">Continue</button></a>
                 &nbsp; <a href="/"><button type="button" class="btn btn-danger">Cancel</button></a>
             </div>

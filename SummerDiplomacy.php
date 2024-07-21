@@ -77,9 +77,9 @@
                     </div>
                     <!-- Courses Section -->
                     <div class="section" style="min-height: 22%;">
-                        <h3>COURSES</h3>
+                        <h3>PROGRAM</h3>
                         <div class="programDatesContent">
-                            <p>Summer Diplomacy</p>
+                            <p>IAU UNESCO SUMMER DIPLOMACY</p>
                         </div>
                     </div>
                     <!-- Fees Section -->
@@ -197,7 +197,7 @@
     </div>
     <div id="modal">
         <div class="modal-content">
-            <h2>UNESCO JUNIOR DIPLOMACY PROGRAM TERMS AND CONDITIONS</h2>
+            <h2>UNESCO SUMMER DIPLOMACY PROGRAM TERMS AND CONDITIONS</h2>
             <div class="terms-section">
                 <strong>1. Eligibility:</strong>
                 <p>- The program is open to all university students ages 18 and above, including international students.</p>

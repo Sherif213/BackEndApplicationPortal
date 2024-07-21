@@ -91,9 +91,9 @@
                     </div>
                     <!-- Courses Section -->
                     <div class="section" style="min-height: 22%;">
-                        <h3>COURSES</h3>
+                        <h3>PROGRAM</h3>
                         <div class="programDatesContent">
-                            <p>Introduction to Dentistry</p>
+                            <p>IAU UNESCO SUMMER DENTISTRY</p>
                         </div>
                     </div>
                     <!-- Fees Section -->
@@ -124,13 +124,13 @@
             <div class="information-container6">
         <div class="container-headline1">
             <img src="images/Course.jpg" alt="Texture Image" class="texture-image2">
-            <h2 class="headline1">COURSE SELECTION</h2>
+            <h2 class="headline1">PROGRAM SELECTION</h2>
         </div>
         <div class="course-selection">
-            <label for="course">Course</label>
+            <label for="course">PROGRAM</label>
             <select id="course" name="course" required>
-                <option value="">-- Select Course --</option>
-                <option value="Global Diplomacy and Foreign Policy">Global Diplomacy and Foreign Policy.</option>
+                <option value="">-- Select Program --</option>
+                <option value="Introduction to Dentistry">Introduction to Dentistry.</option>
             </select>
         </div>
 
