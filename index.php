@@ -46,6 +46,7 @@ $routes = [
     'SummerDentalFormApplication' => 'summerDental.php',
     'SuccessfulRegisteration' => 'signUpSuccessful.php',
     'secretAdmin' => 'login.php',
+    'authentication' => 'enter_passcode.php',
     'applicationFormAdminPanel' => 'admin_panel.php',
     'JuniorPeace' => 'JuniorPeace.php',
     'contact' => 'contact.php',

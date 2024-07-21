@@ -36,6 +36,7 @@ class ComposerStaticInit04a4b286c75e09962e76c3aa33398af5
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Container\\' => 14,
             'Psr\\Clock\\' => 10,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'I' => 
         array (
@@ -104,6 +105,10 @@ class ComposerStaticInit04a4b286c75e09962e76c3aa33398af5
         array (
             0 => __DIR__ . '/..' . '/psr/clock/src',
         ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
         'Illuminate\\Support\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/collections',
@@ -141,16 +146,6 @@ class ComposerStaticInit04a4b286c75e09962e76c3aa33398af5
         ),
     );
 
-    public static $prefixesPsr0 = array (
-        'P' => 
-        array (
-            'PHPExcel' => 
-            array (
-                0 => __DIR__ . '/..' . '/phpoffice/phpexcel/Classes',
-            ),
-        ),
-    );
-
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
@@ -176,7 +171,6 @@ class ComposerStaticInit04a4b286c75e09962e76c3aa33398af5
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit04a4b286c75e09962e76c3aa33398af5::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit04a4b286c75e09962e76c3aa33398af5::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit04a4b286c75e09962e76c3aa33398af5::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit04a4b286c75e09962e76c3aa33398af5::$classMap;
 
         }, null, ClassLoader::class);

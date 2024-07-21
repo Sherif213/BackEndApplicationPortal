@@ -3,7 +3,15 @@ $session_expire = 300; // 5 minutes for session expiration
 session_set_cookie_params($session_expire);
 session_start();
 require_once __DIR__ . '/vendor/autoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 session_regenerate_id(true);
+
+// Function to generate a random 6-digit passcode
+function generatePasscode() {
+    return rand(100000, 999999);
+}
+
 // Check if the user has provided credentials
 if (!isset($_SESSION['login_attempts'])) {
     $_SESSION['login_attempts'] = 0;
@@ -24,26 +32,54 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['username']) && isset(
             $to = "shouldtheone@gmail.com";
             $subject = "Login attempts exceeded";
             $message = "Someone has attempted to log in to the Admin Panel more than 3 times.";
-            $headers = "From: webmaster@example.com";
 
-            mail($to, $subject, $message, $headers);
+            sendEmail($to, $subject, $message);
             exit;
         }
         
         $error = 'Invalid credentials';
     } else {
-        // Reset login attempts on successful login
-        $_SESSION['login_attempts'] = 0;
-        $_SESSION['logged_in'] = true;
-        // Set session timeout
-        $_SESSION['timeout'] = time() + $session_expire;
+        // Generate and send the passcode
+        $passcode = generatePasscode();
+        $_SESSION['passcode'] = $passcode;
 
-        // Redirect to prevent form resubmission
-        header("Location: /applicationFormAdminPanel"); 
+        $to = "shouldtheone@gmail.com";
+        $subject = "Your Login Passcode";
+        $message = "Your passcode is: $passcode";
+
+        sendEmail($to, $subject, $message);
+
+        // Redirect to passcode entry page
+        header("Location: /authentication");
         exit;
     }
 }
 
+function sendEmail($to, $subject, $message) {
+    $mail = new PHPMailer(true);
+    try {
+        $mail->isSMTP();
+        $mail->Host = 'smtp.mail.ru';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'shouldtheone@mail.ru'; 
+        $mail->Password = 'whupyvhXJJ5Sdan10vAC'; 
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
+
+        // Recipients
+        $mail->setFrom('shouldtheone@mail.ru', 'Admin Panel');
+        $mail->addAddress($to);
+
+        // Content
+        $mail->isHTML(true);
+        $mail->Subject = $subject;
+        $mail->Body    = $message;
+
+        $mail->send();
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+}
 ?>
 
 <!DOCTYPE html>
