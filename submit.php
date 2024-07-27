@@ -63,8 +63,8 @@ function sendNotificationEmail($studentData, $imageData)
         $mail->SMTPAuth = true;
         $mail->Username = 'shouldtheone@mail.ru'; 
         $mail->Password = 'whupyvhXJJ5Sdan10vAC'; 
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-        $mail->Port = 465;
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
 
         // Recipients
         $mail->setFrom('shouldtheone@mail.ru', 'Your Application System'); 

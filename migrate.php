@@ -1,5 +1,5 @@
 <?php
-require __DIR__.'/vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 // Define the path to the log file
@@ -16,14 +16,14 @@ try {
 
     // Set the database connection
     $capsule->addConnection([
-        'driver'    => 'mysql',
-        'host'      => 'localhost',
-        'database'  => 'unesco_app',
-        'username'  => 'unesco_admin',
-        'password'  => 'kfNhTW3vNqh',
-        'charset'   => 'utf8',
-        'collation' => 'utf8_unicode_ci',
-        'prefix'    => '',
+        'driver' => 'mysql',
+        'host' => 'localhost',
+        'database' => 'unescodb',
+        'username' => 'root',
+        'password' => '1532910',
+        'charset' => 'utf8mb4',
+        'collation' => 'utf8mb4_general_ci',
+        'prefix' => '',
     ]);
 
     // Set the Capsule Manager instance as global
@@ -66,7 +66,6 @@ try {
             $table->string('iban');
             $table->timestamps();
         });
-        // Output a success message
         echo "Students table migration completed successfully.\n";
     } else {
         echo "Table 'students' already exists.\n";
@@ -87,15 +86,33 @@ try {
             $table->string('Motivation_Letter')->nullable();
             $table->timestamps();
         });
-        // Output a success message
         echo "Attachments table migration completed successfully.\n";
     } else {
         echo "Table 'attachments' already exists.\n";
     }
 
+    // Check if the 'payments' table exists before creating it
+    if (!Capsule::schema()->hasTable('payments')) {
+        // Create 'payments' table
+        Capsule::schema()->create('payments', function ($table) {
+            $table->increments('id');
+            $table->unsignedInteger('student_id'); // Foreign key to students table
+            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
+            $table->enum('payment_status', ['paid', 'unpaid']);
+            $table->decimal('amount_sent', 10, 2)->nullable();
+            $table->string('currency', 3); 
+            $table->string('receipt')->nullable();
+            $table->timestamps();
+        });
+        echo "Payments table migration completed successfully.\n";
+    } else {
+        echo "Table 'payments' already exists.\n";
+    }
+
 } catch (\Exception $e) {
     // Log the error to a file
-    file_put_contents($logFile, date('Y-m-d H:i:s') . ' - ERROR: ' . $e->getMessage() . PHP_EOL, FILE_APPEND);
+    $errorMessage = date('Y-m-d H:i:s') . ' - ERROR: ' . $e->getMessage() . PHP_EOL;
+    file_put_contents($logFile, $errorMessage, FILE_APPEND);
 
     // Output a generic error message to the console
     echo "An error occurred. Please see the log file for details.\n";
