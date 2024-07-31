@@ -182,6 +182,23 @@
             </select>
         </div>
     </div>
+    <div class="information-container8">
+        <div class="container-headline1">
+            <img src="images/frost.jpg" alt="Texture Image" class="texture-image2">
+            <h2 class="headline1">OUTREACH</h2>
+        </div>
+        <div class="course-selection">
+            <label for="course2">Where did you hear about us?</label>
+            <select id="course2" name="iban" required>
+                <option value="">-- Select --</option>
+                <option value="Social Media">Social Media</option>
+                <option value="university's international office">Your university's international office</option>
+                <option value="newsletter">Newsletter</option>
+                <option value="website">Website</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+    </div>
 
     <div class="information-container9">
         <div class="top-section6">
