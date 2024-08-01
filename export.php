@@ -22,7 +22,7 @@ $headers = [
     "Father's Email", "Father's Telephone", "Mother's Full Name", "Mother's Email",
     "Mother's Telephone", 'Passport Name', 'Given Place', 'Passport Number', 'Expiry Date',
     'Course', 'Institution Name', 'Department', 'Institution Address', 'Institution Email',
-    'Institution Telephone', 'IBAN', 'Student Certificate', 'Photo', 'Passport Copy'
+    'Institution Telephone', 'IBAN','Outreach', 'Student Certificate', 'Photo', 'Passport Copy'
 ];
 fputcsv($csvFile, $headers);
 
@@ -39,11 +39,19 @@ foreach ($students as $student) {
         $student->mothersEmail, $student->mothersTelephone, $student->passportName,
         $student->givenPlace, $student->passportNumber, $student->expiryDate, $student->course,
         $student->institutionName, $student->department, $student->institutionAddress,
-        $student->institutionEmail, $student->institutionTelephone, $student->iban,
+        $student->institutionEmail, $student->institutionTelephone, $student->iban, $student->outreach,
         isset($attachment->studentCertificate) ? $attachment->studentCertificate : '',
         isset($attachment->photo) ? $attachment->photo : '',
         isset($attachment->passportCopy) ? $attachment->passportCopy : ''
     ];
+
+    // Format long numbers as strings to avoid scientific notation in Excel
+    foreach ($rowData as &$value) {
+        if (is_numeric($value) && (strlen($value) > 10 || strpos($value, '.') !== false)) {
+            $value = '"' . $value . '"';
+        }
+    }
+
     fputcsv($csvFile, $rowData);
 }
 

@@ -64,6 +64,7 @@ try {
             $table->string('institutionEmail')->nullable();
             $table->string('institutionTelephone')->nullable();
             $table->string('iban');
+            $table->string('outreach');
             $table->timestamps();
         });
         echo "Students table migration completed successfully.\n";

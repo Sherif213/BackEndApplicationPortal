@@ -33,7 +33,9 @@ class Student extends Model {
         'institutionAddress',
         'institutionEmail',
         'institutionTelephone',
-        'iban'
+        'iban',
+        'outreach'
+
     ];
 
     public $timestamps = true;

@@ -285,8 +285,8 @@
             <h2 class="headline1">OUTREACH</h2>
         </div>
         <div class="course-selection">
-            <label for="course2">Where did you hear about us?</label>
-            <select id="course2" name="iban" required>
+            <label for="outreach">Where did you hear about us?</label>
+            <select id="outreach" name="outreach" required>
                 <option value="">-- Select --</option>
                 <option value="Social Media">Social Media</option>
                 <option value="university's international office">Your university's international office</option>

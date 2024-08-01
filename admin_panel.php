@@ -65,11 +65,10 @@ $students = Capsule::table('students')->get();
                         <th>Institution Email</th>
                         <th>Institution Telephone</th>
                         <th>IBAN</th>
+                        <th>outreach</th>
                         <th>Student Certificate</th>
                         <th>Photo</th>
                         <th>Passport Copy</th>
-                        <th>Recommendation Letter</th>
-                        <th>Motivation Letter</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -107,6 +106,7 @@ $students = Capsule::table('students')->get();
                             <td><?php echo $student->institutionEmail; ?></td>
                             <td><?php echo $student->institutionTelephone; ?></td>
                             <td><?php echo $student->iban; ?></td>
+                            <td><?php echo $student->outreach; ?></td>
                             <td><a href="/uploads/<?php echo $student->passportName."/". $attachment->studentCertificate; ?>"><?php echo isset($attachment->studentCertificate) ? $attachment->studentCertificate : ''; ?></a></td>
                             <td><a href="/uploads/<?php echo $student->passportName."/". $attachment->photo; ?>"><?php echo isset($attachment->photo) ? $attachment->photo : ''; ?></a></td>
                             <td><a href="/uploads/<?php echo $student->passportName."/". $attachment->passportCopy; ?>"><?php echo isset($attachment->passportCopy) ? $attachment->passportCopy : ''; ?></a></td>

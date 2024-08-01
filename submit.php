@@ -174,7 +174,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'institutionAddress' => $_POST['institution_address'],
         'institutionEmail' => $_POST['institution_email'],
         'institutionTelephone' => $_POST['institution_telephone'],
-        'iban' => $_POST['iban']
+        'iban' => $_POST['iban'],
+        'outreach'=>$_POST['outreach']
     ];
 
     // Prepare image data
