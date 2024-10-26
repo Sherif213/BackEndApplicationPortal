@@ -5,16 +5,9 @@
 
 <!-- Information Container -->
 <div class="information-container" style="text-align:justify; font-size:14px !important;">
-    <span class="text">‘The UNESCO Junior Peace Program is a dynamic two-week initiative dedicated to nurturing the leadership,
-    intercultural understanding, and peacebuilding skills of young participants from around the world.
-    <br><br> Taking place in the vibrant city of Istanbul, Turkey, this program offers an immersive
-    experience designed to empower youth to become active agents of positive change in their communities and
-    beyond. I understand that the IAU Academic Relations Office
-    <br><br>The UNESCO Junior Peace Program is open to young individuals who
-    are passionate about peace, education, and intercultural dialogue. Whether you're a student, activist,
-    aspiring leader, or changemaker, this program provides a platform for you to develop your potential and
-    make a meaningful impact on the world.
-    <br><br> Join us at the UNESCO Junior Peace Program in Istanbul and become part of a global community
-    committed to building a brighter future for all.’
+    <span class="text">‘The UNESCO Winter Peace Program provides university students with an enriching one-week journey focused on fostering peace, cultural understanding, and international collaboration.
+    <br><br> Through interactive workshops and immersive experiences, participants will deepen their understanding of peace-building and cross-cultural integration.
+    <br><br>The program also includes guided tours of Istanbul’s historic sites, offering a unique blend of learning and cultural exploration.
+    <br><br> By the end of the week, students will gain the skills and insights to actively promote peace and contribute to a more sustainable, harmonious world.’
     <div class="clear"><br><br></span></div>
     <input type="hidden" name="_IsAgree" value="1">
