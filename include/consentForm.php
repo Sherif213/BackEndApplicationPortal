@@ -13,7 +13,7 @@
             <div class="right-section3">
             <label class="checkbox-container">
         <input type="checkbox" id="consentCheckbox" disabled required>
-        <span>I have downloaded the consent form.</span>
+        <span>I have downloaded the file.</span>
       </label>
             </div>
     </div>

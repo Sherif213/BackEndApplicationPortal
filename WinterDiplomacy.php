@@ -42,7 +42,7 @@
                             <p>Orientation Day: <strong>3rd Feburary</strong> </p>
                             <p>Program Courses and activities: <strong>3rd Feburary till 7th Feburary</strong></p>
                             <p>Closing Ceremony: <strong>7th Feburary</strong></p>
-                            <p>Departure of International Participants: <strong>17th August</strong></p>
+                            <p>Departure of International Participants: <strong>8th Feburary</strong></p>
                         </div>
                     </div>
                     <!-- Payment Method Section -->
