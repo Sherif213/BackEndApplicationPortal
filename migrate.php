@@ -83,8 +83,7 @@ try {
             $table->string('photo')->nullable();
             $table->string('passportName')->nullable();
             $table->string('passportCopy')->nullable();
-            $table->string('Recommendation_Letter')->nullable();
-            $table->string('Motivation_Letter')->nullable();
+            $table->string('consentForm')->nullable();
             $table->timestamps();
         });
         echo "Attachments table migration completed successfully.\n";
