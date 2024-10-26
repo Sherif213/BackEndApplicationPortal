@@ -1,7 +1,7 @@
 <?php
 namespace App\Models;
 
-require_once __DIR__ . '/../config/database.php';
+require_once __DIR__ . '/../config/database.php'; // Adjust the path if necessary
 use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model {
@@ -33,8 +33,14 @@ class Student extends Model {
         'institutionAddress',
         'institutionEmail',
         'institutionTelephone',
-        'iban'
+        'iban',
+        'outreach'
+
     ];
 
     public $timestamps = true;
+
+    public function payments() {
+        return $this->hasMany(Payment::class, 'student_id');
+    }
 }

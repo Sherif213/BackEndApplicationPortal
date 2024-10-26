@@ -6,9 +6,9 @@ $capsule = new Capsule;
 $capsule->addConnection([
     'driver'    => 'mysql',
     'host'      => 'localhost',
-    'database'  => 'unesco_app',
-    'username'  => 'unesco_admin',
-    'password'  => 'kfNhTW3vNqh',
+    'database'  => 'unescodb',
+    'username'  => 'root',
+    'password'  => '1532910',
     'charset'   => 'utf8mb4',
     'collation' => 'utf8mb4_general_ci',
     'prefix'    => '',

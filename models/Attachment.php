@@ -14,6 +14,7 @@ class Attachment extends Model {
         'photo',
         'passportName',
         'passportCopy',
+        'consentForm'
         // 'Recommendation_Letter',
         // 'Motivation_Letter'
     ];

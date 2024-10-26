@@ -63,8 +63,8 @@ function sendNotificationEmail($studentData, $imageData)
         $mail->SMTPAuth = true;
         $mail->Username = 'shouldtheone@mail.ru'; 
         $mail->Password = 'whupyvhXJJ5Sdan10vAC'; 
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-        $mail->Port = 465;
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
 
         // Recipients
         $mail->setFrom('shouldtheone@mail.ru', 'Your Application System'); 
@@ -126,6 +126,7 @@ function sendNotificationEmail($studentData, $imageData)
                 <tr><td>Student Certificate</td><td>{$fileLinks['studentCertificate']}</td></tr>
                 <tr><td>Photo</td><td>{$fileLinks['photo']}</td></tr>
                 <tr><td>Passport Copy</td><td>{$fileLinks['passportCopy']}</td></tr>
+                <tr><td>Consent Form</td><td>{$fileLinks['consentForm']}</td></tr>
             </table>
         </body>
         </html>";
@@ -174,7 +175,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'institutionAddress' => $_POST['institution_address'],
         'institutionEmail' => $_POST['institution_email'],
         'institutionTelephone' => $_POST['institution_telephone'],
-        'iban' => $_POST['iban']
+        'iban' => $_POST['iban'],
+        'outreach'=>$_POST['outreach']
+
     ];
 
     // Prepare image data
@@ -185,6 +188,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'photo' => $_FILES['photo']['name'],
         'passportName' => $_POST['passport_name'],
         'passportCopy' => $_FILES['passport_copy']['name'],
+        'consentForm' => $_FILES['consentForm']['name'],
         // 'Recommendation_Letter' => $_FILES['Recommendation_Letter']['name'], 
         // 'Motivation_Letter' => $_FILES['Motivation_Letter']['name'] 
     ];
@@ -210,6 +214,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         move_uploaded_file($_FILES['student_certificate']['tmp_name'], $uploadDir . $_FILES['student_certificate']['name']);
         move_uploaded_file($_FILES['photo']['tmp_name'], $uploadDir . $_FILES['photo']['name']);
         move_uploaded_file($_FILES['passport_copy']['tmp_name'], $uploadDir . $_FILES['passport_copy']['name']);
+        move_uploaded_file($_FILES['consentForm']['tmp_name'], $uploadDir . $_FILES['consentForm']['name']);
         // move_uploaded_file($_FILES['Recommendation_Letter']['tmp_name'], $uploadDir . $_FILES['Recommendation_Letter']['name']);
         // move_uploaded_file($_FILES['Motivation_Letter']['tmp_name'], $uploadDir . $_FILES['Motivation_Letter']['name']);
 
