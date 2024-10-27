@@ -19,7 +19,7 @@
             document.getElementById('listViewButton').classList.toggle('active', season === 'winter');
             document.getElementById('mapViewButton').classList.toggle('active', season === 'summer');
         }
-    </script>
+    </script> 
 </head>
 <body>
     <div class="wrapper">
@@ -40,7 +40,7 @@
             <!-- Program Options -->
             <div id="winterPrograms" class="information-container" style="display: block;">
                 <div class="buttons">
-                    <a href="/unescoWinterPeaceProgramInfo" class="button" id="WinterPeace">Winter Peace</a>
+                    <a href="/unescoWinterPeaceProgramInfo" class="button" id="WinterPeace">Junior Peace</a>
                     <a href="/unescoWinterDiplomacyProgramInfo" class="button" id="WinterDiplomacy">Winter Diplomacy</a>
                 </div>
             </div>

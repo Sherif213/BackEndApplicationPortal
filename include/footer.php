@@ -1,3 +1,3 @@
 <div class="info-container">
-    <p>Copyright © 2024 Şerif Dev. All rights reserved.</p>
+    <p>Copyright © 2025 Şerif Dev. All rights reserved.</p>
 </div>
