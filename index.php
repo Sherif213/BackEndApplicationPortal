@@ -48,12 +48,13 @@ $routes = [
     'SummerDentalFormApplication' => 'templates/summer/summerDental.php',
     'winterJuniorPeaceFormApplication' => 'templates/winter/WinterJuniorPeace.php',
     'winterDiplomacyFormApplication' => 'templates/winter/WinterDiplomacy.php',
-    'SuccessfulRegisteration' => 'signUpSuccessful.php',
+    'SuccessfulRegisteration' => 'templates/others/signUpSuccessful.php',
     'secretAdmin' => 'login.php',
     'authentication' => 'enter_passcode.php',
     'applicationFormAdminPanel' => 'admin_panel.php',
     'JuniorPeace' => 'templates/summer/JuniorPeace.php',
     'contact' => 'contact.php',
+    'error' => 'error404.php',
 ];
 
 // Function to include the appropriate file if it exists
@@ -62,7 +63,7 @@ function includeFile($file) {
         require $file;
     } else {
         http_response_code(404);
-        require BASE_DIR . '/error404.php';
+        require BASE_DIR . '/error';
     }
 }
 
@@ -73,7 +74,7 @@ if (array_key_exists($route, $routes)) {
     includeFile($fileToInclude);
 } else {
     http_response_code(404);
-    require BASE_DIR . '/error404.php';
+    require BASE_DIR . '/error';
 }
 
 
