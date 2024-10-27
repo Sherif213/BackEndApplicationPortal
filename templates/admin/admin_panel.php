@@ -5,8 +5,8 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     header("Location: /"); 
     exit;
 }
-require_once __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/config/database.php';
+require_once __DIR__ . '../../../vendor/autoload.php';
+require_once __DIR__ . '../../../config/database.php';
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 
