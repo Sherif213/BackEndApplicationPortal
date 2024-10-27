@@ -34,27 +34,47 @@ if (!isset($queryParams['AuthKey'])) {
 
 // Allowed routes
 $routes = [
+    // MAIN PAGE (SELECTION WINDOW)
     '' => 'templates/main/mainPage.php',
     '/' => 'templates/main/mainPage.php',
+
+    // JUNIOR PEACE SUMMER PROGRAM
     'unescoPeaceProgramInfo' => 'templates/summer/JuniorPeacePolicy.php',
-    'unescoSummerProgramInfo' => 'templates/summer/SummerDiplomacyPolicy.php',
-    'unescoMedicalProgramInfo' => 'templates/summer/SummerMedicalPolicy.php',
-    'unescoDentalProgramInfo' => 'templates/summer/SummerDentalPolicy.php',
-    'unescoWinterPeaceProgramInfo' => 'templates/winter/winterPeacePolicy.php',
-    'unescoWinterDiplomacyProgramInfo' => 'templates/winter/winterDiplomacyPolicy.php',
-    'JuniorPeaceFormApplication' => 'templates/summer/JuniorPeace.php',
-    'SummerDiplomacyFormApplication' => 'templates/summer/SummerDiplomacy.php',
-    'SummerMedicalFormApplication' => 'templates/summer/summerMedical.php',
-    'SummerDentalFormApplication' => 'templates/summer/summerDental.php',
-    'winterJuniorPeaceFormApplication' => 'templates/winter/WinterJuniorPeace.php',
-    'winterDiplomacyFormApplication' => 'templates/winter/WinterDiplomacy.php',
-    'SuccessfulRegisteration' => 'templates/others/signUpSuccessful.php',
-    'secretAdmin' => 'login.php',
-    'authentication' => 'enter_passcode.php',
-    'applicationFormAdminPanel' => 'admin_panel.php',
     'JuniorPeace' => 'templates/summer/JuniorPeace.php',
+    'JuniorPeaceFormApplication' => 'templates/summer/JuniorPeace.php',
+
+    // SUMMER DIPLOMACY PROGRAM
+    'unescoSummerProgramInfo' => 'templates/summer/SummerDiplomacyPolicy.php',
+    'SummerDiplomacyFormApplication' => 'templates/summer/SummerDiplomacy.php',
+
+    //SUMMER MEDICAL PROGRAM
+    'unescoMedicalProgramInfo' => 'templates/summer/SummerMedicalPolicy.php',
+    'SummerMedicalFormApplication' => 'templates/summer/summerMedical.php',
+
+    //SUMMER DENTAL PROGRAM
+    'unescoDentalProgramInfo' => 'templates/summer/SummerDentalPolicy.php',
+    'SummerDentalFormApplication' => 'templates/summer/summerDental.php',
+
+    //WINTER JUNIOR PEACE PROGRAM
+    'unescoWinterPeaceProgramInfo' => 'templates/winter/winterPeacePolicy.php',
+    'winterJuniorPeaceFormApplication' => 'templates/winter/WinterJuniorPeace.php',
+
+    //WINTER DIPLOMACY PROGRAM
+    'unescoWinterDiplomacyProgramInfo' => 'templates/winter/winterDiplomacyPolicy.php',
+    'winterDiplomacyFormApplication' => 'templates/winter/WinterDiplomacy.php',
+
+    //SUCCESS AND ERROR PAGES
+    'SuccessfulRegisteration' => 'templates/others/signUpSuccessful.php',
+    'error' => 'templates/others/error404.php',
+
+    //ADMIN PANELS
+    'secretAdmin' => 'templates/admin/login.php',
+    'authentication' => 'templates/admin/enter_passcode.php',
+    'applicationFormAdminPanel' => 'templates/admin/admin_panel.php',
+    
+    //CONTACT US 
     'contact' => 'contact.php',
-    'error' => 'error404.php',
+
 ];
 
 // Function to include the appropriate file if it exists
