@@ -487,3 +487,4 @@
 <script src="src/js/schedule.js"></script>
 <script src="src/js/termsConditions.js"></script>
 <script src="src/js/agree_terms.js"></script>
+<script src="src/js/consentForm.js"></script>
