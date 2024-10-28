@@ -24,7 +24,7 @@
 <body>
     <div class="wrapper">
         <div class="container">
-            <?php include "include/mainPage.php" ?>
+            <?php include "include/others/mainPage.php" ?>
 
             <!-- Text Section -->
             <div class="text-section text-center my-4">
@@ -55,7 +55,7 @@
             </div>
 
             <div class="bottomSection mt-4">
-                <?php include "include/footer.php" ?>
+                <?php include "include/others/footer.php" ?>
             </div>
         </div>
     </div>

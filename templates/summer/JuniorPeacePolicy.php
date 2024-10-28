@@ -1,13 +1,13 @@
 
-<?php include "include/PolicyHeader.php" ?>
-            <?php include "include/JuniorPeace.php" ?>
+<?php include "include/summer/PolicyHeader.php" ?>
+            <?php include "include/summer/JuniorPeace.php" ?>
 
-            <?php include "include/PolicyFooter.php" ?>
+            <?php include "include/summer/PolicyFooter.php" ?>
                 <a href="/JuniorPeaceFormApplication"><button type="submit" class="btn btn-success">Continue</button></a>
                 &nbsp; <a href="/"><button type="button" class="btn btn-danger">Cancel</button></a>
             </div>
 
-            <?php include "include/footer.php" ?>
+            <?php include "include/others/footer.php" ?>
         </div>
     </div>
 

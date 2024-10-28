@@ -18,7 +18,7 @@
             <div class="right-section3">
                 <label for="nationality">Nationality</label>
                 <select name="Nationality" class="form-control" required>
-                    <?php include "include/countries.php" ?>
+                    <?php include "include/others/countries.php" ?>
                 </select>
             </div>
         </div>
@@ -296,6 +296,7 @@
             </select>
         </div>
     </div>
+    <?php include "include/others/consentForm.php" ?>
     <div class="information-container9">
         <div class="top-section6">
             <div class="left-section6">
@@ -478,7 +479,7 @@
     </div>
 </form>
 
-<?php include "include/footer.php" ?>
+<?php include "include/others/footer.php" ?>
 <div class="info-container">
 </div>
 </div>

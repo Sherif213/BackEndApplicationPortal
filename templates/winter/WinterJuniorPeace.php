@@ -17,7 +17,7 @@
 <body>
     <div class="wrapper">
         <div class="container">
-        <?php include "include/winterPeace.php" ?>
+        <?php include "include/winter/winterPeace.php" ?>
             <!-- Text Section -->
             <div class="text-section">
                 <h1></h1>
@@ -106,7 +106,7 @@
 
                 </div>
             </div>
-            <?php include "include/winterJuniorForm.php" ?>
+            <?php include "include/winter/winterJuniorForm.php" ?>
             <div class="information-container6">
         <div class="container-headline1">
             <img src="images/Course.jpg" alt="Texture Image" class="texture-image2">
@@ -185,7 +185,7 @@
             </select>
         </div>
     </div>
-    <?php include "include/consentForm.php" ?>
+    <?php include "include/others/consentForm.php" ?>
 
     <div class="information-container9">
         <div class="top-section6">
@@ -353,7 +353,7 @@
         </div>
     </div>
 </form>
-<?php include "include/footer.php" ?>
+<?php include "include/others/footer.php" ?>
 <div class="info-container">
 </div>
 </div>

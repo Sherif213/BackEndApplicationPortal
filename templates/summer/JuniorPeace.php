@@ -23,7 +23,7 @@ session_start();
 <body>
     <div class="wrapper">
         <div class="container">
-            <?php include "include/JuniorPeace.php" ?>
+            <?php include "include/summer/JuniorPeace.php" ?>
             <!-- Text Section -->
             <div class="text-section">
                 <h1></h1>
@@ -112,7 +112,7 @@ session_start();
 
                 </div>
             </div>
-            <?php include "include/form.php" ?>
+            <?php include "include/summer/form.php" ?>
 
 </body>
 

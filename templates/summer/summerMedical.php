@@ -120,7 +120,7 @@
 
                 </div>
             </div>
-            <?php include "include/summerForm.php" ?>
+            <?php include "include/summer/summerForm.php" ?>
             <div class="information-container6">
         <div class="container-headline1">
             <img src="images/Course.jpg" alt="Texture Image" class="texture-image2">
@@ -366,7 +366,7 @@
         </div>
     </div>
 </form>
-<?php include "include/footer.php" ?>
+<?php include "include/others/footer.php" ?>
 <div class="info-container">
 </div>
 </div>
