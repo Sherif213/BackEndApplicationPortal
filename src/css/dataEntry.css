@@ -3,8 +3,8 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
-    background-color:#0A2853;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0A2853, #031125);
     display: flex;
     justify-content: center;
 }
