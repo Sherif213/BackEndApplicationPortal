@@ -5,7 +5,7 @@
         </div>
         <div class="file-info">
             <span class="file-name">PARENTAL CONSENT FORM</span>
-            <span class="file-size">very important</span>
+            <span class="file-size">Parental consent form need to be manually filled , Scanned , Reuploaded.</span>
         </div>
         <div class="file-actions">
             <a href="../images/UNESCO_Junior_Contract.pdf" 

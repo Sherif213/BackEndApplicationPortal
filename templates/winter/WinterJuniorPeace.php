@@ -37,12 +37,12 @@
                     <div class="section" style="min-height: 48%;">
                         <h3>PROGRAM DATES</h3>
                         <div class="programDatesContent">
-                            <p>Arrival of International Participants: <strong>1st Feburary</strong>.<span>&#9992;</span>
+                            <p>Arrival of International Participants: <strong>26th January</strong>.<span>&#9992;</span>
                             </p>
-                            <p>Orientation Day: <strong>3rd Feburary</strong> </p>
-                            <p>Program Courses and activities: <strong>3rd Feburary till 7th Feburary</strong></p>
-                            <p>Closing Ceremony: <strong>7th Feburary</strong></p>
-                            <p>Departure of International Participants: <strong>8th Feburary</strong></p>
+                            <p>Orientation Day: <strong>27th January</strong> </p>
+                            <p>Program Courses and activities: <strong>27th January till 2nd February</strong></p>
+                            <p>Closing Ceremony: <strong>2nd February</strong></p>
+                            <p>Departure of International Participants: <strong>3rd February</strong></p>
                         </div>
                     </div>
                     <!-- Payment Method Section -->
@@ -79,7 +79,7 @@
                     <div class="section" style="min-height: 22%;">
                         <h3>PROGRAM</h3>
                         <div class="programDatesContent">
-                            <p>IAU UNESCO WINTER PEACE AND DIPLOMACY</p>
+                            <p>IAU UNESCO WINTER JUNIOR PEACE AND DIPLOMACY</p>
                         </div>
                     </div>
                     <!-- Fees Section -->
@@ -107,7 +107,7 @@
                 </div>
             </div>
             <?php include "include/winter/winterJuniorForm.php" ?>
-            <div class="information-container6">
+            <!-- <div class="information-container6">
         <div class="container-headline1">
             <img src="images/Course.jpg" alt="Texture Image" class="texture-image2">
             <h2 class="headline1">COURSE SELECTION</h2>
@@ -121,7 +121,7 @@
         </div>
 
 
-    </div>
+    </div> -->
     <div class="information-container7">
         <div class="container-headline1">
             <img src="images/Course.jpg" alt="Texture Image" class="texture-image2">
@@ -153,6 +153,31 @@
             </div>
         </div>
     </div>
+    <div class="information-container3">
+        
+        <div class="container-headline1">
+            <img src="images/Letter.jpg" alt="Texture Image" class="texture-image2">
+            <h2 class="headline1">DOCUMENTS</h2>
+        </div>
+        
+        <div class="bottom-section2">
+            <div class="left-section2">
+                <label for="Recommendation_Letter"><strong>Recommendation Letter</strong></label>
+                <div class="input-group mb-3">
+                <label for="Recommendation_Letter"></label>
+                    <input type="file" class="form-control"  id="Recommendation_Letter"
+                        name="Recommendation_Letter" required>
+                </div>
+            </div>
+            <div class="right-section2">
+                <label for="Motivation_Letter"><strong>Motivation Letter</strong></label>
+                <div class="input-group mb-3">
+                    <label for="Motivation_Letter"></label>
+                    <input type="file" class="form-control" id="Motivation_Letter" name="Motivation_Letter" required>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="information-container8">
         <div class="container-headline1">
             <img src="images/dollar.jpg" alt="Texture Image" class="texture-image2">
@@ -168,23 +193,8 @@
             </select>
         </div>
     </div>
-    <div class="information-container8">
-        <div class="container-headline1">
-            <img src="images/frost.jpg" alt="Texture Image" class="texture-image2">
-            <h2 class="headline1">OUTREACH</h2>
-        </div>
-        <div class="course-selection">
-            <label for="course2">Where did you hear about us?</label>
-            <select id="course2" name="iban" required>
-                <option value="">-- Select --</option>
-                <option value="Social Media">Social Media</option>
-                <option value="university's international office">Your university's international office</option>
-                <option value="newsletter">Newsletter</option>
-                <option value="website">Website</option>
-                <option value="Other">Other</option>
-            </select>
-        </div>
-    </div>
+    <?php include "include/blocks/outreach.php" ?>
+    
     <?php include "include/others/consentForm.php" ?>
 
     <div class="information-container9">
@@ -215,10 +225,9 @@
     </div>
     <div id="modal">
         <div class="modal-content">
-            <h2>UNESCO SUMMER DIPLOMACY PROGRAM TERMS AND CONDITIONS</h2>
+            <h2>UNESCO WINTER JUNIOR PEACE AND DIPLOMACY PROGRAM TERMS AND CONDITIONS</h2>
             <div class="terms-section">
                 <strong>1. Eligibility:</strong>
-                <p>- The program is open to all university students ages 18 and above, including international students.</p>
                 <p>- Participants must have a minimum proficiency level of B1 in English</p>
                 <p>- Participants must submit a valid ID or passport.</p>
                 <p>- Students under 18 years of age require the consent of a legal guardian to participate.</p>

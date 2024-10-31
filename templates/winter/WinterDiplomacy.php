@@ -37,12 +37,12 @@
                     <div class="section" style="min-height: 48%;">
                         <h3>PROGRAM DATES</h3>
                         <div class="programDatesContent">
-                            <p>Arrival of International Participants: <strong>1st Feburary</strong>.<span>&#9992;</span>
+                            <p>Arrival of International Participants: <strong>31st January</strong>.<span>&#9992;</span>
                             </p>
-                            <p>Orientation Day: <strong>3rd Feburary</strong> </p>
-                            <p>Program Courses and activities: <strong>3rd Feburary till 7th Feburary</strong></p>
-                            <p>Closing Ceremony: <strong>7th Feburary</strong></p>
-                            <p>Departure of International Participants: <strong>8th Feburary</strong></p>
+                            <p>Orientation Day: <strong>1st February</strong> </p>
+                            <p>Program Courses and activities: <strong>1st February till 7th February</strong></p>
+                            <p>Closing Ceremony: <strong>7th February</strong></p>
+                            <p>Departure of International Participants: <strong>8th February</strong></p>
                         </div>
                     </div>
                     <!-- Payment Method Section -->
@@ -106,85 +106,16 @@
 
                 </div>
             </div>
-            <?php include "include/winter/winterForm.php" ?>
-            <div class="information-container6">
-        <div class="container-headline1">
-            <img src="images/Course.jpg" alt="Texture Image" class="texture-image2">
-            <h2 class="headline1">COURSE SELECTION</h2>
-        </div>
-        <div class="course-selection">
-            <label for="course">Course</label>
-            <select id="course" name="course" required>
-                <option value="">-- Select Course --</option>
-                <option value="Global Diplomacy and Foreign Policy">Global Diplomacy and Foreign Policy.</option>
-            </select>
-        </div>
+    <?php include "include/winter/winterForm.php" ?>
+            
+    
+    <?php include "include/blocks/university_information.php" ?>
+
+    <?php include "include/blocks/payment_method.php" ?>
+
+    <?php include "include/blocks/outreach.php" ?>
 
 
-    </div>
-    <div class="information-container7">
-        <div class="container-headline1">
-            <img src="images/Course.jpg" alt="Texture Image" class="texture-image2">
-            <h2 class="headline1">UNIVERSITY INFORMATION</h2>
-        </div>
-        <div class="bottom-section3">
-            <div class="left-section3">
-                <label for="institution-name">Institution Name</label>
-                <input type="text" class="form-control" id="institution-name" name="institution_name" required>
-            </div>
-            <div class="right-section3">
-                <label for="department">Department</label>
-                <input type="text" class="form-control" id="department" name="department" required>
-            </div>
-        </div>
-        <div class="top-section3">
-            <label for="institution-address">Institution Address</label>
-            <textarea id="institution-address" name="institution_address" class="form-control full-width-input"
-                required></textarea>
-        </div>
-        <div class="bottom-section3">
-            <div class="left-section3">
-                <label for="email4">Institution Email</label>
-                <input type="email" id="email4" name="institution_email" required>
-            </div>
-            <div class="right-section3">
-                <label for="telephone4">Institution Telephone</label>
-                <input type="tel" class="form-control" id="telephone4" name="institution_telephone" required>
-            </div>
-        </div>
-    </div>
-    <div class="information-container8">
-        <div class="container-headline1">
-            <img src="images/dollar.jpg" alt="Texture Image" class="texture-image2">
-            <h2 class="headline1">PREFERRED PAYMENT METHOD</h2>
-        </div>
-        <div class="course-selection">
-            <label for="course2">Payment Method</label>
-            <select id="course2" name="iban" required>
-                <option value="">-- Select Payment Method --</option>
-                <option value="ibanTR">Turkish Lira IBAN</option>
-                <option value="ibanUS">US Dollar IBAN</option>
-                <option value="ibanEURO">EURO IBAN</option>
-            </select>
-        </div>
-    </div>
-    <div class="information-container8">
-        <div class="container-headline1">
-            <img src="images/frost.jpg" alt="Texture Image" class="texture-image2">
-            <h2 class="headline1">OUTREACH</h2>
-        </div>
-        <div class="course-selection">
-            <label for="course2">Where did you hear about us?</label>
-            <select id="course2" name="iban" required>
-                <option value="">-- Select --</option>
-                <option value="Social Media">Social Media</option>
-                <option value="university's international office">Your university's international office</option>
-                <option value="newsletter">Newsletter</option>
-                <option value="website">Website</option>
-                <option value="Other">Other</option>
-            </select>
-        </div>
-    </div>
 
     <div class="information-container9">
         <div class="top-section6">
@@ -214,7 +145,7 @@
     </div>
     <div id="modal">
         <div class="modal-content">
-            <h2>UNESCO SUMMER DIPLOMACY PROGRAM TERMS AND CONDITIONS</h2>
+            <h2>UNESCO WINTER DIPLOMACY PROGRAM TERMS AND CONDITIONS</h2>
             <div class="terms-section">
                 <strong>1. Eligibility:</strong>
                 <p>- The program is open to all university students ages 18 and above, including international students.</p>
