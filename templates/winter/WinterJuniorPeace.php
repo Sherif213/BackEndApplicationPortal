@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="aydin University" href="images/IAU.png">
-    <title>UNESCO APPLICATION FORM</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="src/css/dataEntry.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-</head>
+<?php include "include/blocks/Header.php" ?>
 
 <body>
     <div class="wrapper">
@@ -107,122 +96,16 @@
                 </div>
             </div>
             <?php include "include/winter/winterJuniorForm.php" ?>
-            <!-- <div class="information-container6">
-        <div class="container-headline1">
-            <img src="images/Course.jpg" alt="Texture Image" class="texture-image2">
-            <h2 class="headline1">COURSE SELECTION</h2>
-        </div>
-        <div class="course-selection">
-            <label for="course">Course</label>
-            <select id="course" name="course" required>
-                <option value="">-- Select Course --</option>
-                <option value="Global Diplomacy and Foreign Policy">Global Diplomacy and Foreign Policy.</option>
-            </select>
-        </div>
-
-
-    </div> -->
-    <div class="information-container7">
-        <div class="container-headline1">
-            <img src="images/Course.jpg" alt="Texture Image" class="texture-image2">
-            <h2 class="headline1">UNIVERSITY INFORMATION</h2>
-        </div>
-        <div class="bottom-section3">
-            <div class="left-section3">
-                <label for="institution-name">Institution Name</label>
-                <input type="text" class="form-control" id="institution-name" name="institution_name" required>
-            </div>
-            <div class="right-section3">
-                <label for="department">Department</label>
-                <input type="text" class="form-control" id="department" name="department" required>
-            </div>
-        </div>
-        <div class="top-section3">
-            <label for="institution-address">Institution Address</label>
-            <textarea id="institution-address" name="institution_address" class="form-control full-width-input"
-                required></textarea>
-        </div>
-        <div class="bottom-section3">
-            <div class="left-section3">
-                <label for="email4">Institution Email</label>
-                <input type="email" id="email4" name="institution_email" required>
-            </div>
-            <div class="right-section3">
-                <label for="telephone4">Institution Telephone</label>
-                <input type="tel" class="form-control" id="telephone4" name="institution_telephone" required>
-            </div>
-        </div>
-    </div>
-    <div class="information-container3">
-        
-        <div class="container-headline1">
-            <img src="images/Letter.jpg" alt="Texture Image" class="texture-image2">
-            <h2 class="headline1">DOCUMENTS</h2>
-        </div>
-        
-        <div class="bottom-section2">
-            <div class="left-section2">
-                <label for="Recommendation_Letter"><strong>Recommendation Letter</strong></label>
-                <div class="input-group mb-3">
-                <label for="Recommendation_Letter"></label>
-                    <input type="file" class="form-control"  id="Recommendation_Letter"
-                        name="Recommendation_Letter" required>
-                </div>
-            </div>
-            <div class="right-section2">
-                <label for="Motivation_Letter"><strong>Motivation Letter</strong></label>
-                <div class="input-group mb-3">
-                    <label for="Motivation_Letter"></label>
-                    <input type="file" class="form-control" id="Motivation_Letter" name="Motivation_Letter" required>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="information-container8">
-        <div class="container-headline1">
-            <img src="images/dollar.jpg" alt="Texture Image" class="texture-image2">
-            <h2 class="headline1">PREFERRED PAYMENT METHOD</h2>
-        </div>
-        <div class="course-selection">
-            <label for="course2">Payment Method</label>
-            <select id="course2" name="iban" required>
-                <option value="">-- Select Payment Method --</option>
-                <option value="ibanTR">Turkish Lira IBAN</option>
-                <option value="ibanUS">US Dollar IBAN</option>
-                <option value="ibanEURO">EURO IBAN</option>
-            </select>
-        </div>
-    </div>
-    <?php include "include/blocks/outreach.php" ?>
+            
     
-    <?php include "include/others/consentForm.php" ?>
-
-    <div class="information-container9">
-        <div class="top-section6">
-            <div class="left-section6">
-                <label class="checkbox-container">
-                    <input type="checkbox" id="agreeCheckbox" required class="checkbox-input" required>
-                    <span class="checkmark"></span>
-                    <span class="checkbox-text">I agree to the <a href="#" id="openModal" class="terms-link">Terms
-                            and Conditions</a></span>
-                </label>
-            </div>
-            <div class="alert alert-warning" role="alert">
-                <i class="fa-solid fa-circle-info"></i>&nbsp;
-                Read terms and conditions before proceeding!
-            </div>
-        </div>
-
-    </div>
+    
     <div class="information-container8">
         <div class="g-recaptcha" data-sitekey="6LdqOvspAAAAAN2h0gs6rDQ9sg6yVwOSoXTJCf1l"></div>
     </div>
-    <div class="information-container8">
-        <div class="button-section">
-            <button type="submit" class="btn btn-success">Submit Application</button>
-            <button type="reset" class="btn btn-danger">Reset Field</button>
-        </div>
-    </div>
+
+    <?php include "include/blocks/submit_buttons.php" ?>
+
+    
     <div id="modal">
         <div class="modal-content">
             <h2>UNESCO WINTER JUNIOR PEACE AND DIPLOMACY PROGRAM TERMS AND CONDITIONS</h2>

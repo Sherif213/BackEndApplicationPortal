@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="aydin University" href="images/IAU.png">
-    <title>UNESCO APPLICATION FORM</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="src/css/dataEntry.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-</head>
+<?php include "include/blocks/Header.php" ?>
 
 <body>
     <div class="wrapper">
@@ -107,42 +96,15 @@
                 </div>
             </div>
     <?php include "include/winter/winterForm.php" ?>
-            
-    
-    <?php include "include/blocks/university_information.php" ?>
-
-    <?php include "include/blocks/payment_method.php" ?>
-
-    <?php include "include/blocks/outreach.php" ?>
 
 
 
-    <div class="information-container9">
-        <div class="top-section6">
-            <div class="left-section6">
-                <label class="checkbox-container">
-                    <input type="checkbox" id="agreeCheckbox" required class="checkbox-input" required>
-                    <span class="checkmark"></span>
-                    <span class="checkbox-text">I agree to the <a href="#" id="openModal" class="terms-link">Terms
-                            and Conditions</a></span>
-                </label>
-            </div>
-            <div class="alert alert-warning" role="alert">
-                <i class="fa-solid fa-circle-info"></i>&nbsp;
-                Read terms and conditions before proceeding!
-            </div>
-        </div>
-
-    </div>
     <div class="information-container8">
         <div class="g-recaptcha" data-sitekey="6LdqOvspAAAAAN2h0gs6rDQ9sg6yVwOSoXTJCf1l"></div>
     </div>
-    <div class="information-container8">
-        <div class="button-section">
-            <button type="submit" class="btn btn-success">Submit Application</button>
-            <button type="reset" class="btn btn-danger">Reset Field</button>
-        </div>
-    </div>
+
+
+    <?php include "include/blocks/submit_buttons.php" ?>
     <div id="modal">
         <div class="modal-content">
             <h2>UNESCO WINTER DIPLOMACY PROGRAM TERMS AND CONDITIONS</h2>

@@ -7,10 +7,6 @@
         <img src="images/WinterJuniorPeace.png" alt="Sponsor 1">
     </div>
 </div>
-<div class="top-menu">
-    <nav class="separator">
-        <div class="separator-collapse">
-            <p>Application Portal</p>
-        </div>
-    </nav>
-</div>
+
+
+<?php include "include/blocks/separator.php" ?>

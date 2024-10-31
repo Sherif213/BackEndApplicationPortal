@@ -279,7 +279,7 @@
             </select>
         </div>
     </div>
-    <?php include "include/others/consentForm.php" ?>
+    <?php include "include/blocks/consentForm.php" ?>
     <div class="information-container9">
         <div class="top-section6">
             <div class="left-section6">
