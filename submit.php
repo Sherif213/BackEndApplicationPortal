@@ -241,4 +241,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     header('Location: /');
     exit;
 }
+
+function writeToLog($message)
+{
+    global $logFile;
+    file_put_contents($logFile, date('Y-m-d H:i:s') . ' - ' . $message, FILE_APPEND);
+}
 ?>
