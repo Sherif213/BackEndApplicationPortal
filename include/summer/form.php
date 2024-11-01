@@ -272,9 +272,10 @@
             <select id="outreach" name="outreach" required>
                 <option value="">-- Select --</option>
                 <option value="Social Media">Social Media</option>
-                <option value="university's international office">Your university's international office</option>
-                <option value="newsletter">Newsletter</option>
-                <option value="website">Website</option>
+                <option value="University's International Office">Your university's international office</option>
+                <option value="Newsletter">Newsletter</option>
+                <option value="Website">Website</option>
+                <option value="Agency">Agency</option>
                 <option value="Other">Other</option>
             </select>
         </div>

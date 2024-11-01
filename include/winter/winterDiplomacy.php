@@ -4,7 +4,7 @@
         <a href="/"><img src="images/logo.png" alt="Logo"></a>
     </div>
     <div class="sponsor-logo">
-        <img src="images/winterDiplomacy.png" alt="Sponsor 1">
+        <img src="images/WinterDiplomacy.png" alt="Sponsor 1">
     </div>
 </div>
 
