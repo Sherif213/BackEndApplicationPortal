@@ -14,29 +14,39 @@ use App\Models\Attachment;
 // Define the path to the log file
 $logFile = __DIR__ . '/debug.log';
 
+function writeToLog($message)
+{
+    global $logFile;
+    file_put_contents($logFile, date('Y-m-d H:i:s') . ' - ' . $message . PHP_EOL, FILE_APPEND);
+}
+
 // Function to retrieve country name based on nationality value
 function getCountryName($nationalityValue)
 {
-    global $capsule; // Assuming $capsule contains the Eloquent Capsule
+    global $capsule;
 
-    // Use Eloquent to query the database
+    writeToLog("Retrieving country name for nationality value: $nationalityValue");
+
     $country = $capsule->getConnection()->table('Countries')->where('value', $nationalityValue)->first();
 
     if ($country) {
+        writeToLog("Country found: {$country->name}");
         return $country->name;
     } else {
-        return null; 
+        writeToLog("No country found for nationality value: $nationalityValue");
+        return null;
     }
 }
 
 function createNewStudent($studentData)
 {
     try {
-        writeToLog("Creating new student...\n");
+        writeToLog("Creating new student with data: " . json_encode($studentData));
         $newStudent = Student::create($studentData);
-        writeToLog("New student created successfully.\n");
+        writeToLog("New student created successfully with ID: {$newStudent->id}");
         return $newStudent;
     } catch (Exception $e) {
+        writeToLog("ERROR creating new student: " . $e->getMessage());
         throw new Exception($e->getMessage());
     }
 }
@@ -44,11 +54,12 @@ function createNewStudent($studentData)
 function createNewAttachment($imageData)
 {
     try {
-        writeToLog("Creating new attachment...\n");
+        writeToLog("Creating new attachment with data: " . json_encode($imageData));
         $newAttachment = Attachment::create($imageData);
-        writeToLog("New attachment created successfully.\n");
+        writeToLog("New attachment created successfully with ID: {$newAttachment->id}");
         return $newAttachment;
     } catch (Exception $e) {
+        writeToLog("ERROR creating new attachment: " . $e->getMessage());
         throw new Exception($e->getMessage());
     }
 }
@@ -57,28 +68,31 @@ function sendNotificationEmail($studentData, $imageData)
 {
     $mail = new PHPMailer(true);
     try {
+        writeToLog("Preparing to send notification email...");
+
         // Server settings
         $mail->isSMTP();
         $mail->Host = 'smtp.mail.ru';
         $mail->SMTPAuth = true;
-        $mail->Username = 'shouldtheone@mail.ru'; 
-        $mail->Password = 'whupyvhXJJ5Sdan10vAC'; 
+        $mail->Username = 'shouldtheone@mail.ru';
+        $mail->Password = 'whupyvhXJJ5Sdan10vAC';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
+        // Set sender email and name
+        $mail->setFrom('shouldtheone@mail.ru', 'Your Application System');
+        
         // Recipients
-        $mail->setFrom('shouldtheone@mail.ru', 'Your Application System'); 
         $recipients = [
             'Shouldtheone@gmail.com' => 'Serif',
-            'another@example.com' => 'Another Recipient',
-            'third@example.com' => 'Third Recipient'
+            
         ];
-
         foreach ($recipients as $email => $name) {
             $mail->addAddress($email, $name);
         }
 
-        $uploadDir = 'http://localhost:3000//uploads/' . $studentData['passportName'] . '/';
+        // Create file links
+        $uploadDir = 'http://localhost:3000/uploads/' . $studentData['passportName'] . '/';
         $fileLinks = [];
         foreach ($imageData as $key => $filename) {
             if ($filename) {
@@ -88,9 +102,11 @@ function sendNotificationEmail($studentData, $imageData)
             }
         }
 
-        // Content
+        // Email content
         $mail->isHTML(true);
         $mail->Subject = 'New Applicant Submission';
+        
+        // Email body with embedded HTML
         $mail->Body = "
         <html>
         <body>
@@ -126,27 +142,26 @@ function sendNotificationEmail($studentData, $imageData)
                 <tr><td>Student Certificate</td><td>{$fileLinks['studentCertificate']}</td></tr>
                 <tr><td>Photo</td><td>{$fileLinks['photo']}</td></tr>
                 <tr><td>Passport Copy</td><td>{$fileLinks['passportCopy']}</td></tr>
-                <tr><td>Recommendation_Letter</td><td>{$fileLinks['Recommendation_Letter']}</td></tr>
-                <tr><td>Motivation_Letter</td><td>{$fileLinks['Motivation_Letter']}</td></tr>
+                <tr><td>Recommendation Letter</td><td>{$fileLinks['Recommendation_Letter']}</td></tr>
+                <tr><td>Motivation Letter</td><td>{$fileLinks['Motivation_Letter']}</td></tr>
                 <tr><td>Consent Form</td><td>{$fileLinks['consentForm']}</td></tr>
             </table>
         </body>
         </html>";
-
+        
+        // Send the email
         $mail->send();
-        writeToLog("Notification email sent successfully.\n");
+        writeToLog("Notification email sent successfully.");
     } catch (Exception $e) {
-        writeToLog("ERROR: Could not send email. Mailer Error: {$mail->ErrorInfo}\n");
+        writeToLog("ERROR: Could not send email. Mailer Error: {$mail->ErrorInfo}");
     }
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    writeToLog("Processing form submission...\n");
+    writeToLog("Processing form submission...");
 
-    // Establish database connection if not already done
     require_once __DIR__ . '/config/database.php';
 
-    // Prepare student data
     $nationalityValue = $_POST['Nationality'];
     $countryName = getCountryName($nationalityValue);
 
@@ -179,10 +194,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'institutionTelephone' => $_POST['institution_telephone'],
         'iban' => $_POST['iban'],
         'outreach'=>$_POST['outreach']
-
     ];
 
-    // Prepare image data
     $imageData = [
         'submissionId' => $studentData['submissionId'],
         'firstName' => $_POST['first_name'],
@@ -197,22 +210,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     try {
         $passportName = $_POST['passport_name'];
-
-        writeToLog("Creating upload directory...\n");
-
-        // Create directory if it doesn't exist
         $uploadDir = 'uploads/' . $passportName . '/';
-        if (!file_exists($uploadDir)) {
-            mkdir($uploadDir, 0777, true); // Creates the directory recursively
-            writeToLog("Upload directory created: $uploadDir\n");
-        }
 
-        writeToLog("Creating new student and attachment...\n");
+        if (!file_exists($uploadDir)) {
+            mkdir($uploadDir, 0777, true);
+            writeToLog("Upload directory created: $uploadDir");
+        }
 
         $newStudent = createNewStudent($studentData);
         $newAttachment = createNewAttachment($imageData);
 
-        // Handle file uploads
         move_uploaded_file($_FILES['student_certificate']['tmp_name'], $uploadDir . $_FILES['student_certificate']['name']);
         move_uploaded_file($_FILES['photo']['tmp_name'], $uploadDir . $_FILES['photo']['name']);
         move_uploaded_file($_FILES['passport_copy']['tmp_name'], $uploadDir . $_FILES['passport_copy']['name']);
@@ -220,28 +227,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         move_uploaded_file($_FILES['Motivation_Letter']['tmp_name'], $uploadDir . $_FILES['Motivation_Letter']['name']);
         move_uploaded_file($_FILES['consentForm']['tmp_name'], $uploadDir . $_FILES['consentForm']['name']);
 
-        writeToLog("Data insertion successful.\n");
+        writeToLog("Files uploaded and data insertion successful.");
         
-        // Send notification email
         sendNotificationEmail($studentData, $imageData);
 
-        // Redirect to success page
         header('Location: /SuccessfulRegisteration');
         exit;
     } catch (Exception $e) {
-        // Log the error and display a generic error message
-        writeToLog("ERROR: " . $e->getMessage() . "\n");
+        writeToLog("ERROR: " . $e->getMessage());
         echo 'Form submission failed. Please try again later.';
     }
 } else {
-    // Redirect back to the form page if the request method is not POST
     header('Location: /');
     exit;
-}
-
-function writeToLog($message)
-{
-    global $logFile;
-    file_put_contents($logFile, date('Y-m-d H:i:s') . ' - ' . $message, FILE_APPEND);
 }
 ?>
