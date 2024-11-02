@@ -1,6 +1,7 @@
 <?php
 // config/Database.php
 use Illuminate\Database\Capsule\Manager as Capsule;
+use Dotenv\Dotenv;
 
 class Database
 {
@@ -13,14 +14,14 @@ class Database
         if (self::$capsule === null) {
             $capsule = new Capsule;
             $capsule->addConnection([
-                'driver'    => 'mysql',
-                'host'      => 'localhost',
-                'database'  => 'unescodb',
-                'username'  => 'root',
-                'password'  => '1532910',
-                'charset'   => 'utf8mb4',
-                'collation' => 'utf8mb4_general_ci',
-                'prefix'    => '',
+                'driver'    => $_ENV['DB_DRIVER'],
+                'host'      => $_ENV['DB_HOST'],
+                'database'  => $_ENV['DB_DATABASE'],
+                'username'  => $_ENV['DB_USERNAME'],
+                'password'  => $_ENV['DB_PASSWORD'],
+                'charset'   => $_ENV['DB_CHARSET'],
+                'collation' => $_ENV['DB_COLLATION'],
+                'prefix'    => $_ENV['DB_PREFIX'],
             ]);
             $capsule->setAsGlobal();
             $capsule->bootEloquent();
