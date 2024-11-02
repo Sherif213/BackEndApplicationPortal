@@ -3,8 +3,12 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+use Dotenv\Dotenv;
+
 function sendNotificationEmail($studentData, $imageData)
 {
+    $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+    $dotenv->load();
     $mail = new PHPMailer(true);
     try {
         writeToLog("Preparing to send notification email...");
@@ -13,17 +17,19 @@ function sendNotificationEmail($studentData, $imageData)
         $mail->isSMTP();
         $mail->Host = 'smtp.mail.ru';
         $mail->SMTPAuth = true;
-        $mail->Username = 'shouldtheone@mail.ru';
-        $mail->Password = 'whupyvhXJJ5Sdan10vAC';
+        $mail->Username = $_ENV['email_username']; 
+        $mail->Password = $_ENV['email_password'];
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         // Set sender email and name
-        $mail->setFrom('shouldtheone@mail.ru', 'Your Application System');
+        $mail->setFrom($_ENV['email_username'], 'UNESCO APPLICATION PORTAL');
         
         // Recipients
         $recipients = [
-            'Shouldtheone@gmail.com' => 'Serif',
+            $_ENV['firstRecipient'] => 'Serif',
+            $_ENV['secondRecipient'] => 'Osman',
+            $_ENV['thirdRecipient'] => 'Faruk',
             
         ];
         foreach ($recipients as $email => $name) {

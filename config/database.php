@@ -12,6 +12,11 @@ class Database
     public static function getConnection()
     {
         if (self::$capsule === null) {
+            // Load .env variables
+            $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+            $dotenv->load();
+
+            // Initialize Capsule with environment variables
             $capsule = new Capsule;
             $capsule->addConnection([
                 'driver'    => $_ENV['DB_DRIVER'],
