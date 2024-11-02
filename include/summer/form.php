@@ -1,4 +1,4 @@
-<form id="myForm" action="/submit.php" method="POST" enctype="multipart/form-data">
+<form id="myForm" action="/submitApplication" method="POST" enctype="multipart/form-data">
     <!-- Information Container 2 -->
     <div class="information-container2">
         <!-- Headline -->

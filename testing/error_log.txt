@@ -1,0 +1,7 @@
+cURL Error: operation aborted by callback
+cURL Error: operation aborted by callback
+cURL Error: operation aborted by callback
+cURL Error: operation aborted by callback
+cURL Error: operation aborted by callback
+cURL Error: operation aborted by callback
+cURL Error: operation aborted by callback

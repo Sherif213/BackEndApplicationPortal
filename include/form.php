@@ -1,4 +1,4 @@
-<form id="myForm" action="/submit.php" method="POST" enctype="multipart/form-data">
+<form id="myForm" action="/submitApplication" method="POST" enctype="multipart/form-data">
     
 
     <?php include "include/blocks/student_information.php" ?>

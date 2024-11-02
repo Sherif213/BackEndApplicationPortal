@@ -24,8 +24,11 @@ if (isset($_SERVER['QUERY_STRING'])) {
     parse_str($_SERVER['QUERY_STRING'], $queryParams);
 }
 
+$skipAuthKeyRoutes = ['submitApplication']; // Add any other routes that don't need AuthKey
+$routeKey = ltrim($requestUri, '/');
+
 // If AuthKey is not present in the query parameters, append it and redirect
-if (!isset($queryParams['AuthKey'])) {
+if (!in_array($routeKey, $skipAuthKeyRoutes) && !isset($queryParams['AuthKey'])) {
     $queryParams['AuthKey'] = $authKey;
     $newQuery = http_build_query($queryParams);
     header("Location: $requestUri?$newQuery");
@@ -74,6 +77,12 @@ $routes = [
     
     //CONTACT US 
     'contact' => 'contact.php',
+
+    //testing
+    'testCase' => 'testing/test_submit.php',
+
+    //submitting
+    'submitApplication' =>'public/submit.php',
 
 ];
 

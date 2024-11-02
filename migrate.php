@@ -1,5 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/config/Database.php';
+
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 // Define the path to the log file
@@ -11,26 +13,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 try {
-    // Create a new Capsule Manager instance
-    $capsule = new Capsule;
-
-    // Set the database connection
-    $capsule->addConnection([
-        'driver' => 'mysql',
-        'host' => 'localhost',
-        'database' => 'unescodb',
-        'username' => 'root',
-        'password' => '1532910',
-        'charset' => 'utf8mb4',
-        'collation' => 'utf8mb4_general_ci',
-        'prefix' => '',
-    ]);
-
-    // Set the Capsule Manager instance as global
-    $capsule->setAsGlobal();
-
-    // Boot Eloquent ORM
-    $capsule->bootEloquent();
+    // Get the Capsule instance from Database singleton
+    $capsule = Database::getConnection();
 
     // Check if the 'students' table exists before creating it
     if (!Capsule::schema()->hasTable('students')) {
