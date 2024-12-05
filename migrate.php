@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/config/Database.php';
+require_once __DIR__ . '/config/database.php';
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 
@@ -16,39 +16,22 @@ try {
     // Get the Capsule instance from Database singleton
     $capsule = Database::getConnection();
 
-    // Check if the 'students' table exists before creating it
+    // Create 'students' table
     if (!Capsule::schema()->hasTable('students')) {
-        // Create 'students' table
         Capsule::schema()->create('students', function ($table) {
             $table->increments('id');
-            $table->string('submissionId')->unique();
-            $table->string('firstName');
-            $table->date('dateOfBirth');
-            $table->string('gender')->nullable();
-            $table->string('tshirtSize')->nullable();
+            $table->string('submission_id')->unique();
+            $table->string('first_name');
+            $table->date('date_of_birth');
+            $table->string('tshirt_size');
+            $table->enum('gender', ['M', 'F'])->nullable();
             $table->string('nationality')->default('Unknown');
-            $table->string('placeOfBirth')->nullable();
-            $table->string('homeAddress')->nullable();
-            $table->string('email');
+            $table->string('place_of_birth');
+            $table->text('home_address')->nullable();
+            $table->string('email')->unique();
             $table->string('telephone');
-            $table->string('fathersFullName')->nullable();
-            $table->string('fathersEmail')->nullable();
-            $table->string('fathersTelephone')->nullable();
-            $table->string('mothersFullName')->nullable();
-            $table->string('mothersEmail')->nullable();
-            $table->string('mothersTelephone')->nullable();
-            $table->string('passportName')->nullable();
-            $table->string('givenPlace')->nullable();
-            $table->string('passportNumber')->nullable();
-            $table->string('expiryDate')->nullable();
-            $table->string('course');
-            $table->string('institutionName');
-            $table->string('department')->nullable();
-            $table->string('institutionAddress')->nullable();
-            $table->string('institutionEmail')->nullable();
-            $table->string('institutionTelephone')->nullable();
+            $table->string('outreach')->nullable();
             $table->string('iban');
-            $table->string('outreach');
             $table->timestamps();
         });
         echo "Students table migration completed successfully.\n";
@@ -56,20 +39,64 @@ try {
         echo "Table 'students' already exists.\n";
     }
 
-    // Check if the 'attachments' table exists before creating it
+    // Create 'parental_infos' table
+    if (!Capsule::schema()->hasTable('parental_infos')) {
+        Capsule::schema()->create('parental_infos', function ($table) {
+            $table->increments('id');
+            $table->unsignedInteger('student_id'); // Foreign key to students table
+            $table->enum('parent_type', ['Father', 'Mother']);
+            $table->string('full_name')->nullable();
+            $table->string('email')->nullable();
+            $table->string('telephone')->nullable();
+            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
+        });
+        echo "Parental Infos table migration completed successfully.\n";
+    } else {
+        echo "Table 'parental_infos' already exists.\n";
+    }
+
+    // Create 'legal_information' table
+    if (!Capsule::schema()->hasTable('legal_information')) {
+        Capsule::schema()->create('legal_information', function ($table) {
+            $table->increments('id');
+            $table->unsignedInteger('student_id'); // Foreign key to students table
+            $table->string('passport_name')->nullable();
+            $table->string('given_place')->nullable();
+            $table->string('passport_number')->nullable();
+            $table->string('expiry_date')->nullable();
+            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
+        });
+        echo "Institution Details table migration completed successfully.\n";
+    } else {
+        echo "Table 'institution_details' already exists.\n";
+    }
+
+    // Create 'institution_details' table
+    if (!Capsule::schema()->hasTable('institution_details')) {
+        Capsule::schema()->create('institution_details', function ($table) {
+            $table->increments('id');
+            $table->unsignedInteger('student_id'); // Foreign key to students table
+            $table->string('institution_name');
+            $table->string('department')->nullable();
+            $table->string('course')->nullable();
+            $table->text('address')->nullable();
+            $table->string('email')->nullable();
+            $table->string('telephone')->nullable();
+            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
+        });
+        echo "Institution Details table migration completed successfully.\n";
+    } else {
+        echo "Table 'institution_details' already exists.\n";
+    }
+
+    // Create 'attachments' table
     if (!Capsule::schema()->hasTable('attachments')) {
-        // Create 'attachments' table
         Capsule::schema()->create('attachments', function ($table) {
             $table->increments('id');
-            $table->string('submissionId');
-            $table->string('firstName');
-            $table->string('studentCertificate')->nullable();
-            $table->string('photo')->nullable();
-            $table->string('passportName')->nullable();
-            $table->string('passportCopy')->nullable();
-            $table->string('Recommendation_Letter')->nullable();
-            $table->string('Motivation_Letter')->nullable();
-            $table->string('consentForm')->nullable();
+            $table->unsignedInteger('student_id'); // Foreign key to students table
+            $table->enum('attachment_type', ['Certificate', 'Photo', 'Passport', 'Recommendation_Letter', 'Motivation_Letter', 'ConsentForm']);
+            $table->string('file_path');
+            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
             $table->timestamps();
         });
         echo "Attachments table migration completed successfully.\n";
@@ -77,17 +104,16 @@ try {
         echo "Table 'attachments' already exists.\n";
     }
 
-    // Check if the 'payments' table exists before creating it
+    // Create 'payments' table
     if (!Capsule::schema()->hasTable('payments')) {
-        // Create 'payments' table
         Capsule::schema()->create('payments', function ($table) {
             $table->increments('id');
             $table->unsignedInteger('student_id'); // Foreign key to students table
-            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
             $table->enum('payment_status', ['paid', 'unpaid']);
             $table->decimal('amount_sent', 10, 2)->nullable();
-            $table->string('currency', 3); 
+            $table->string('currency', 3)->nullable();
             $table->string('receipt')->nullable();
+            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
             $table->timestamps();
         });
         echo "Payments table migration completed successfully.\n";
@@ -103,4 +129,3 @@ try {
     // Output a generic error message to the console
     echo "An error occurred. Please see the log file for details.\n";
 }
-?>

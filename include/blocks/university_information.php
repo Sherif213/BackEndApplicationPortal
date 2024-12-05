@@ -13,7 +13,7 @@
                 <input type="text" class="form-control" id="department" name="department" required>
             </div>
         </div>
-        <div class="top-section3">
+        <div class="top-section3"> 
             <label for="institution-address">Institution Address</label>
             <textarea id="institution-address" name="institution_address" class="form-control full-width-input"
                 required></textarea>

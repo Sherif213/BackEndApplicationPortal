@@ -1,16 +1,27 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    header("Location: /"); 
-    exit;
-}
+// if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+//     header("Location: /"); 
+//     exit;
+// }
 require_once __DIR__ . '../../../vendor/autoload.php';
 require_once __DIR__ . '../../../config/database.php';
+require_once __DIR__ . '../../../models/Student.php';
+require_once __DIR__ . '../../../models/Parental_info.php';
+require_once __DIR__ . '../../../models/institution_details.php';
+require_once __DIR__ . '../../../models/Attachment.php';
+require_once __DIR__ . '../../../models/legal_information.php';
+use App\Models\Student;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 
-$students = Capsule::table('students')->get();
+$capsule = Database::getConnection();
+
+$students = Student::with(['parentalInfos', 'institutionDetails', 'attachments','passport'])->get();
+
+error_log('Fetched students: ' . json_encode($students));
+
 ?>
 
 <!DOCTYPE html>
@@ -69,55 +80,111 @@ $students = Capsule::table('students')->get();
                         <th>Student Certificate</th>
                         <th>Photo</th>
                         <th>Passport Copy</th>
+                        <th>Consent Form</th>
+                        <th>Motivation Letter</th>
+                        <th>Recommendation Letter</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php foreach ($students as $index => $student): ?>
                         <?php
                         // Retrieve attachment data for the current student
-                        $attachment = Capsule::table('attachments')->where('submissionId', $student->submissionId)->first();
+                        $attachment = Capsule::table('attachments')->where('student_id', $student->id)->first();
+                        $parentalInfos = Capsule::table('parental_infos')->where('student_id', $student->id)->first();
+                        $institutionDetails = Capsule::table('institution_details')->where('student_id', $student->id)->first();
+
+                        error_log('Student ID: ' . $student->id . ' - Attachments: ' . json_encode($attachment));
+                        error_log('Student ID: ' . $student->id . ' - Parental Infos: ' . json_encode($parentalInfos));
+                        error_log('Student ID: ' . $student->id . ' - Institution Details: ' . json_encode($institutionDetails));
                         ?>
-                        <tr class="<?php echo ($index % 2 == 0) ? 'even' : ''; ?>">
+                        <tr class="<?= ($index % 2 == 0) ? 'even' : ''; ?>">
                             <td><?php echo $student->id; ?></td>
-                            <td><?php echo $student->submissionId; ?></td>
-                            <td><?php echo $student->firstName; ?></td>
-                            <td><?php echo $student->dateOfBirth; ?></td>
+                            <td><?php echo $student->submission_id; ?></td>
+                            <td><?php echo $student->first_name; ?></td>
+                            <td><?php echo $student->date_of_birth; ?></td>
                             <td><?php echo $student->gender; ?></td>
-                            <td><?php echo $student->tshirtSize; ?></td>
+                            <td><?php echo $student->tshirt_size; ?></td>
                             <td><?php echo $student->nationality; ?></td>
-                            <td><?php echo $student->placeOfBirth; ?></td>
-                            <td><?php echo $student->homeAddress; ?></td>
+                            <td><?php echo $student->place_of_birth; ?></td>
+                            <td><?php echo $student->home_address; ?></td>
                             <td><?php echo $student->email; ?></td>
                             <td><?php echo $student->telephone; ?></td>
-                            <td><?php echo $student->fathersFullName; ?></td>
-                            <td><?php echo $student->fathersEmail; ?></td>
-                            <td><?php echo $student->fathersTelephone; ?></td>
-                            <td><?php echo $student->mothersFullName; ?></td>
-                            <td><?php echo $student->mothersEmail; ?></td>
-                            <td><?php echo $student->mothersTelephone; ?></td>
-                            <td><?php echo $student->passportName; ?></td>
-                            <td><?php echo $student->givenPlace; ?></td>
-                            <td><?php echo $student->passportNumber; ?></td>
-                            <td><?php echo $student->expiryDate; ?></td>
-                            <td><?php echo $student->course; ?></td>
-                            <td><?php echo $student->institutionName; ?></td>
-                            <td><?php echo $student->department; ?></td>
-                            <td><?php echo $student->institutionAddress; ?></td>
-                            <td><?php echo $student->institutionEmail; ?></td>
-                            <td><?php echo $student->institutionTelephone; ?></td>
+
+                            <!-- Father's Information -->
+                            <td><?php echo $student->parentalInfos->where('parent_type', 'Father')->first()->full_name ?? ''; ?></td>
+                            <td><?php echo $student->parentalInfos->where('parent_type', 'Father')->first()->email ?? ''; ?></td>
+                            <td><?php echo $student->parentalInfos->where('parent_type', 'Father')->first()->telephone ?? ''; ?></td>
+
+                            <!-- Mother's Information -->
+                            <td><?php echo $student->parentalInfos->where('parent_type', 'Mother')->first()->full_name ?? ''; ?></td>
+                            <td><?php echo $student->parentalInfos->where('parent_type', 'Mother')->first()->email ?? ''; ?></td>
+                            <td><?php echo $student->parentalInfos->where('parent_type', 'Mother')->first()->telephone ?? ''; ?></td>
+                            
+                            <!-- Legal Information -->                           
+                            <td><?php echo $student->passport->passport_name ?? ''; ?></td>
+                            <td><?php echo $student->passport->given_place ?? ''; ?></td>
+                            <td><?php echo $student->passport->passport_number ?? ''; ?></td>
+                            <td><?php echo $student->passport->expiry_date ?? ''; ?></td>
+
+                            <!-- course -->
+                            <td><?php echo $student->institutionDetails->course ?? ''; ?></td>
+
+                            <!-- Institution Information -->
+                            <td><?php echo $student->institutionDetails->institution_name ?? ''; ?></td>
+                            <td><?php echo $student->institutionDetails->department ?? ''; ?></td>
+                            <td><?php echo $student->institutionDetails->address ?? ''; ?></td>
+                            <td><?php echo $student->institutionDetails->email ?? ''; ?></td>
+                            <td><?php echo $student->institutionDetails->telephone ?? ''; ?></td>
+
+                            <!-- iban and outreach -->
                             <td><?php echo $student->iban; ?></td>
                             <td><?php echo $student->outreach; ?></td>
-                            <td><a href="/uploads/<?php echo $student->passportName."/". $attachment->studentCertificate; ?>"><?php echo isset($attachment->studentCertificate) ? $attachment->studentCertificate : ''; ?></a></td>
-                            <td><a href="/uploads/<?php echo $student->passportName."/". $attachment->photo; ?>"><?php echo isset($attachment->photo) ? $attachment->photo : ''; ?></a></td>
-                            <td><a href="/uploads/<?php echo $student->passportName."/". $attachment->passportCopy; ?>"><?php echo isset($attachment->passportCopy) ? $attachment->passportCopy : ''; ?></a></td>
-                            <td><a href="/uploads/<?php echo $student->passportName."/". $attachment->consentForm; ?>"><?php echo isset($attachment->consentForm) ? $attachment->consentForm : ''; ?></td>
+
+                            <!-- Attachment Information -->
+                            <td>
+                                <a href="<?php echo $student->attachments->where('attachment_type', 'Certificate')->first()->file_path ?? 'Not Provided'; ?>">
+                                    <?php $file_path = $student->attachments->where('attachment_type', 'Certificate')->first()->file_path ?? ''; 
+                                    echo basename($file_path);?>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="<?php echo $student->attachments->where('attachment_type', 'Photo')->first()->file_path ?? 'Not Provided'; ?>">
+                                    <?php $file_path = $student->attachments->where('attachment_type', 'Photo')->first()->file_path ?? ''; 
+                                    echo basename($file_path);?>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="<?php echo $student->attachments->where('attachment_type', 'Passport')->first()->file_path ?? 'Not Provided'; ?>">
+                                    <?php $file_path = $student->attachments->where('attachment_type', 'Passport')->first()->file_path ?? ''; 
+                                    echo basename($file_path);?>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="<?php echo $student->attachments->where('attachment_type', 'ConsentForm')->first()->file_path ?? 'Not Provided'; ?>">
+                                    <?php $file_path = $student->attachments->where('attachment_type', 'ConsentForm')->first()->file_path ?? ''; 
+                                    echo basename($file_path);?>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="<?php echo $student->attachments->where('attachment_type', 'Motivation_Letter')->first()->file_path ?? 'Not Provided'; ?>">
+                                    <?php $file_path = $student->attachments->where('attachment_type', 'Motivation_Letter')->first()->file_path ?? '';
+                                     echo basename($file_path);?>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="<?php echo $student->attachments->where('attachment_type', 'Recommendation_Letter')->first()->file_path ?? 'Not Provided'; ?>">
+                                    <?php $file_path = $student->attachments->where('attachment_type', 'Recommendation_Letter')->first()->file_path ?? '';
+                                    echo basename($file_path); ?>
+                                </a>
+                            </td>
+                            
                         </tr>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
                 </tbody>
             </table>
         </div>
     </div>
-    <script>
+    <!-- <script>
     var timeout;
 
     function resetTimer() {
@@ -131,7 +198,7 @@ $students = Capsule::table('students')->get();
     document.addEventListener('mousemove', resetTimer);
     document.addEventListener('mousedown', resetTimer);
     document.addEventListener('keypress', resetTimer);
-</script>
+</script> -->
 </body>
 
 </html>
