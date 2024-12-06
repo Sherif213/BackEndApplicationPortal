@@ -1,10 +1,18 @@
 <?php
 session_start();
+use App\Models\Attachment;
+use App\Models\ParentalInfo;
+use App\Models\InstitutionDetail;
+use App\Models\legal_information;
+
 
 require __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../config/database.php';
 require_once __DIR__ . '/../models/Student.php';
+require_once __DIR__ . '/../models/Parental_info.php';
+require_once __DIR__ . '/../models/institution_details.php';
 require_once __DIR__ . '/../models/Attachment.php';
+require_once __DIR__ . '/../models/legal_information.php';
 
 require_once __DIR__ . '/../functions/log.php';
 require_once __DIR__ . '/../functions/email.php';
@@ -17,75 +25,135 @@ writeToLog("POST data: " . json_encode($_POST));
 writeToLog("FILES data: " . json_encode($_FILES));
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    writeToLog("Processing form submission...");
-
-    $nationalityValue = $_POST['Nationality'];
-    $countryName = getCountryName($nationalityValue);
-
-    $studentData = [
-        'submissionId' => uniqid(),
-        'firstName' => $_POST['first_name'],
-        'dateOfBirth' => $_POST['date_of_birth'],
-        'gender' => $_POST['gender'],
-        'tshirtSize' => $_POST['tshirt_size'],
-        'nationality' => $countryName,
-        'placeOfBirth' => $_POST['place_of_birth'],
-        'homeAddress' => $_POST['home_address'],
-        'email' => $_POST['email'],
-        'telephone' => $_POST['telephone'],
-        'fathersFullName' => $_POST['fathers_full_name'],
-        'fathersEmail' => $_POST['fathers_email'],
-        'fathersTelephone' => $_POST['fathers_telephone'],
-        'mothersFullName' => $_POST['mothers_full_name'],
-        'mothersEmail' => $_POST['mothers_email'],
-        'mothersTelephone' => $_POST['mothers_telephone'],
-        'passportName' => $_POST['passport_name'],
-        'givenPlace' => $_POST['given_place'],
-        'passportNumber' => $_POST['passport_number'],
-        'expiryDate' => $_POST['expiry_date'],
-        'course' => isset($_POST['course']) ? $_POST['course'] : "NOT SPECIFIED",
-        'institutionName' => $_POST['institution_name'],
-        'department' => $_POST['department'],
-        'institutionAddress' => $_POST['institution_address'],
-        'institutionEmail' => $_POST['institution_email'],
-        'institutionTelephone' => $_POST['institution_telephone'],
-        'iban' => $_POST['iban'],
-        'outreach'=>$_POST['outreach']
-    ];
-
-    $imageData = [
-        'submissionId' => $studentData['submissionId'],
-        'firstName' => $_POST['first_name'],
-        'studentCertificate' => $_FILES['student_certificate']['name'],
-        'photo' => $_FILES['photo']['name'],
-        'passportName' => $_POST['passport_name'],
-        'passportCopy' => $_FILES['passport_copy']['name'],
-        'Recommendation_Letter' => $_FILES['Recommendation_Letter']['name'], 
-        'Motivation_Letter' => $_FILES['Motivation_Letter']['name'],
-        'consentForm' => $_FILES['consentForm']['name'],
-    ];
-
     try {
-        $uploadDir = 'uploads/' . $studentData['passportName'] . '/';
-        if (!file_exists($uploadDir)) {
-            mkdir($uploadDir, 0777, true);
-            writeToLog("Upload directory created: $uploadDir");
+        writeToLog("Processing form submission...");
+
+        $gender = strtolower($_POST['gender']) === 'male' ? 'M' : (strtolower($_POST['gender']) === 'female' ? 'F' : null);
+
+        if ($gender === null) {
+            throw new Exception('Invalid gender value provided.');
         }
 
+        $attachmentTypeMap = [
+            'student_certificate' => 'Certificate',
+            'photo' => 'Photo',
+            'passport_copy' => 'Passport',
+            'recommendation_letter' => 'Recommendation_Letter',
+            'motivation_letter' => 'Motivation_Letter',
+            'consent_form' => 'ConsentForm',
+        ];
+
+        // Validate and sanitize input
+        $studentData = [
+            'submission_id' => uniqid(),
+            'first_name' => filter_var($_POST['first_name'], FILTER_SANITIZE_STRING),
+            'date_of_birth' => filter_var($_POST['date_of_birth'], FILTER_SANITIZE_STRING),
+            'tshirt_size' => $_POST['tshirt_size'],
+            'gender' => $gender,
+            'nationality' => getCountryName($_POST['Nationality']),
+            'place_of_birth' => $_POST['place_of_birth'],
+            'home_address' => filter_var($_POST['home_address'], FILTER_SANITIZE_STRING),
+            'email' => filter_var($_POST['email'], FILTER_SANITIZE_EMAIL),
+            'telephone' => filter_var($_POST['telephone'], FILTER_SANITIZE_STRING),
+            'outreach' => filter_var($_POST['outreach'], FILTER_SANITIZE_STRING),
+            'iban' => filter_var($_POST['iban'], FILTER_SANITIZE_STRING),
+        ];
+
+        $parentalData = [
+            'father' => [
+                'full_name' => filter_var($_POST['fathers_full_name'], FILTER_SANITIZE_STRING),
+                'email' => filter_var($_POST['fathers_email'], FILTER_SANITIZE_EMAIL),
+                'telephone' => filter_var($_POST['fathers_telephone'], FILTER_SANITIZE_STRING),
+            ],
+            'mother' => [
+                'full_name' => filter_var($_POST['mothers_full_name'], FILTER_SANITIZE_STRING),
+                'email' => filter_var($_POST['mothers_email'], FILTER_SANITIZE_EMAIL),
+                'telephone' => filter_var($_POST['mothers_telephone'], FILTER_SANITIZE_STRING),
+            ],
+        ];
+        $legal_information = [
+            'passport_name' => filter_var($_POST['passport_name'], FILTER_SANITIZE_STRING),
+            'given_place' => filter_var($_POST['given_place'], FILTER_SANITIZE_STRING),
+            'passport_number' => filter_var($_POST['passport_number'], FILTER_SANITIZE_STRING),
+            'expiry_date' => filter_var($_POST['expiry_date'], FILTER_SANITIZE_EMAIL),
+        ];
+
+        $institutionData = [
+            'institution_name' => filter_var($_POST['institution_name'], FILTER_SANITIZE_STRING),
+            'department' => filter_var($_POST['department'], FILTER_SANITIZE_STRING),
+            'course' => isset($_POST['course']) ? filter_var($_POST['course'], FILTER_SANITIZE_STRING) : null, // Handle optional course
+            'address' => filter_var($_POST['institution_address'], FILTER_SANITIZE_STRING),
+            'email' => filter_var($_POST['institution_email'], FILTER_SANITIZE_EMAIL),
+            'telephone' => filter_var($_POST['institution_telephone'], FILTER_SANITIZE_STRING),
+        ];
+
+        $attachmentData = [
+            'student_certificate' => $_FILES['student_certificate'],
+            'photo' => $_FILES['photo'],
+            'passport_copy' => $_FILES['passport_copy'],
+            'recommendation_letter' => $_FILES['Recommendation_Letter'],
+            'motivation_letter' => $_FILES['Motivation_Letter'],
+            'consent_form' => $_FILES['consentForm'],
+        ];
+
+        // Create student record
         $newStudent = createNewStudent($studentData);
-        $newAttachment = createNewAttachment($imageData);
+        writeToLog("Student created with ID: " . $newStudent->id);
 
-        move_uploaded_file($_FILES['student_certificate']['tmp_name'], $uploadDir . $_FILES['student_certificate']['name']);
-        move_uploaded_file($_FILES['photo']['tmp_name'], $uploadDir . $_FILES['photo']['name']);
-        move_uploaded_file($_FILES['passport_copy']['tmp_name'], $uploadDir . $_FILES['passport_copy']['name']);
-        move_uploaded_file($_FILES['Recommendation_Letter']['tmp_name'], $uploadDir . $_FILES['Recommendation_Letter']['name']);
-        move_uploaded_file($_FILES['Motivation_Letter']['tmp_name'], $uploadDir . $_FILES['Motivation_Letter']['name']);
-        move_uploaded_file($_FILES['consentForm']['tmp_name'], $uploadDir . $_FILES['consentForm']['name']);
+        // Add parental information
+        foreach ($parentalData as $type => $data) {
+            ParentalInfo::create([
+                'student_id' => $newStudent->id,
+                'parent_type' => ucfirst($type), // Father or Mother
+                'full_name' => $data['full_name'],
+                'email' => $data['email'],
+                'telephone' => $data['telephone'],
+            ]);
+            writeToLog("Parental info added for: $type");
+        }
 
-        writeToLog("Files uploaded and data insertion successful.");
+        // Add institution details
+        InstitutionDetail::create(array_merge(['student_id' => $newStudent->id], $institutionData));
+        writeToLog("Institution details added for student ID: " . $newStudent->id);
+
+        //add legal information
         
-        sendNotificationEmail($studentData, $imageData);
+        legal_Information::create(array_merge(['student_id' => $newStudent->id], $legal_information));
+        writeToLog("legal information details added for student ID: " . $newStudent->id);
 
+        // Process and store file attachments
+        $uploadDir = 'uploads/' . $studentData['submission_id'] . '/';
+        if (!file_exists($uploadDir)) {
+            mkdir($uploadDir, 0777, true);
+        }
+
+        foreach ($attachmentData as $type => $file) {
+            if ($file['error'] === UPLOAD_ERR_OK) {
+                $attachmentType = $attachmentTypeMap[$type] ?? null;
+        
+                if (!$attachmentType) {
+                    writeToLog("Invalid attachment type: $type");
+                    throw new Exception("Invalid attachment type: $type");
+                }
+        
+                $filePath = $uploadDir . basename($file['name']);
+                if (move_uploaded_file($file['tmp_name'], $filePath)) {
+                    Attachment::create([
+                        'student_id' => $newStudent->id,
+                        'attachment_type' => $attachmentType,
+                        'file_path' => $filePath,
+                    ]);
+                    writeToLog("Attachment uploaded successfully for type: $attachmentType");
+                } else {
+                    writeToLog("Failed to upload attachment for type: $attachmentType");
+                }
+            }
+        }
+
+        // Send notification email
+        sendNotificationEmail($studentData, $parentalData, $institutionData, $attachments);
+
+        writeToLog("Form submission completed successfully.");
         header('Location: /SuccessfulRegisteration');
         exit;
     } catch (Exception $e) {
@@ -93,8 +161,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo 'Form submission failed. Please try again later.';
     }
 } else {
-    writeToLog("Request method is not POST: " . $_SERVER['REQUEST_METHOD']);
-    
+    writeToLog("Invalid request method: " . $_SERVER['REQUEST_METHOD']);
     header('Location: /');
     exit;
 }

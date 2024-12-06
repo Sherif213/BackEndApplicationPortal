@@ -1,46 +1,46 @@
 <?php
+
 namespace App\Models;
 
-require_once __DIR__ . '/../config/database.php'; // Adjust the path if necessary
+require_once __DIR__ . '/../config/database.php'; 
 use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model {
-    protected $table = 'students';
+    protected $table = 'students'; 
+
     protected $fillable = [
-        'submissionId',
-        'firstName',
-        'dateOfBirth',
+        'submission_id',
+        'first_name',
+        'date_of_birth',
+        'tshirt_size',
         'gender',
-        'tshirtSize',
         'nationality',
-        'placeOfBirth',
-        'homeAddress',
+        'place_of_birth',
+        'home_address',
         'email',
         'telephone',
-        'fathersFullName',
-        'fathersEmail',
-        'fathersTelephone',
-        'mothersFullName',
-        'mothersEmail',
-        'mothersTelephone',
-        'passportName',
-        'givenPlace',
-        'passportNumber',
-        'expiryDate',
-        'course',
-        'institutionName',
-        'department',
-        'institutionAddress',
-        'institutionEmail',
-        'institutionTelephone',
-        'iban',
-        'outreach'
-
+        'outreach',
+        'iban'
     ];
 
-    public $timestamps = true;
+    public $timestamps = true; 
 
     public function payments() {
         return $this->hasMany(Payment::class, 'student_id');
+    }
+
+    public function parentalInfos() {
+        return $this->hasMany(ParentalInfo::class, 'student_id');
+    }
+
+    public function institutionDetails() {
+        return $this->hasOne(InstitutionDetail::class, 'student_id');
+    }
+
+    public function attachments() {
+        return $this->hasMany(Attachment::class, 'student_id');
+    }
+    public function passport() {
+        return $this->hasOne(legal_Information::class, 'student_id');
     }
 }

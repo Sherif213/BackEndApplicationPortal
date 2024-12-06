@@ -84,6 +84,8 @@ $routes = [
     //submitting
     'submitApplication' =>'public/submit.php',
 
+    'database_integration' => 'migrate.php'
+
 ];
 
 // Function to include the appropriate file if it exists

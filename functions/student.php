@@ -2,7 +2,7 @@
 // functions/student.php
 
 use App\Models\Student;
-require_once __DIR__ . '/../config/Database.php';
+require_once __DIR__ . '/../config/database.php';
 
 function createNewStudent($studentData)
 {

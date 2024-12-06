@@ -1,23 +1,22 @@
 <?php
+
 namespace App\Models;
 
-require_once __DIR__ . '/../config/database.php'; // Adjust the path if necessary
+require_once __DIR__ . '/../config/database.php';
 use Illuminate\Database\Eloquent\Model;
 
 class Attachment extends Model {
-    protected $table = 'attachments'; // Table name
+    protected $table = 'attachments'; 
 
     protected $fillable = [
-        'submissionId',
-        'firstName',
-        'studentCertificate',
-        'photo',
-        'passportName',
-        'passportCopy',
-        'Recommendation_Letter',
-        'Motivation_Letter',
-        'consentForm',
+        'student_id',
+        'attachment_type',
+        'file_path',
     ];
 
-    public $timestamps = true; // Enable timestamps (created_at and updated_at)
+    public $timestamps = true;
+
+    public function student() {
+        return $this->belongsTo(Student::class, 'student_id');
+    }
 }
