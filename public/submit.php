@@ -151,7 +151,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
 
         // Send notification email
-        sendNotificationEmail($studentData, $parentalData, $institutionData, $attachments);
+        sendNotificationEmail($studentData, $parentalData,$legal_information, $institutionData, $attachmentData);
 
         writeToLog("Form submission completed successfully.");
         header('Location: /SuccessfulRegisteration');
