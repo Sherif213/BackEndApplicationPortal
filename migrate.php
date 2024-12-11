@@ -121,6 +121,38 @@ try {
         echo "Table 'payments' already exists.\n";
     }
 
+
+    if (!Capsule::schema()->hasTable('unesco_programs')) {
+        Capsule::schema()->create('unesco_programs', function ($table) {
+            $table->increments('id');
+            $table->string('name')->nullable();
+            $table->date('start_date')->nullable();
+            $table->date('end_date')->nullable();
+            $table->enum('progress', ['Not Started', 'In Progress', 'Completed'])->default('Not Started');
+            $table->timestamps();
+        });
+        echo "unesco_programs table migration completed successfully.\n";
+    } else {
+        echo "Table 'unesco_programs' already exists.\n";
+    }
+
+    if (!Capsule::schema()->hasTable('student_program')) {
+        Capsule::schema()->create('student_program', function ($table) {
+            $table->increments('id'); // Unique ID for each assignment
+            $table->unsignedInteger('student_id'); // Foreign key to the students table
+            $table->unsignedInteger('program_id'); // Foreign key to the unesco_programs table
+            $table->string('program_specific_id')->unique(); // Unique ID for the student in this program
+            $table->timestamps(); // Created at and updated at timestamps
+    
+            // Foreign key constraints
+            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
+            $table->foreign('program_id')->references('id')->on('unesco_programs')->onDelete('cascade');
+        });
+        echo "Table 'student_program' created successfully.\n";
+    } else {
+        echo "Table 'student_program' already exists.\n";
+    }
+
 } catch (\Exception $e) {
     // Log the error to a file
     $errorMessage = date('Y-m-d H:i:s') . ' - ERROR: ' . $e->getMessage() . PHP_EOL;

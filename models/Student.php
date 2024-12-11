@@ -43,4 +43,12 @@ class Student extends Model {
     public function passport() {
         return $this->hasOne(legal_Information::class, 'student_id');
     }
+
+    public function programs()
+{
+    return $this->belongsToMany(Program::class, 'student_program', 'student_id', 'program_id')
+                ->using(StudentProgram::class) // Use the StudentProgram pivot model
+                ->withPivot('program_specific_id') // Include additional pivot fields
+                ->withTimestamps(); // Include created_at and updated_at
+}
 }

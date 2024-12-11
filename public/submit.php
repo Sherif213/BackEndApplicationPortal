@@ -4,6 +4,7 @@ use App\Models\Attachment;
 use App\Models\ParentalInfo;
 use App\Models\InstitutionDetail;
 use App\Models\legal_information;
+use App\Models\StudentProgram;
 
 
 require __DIR__ . '/../vendor/autoload.php';
@@ -13,6 +14,7 @@ require_once __DIR__ . '/../models/Parental_info.php';
 require_once __DIR__ . '/../models/institution_details.php';
 require_once __DIR__ . '/../models/Attachment.php';
 require_once __DIR__ . '/../models/legal_information.php';
+require_once __DIR__ . '/../models/student_program.php';
 
 require_once __DIR__ . '/../functions/log.php';
 require_once __DIR__ . '/../functions/email.php';
@@ -32,6 +34,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if ($gender === null) {
             throw new Exception('Invalid gender value provided.');
+        }
+
+        $programId = filter_var($_POST['program_id'], FILTER_VALIDATE_INT);
+        if (!$programId) {
+            throw new Exception('Invalid program selected.');
         }
 
         $attachmentTypeMap = [
@@ -99,6 +106,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Create student record
         $newStudent = createNewStudent($studentData);
         writeToLog("Student created with ID: " . $newStudent->id);
+
+        StudentProgram::create([
+            'student_id' => $newStudent->id,
+            'program_id' => $programId,
+            'program_specific_id' => uniqid(), // Generate a unique ID for this association
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+        ]);
+        writeToLog("Student associated with program ID: $programId");
 
         // Add parental information
         foreach ($parentalData as $type => $data) {

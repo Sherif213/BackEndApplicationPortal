@@ -1,5 +1,6 @@
 <form id="myForm" action="/submitApplication" method="POST" enctype="multipart/form-data">
     <!-- Information Container 2 -->
+    <input type="hidden" name="program_id" value="2">
     <?php include "include/blocks/student_information.php" ?>
 
     
