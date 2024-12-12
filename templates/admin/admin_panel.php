@@ -12,6 +12,8 @@ require_once __DIR__ . '../../../models/Parental_info.php';
 require_once __DIR__ . '../../../models/institution_details.php';
 require_once __DIR__ . '../../../models/Attachment.php';
 require_once __DIR__ . '../../../models/legal_information.php';
+require_once __DIR__ . '../../../models/student_program.php';
+require_once __DIR__ . '../../../models/program.php';
 use App\Models\Student;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
@@ -49,6 +51,7 @@ error_log('Fetched students: ' . json_encode($students));
                 <thead>
                     <tr>
                         <th>ID</th>
+                        <th>Program</th>
                         <th>Submission ID</th>
                         <th>First Name</th>
                         <th>Date of Birth</th>
@@ -92,6 +95,11 @@ error_log('Fetched students: ' . json_encode($students));
                         $attachment = Capsule::table('attachments')->where('student_id', $student->id)->first();
                         $parentalInfos = Capsule::table('parental_infos')->where('student_id', $student->id)->first();
                         $institutionDetails = Capsule::table('institution_details')->where('student_id', $student->id)->first();
+                        $studentWithCourse = Capsule::table('student_program')
+                        ->join('unesco_programs', 'student_program.program_id', '=', 'unesco_programs.id')
+                        ->where('student_program.student_id', $student->id)
+                        ->select('unesco_programs.name', 'unesco_programs.start_date', 'unesco_programs.end_date') // Select the course data you want
+                        ->first();
 
                         error_log('Student ID: ' . $student->id . ' - Attachments: ' . json_encode($attachment));
                         error_log('Student ID: ' . $student->id . ' - Parental Infos: ' . json_encode($parentalInfos));
@@ -99,6 +107,7 @@ error_log('Fetched students: ' . json_encode($students));
                         ?>
                         <tr class="<?= ($index % 2 == 0) ? 'even' : ''; ?>">
                             <td><?php echo $student->id; ?></td>
+                            <td><?php echo $student->programs->first()->name ?? ''; ?></td>
                             <td><?php echo $student->submission_id; ?></td>
                             <td><?php echo $student->first_name; ?></td>
                             <td><?php echo $student->date_of_birth; ?></td>

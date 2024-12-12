@@ -5,6 +5,7 @@ session_start();
 require_once __DIR__ . '../../../vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use Dotenv\Dotenv;
 session_regenerate_id(true);
 
 // Function to generate a random 6-digit passcode
@@ -56,18 +57,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['username']) && isset(
 }
 
 function sendEmail($to, $subject, $message) {
+    $dotenv = Dotenv::createImmutable(__DIR__ . '/../../');
+    $dotenv->load();
     $mail = new PHPMailer(true);
     try {
         $mail->isSMTP();
         $mail->Host = 'smtp.mail.ru';
         $mail->SMTPAuth = true;
-        $mail->Username = 'shouldtheone@mail.ru'; 
-        $mail->Password = 'whupyvhXJJ5Sdan10vAC'; 
+        $mail->Username = "tomioka_047@mail.ru"; 
+        $mail->Password = "v5kvg4GJkyr1bYuVATur"; 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         // Recipients
-        $mail->setFrom('shouldtheone@mail.ru', 'Admin Panel');
+        $mail->setFrom('tomioka_047@mail.ru', 'Admin Panel');
         $mail->addAddress($to);
 
         // Content
