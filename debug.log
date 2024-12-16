@@ -1,0 +1,119 @@
+2024-12-12 17:05:27 - Request URI: /public/submit.php
+2024-12-12 17:05:27 - Request method: GET
+2024-12-12 17:05:27 - POST data: []
+2024-12-12 17:05:27 - FILES data: []
+2024-12-12 17:05:27 - Invalid request method: GET
+2024-12-12 17:07:09 - Request URI: /submitApplication
+2024-12-12 17:07:09 - Request method: POST
+2024-12-12 17:07:09 - POST data: {"program_id":"2","first_name":"Jon Stewart Doe","Nationality":"11","date_of_birth":"2024-12-12","place_of_birth":"Egypt","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone":"6019521325","mothers_full_name":"Jon Stewart Doe","mothers_email":"test@example.us","mothers_telephone":"6019521325","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"1600 Fake Street\r\nApartment 1","institution_email":"test@example.us","institution_telephone":"6019521325","iban":"ibanTR","outreach":"Social Media"}
+2024-12-12 17:07:09 - FILES data: {"student_certificate":{"name":"Screenshot_705.png","full_path":"Screenshot_705.png","type":"image\/png","tmp_name":"C:\\xampp\\tmp\\phpF224.tmp","error":0,"size":134644},"photo":{"name":"Screenshot_705.png","full_path":"Screenshot_705.png","type":"image\/png","tmp_name":"C:\\xampp\\tmp\\phpF225.tmp","error":0,"size":134644},"passport_copy":{"name":"Screenshot_705.png","full_path":"Screenshot_705.png","type":"image\/png","tmp_name":"C:\\xampp\\tmp\\phpF226.tmp","error":0,"size":134644},"Recommendation_Letter":{"name":"Screenshot_705.png","full_path":"Screenshot_705.png","type":"image\/png","tmp_name":"C:\\xampp\\tmp\\phpF227.tmp","error":0,"size":134644},"Motivation_Letter":{"name":"Screenshot_705.png","full_path":"Screenshot_705.png","type":"image\/png","tmp_name":"C:\\xampp\\tmp\\phpF238.tmp","error":0,"size":134644},"consentForm":{"name":"Screenshot_705.png","full_path":"Screenshot_705.png","type":"image\/png","tmp_name":"C:\\xampp\\tmp\\phpF239.tmp","error":0,"size":134644}}
+2024-12-12 17:07:09 - Processing form submission...
+2024-12-12 17:07:09 - Retrieving country name for nationality value: 11
+2024-12-12 17:07:09 - Creating new student with data: {"submission_id":"675b0a2dc7414","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-12","tshirt_size":"small","gender":"M","nationality":"BELARUS","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-12 17:07:10 - ERROR creating new student: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (675b0a2dc7414, Jon Stewart Doe, 2024-12-12, small, M, BELARUS, Egypt, 1600 Fake Street
+Apartment 1, test@example.us, 6019521325, Social Media, ibanTR, 2024-12-12 17:07:10, 2024-12-12 17:07:10))
+2024-12-12 17:07:10 - ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (675b0a2dc7414, Jon Stewart Doe, 2024-12-12, small, M, BELARUS, Egypt, 1600 Fake Street
+Apartment 1, test@example.us, 6019521325, Social Media, ibanTR, 2024-12-12 17:07:10, 2024-12-12 17:07:10))
+2024-12-12 17:07:24 - Request URI: /submitApplication
+2024-12-12 17:07:24 - Request method: POST
+2024-12-12 17:07:24 - POST data: {"program_id":"2","first_name":"Jon Stewart Doe","Nationality":"11","date_of_birth":"2024-12-12","place_of_birth":"Egypt","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test234@example.us","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone":"6019521325","mothers_full_name":"Jon Stewart Doe","mothers_email":"test@example.us","mothers_telephone":"6019521325","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"1600 Fake Street\r\nApartment 1","institution_email":"test@example.us","institution_telephone":"6019521325","iban":"ibanTR","outreach":"Social Media"}
+2024-12-12 17:07:24 - FILES data: {"student_certificate":{"name":"Screenshot_705.png","full_path":"Screenshot_705.png","type":"image\/png","tmp_name":"C:\\xampp\\tmp\\php2C16.tmp","error":0,"size":134644},"photo":{"name":"Screenshot_705.png","full_path":"Screenshot_705.png","type":"image\/png","tmp_name":"C:\\xampp\\tmp\\php2C17.tmp","error":0,"size":134644},"passport_copy":{"name":"Screenshot_705.png","full_path":"Screenshot_705.png","type":"image\/png","tmp_name":"C:\\xampp\\tmp\\php2C18.tmp","error":0,"size":134644},"Recommendation_Letter":{"name":"Screenshot_705.png","full_path":"Screenshot_705.png","type":"image\/png","tmp_name":"C:\\xampp\\tmp\\php2C19.tmp","error":0,"size":134644},"Motivation_Letter":{"name":"Screenshot_705.png","full_path":"Screenshot_705.png","type":"image\/png","tmp_name":"C:\\xampp\\tmp\\php2C1A.tmp","error":0,"size":134644},"consentForm":{"name":"Screenshot_705.png","full_path":"Screenshot_705.png","type":"image\/png","tmp_name":"C:\\xampp\\tmp\\php2C1B.tmp","error":0,"size":134644}}
+2024-12-12 17:07:24 - Processing form submission...
+2024-12-12 17:07:24 - Retrieving country name for nationality value: 11
+2024-12-12 17:07:24 - Creating new student with data: {"submission_id":"675b0a3c9a0c8","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-12","tshirt_size":"small","gender":"M","nationality":"BELARUS","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test234@example.us","telephone":"6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-12 17:07:24 - New student created successfully with ID: 21
+2024-12-12 17:07:24 - Student created with ID: 21
+2024-12-12 17:07:24 - Student associated with program ID: 2
+2024-12-12 17:07:24 - Parental info added for: father
+2024-12-12 17:07:24 - Parental info added for: mother
+2024-12-12 17:07:24 - Institution details added for student ID: 21
+2024-12-12 17:07:24 - legal information details added for student ID: 21
+2024-12-12 17:07:24 - Attachment uploaded successfully for type: Certificate
+2024-12-12 17:07:24 - Attachment uploaded successfully for type: Photo
+2024-12-12 17:07:24 - Attachment uploaded successfully for type: Passport
+2024-12-12 17:07:24 - Attachment uploaded successfully for type: Recommendation_Letter
+2024-12-12 17:07:24 - Attachment uploaded successfully for type: Motivation_Letter
+2024-12-12 17:07:24 - Attachment uploaded successfully for type: ConsentForm
+2024-12-12 17:07:24 - Preparing to send notification email...
+2024-12-12 17:07:24 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => Screenshot_705.png
+            [full_path] => Screenshot_705.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php2C16.tmp
+            [error] => 0
+            [size] => 134644
+        )
+
+    [photo] => Array
+        (
+            [name] => Screenshot_705.png
+            [full_path] => Screenshot_705.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php2C17.tmp
+            [error] => 0
+            [size] => 134644
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => Screenshot_705.png
+            [full_path] => Screenshot_705.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php2C18.tmp
+            [error] => 0
+            [size] => 134644
+        )
+
+    [recommendation_letter] => Array
+        (
+            [name] => Screenshot_705.png
+            [full_path] => Screenshot_705.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php2C19.tmp
+            [error] => 0
+            [size] => 134644
+        )
+
+    [motivation_letter] => Array
+        (
+            [name] => Screenshot_705.png
+            [full_path] => Screenshot_705.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php2C1A.tmp
+            [error] => 0
+            [size] => 134644
+        )
+
+    [consent_form] => Array
+        (
+            [name] => Screenshot_705.png
+            [full_path] => Screenshot_705.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php2C1B.tmp
+            [error] => 0
+            [size] => 134644
+        )
+
+)
+
+2024-12-12 17:07:24 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/675b0a3c9a0c8/Screenshot_705.png
+2024-12-12 17:07:24 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/675b0a3c9a0c8/Screenshot_705.png
+2024-12-12 17:07:24 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/675b0a3c9a0c8/Screenshot_705.png
+2024-12-12 17:07:24 - Attachment processed: Type=recommendation_letter, Path=http://localhost:3000/uploads/675b0a3c9a0c8/Screenshot_705.png
+2024-12-12 17:07:24 - Attachment processed: Type=motivation_letter, Path=http://localhost:3000/uploads/675b0a3c9a0c8/Screenshot_705.png
+2024-12-12 17:07:24 - Attachment processed: Type=consent_form, Path=http://localhost:3000/uploads/675b0a3c9a0c8/Screenshot_705.png
+2024-12-12 17:07:24 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/675b0a3c9a0c8/Screenshot_705.png" target="_blank">Screenshot_705.png</a>
+    [photo] => <a href="http://localhost:3000/uploads/675b0a3c9a0c8/Screenshot_705.png" target="_blank">Screenshot_705.png</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/675b0a3c9a0c8/Screenshot_705.png" target="_blank">Screenshot_705.png</a>
+    [recommendation_letter] => <a href="http://localhost:3000/uploads/675b0a3c9a0c8/Screenshot_705.png" target="_blank">Screenshot_705.png</a>
+    [motivation_letter] => <a href="http://localhost:3000/uploads/675b0a3c9a0c8/Screenshot_705.png" target="_blank">Screenshot_705.png</a>
+    [consent_form] => <a href="http://localhost:3000/uploads/675b0a3c9a0c8/Screenshot_705.png" target="_blank">Screenshot_705.png</a>
+)
+
+2024-12-12 17:07:37 - Notification email sent successfully.
+2024-12-12 17:07:37 - Form submission completed successfully.

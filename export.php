@@ -6,6 +6,8 @@ require_once __DIR__ . '/config/database.php';
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 // Retrieve student data from the database using Eloquent
+$capsule = Database::getConnection();
+
 $students = Capsule::table('students')->get();
 
 // Export data to CSV file
@@ -29,10 +31,10 @@ fputcsv($csvFile, $headers);
 // Write data rows
 foreach ($students as $student) {
     // Retrieve attachment data for the current student
-    $attachment = Capsule::table('attachments')->where('submissionId', $student->submissionId)->first();
+    $attachment = Capsule::table('attachments')->where('submission_Id', $student->submission_Id)->first();
 
     $rowData = [
-        $student->id, $student->submissionId, $student->firstName, $student->dateOfBirth,
+        $student->id, $student->submission_Id, $student->firstName, $student->dateOfBirth,
         $student->gender, $student->tshirtSize, $student->nationality, $student->placeOfBirth,
         $student->homeAddress, $student->email, $student->telephone, $student->fathersFullName,
         $student->fathersEmail, $student->fathersTelephone, $student->mothersFullName,
