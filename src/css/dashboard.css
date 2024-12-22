@@ -1,0 +1,263 @@
+/* General Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafc;
+    color: #2d3748;
+    line-height: 1.7;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Header Section */
+header {
+    padding: 40px;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+header p {
+    font-size: 16px;
+    margin: 8px 0 0;
+    opacity: 0.85;
+}
+
+header .badge {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: #ffffff;
+    color: #6a11cb;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Section */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f7f8fa;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+nav button {
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #6a11cb;
+    border: 2px solid #6a11cb;
+    border-radius: 30px;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav button.active {
+    background: #6a11cb;
+    color: #ffffff;
+}
+
+nav button:hover {
+    background: #2575fc;
+    color: #ffffff;
+}
+
+/* Actions Section */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: #f9fafc;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.actions button {
+    background: #6a11cb;
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.actions button:hover {
+    background: #2575fc;
+    transform: scale(1.05);
+}
+
+.actions .filters button {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    color: #2d3748;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.actions .filters button:hover {
+    border-color: #6a11cb;
+    color: #6a11cb;
+}
+
+/* Table Section */
+.table-container {
+    padding: 30px;
+    background: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #edf2f7;
+}
+
+table th {
+    background: #f7f8fa;
+    font-size: 14px;
+    color: #718096;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+table td {
+    font-size: 14px;
+    color: #2d3748;
+}
+
+table td button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table td button.expand-btn {
+    background: #007bff; /* Blue */
+    color: #ffffff;
+    border: none;
+}
+
+table td button.edit-btn {
+    background: #ffc107; /* Yellow */
+    color: #000000;
+    border: none;
+}
+
+table td button.delete-btn {
+    background: #dc3545; /* Red */
+    color: #ffffff;
+    border: none;
+}
+
+/* Status Badges */
+table td span {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+table td span.spam {
+    background: #feb2b2;
+    color: #c53030;
+}
+
+table td span.active {
+    background: #c6f6d5;
+    color: #2f855a;
+}
+
+table td span.pending {
+    background: #fefcbf;
+    color: #b7791f;
+}
+
+/* Hover Effects */
+
+.expand-row {
+    background-color: #f8f9fa;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.expanded-content table {
+    margin-top: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.expanded-content th {
+    background: #6a11cb;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.expanded-content td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    table th,
+    table td {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
