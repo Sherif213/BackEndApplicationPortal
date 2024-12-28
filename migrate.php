@@ -152,6 +152,7 @@ try {
     } else {
         echo "Table 'student_program' already exists.\n";
     }
+    
 
 } catch (\Exception $e) {
     // Log the error to a file

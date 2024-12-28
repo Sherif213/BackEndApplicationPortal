@@ -6,7 +6,7 @@
 <body>
     <div class="wrapper">
         <div class="container">
-        <?php include "include/winter/winterPeace.php" ?>
+        <?php include "include/winter/winterJuniorHeader.php" ?>
             <!-- Text Section -->
             <div class="text-section">
                 <h1></h1>

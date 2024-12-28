@@ -14,6 +14,9 @@ require_once __DIR__ . '../../../models/Attachment.php';
 require_once __DIR__ . '../../../models/legal_information.php';
 require_once __DIR__ . '../../../models/student_program.php';
 require_once __DIR__ . '../../../models/program.php';
+require_once __DIR__ . '../../../functions/log.php';
+
+
 use App\Models\Student;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
@@ -22,7 +25,8 @@ $capsule = Database::getConnection();
 
 $students = Student::with(['parentalInfos', 'institutionDetails', 'attachments','passport'])->get();
 
-error_log('Fetched students: ' . json_encode($students));
+writeToLog('Fetched students: ' . json_encode($students));
+
 
 ?>
 
@@ -101,9 +105,9 @@ error_log('Fetched students: ' . json_encode($students));
                         ->select('unesco_programs.name', 'unesco_programs.start_date', 'unesco_programs.end_date') // Select the course data you want
                         ->first();
 
-                        error_log('Student ID: ' . $student->id . ' - Attachments: ' . json_encode($attachment));
-                        error_log('Student ID: ' . $student->id . ' - Parental Infos: ' . json_encode($parentalInfos));
-                        error_log('Student ID: ' . $student->id . ' - Institution Details: ' . json_encode($institutionDetails));
+                        writeToLog('Student ID: ' . $student->id . ' - Attachments: ' . json_encode($attachment));
+                        writeToLog('Student ID: ' . $student->id . ' - Parental Infos: ' . json_encode($parentalInfos));
+                        writeToLog('Student ID: ' . $student->id . ' - Institution Details: ' . json_encode($institutionDetails));
                         ?>
                         <tr class="<?= ($index % 2 == 0) ? 'even' : ''; ?>">
                             <td><?php echo $student->id; ?></td>

@@ -6,7 +6,7 @@
 <body>
     <div class="wrapper">
         <div class="container">
-        <?php include "include/winter/winterDiplomacy.php" ?>
+        <?php include "include/winter/winterDiplomacyHeader.php" ?>
             <!-- Text Section -->
             <div class="text-section">
                 <h1></h1>
@@ -95,15 +95,14 @@
 
                 </div>
             </div>
-    <?php include "include/winter/winterForm.php" ?>
+    <?php include "include/winter/winterDiplomacyForm.php" ?>
 
 
 
     <div class="information-container8">
-        <div class="g-recaptcha" data-sitekey="6LdqOvspAAAAAN2h0gs6rDQ9sg6yVwOSoXTJCf1l"></div>
+        <div class="g-recaptcha" data-sitekey="6LdLfgMqAAAAAPckF3PzHB-HchqkE1HX8zb4wzft"></div>
     </div>
-
-
+    
     <?php include "include/blocks/submit_buttons.php" ?>
     <div id="modal">
         <div class="modal-content">

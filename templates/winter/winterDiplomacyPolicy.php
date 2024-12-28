@@ -1,5 +1,5 @@
 <?php include "include/summer/PolicyHeader.php" ?>
-            <?php include "include/winter/winterDiplomacy.php" ?>
+            <?php include "include/winter/winterDiplomacyHeader.php" ?>
 
             <?php include "include/winter/winterDiplomacyFooter.php" ?>
                 <a href="/winterDiplomacyFormApplication"><button type="submit" class="btn btn-success">Continue</button></a>
