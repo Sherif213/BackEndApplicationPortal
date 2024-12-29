@@ -1,46 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-bg: #f3f4f6;
+    --card-bg: #ffffff;
+    --border-color: #e5e7eb;
+    --text-color: #333333;
+    --primary-btn-bg: linear-gradient(135deg, #6c63ff, #3b82f6);
+    --primary-btn-shadow: rgba(60, 64, 241, 0.3);
+    --hover-shadow: rgba(60, 64, 241, 0.5);
+    --hover-bg: linear-gradient(135deg, #5546e9, #316aff);
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-bg);
     margin: 0;
     padding: 0;
+    color: var(--text-color);
 }
 
 h1 {
     text-align: center;
-    margin-top: 20px;
-    color: #333;
+    margin: 20px 0;
+    font-size: 2.8rem;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px; 
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+
+.file-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Add space between buttons */
+    margin: 20px;
+    align-items: center; /* Align items neatly */
+}
+
+.file-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    background: linear-gradient(135deg, #6c63ff, #3b82f6);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(60, 64, 241, 0.3);
+    cursor: pointer;
+    text-align: center;
+    max-width: 200px; /* Limit button width */
+    text-overflow: ellipsis; /* Handle long text */
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.file-button:hover {
+    background: linear-gradient(135deg, #5546e9, #316aff);
+    box-shadow: 0 6px 14px rgba(60, 64, 241, 0.5);
+    transform: translateY(-2px);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    border-spacing: 0;
-    margin-top: 20px;
+    font-size: 1rem;
+    margin-top: 10px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 th,
 td {
-    padding: 12px;
+    padding: 18px 16px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
+    
 }
 
+.button_cell{
+    text-align: center;
+}
+
+
 th {
-    background-color: #f2f2f2;
-    color: #333;
+    background-color: #f9fafb;
+    color: #6b7280;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9fafb;
 }
 
 tr:hover {
-    background-color: #f2f2f2;
+    background-color: #e5e7eb;
+    transition: background-color 0.3s ease;
 }
 
-.even {
-    background-color: #f9f9f9;
-}
-.mb-3{ 
-    position: fixed; 
-    top: 30px; 
-    right: 20px; 
-    z-index: 1000; 
+td a {
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 12px;
+    color: #ffffff;
+    transition: all 0.3s ease;
 }
 
+
+.btn-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ffffff;
+    background: var(--primary-btn-bg);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px var(--primary-btn-shadow);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--hover-bg);
+    box-shadow: 0 6px 14px var(--hover-shadow);
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    th,
+    td {
+        padding: 12px 8px;
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 10px 16px;
+        font-size: 0.8rem;
+    }
+}

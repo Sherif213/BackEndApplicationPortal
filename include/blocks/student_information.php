@@ -28,8 +28,9 @@
             <!-- Place of Birth -->
             <div class="right-section3">
                 <label for="place_of_birth">Place of Birth</label>
-                <input type="text" aria-label="Place of birth" class="form-control" id="place_of_birth"
-                    name="place_of_birth" required>
+                <select name="place_of_birth" class="form-control"  id="place_of_birth" aria-label="Place of birth" required>
+                    <?php include "include/others/countries.php" ?>
+                </select>
             </div>
 
         </div>

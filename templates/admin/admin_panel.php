@@ -47,8 +47,9 @@ writeToLog('Fetched students: ' . json_encode($students));
 <body>
     <div>
         <h1>Admin Panel - Student Data</h1>
-        <div class="btn-group mb-3">
-            <a href="export.php?format=csv" class="btn btn-primary">Export as CSV</a>
+        <div class="btn-group">
+            <a href="export.php?format=csv" class="btn">Download CSV</a>
+            <a href="export.php?format=pdf" class="btn">Download PDF</a>
         </div>
         <div>
             <table class="table table-striped">
@@ -57,7 +58,7 @@ writeToLog('Fetched students: ' . json_encode($students));
                         <th>ID</th>
                         <th>Program</th>
                         <th>Submission ID</th>
-                        <th>First Name</th>
+                        <th>Full Name</th>
                         <th>Date of Birth</th>
                         <th>Gender</th>
                         <th>T-Shirt Size</th>
@@ -154,41 +155,53 @@ writeToLog('Fetched students: ' . json_encode($students));
                             <td><?php echo $student->outreach; ?></td>
 
                             <!-- Attachment Information -->
-                            <td>
-                                <a href="<?php echo $student->attachments->where('attachment_type', 'Certificate')->first()->file_path ?? 'Not Provided'; ?>">
-                                    <?php $file_path = $student->attachments->where('attachment_type', 'Certificate')->first()->file_path ?? ''; 
-                                    echo basename($file_path);?>
-                                </a>
+                            <td class="button_cell">
+                                <button class="file-button">
+                                    <a href="<?php echo $student->attachments->where('attachment_type', 'Certificate')->first()->file_path ?? 'Not Provided'; ?>">
+                                        <?php $file_path = $student->attachments->where('attachment_type', 'Certificate')->first()->file_path ?? 'Not Provided'; 
+                                        echo basename($file_path);?>
+                                    </a>
+                                </button>
                             </td>
-                            <td>
-                                <a href="<?php echo $student->attachments->where('attachment_type', 'Photo')->first()->file_path ?? 'Not Provided'; ?>">
-                                    <?php $file_path = $student->attachments->where('attachment_type', 'Photo')->first()->file_path ?? ''; 
-                                    echo basename($file_path);?>
-                                </a>
+                            <td class="button_cell">
+                                <button class="file-button">
+                                    <a href="<?php echo $student->attachments->where('attachment_type', 'Photo')->first()->file_path ?? 'Not Provided'; ?>">
+                                        <?php $file_path = $student->attachments->where('attachment_type', 'Photo')->first()->file_path ?? 'Not Provided'; 
+                                        echo basename($file_path);?>
+                                    </a>
+                                </button>
                             </td>
-                            <td>
-                                <a href="<?php echo $student->attachments->where('attachment_type', 'Passport')->first()->file_path ?? 'Not Provided'; ?>">
-                                    <?php $file_path = $student->attachments->where('attachment_type', 'Passport')->first()->file_path ?? ''; 
-                                    echo basename($file_path);?>
-                                </a>
+                            <td class="button_cell">
+                                <button class="file-button">
+                                    <a href="<?php echo $student->attachments->where('attachment_type', 'Passport')->first()->file_path ?? 'Not Provided'; ?>">
+                                        <?php $file_path = $student->attachments->where('attachment_type', 'Passport')->first()->file_path ?? 'Not Provided'; 
+                                        echo basename($file_path);?>
+                                    </a>
+                                </button>
                             </td>
-                            <td>
-                                <a href="<?php echo $student->attachments->where('attachment_type', 'ConsentForm')->first()->file_path ?? 'Not Provided'; ?>">
-                                    <?php $file_path = $student->attachments->where('attachment_type', 'ConsentForm')->first()->file_path ?? ''; 
-                                    echo basename($file_path);?>
-                                </a>
+                            <td class="button_cell">
+                                <button class="file-button">
+                                    <a href="<?php echo $student->attachments->where('attachment_type', 'ConsentForm')->first()->file_path ?? 'Not Provided'; ?>">
+                                        <?php $file_path = $student->attachments->where('attachment_type', 'ConsentForm')->first()->file_path ?? 'Not Provided'; 
+                                        echo basename($file_path);?>
+                                    </a>
+                                </button>
                             </td>
-                            <td>
-                                <a href="<?php echo $student->attachments->where('attachment_type', 'Motivation_Letter')->first()->file_path ?? 'Not Provided'; ?>">
-                                    <?php $file_path = $student->attachments->where('attachment_type', 'Motivation_Letter')->first()->file_path ?? '';
-                                     echo basename($file_path);?>
-                                </a>
+                            <td class="button_cell">
+                                <button class="file-button">
+                                    <a href="<?php echo $student->attachments->where('attachment_type', 'Motivation_Letter')->first()->file_path ?? 'Not Provided'; ?>">
+                                        <?php $file_path = $student->attachments->where('attachment_type', 'Motivation_Letter')->first()->file_path ?? 'Not Provided';
+                                        echo basename($file_path);?>
+                                    </a>
+                                </button>
                             </td>
-                            <td>
-                                <a href="<?php echo $student->attachments->where('attachment_type', 'Recommendation_Letter')->first()->file_path ?? 'Not Provided'; ?>">
-                                    <?php $file_path = $student->attachments->where('attachment_type', 'Recommendation_Letter')->first()->file_path ?? '';
-                                    echo basename($file_path); ?>
-                                </a>
+                            <td class="button_cell">
+                                <button class="file-button">
+                                    <a href="<?php echo $student->attachments->where('attachment_type', 'Recommendation_Letter')->first()->file_path ?? 'Not Provided'; ?>">
+                                        <?php $file_path = $student->attachments->where('attachment_type', 'Recommendation_Letter')->first()->file_path ?? 'Not Provided';
+                                        echo basename($file_path); ?>
+                                    </a>
+                                </button>
                             </td>
                             
                         </tr>
