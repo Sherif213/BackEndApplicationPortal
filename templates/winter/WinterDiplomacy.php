@@ -1,7 +1,16 @@
+<?php
+include __DIR__ . '/../../functions/student.php';
+
+// Fetch countries from the database
+$countries = getCountries();
+$dials = getDial();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <?php include "include/blocks/Header.php" ?>
+
 
 <body>
     <div class="wrapper">

@@ -28,8 +28,13 @@
             <!-- Place of Birth -->
             <div class="right-section3">
                 <label for="place_of_birth">Place of Birth</label>
-                <select name="place_of_birth" class="form-control"  id="place_of_birth" aria-label="Place of birth" required>
-                    <?php include "include/others/countries.php" ?>
+                <select name="place_of_birth" class="form-control"  id="place_of_birth" aria-label="Place of birth" required>  
+                <option value="-1">__SELECT__</option>     
+                <?php foreach ($countries as $country): ?>
+                    <option value="<?= htmlspecialchars($country['M49']) ?>">
+                    <?= htmlspecialchars($country['official_name_en'], ENT_QUOTES, 'UTF-8') ?>
+                    </option>
+                <?php endforeach; ?>
                 </select>
             </div>
 

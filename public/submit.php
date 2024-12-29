@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             'tshirt_size' => $_POST['tshirt_size'],
             'gender' => $gender,
             'nationality' => getCountryName($_POST['Nationality']),
-            'place_of_birth' => $_POST['place_of_birth'],
+            'place_of_birth' => getCountryName($_POST['place_of_birth']),
             'home_address' => filter_var($_POST['home_address'], FILTER_SANITIZE_STRING),
             'email' => filter_var($_POST['email'], FILTER_SANITIZE_EMAIL),
             'telephone' => filter_var($_POST['telephone'], FILTER_SANITIZE_STRING),
