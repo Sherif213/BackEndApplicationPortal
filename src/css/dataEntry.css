@@ -18,6 +18,64 @@ body, html {
     align-items: flex-start;
 }
 
+.phone-input-container {
+    margin-top: 20px;
+}
+
+.phone-input-container label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000; /* Adjust text color for labels */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.phone-input-wrapper {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden; 
+    
+    transition: border-color 0.3s ease-in-out;
+}
+
+.phone-input-wrapper:focus-within {
+    
+    background-color: #fff;
+}
+
+.country-code-select {
+    width: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-right: 1px solid #ccc; /* Divider between dropdown and phone number */
+    background-color: transparent;
+    appearance: none; /* Removes default browser styling */
+    text-align: center; /* Centers text in dropdown */
+}
+
+.phone-number-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.phone-number-input::placeholder {
+    color: #aaa;
+}
+
+.phone-input-wrapper select:focus,
+.phone-input-wrapper input:focus {
+    outline: none;
+    background-color: #fff;
+}
+
+
   /* Container Styles */
 .container {
     width: 55%;
@@ -372,15 +430,19 @@ body, html {
     color: #333;
 }
 
-.left-section3 input[type="email"],
-.right-section3 input[type="tel"] {
+.left-section3 input[type="email"]{
     width: 100%;
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
+.right-section3 input[type="tel"]{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
 .right-section3 {
     margin-left: 10px;
 }
@@ -453,12 +515,18 @@ body, html {
 }
 
 .top-section4 input[type="text"],
-.bottom-section4 input[type="email"],
-.bottom-section4 input[type="tel"] {
+.bottom-section4 input[type="email"]
+ {
     width: 100%;
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.bottom-section4 input[type="tel"]{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
     box-sizing: border-box;
 }
 

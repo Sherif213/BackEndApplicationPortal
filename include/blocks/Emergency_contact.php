@@ -15,8 +15,18 @@
                 <input type="email" id="email2" name="fathers_email" class="form-control" required>
             </div>
             <div class="right-section4">
-                <label for="telephone2">Telephone</label>
-                <input type="tel" id="telephone2" name="fathers_telephone" class="form-control" required>
+            <label for="phone-number">Telephone</label>
+                <div class="phone-input-wrapper">
+                    <select id="country-code" name="country_code" class="country-code-select">
+                        <option value="+1" data-country="us">+1 (USA)</option>
+                        <option value="+44" data-country="gb">+44 (UK)</option>
+                        <option value="+90" data-country="tr">+90 (Turkey)</option>
+                        <option value="+91" data-country="in">+91 (India)</option>
+                        <option value="+61" data-country="au">+61 (Australia)</option>
+                        <!-- Add more options -->
+                    </select>
+                    <input type="tel" id="phone-number" name="telephone2" class="phone-number-input" placeholder="Enter your phone number" required>
+                </div>
             </div>
         </div>
         <div class="separator"></div>
@@ -32,8 +42,18 @@
                 <input type="email" id="email3" name="mothers_email" class="form-control" required>
             </div>
             <div class="right-section4">
-                <label for="telephone3">Telephone</label>
-                <input type="tel" id="telephone3" name="mothers_telephone" class="form-control" required>
+            <label for="phone-number">Telephone</label>
+                <div class="phone-input-wrapper">
+                    <select id="country-code" name="country_code" class="country-code-select">
+                        <option value="+1" data-country="us">+1 (USA)</option>
+                        <option value="+44" data-country="gb">+44 (UK)</option>
+                        <option value="+90" data-country="tr">+90 (Turkey)</option>
+                        <option value="+91" data-country="in">+91 (India)</option>
+                        <option value="+61" data-country="au">+61 (Australia)</option>
+                        <!-- Add more options -->
+                    </select>
+                    <input type="tel" id="phone-number" name="telephone3" class="phone-number-input" placeholder="Enter your phone number" required>
+                </div>
             </div>
         </div>
     </div>

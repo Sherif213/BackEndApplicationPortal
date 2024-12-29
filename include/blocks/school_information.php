@@ -24,8 +24,18 @@
                 <input type="email" id="email4" name="institution_email" required>
             </div>
             <div class="right-section3">
-                <label for="telephone4">Institution Telephone</label>
-                <input type="tel" class="form-control" id="telephone4" name="institution_telephone" required>
+            <label for="phone-number">Institution Telephone</label>
+                <div class="phone-input-wrapper">
+                    <select id="country-code" name="country_code" class="country-code-select">
+                        <option value="+1" data-country="us">+1 (USA)</option>
+                        <option value="+44" data-country="gb">+44 (UK)</option>
+                        <option value="+90" data-country="tr">+90 (Turkey)</option>
+                        <option value="+91" data-country="in">+91 (India)</option>
+                        <option value="+61" data-country="au">+61 (Australia)</option>
+                        <!-- Add more options -->
+                    </select>
+                    <input type="tel" id="phone-number" name="telephone4" class="phone-number-input" placeholder="Enter your phone number" required>
+                </div>
             </div>
         </div>
     </div>
