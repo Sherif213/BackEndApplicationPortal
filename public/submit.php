@@ -51,6 +51,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ];
 
         // Validate and sanitize input
+        $personalCountryCode = getDialCode($_POST['telephone_country_code']);
+        $personalTelephone = $_POST['telephone'];
+        
+        $personal_telephone = formatTelephone($personalCountryCode, $personalTelephone);
+
+
         $studentData = [
             'submission_id' => uniqid(),
             'first_name' => filter_var($_POST['first_name'], FILTER_SANITIZE_STRING),
@@ -61,21 +67,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             'place_of_birth' => getCountryName($_POST['place_of_birth']),
             'home_address' => filter_var($_POST['home_address'], FILTER_SANITIZE_STRING),
             'email' => filter_var($_POST['email'], FILTER_SANITIZE_EMAIL),
-            'telephone' => sprintf('+(%s) %s', getDialCode($_POST['telephone_country_code']), filter_var($_POST['telephone'], FILTER_SANITIZE_STRING)),
+            'telephone' => $personal_telephone,
             'outreach' => filter_var($_POST['outreach'], FILTER_SANITIZE_STRING),
             'iban' => filter_var($_POST['iban'], FILTER_SANITIZE_STRING),
         ];
+
+        $fathersCountryCode = getDialCode($_POST['fathers_telephone_country_code']);
+        $mothersCountryCode = getDialCode($_POST['mothers_telephone_country_code']);
+
+        $fathersTelephone = $_POST['fathers_telephone'];
+        $mothersTelephone = $_POST['mothers_telephone'];
+        
+        $fathers_telephone = formatTelephone($fathersCountryCode, $fathersTelephone);
+        $mothers_telephone = formatTelephone($mothersCountryCode, $mothersTelephone);
 
         $parentalData = [
             'father' => [
                 'full_name' => filter_var($_POST['fathers_full_name'], FILTER_SANITIZE_STRING),
                 'email' => filter_var($_POST['fathers_email'], FILTER_SANITIZE_EMAIL),
-                'telephone' => sprintf('+(%s) %s', getDialCode($_POST['fathers_telephone_country_code']), filter_var($_POST['fathers_telephone'], FILTER_SANITIZE_STRING)),
+                'telephone' => $fathers_telephone,
             ],
             'mother' => [
                 'full_name' => filter_var($_POST['mothers_full_name'], FILTER_SANITIZE_STRING),
                 'email' => filter_var($_POST['mothers_email'], FILTER_SANITIZE_EMAIL),
-                'telephone' =>  sprintf('+(%s) %s', getDialCode($_POST['mothers_telephone_country_code']), filter_var($_POST['mothers_telephone'], FILTER_SANITIZE_STRING)),
+                'telephone' =>  $mothers_telephone,
             ],
         ];
         $legal_information = [
@@ -85,13 +100,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             'expiry_date' => filter_var($_POST['expiry_date'], FILTER_SANITIZE_EMAIL),
         ];
 
+        $institutionCountryCode = getDialCode($_POST['institution_country_code']);
+        $institutionTelephone = $_POST['institution_telephone'];
+        
+        $institution_telephone = formatTelephone($institutionCountryCode, $institutionTelephone);
+
         $institutionData = [
             'institution_name' => filter_var($_POST['institution_name'], FILTER_SANITIZE_STRING),
             'department' => filter_var($_POST['department'], FILTER_SANITIZE_STRING),
             'course' => isset($_POST['course']) ? filter_var($_POST['course'], FILTER_SANITIZE_STRING) : null, // Handle optional course
             'address' => filter_var($_POST['institution_address'], FILTER_SANITIZE_STRING),
             'email' => filter_var($_POST['institution_email'], FILTER_SANITIZE_EMAIL),
-            'telephone' =>  sprintf('+(%s) %s',getDialCode($_POST['institution_country_code']) , filter_var($_POST['institution_telephone'], FILTER_SANITIZE_STRING)),
+            'telephone' =>  $institution_telephone,
         ];
 
         $attachmentData = [

@@ -70,3 +70,25 @@ function getDial(){
         die("An error occurred 2. Please try again later.");
     }
 }
+
+function formatTelephone($countryCode, $telephone) {
+    // Sanitize the inputs (remove all non-numeric characters)
+    $sanitizedTelephone = preg_replace('/\D/', '', $telephone); // Keep only digits
+
+    // Validate the length (5 to 15 digits for international numbers)
+    if (!preg_match('/^\d{5,15}$/', $sanitizedTelephone)) {
+        return 'Invalid telephone number provided , Request it from owner';
+    }
+
+    // Custom formatting for readability
+    $formattedNumber = preg_replace_callback(
+        '/^(\d{3})(\d{3})(\d{2})(\d{2})$/',
+        function ($matches) {
+            return $matches[1] . ' ' . $matches[2] . ' ' . $matches[3] . $matches[4];
+        },
+        $sanitizedTelephone
+    );
+
+    // Combine country code with the formatted number
+    return sprintf('+(%s) %s', $countryCode, $formattedNumber);
+}

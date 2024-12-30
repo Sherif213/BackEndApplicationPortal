@@ -557,3 +557,1300 @@
 
 2024-12-30 13:03:18 - Notification email sent successfully.
 2024-12-30 13:03:18 - Form submission completed successfully.
+2024-12-30 20:13:45 - Request URI: /submitApplication
+2024-12-30 20:13:45 - Request method: POST
+2024-12-30 20:13:45 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"4","institution_telephone":"6019521325","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:13:45 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php252F.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php253F.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php2540.tmp","error":0,"size":158327}}
+2024-12-30 20:13:45 - Processing form submission...
+2024-12-30 20:13:45 - Retrieving country name for nationality value: 4
+2024-12-30 20:13:45 - Retrieving country name for nationality value: 4
+2024-12-30 20:13:45 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:13:45 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:13:45 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:13:45 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:13:45 - Retrieving country Dial Code for nationality value: 93
+2024-12-30 20:13:45 - Creating new student with data: {"submission_id":"6772f0e98075d","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:13:45 - ERROR creating new student: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test12313@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (6772f0e98075d, Jon Stewart Doe, 2024-12-05, small, M, Afghanistan, Afghanistan, 1600 Fake Street
+Apartment 1, test12313@example.us, +(93) 6019521325, Social Media, ibanTR, 2024-12-30 20:13:45, 2024-12-30 20:13:45))
+2024-12-30 20:13:45 - ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test12313@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (6772f0e98075d, Jon Stewart Doe, 2024-12-05, small, M, Afghanistan, Afghanistan, 1600 Fake Street
+Apartment 1, test12313@example.us, +(93) 6019521325, Social Media, ibanTR, 2024-12-30 20:13:45, 2024-12-30 20:13:45))
+2024-12-30 20:14:00 - Request URI: /submitApplication
+2024-12-30 20:14:00 - Request method: POST
+2024-12-30 20:14:00 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asd@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"4","institution_telephone":"6019521325","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:14:00 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php616F.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php6170.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php6171.tmp","error":0,"size":158327}}
+2024-12-30 20:14:00 - Processing form submission...
+2024-12-30 20:14:00 - Retrieving country name for nationality value: 4
+2024-12-30 20:14:00 - Retrieving country name for nationality value: 4
+2024-12-30 20:14:00 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:14:00 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:14:00 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:14:00 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:14:00 - Retrieving country Dial Code for nationality value: 93
+2024-12-30 20:14:00 - Creating new student with data: {"submission_id":"6772f0f8dc2ad","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:14:00 - New student created successfully with ID: 37
+2024-12-30 20:14:00 - Student created with ID: 37
+2024-12-30 20:14:00 - Student associated with program ID: 1
+2024-12-30 20:14:00 - Parental info added for: father
+2024-12-30 20:14:00 - Parental info added for: mother
+2024-12-30 20:14:00 - Institution details added for student ID: 37
+2024-12-30 20:14:00 - legal information details added for student ID: 37
+2024-12-30 20:14:01 - Attachment uploaded successfully for type: Certificate
+2024-12-30 20:14:01 - Attachment uploaded successfully for type: Photo
+2024-12-30 20:14:01 - Attachment uploaded successfully for type: Passport
+2024-12-30 20:14:01 - Preparing to send notification email...
+2024-12-30 20:14:01 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php616F.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php6170.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php6171.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 20:14:01 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772f0f8dc2ad/test.pdf
+2024-12-30 20:14:01 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772f0f8dc2ad/test.pdf
+2024-12-30 20:14:01 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772f0f8dc2ad/test.pdf
+2024-12-30 20:14:01 - Empty file path for attachment type: recommendation_letter
+2024-12-30 20:14:01 - Empty file path for attachment type: motivation_letter
+2024-12-30 20:14:01 - Empty file path for attachment type: consent_form
+2024-12-30 20:14:01 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772f0f8dc2ad/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772f0f8dc2ad/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772f0f8dc2ad/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 20:14:04 - Notification email sent successfully.
+2024-12-30 20:14:04 - Form submission completed successfully.
+2024-12-30 20:15:26 - Request URI: /submitApplication
+2024-12-30 20:15:26 - Request method: POST
+2024-12-30 20:15:26 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asd@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"4","institution_telephone":"6019521325","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:15:26 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpB143.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpB144.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpB145.tmp","error":0,"size":158327}}
+2024-12-30 20:15:26 - Processing form submission...
+2024-12-30 20:15:26 - Retrieving country name for nationality value: 4
+2024-12-30 20:15:26 - Retrieving country name for nationality value: 4
+2024-12-30 20:15:26 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:15:26 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:15:26 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:15:26 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:15:26 - Creating new student with data: {"submission_id":"6772f14ed7443","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:15:26 - ERROR creating new student: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test12313asd@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (6772f14ed7443, Jon Stewart Doe, 2024-12-05, small, M, Afghanistan, Afghanistan, 1600 Fake Street
+Apartment 1, test12313asd@example.us, +(93) 6019521325, Social Media, ibanTR, 2024-12-30 20:15:26, 2024-12-30 20:15:26))
+2024-12-30 20:15:26 - ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test12313asd@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (6772f14ed7443, Jon Stewart Doe, 2024-12-05, small, M, Afghanistan, Afghanistan, 1600 Fake Street
+Apartment 1, test12313asd@example.us, +(93) 6019521325, Social Media, ibanTR, 2024-12-30 20:15:26, 2024-12-30 20:15:26))
+2024-12-30 20:15:38 - Request URI: /submitApplication
+2024-12-30 20:15:38 - Request method: POST
+2024-12-30 20:15:38 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasd@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"4","institution_telephone":"6019521325","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:15:38 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpDF2C.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpDF2D.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpDF2E.tmp","error":0,"size":158327}}
+2024-12-30 20:15:38 - Processing form submission...
+2024-12-30 20:15:38 - Retrieving country name for nationality value: 4
+2024-12-30 20:15:38 - Retrieving country name for nationality value: 4
+2024-12-30 20:15:38 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:15:38 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:15:38 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:15:38 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:15:38 - Creating new student with data: {"submission_id":"6772f15a98f1f","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:15:38 - New student created successfully with ID: 39
+2024-12-30 20:15:38 - Student created with ID: 39
+2024-12-30 20:15:38 - Student associated with program ID: 1
+2024-12-30 20:15:38 - Parental info added for: father
+2024-12-30 20:15:38 - Parental info added for: mother
+2024-12-30 20:15:38 - Institution details added for student ID: 39
+2024-12-30 20:15:38 - legal information details added for student ID: 39
+2024-12-30 20:15:38 - Attachment uploaded successfully for type: Certificate
+2024-12-30 20:15:38 - Attachment uploaded successfully for type: Photo
+2024-12-30 20:15:38 - Attachment uploaded successfully for type: Passport
+2024-12-30 20:15:38 - Preparing to send notification email...
+2024-12-30 20:15:38 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpDF2C.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpDF2D.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpDF2E.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 20:15:38 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772f15a98f1f/test.pdf
+2024-12-30 20:15:38 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772f15a98f1f/test.pdf
+2024-12-30 20:15:38 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772f15a98f1f/test.pdf
+2024-12-30 20:15:38 - Empty file path for attachment type: recommendation_letter
+2024-12-30 20:15:38 - Empty file path for attachment type: motivation_letter
+2024-12-30 20:15:38 - Empty file path for attachment type: consent_form
+2024-12-30 20:15:38 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772f15a98f1f/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772f15a98f1f/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772f15a98f1f/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 20:15:41 - Notification email sent successfully.
+2024-12-30 20:15:41 - Form submission completed successfully.
+2024-12-30 20:17:17 - Request URI: /submitApplication
+2024-12-30 20:17:17 - Request method: POST
+2024-12-30 20:17:17 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasd@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"05330252231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:17:17 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php62F1.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php62F2.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php62F3.tmp","error":0,"size":158327}}
+2024-12-30 20:17:17 - Processing form submission...
+2024-12-30 20:17:17 - Retrieving country name for nationality value: 4
+2024-12-30 20:17:17 - Retrieving country name for nationality value: 4
+2024-12-30 20:17:17 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:17:17 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:17:17 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:17:17 - Creating new student with data: {"submission_id":"6772f1bddb8be","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:17:17 - ERROR creating new student: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test12313asdasd@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (6772f1bddb8be, Jon Stewart Doe, 2024-12-05, small, M, Afghanistan, Afghanistan, 1600 Fake Street
+Apartment 1, test12313asdasd@example.us, +(93) 6019521325, Social Media, ibanTR, 2024-12-30 20:17:17, 2024-12-30 20:17:17))
+2024-12-30 20:17:17 - ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test12313asdasd@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (6772f1bddb8be, Jon Stewart Doe, 2024-12-05, small, M, Afghanistan, Afghanistan, 1600 Fake Street
+Apartment 1, test12313asdasd@example.us, +(93) 6019521325, Social Media, ibanTR, 2024-12-30 20:17:17, 2024-12-30 20:17:17))
+2024-12-30 20:17:28 - Request URI: /submitApplication
+2024-12-30 20:17:28 - Request method: POST
+2024-12-30 20:17:28 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasd@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"05330252231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:17:28 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php8CE2.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php8CE3.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php8CE4.tmp","error":0,"size":158327}}
+2024-12-30 20:17:28 - Processing form submission...
+2024-12-30 20:17:28 - Retrieving country name for nationality value: 4
+2024-12-30 20:17:28 - Retrieving country name for nationality value: 4
+2024-12-30 20:17:28 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:17:28 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:17:28 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:17:28 - Creating new student with data: {"submission_id":"6772f1c899bd9","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:17:28 - New student created successfully with ID: 41
+2024-12-30 20:17:28 - Student created with ID: 41
+2024-12-30 20:17:28 - Student associated with program ID: 1
+2024-12-30 20:17:28 - Parental info added for: father
+2024-12-30 20:17:28 - Parental info added for: mother
+2024-12-30 20:17:28 - Institution details added for student ID: 41
+2024-12-30 20:17:28 - legal information details added for student ID: 41
+2024-12-30 20:17:28 - Attachment uploaded successfully for type: Certificate
+2024-12-30 20:17:28 - Attachment uploaded successfully for type: Photo
+2024-12-30 20:17:28 - Attachment uploaded successfully for type: Passport
+2024-12-30 20:17:28 - Preparing to send notification email...
+2024-12-30 20:17:28 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php8CE2.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php8CE3.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php8CE4.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 20:17:28 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772f1c899bd9/test.pdf
+2024-12-30 20:17:28 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772f1c899bd9/test.pdf
+2024-12-30 20:17:28 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772f1c899bd9/test.pdf
+2024-12-30 20:17:28 - Empty file path for attachment type: recommendation_letter
+2024-12-30 20:17:28 - Empty file path for attachment type: motivation_letter
+2024-12-30 20:17:28 - Empty file path for attachment type: consent_form
+2024-12-30 20:17:28 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772f1c899bd9/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772f1c899bd9/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772f1c899bd9/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 20:17:31 - Notification email sent successfully.
+2024-12-30 20:17:31 - Form submission completed successfully.
+2024-12-30 20:20:47 - Request URI: /submitApplication
+2024-12-30 20:20:47 - Request method: POST
+2024-12-30 20:20:47 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsad@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"05330252231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:20:47 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php941A.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php941B.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php941C.tmp","error":0,"size":158327}}
+2024-12-30 20:20:47 - Processing form submission...
+2024-12-30 20:20:47 - Retrieving country name for nationality value: 4
+2024-12-30 20:20:47 - Retrieving country name for nationality value: 4
+2024-12-30 20:20:47 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:20:47 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:20:47 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:20:47 - Retrieving country Dial Code for nationality value: 792
+2024-12-30 20:20:47 - Creating new student with data: {"submission_id":"6772f28f1636e","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsad@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:20:47 - New student created successfully with ID: 42
+2024-12-30 20:20:47 - Student created with ID: 42
+2024-12-30 20:20:47 - Student associated with program ID: 1
+2024-12-30 20:20:47 - Parental info added for: father
+2024-12-30 20:20:47 - Parental info added for: mother
+2024-12-30 20:20:47 - Institution details added for student ID: 42
+2024-12-30 20:20:47 - legal information details added for student ID: 42
+2024-12-30 20:20:47 - Attachment uploaded successfully for type: Certificate
+2024-12-30 20:20:47 - Attachment uploaded successfully for type: Photo
+2024-12-30 20:20:47 - Attachment uploaded successfully for type: Passport
+2024-12-30 20:20:47 - Preparing to send notification email...
+2024-12-30 20:20:47 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php941A.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php941B.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php941C.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 20:20:47 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772f28f1636e/test.pdf
+2024-12-30 20:20:47 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772f28f1636e/test.pdf
+2024-12-30 20:20:47 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772f28f1636e/test.pdf
+2024-12-30 20:20:47 - Empty file path for attachment type: recommendation_letter
+2024-12-30 20:20:47 - Empty file path for attachment type: motivation_letter
+2024-12-30 20:20:47 - Empty file path for attachment type: consent_form
+2024-12-30 20:20:47 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772f28f1636e/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772f28f1636e/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772f28f1636e/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 20:20:51 - Notification email sent successfully.
+2024-12-30 20:20:51 - Form submission completed successfully.
+2024-12-30 20:37:34 - Request URI: /submitApplication
+2024-12-30 20:37:34 - Request method: POST
+2024-12-30 20:37:34 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasd@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"05330252231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:37:34 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpF35B.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpF35C.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpF35D.tmp","error":0,"size":158327}}
+2024-12-30 20:37:34 - Processing form submission...
+2024-12-30 20:37:34 - Retrieving country name for nationality value: 4
+2024-12-30 20:37:34 - Retrieving country name for nationality value: 4
+2024-12-30 20:37:34 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:37:34 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:37:34 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:37:34 - Retrieving country Dial Code for nationality value: 792
+2024-12-30 20:37:54 - Request URI: /submitApplication
+2024-12-30 20:37:54 - Request method: POST
+2024-12-30 20:37:54 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasd@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"05330252231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:37:54 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php4094.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php4095.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php4096.tmp","error":0,"size":158327}}
+2024-12-30 20:37:54 - Processing form submission...
+2024-12-30 20:37:54 - Retrieving country name for nationality value: 4
+2024-12-30 20:37:54 - Retrieving country name for nationality value: 4
+2024-12-30 20:37:54 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:37:54 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:37:54 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:37:54 - Retrieving country Dial Code for nationality value: 792
+2024-12-30 20:37:54 - Creating new student with data: {"submission_id":"6772f69240a20","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:37:54 - New student created successfully with ID: 43
+2024-12-30 20:37:54 - Student created with ID: 43
+2024-12-30 20:37:54 - Student associated with program ID: 1
+2024-12-30 20:37:54 - Parental info added for: father
+2024-12-30 20:37:54 - Parental info added for: mother
+2024-12-30 20:37:54 - Institution details added for student ID: 43
+2024-12-30 20:37:54 - legal information details added for student ID: 43
+2024-12-30 20:37:54 - Attachment uploaded successfully for type: Certificate
+2024-12-30 20:37:54 - Attachment uploaded successfully for type: Photo
+2024-12-30 20:37:54 - Attachment uploaded successfully for type: Passport
+2024-12-30 20:37:54 - Preparing to send notification email...
+2024-12-30 20:37:54 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php4094.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php4095.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php4096.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 20:37:54 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772f69240a20/test.pdf
+2024-12-30 20:37:54 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772f69240a20/test.pdf
+2024-12-30 20:37:54 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772f69240a20/test.pdf
+2024-12-30 20:37:54 - Empty file path for attachment type: recommendation_letter
+2024-12-30 20:37:54 - Empty file path for attachment type: motivation_letter
+2024-12-30 20:37:54 - Empty file path for attachment type: consent_form
+2024-12-30 20:37:54 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772f69240a20/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772f69240a20/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772f69240a20/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 20:37:57 - Notification email sent successfully.
+2024-12-30 20:37:57 - Form submission completed successfully.
+2024-12-30 20:38:34 - Request URI: /submitApplication
+2024-12-30 20:38:34 - Request method: POST
+2024-12-30 20:38:34 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasd@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"05330252231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:38:34 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpDBEC.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpDBFD.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpDBFE.tmp","error":0,"size":158327}}
+2024-12-30 20:38:34 - Processing form submission...
+2024-12-30 20:38:34 - Retrieving country name for nationality value: 4
+2024-12-30 20:38:34 - Retrieving country name for nationality value: 4
+2024-12-30 20:38:34 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:38:34 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:38:34 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:38:34 - Retrieving country Dial Code for nationality value: 792
+2024-12-30 20:38:34 - Creating new student with data: {"submission_id":"6772f6ba0aba9","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:38:34 - New student created successfully with ID: 44
+2024-12-30 20:38:34 - Student created with ID: 44
+2024-12-30 20:38:34 - Student associated with program ID: 1
+2024-12-30 20:38:34 - Parental info added for: father
+2024-12-30 20:38:34 - Parental info added for: mother
+2024-12-30 20:38:34 - Institution details added for student ID: 44
+2024-12-30 20:38:34 - legal information details added for student ID: 44
+2024-12-30 20:38:34 - Attachment uploaded successfully for type: Certificate
+2024-12-30 20:38:34 - Attachment uploaded successfully for type: Photo
+2024-12-30 20:38:34 - Attachment uploaded successfully for type: Passport
+2024-12-30 20:38:34 - Preparing to send notification email...
+2024-12-30 20:38:34 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpDBEC.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpDBFD.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpDBFE.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 20:38:34 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772f6ba0aba9/test.pdf
+2024-12-30 20:38:34 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772f6ba0aba9/test.pdf
+2024-12-30 20:38:34 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772f6ba0aba9/test.pdf
+2024-12-30 20:38:34 - Empty file path for attachment type: recommendation_letter
+2024-12-30 20:38:34 - Empty file path for attachment type: motivation_letter
+2024-12-30 20:38:34 - Empty file path for attachment type: consent_form
+2024-12-30 20:38:34 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772f6ba0aba9/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772f6ba0aba9/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772f6ba0aba9/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 20:38:37 - Notification email sent successfully.
+2024-12-30 20:38:37 - Form submission completed successfully.
+2024-12-30 20:39:55 - Request URI: /submitApplication
+2024-12-30 20:39:55 - Request method: POST
+2024-12-30 20:39:55 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasd@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"5330252231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:39:55 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php18D4.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php18D5.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php18D6.tmp","error":0,"size":158327}}
+2024-12-30 20:39:55 - Processing form submission...
+2024-12-30 20:39:55 - Retrieving country name for nationality value: 4
+2024-12-30 20:39:55 - Retrieving country name for nationality value: 4
+2024-12-30 20:39:55 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:39:55 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:39:55 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:39:55 - Retrieving country Dial Code for nationality value: 792
+2024-12-30 20:39:55 - Creating new student with data: {"submission_id":"6772f70b292c1","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:39:55 - New student created successfully with ID: 45
+2024-12-30 20:39:55 - Student created with ID: 45
+2024-12-30 20:39:55 - Student associated with program ID: 1
+2024-12-30 20:39:55 - Parental info added for: father
+2024-12-30 20:39:55 - Parental info added for: mother
+2024-12-30 20:39:55 - Institution details added for student ID: 45
+2024-12-30 20:39:55 - legal information details added for student ID: 45
+2024-12-30 20:39:55 - Attachment uploaded successfully for type: Certificate
+2024-12-30 20:39:55 - Attachment uploaded successfully for type: Photo
+2024-12-30 20:39:55 - Attachment uploaded successfully for type: Passport
+2024-12-30 20:39:55 - Preparing to send notification email...
+2024-12-30 20:39:55 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php18D4.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php18D5.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php18D6.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 20:39:55 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772f70b292c1/test.pdf
+2024-12-30 20:39:55 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772f70b292c1/test.pdf
+2024-12-30 20:39:55 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772f70b292c1/test.pdf
+2024-12-30 20:39:55 - Empty file path for attachment type: recommendation_letter
+2024-12-30 20:39:55 - Empty file path for attachment type: motivation_letter
+2024-12-30 20:39:55 - Empty file path for attachment type: consent_form
+2024-12-30 20:39:55 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772f70b292c1/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772f70b292c1/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772f70b292c1/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 20:39:58 - Notification email sent successfully.
+2024-12-30 20:39:58 - Form submission completed successfully.
+2024-12-30 20:49:55 - Request URI: /submitApplication
+2024-12-30 20:49:55 - Request method: POST
+2024-12-30 20:49:55 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasd@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"5330252231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:49:55 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php4069.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php4079.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php407A.tmp","error":0,"size":158327}}
+2024-12-30 20:49:55 - Processing form submission...
+2024-12-30 20:49:55 - Retrieving country name for nationality value: 4
+2024-12-30 20:49:55 - Retrieving country name for nationality value: 4
+2024-12-30 20:49:55 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:49:55 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:49:55 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:49:55 - Retrieving country Dial Code for nationality value: 792
+2024-12-30 20:49:55 - Creating new student with data: {"submission_id":"6772f9631e438","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:49:55 - New student created successfully with ID: 46
+2024-12-30 20:49:55 - Student created with ID: 46
+2024-12-30 20:49:55 - Student associated with program ID: 1
+2024-12-30 20:49:55 - Parental info added for: father
+2024-12-30 20:49:55 - Parental info added for: mother
+2024-12-30 20:49:55 - Institution details added for student ID: 46
+2024-12-30 20:49:55 - legal information details added for student ID: 46
+2024-12-30 20:49:55 - Attachment uploaded successfully for type: Certificate
+2024-12-30 20:49:55 - Attachment uploaded successfully for type: Photo
+2024-12-30 20:49:55 - Attachment uploaded successfully for type: Passport
+2024-12-30 20:49:55 - Preparing to send notification email...
+2024-12-30 20:49:55 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php4069.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php4079.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php407A.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 20:49:55 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772f9631e438/test.pdf
+2024-12-30 20:49:55 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772f9631e438/test.pdf
+2024-12-30 20:49:55 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772f9631e438/test.pdf
+2024-12-30 20:49:55 - Empty file path for attachment type: recommendation_letter
+2024-12-30 20:49:55 - Empty file path for attachment type: motivation_letter
+2024-12-30 20:49:55 - Empty file path for attachment type: consent_form
+2024-12-30 20:49:55 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772f9631e438/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772f9631e438/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772f9631e438/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 20:49:58 - Notification email sent successfully.
+2024-12-30 20:49:58 - Form submission completed successfully.
+2024-12-30 20:51:32 - Request URI: /submitApplication
+2024-12-30 20:51:32 - Request method: POST
+2024-12-30 20:51:32 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"5330252231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:51:32 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpBB15.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpBB16.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpBB17.tmp","error":0,"size":158327}}
+2024-12-30 20:51:32 - Processing form submission...
+2024-12-30 20:51:32 - Retrieving country name for nationality value: 4
+2024-12-30 20:51:32 - Retrieving country name for nationality value: 4
+2024-12-30 20:51:32 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:51:32 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:51:32 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:51:32 - Retrieving country Dial Code for nationality value: 792
+2024-12-30 20:51:32 - Creating new student with data: {"submission_id":"6772f9c40bd89","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:51:32 - New student created successfully with ID: 47
+2024-12-30 20:51:32 - Student created with ID: 47
+2024-12-30 20:51:32 - Student associated with program ID: 1
+2024-12-30 20:51:32 - Parental info added for: father
+2024-12-30 20:51:32 - Parental info added for: mother
+2024-12-30 20:51:32 - Institution details added for student ID: 47
+2024-12-30 20:51:32 - legal information details added for student ID: 47
+2024-12-30 20:51:32 - Attachment uploaded successfully for type: Certificate
+2024-12-30 20:51:32 - Attachment uploaded successfully for type: Photo
+2024-12-30 20:51:32 - Attachment uploaded successfully for type: Passport
+2024-12-30 20:51:32 - Preparing to send notification email...
+2024-12-30 20:51:32 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpBB15.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpBB16.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpBB17.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 20:51:32 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772f9c40bd89/test.pdf
+2024-12-30 20:51:32 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772f9c40bd89/test.pdf
+2024-12-30 20:51:32 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772f9c40bd89/test.pdf
+2024-12-30 20:51:32 - Empty file path for attachment type: recommendation_letter
+2024-12-30 20:51:32 - Empty file path for attachment type: motivation_letter
+2024-12-30 20:51:32 - Empty file path for attachment type: consent_form
+2024-12-30 20:51:32 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772f9c40bd89/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772f9c40bd89/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772f9c40bd89/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 20:51:35 - Notification email sent successfully.
+2024-12-30 20:51:35 - Form submission completed successfully.
+2024-12-30 20:53:12 - Fetched students: [{"id":1,"submission_id":"675a16e13c49c","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-12","tshirt_size":"medium","gender":"M","nationality":"AFGHANISTAN","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325","outreach":"Social Media","iban":"ibanUS","created_at":"2024-12-11T22:49:05.000000Z","updated_at":"2024-12-11T22:49:05.000000Z","parental_infos":[],"institution_details":null,"attachments":[],"passport":null},{"id":3,"submission_id":"675a19a695b47","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-12","tshirt_size":"medium","gender":"M","nationality":"AFGHANISTAN","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test2@example.us","telephone":"6019521325","outreach":"Social Media","iban":"ibanUS","created_at":"2024-12-11T23:00:54.000000Z","updated_at":"2024-12-11T23:00:54.000000Z","parental_infos":[],"institution_details":null,"attachments":[],"passport":null},{"id":4,"submission_id":"675a19d81e32e","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-12","tshirt_size":"medium","gender":"M","nationality":"AFGHANISTAN","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test3@example.us","telephone":"6019521325","outreach":"Social Media","iban":"ibanUS","created_at":"2024-12-11T23:01:44.000000Z","updated_at":"2024-12-11T23:01:44.000000Z","parental_infos":[],"institution_details":null,"attachments":[],"passport":null},{"id":5,"submission_id":"675a1a0f0ae44","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-12","tshirt_size":"medium","gender":"M","nationality":"AFGHANISTAN","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test4@example.us","telephone":"6019521325","outreach":"Social Media","iban":"ibanUS","created_at":"2024-12-11T23:02:39.000000Z","updated_at":"2024-12-11T23:02:39.000000Z","parental_infos":[],"institution_details":null,"attachments":[],"passport":null},{"id":6,"submission_id":"675a1a9ea4d6a","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-12","tshirt_size":"medium","gender":"M","nationality":"AFGHANISTAN","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test5@example.us","telephone":"6019521325","outreach":"Social Media","iban":"ibanUS","created_at":"2024-12-11T23:05:02.000000Z","updated_at":"2024-12-11T23:05:02.000000Z","parental_infos":[{"id":1,"student_id":6,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"},{"id":2,"student_id":6,"parent_type":"Mother","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}],"institution_details":{"id":1,"student_id":6,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"},"attachments":[{"id":1,"student_id":6,"attachment_type":"Certificate","file_path":"uploads\/675a1a9ea4d6a\/1630562221811.jpg","created_at":"2024-12-11T23:05:02.000000Z","updated_at":"2024-12-11T23:05:02.000000Z"},{"id":2,"student_id":6,"attachment_type":"Photo","file_path":"uploads\/675a1a9ea4d6a\/Screenshot_698.png","created_at":"2024-12-11T23:05:02.000000Z","updated_at":"2024-12-11T23:05:02.000000Z"},{"id":3,"student_id":6,"attachment_type":"Passport","file_path":"uploads\/675a1a9ea4d6a\/1163_logo_1280-1024x563.jpg","created_at":"2024-12-11T23:05:02.000000Z","updated_at":"2024-12-11T23:05:02.000000Z"},{"id":4,"student_id":6,"attachment_type":"Recommendation_Letter","file_path":"uploads\/675a1a9ea4d6a\/Screenshot_707.png","created_at":"2024-12-11T23:05:02.000000Z","updated_at":"2024-12-11T23:05:02.000000Z"},{"id":5,"student_id":6,"attachment_type":"Motivation_Letter","file_path":"uploads\/675a1a9ea4d6a\/1181px-Payame_Noor_University_Logo.svg.png","created_at":"2024-12-11T23:05:02.000000Z","updated_at":"2024-12-11T23:05:02.000000Z"},{"id":6,"student_id":6,"attachment_type":"ConsentForm","file_path":"uploads\/675a1a9ea4d6a\/1630645381788.jpg","created_at":"2024-12-11T23:05:02.000000Z","updated_at":"2024-12-11T23:05:02.000000Z"}],"passport":{"id":1,"student_id":6,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":7,"submission_id":"675a957441dc4","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-12","tshirt_size":"medium","gender":"M","nationality":"AFGHANISTAN","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test6@example.us","telephone":"6019521325","outreach":"Social Media","iban":"ibanUS","created_at":"2024-12-12T07:49:08.000000Z","updated_at":"2024-12-12T07:49:08.000000Z","parental_infos":[{"id":3,"student_id":7,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"},{"id":4,"student_id":7,"parent_type":"Mother","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}],"institution_details":{"id":2,"student_id":7,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"},"attachments":[{"id":7,"student_id":7,"attachment_type":"Certificate","file_path":"uploads\/675a957441dc4\/1630562221811.jpg","created_at":"2024-12-12T07:49:08.000000Z","updated_at":"2024-12-12T07:49:08.000000Z"},{"id":8,"student_id":7,"attachment_type":"Photo","file_path":"uploads\/675a957441dc4\/Screenshot_698.png","created_at":"2024-12-12T07:49:08.000000Z","updated_at":"2024-12-12T07:49:08.000000Z"},{"id":9,"student_id":7,"attachment_type":"Passport","file_path":"uploads\/675a957441dc4\/1163_logo_1280-1024x563.jpg","created_at":"2024-12-12T07:49:08.000000Z","updated_at":"2024-12-12T07:49:08.000000Z"},{"id":10,"student_id":7,"attachment_type":"Recommendation_Letter","file_path":"uploads\/675a957441dc4\/Screenshot_707.png","created_at":"2024-12-12T07:49:08.000000Z","updated_at":"2024-12-12T07:49:08.000000Z"},{"id":11,"student_id":7,"attachment_type":"Motivation_Letter","file_path":"uploads\/675a957441dc4\/1181px-Payame_Noor_University_Logo.svg.png","created_at":"2024-12-12T07:49:08.000000Z","updated_at":"2024-12-12T07:49:08.000000Z"},{"id":12,"student_id":7,"attachment_type":"ConsentForm","file_path":"uploads\/675a957441dc4\/1630645381788.jpg","created_at":"2024-12-12T07:49:08.000000Z","updated_at":"2024-12-12T07:49:08.000000Z"}],"passport":{"id":2,"student_id":7,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":9,"submission_id":"675ad7541320e","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-12","tshirt_size":"medium","gender":"M","nationality":"AFGHANISTAN","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test7@example.us","telephone":"6019521325","outreach":"Social Media","iban":"ibanUS","created_at":"2024-12-12T12:30:12.000000Z","updated_at":"2024-12-12T12:30:12.000000Z","parental_infos":[{"id":5,"student_id":9,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"},{"id":6,"student_id":9,"parent_type":"Mother","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}],"institution_details":{"id":3,"student_id":9,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"},"attachments":[{"id":13,"student_id":9,"attachment_type":"Certificate","file_path":"uploads\/675ad7541320e\/1630562221811.jpg","created_at":"2024-12-12T12:30:12.000000Z","updated_at":"2024-12-12T12:30:12.000000Z"},{"id":14,"student_id":9,"attachment_type":"Photo","file_path":"uploads\/675ad7541320e\/Screenshot_698.png","created_at":"2024-12-12T12:30:12.000000Z","updated_at":"2024-12-12T12:30:12.000000Z"},{"id":15,"student_id":9,"attachment_type":"Passport","file_path":"uploads\/675ad7541320e\/1163_logo_1280-1024x563.jpg","created_at":"2024-12-12T12:30:12.000000Z","updated_at":"2024-12-12T12:30:12.000000Z"},{"id":16,"student_id":9,"attachment_type":"Recommendation_Letter","file_path":"uploads\/675ad7541320e\/Screenshot_707.png","created_at":"2024-12-12T12:30:12.000000Z","updated_at":"2024-12-12T12:30:12.000000Z"},{"id":17,"student_id":9,"attachment_type":"Motivation_Letter","file_path":"uploads\/675ad7541320e\/1181px-Payame_Noor_University_Logo.svg.png","created_at":"2024-12-12T12:30:12.000000Z","updated_at":"2024-12-12T12:30:12.000000Z"},{"id":18,"student_id":9,"attachment_type":"ConsentForm","file_path":"uploads\/675ad7541320e\/1630645381788.jpg","created_at":"2024-12-12T12:30:12.000000Z","updated_at":"2024-12-12T12:30:12.000000Z"}],"passport":{"id":3,"student_id":9,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":11,"submission_id":"675ad7c16b3cd","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-12","tshirt_size":"medium","gender":"M","nationality":"AFGHANISTAN","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test8@example.us","telephone":"6019521325","outreach":"Social Media","iban":"ibanUS","created_at":"2024-12-12T12:32:01.000000Z","updated_at":"2024-12-12T12:32:01.000000Z","parental_infos":[{"id":7,"student_id":11,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"},{"id":8,"student_id":11,"parent_type":"Mother","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}],"institution_details":{"id":4,"student_id":11,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"},"attachments":[{"id":19,"student_id":11,"attachment_type":"Certificate","file_path":"uploads\/675ad7c16b3cd\/1630562221811.jpg","created_at":"2024-12-12T12:32:01.000000Z","updated_at":"2024-12-12T12:32:01.000000Z"},{"id":20,"student_id":11,"attachment_type":"Photo","file_path":"uploads\/675ad7c16b3cd\/Screenshot_698.png","created_at":"2024-12-12T12:32:01.000000Z","updated_at":"2024-12-12T12:32:01.000000Z"},{"id":21,"student_id":11,"attachment_type":"Passport","file_path":"uploads\/675ad7c16b3cd\/1163_logo_1280-1024x563.jpg","created_at":"2024-12-12T12:32:01.000000Z","updated_at":"2024-12-12T12:32:01.000000Z"},{"id":22,"student_id":11,"attachment_type":"Recommendation_Letter","file_path":"uploads\/675ad7c16b3cd\/Screenshot_707.png","created_at":"2024-12-12T12:32:01.000000Z","updated_at":"2024-12-12T12:32:01.000000Z"},{"id":23,"student_id":11,"attachment_type":"Motivation_Letter","file_path":"uploads\/675ad7c16b3cd\/1181px-Payame_Noor_University_Logo.svg.png","created_at":"2024-12-12T12:32:01.000000Z","updated_at":"2024-12-12T12:32:01.000000Z"},{"id":24,"student_id":11,"attachment_type":"ConsentForm","file_path":"uploads\/675ad7c16b3cd\/1630645381788.jpg","created_at":"2024-12-12T12:32:01.000000Z","updated_at":"2024-12-12T12:32:01.000000Z"}],"passport":{"id":4,"student_id":11,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":14,"submission_id":"675ad8013acda","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-12","tshirt_size":"medium","gender":"M","nationality":"AFGHANISTAN","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test9@example.us","telephone":"6019521325","outreach":"Social Media","iban":"ibanUS","created_at":"2024-12-12T12:33:05.000000Z","updated_at":"2024-12-12T12:33:05.000000Z","parental_infos":[{"id":9,"student_id":14,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"},{"id":10,"student_id":14,"parent_type":"Mother","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}],"institution_details":{"id":5,"student_id":14,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"},"attachments":[{"id":25,"student_id":14,"attachment_type":"Certificate","file_path":"uploads\/675ad8013acda\/1630562221811.jpg","created_at":"2024-12-12T12:33:05.000000Z","updated_at":"2024-12-12T12:33:05.000000Z"},{"id":26,"student_id":14,"attachment_type":"Photo","file_path":"uploads\/675ad8013acda\/Screenshot_698.png","created_at":"2024-12-12T12:33:05.000000Z","updated_at":"2024-12-12T12:33:05.000000Z"},{"id":27,"student_id":14,"attachment_type":"Passport","file_path":"uploads\/675ad8013acda\/1163_logo_1280-1024x563.jpg","created_at":"2024-12-12T12:33:05.000000Z","updated_at":"2024-12-12T12:33:05.000000Z"},{"id":28,"student_id":14,"attachment_type":"Recommendation_Letter","file_path":"uploads\/675ad8013acda\/Screenshot_707.png","created_at":"2024-12-12T12:33:05.000000Z","updated_at":"2024-12-12T12:33:05.000000Z"},{"id":29,"student_id":14,"attachment_type":"Motivation_Letter","file_path":"uploads\/675ad8013acda\/1181px-Payame_Noor_University_Logo.svg.png","created_at":"2024-12-12T12:33:05.000000Z","updated_at":"2024-12-12T12:33:05.000000Z"},{"id":30,"student_id":14,"attachment_type":"ConsentForm","file_path":"uploads\/675ad8013acda\/1630645381788.jpg","created_at":"2024-12-12T12:33:05.000000Z","updated_at":"2024-12-12T12:33:05.000000Z"}],"passport":{"id":5,"student_id":14,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":15,"submission_id":"675ad862b994c","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-12","tshirt_size":"medium","gender":"M","nationality":"AFGHANISTAN","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test10@example.us","telephone":"6019521325","outreach":"Social Media","iban":"ibanUS","created_at":"2024-12-12T12:34:42.000000Z","updated_at":"2024-12-12T12:34:42.000000Z","parental_infos":[{"id":11,"student_id":15,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"},{"id":12,"student_id":15,"parent_type":"Mother","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}],"institution_details":{"id":6,"student_id":15,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"},"attachments":[{"id":31,"student_id":15,"attachment_type":"Certificate","file_path":"uploads\/675ad862b994c\/1630562221811.jpg","created_at":"2024-12-12T12:34:42.000000Z","updated_at":"2024-12-12T12:34:42.000000Z"},{"id":32,"student_id":15,"attachment_type":"Photo","file_path":"uploads\/675ad862b994c\/Screenshot_698.png","created_at":"2024-12-12T12:34:42.000000Z","updated_at":"2024-12-12T12:34:42.000000Z"},{"id":33,"student_id":15,"attachment_type":"Passport","file_path":"uploads\/675ad862b994c\/1163_logo_1280-1024x563.jpg","created_at":"2024-12-12T12:34:42.000000Z","updated_at":"2024-12-12T12:34:42.000000Z"},{"id":34,"student_id":15,"attachment_type":"Recommendation_Letter","file_path":"uploads\/675ad862b994c\/Screenshot_707.png","created_at":"2024-12-12T12:34:42.000000Z","updated_at":"2024-12-12T12:34:42.000000Z"},{"id":35,"student_id":15,"attachment_type":"Motivation_Letter","file_path":"uploads\/675ad862b994c\/1181px-Payame_Noor_University_Logo.svg.png","created_at":"2024-12-12T12:34:42.000000Z","updated_at":"2024-12-12T12:34:42.000000Z"},{"id":36,"student_id":15,"attachment_type":"ConsentForm","file_path":"uploads\/675ad862b994c\/1630645381788.jpg","created_at":"2024-12-12T12:34:42.000000Z","updated_at":"2024-12-12T12:34:42.000000Z"}],"passport":{"id":6,"student_id":15,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":17,"submission_id":"675ad8e766889","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-12","tshirt_size":"medium","gender":"M","nationality":"AFGHANISTAN","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test11@example.us","telephone":"6019521325","outreach":"Social Media","iban":"ibanUS","created_at":"2024-12-12T12:36:55.000000Z","updated_at":"2024-12-12T12:36:55.000000Z","parental_infos":[{"id":13,"student_id":17,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"},{"id":14,"student_id":17,"parent_type":"Mother","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}],"institution_details":{"id":7,"student_id":17,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"},"attachments":[{"id":37,"student_id":17,"attachment_type":"Certificate","file_path":"uploads\/675ad8e766889\/1630562221811.jpg","created_at":"2024-12-12T12:36:55.000000Z","updated_at":"2024-12-12T12:36:55.000000Z"},{"id":38,"student_id":17,"attachment_type":"Photo","file_path":"uploads\/675ad8e766889\/Screenshot_698.png","created_at":"2024-12-12T12:36:55.000000Z","updated_at":"2024-12-12T12:36:55.000000Z"},{"id":39,"student_id":17,"attachment_type":"Passport","file_path":"uploads\/675ad8e766889\/1163_logo_1280-1024x563.jpg","created_at":"2024-12-12T12:36:55.000000Z","updated_at":"2024-12-12T12:36:55.000000Z"},{"id":40,"student_id":17,"attachment_type":"Recommendation_Letter","file_path":"uploads\/675ad8e766889\/Screenshot_707.png","created_at":"2024-12-12T12:36:55.000000Z","updated_at":"2024-12-12T12:36:55.000000Z"},{"id":41,"student_id":17,"attachment_type":"Motivation_Letter","file_path":"uploads\/675ad8e766889\/1181px-Payame_Noor_University_Logo.svg.png","created_at":"2024-12-12T12:36:55.000000Z","updated_at":"2024-12-12T12:36:55.000000Z"},{"id":42,"student_id":17,"attachment_type":"ConsentForm","file_path":"uploads\/675ad8e766889\/1630645381788.jpg","created_at":"2024-12-12T12:36:55.000000Z","updated_at":"2024-12-12T12:36:55.000000Z"}],"passport":{"id":7,"student_id":17,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":18,"submission_id":"675ad92112085","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-12","tshirt_size":"medium","gender":"M","nationality":"AFGHANISTAN","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test112@example.us","telephone":"6019521325","outreach":"Social Media","iban":"ibanUS","created_at":"2024-12-12T12:37:53.000000Z","updated_at":"2024-12-12T12:37:53.000000Z","parental_infos":[{"id":15,"student_id":18,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"},{"id":16,"student_id":18,"parent_type":"Mother","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}],"institution_details":{"id":8,"student_id":18,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"},"attachments":[{"id":43,"student_id":18,"attachment_type":"Certificate","file_path":"uploads\/675ad92112085\/1630562221811.jpg","created_at":"2024-12-12T12:37:53.000000Z","updated_at":"2024-12-12T12:37:53.000000Z"},{"id":44,"student_id":18,"attachment_type":"Photo","file_path":"uploads\/675ad92112085\/Screenshot_698.png","created_at":"2024-12-12T12:37:53.000000Z","updated_at":"2024-12-12T12:37:53.000000Z"},{"id":45,"student_id":18,"attachment_type":"Passport","file_path":"uploads\/675ad92112085\/1163_logo_1280-1024x563.jpg","created_at":"2024-12-12T12:37:53.000000Z","updated_at":"2024-12-12T12:37:53.000000Z"},{"id":46,"student_id":18,"attachment_type":"Recommendation_Letter","file_path":"uploads\/675ad92112085\/Screenshot_707.png","created_at":"2024-12-12T12:37:53.000000Z","updated_at":"2024-12-12T12:37:53.000000Z"},{"id":47,"student_id":18,"attachment_type":"Motivation_Letter","file_path":"uploads\/675ad92112085\/1181px-Payame_Noor_University_Logo.svg.png","created_at":"2024-12-12T12:37:53.000000Z","updated_at":"2024-12-12T12:37:53.000000Z"},{"id":48,"student_id":18,"attachment_type":"ConsentForm","file_path":"uploads\/675ad92112085\/1630645381788.jpg","created_at":"2024-12-12T12:37:53.000000Z","updated_at":"2024-12-12T12:37:53.000000Z"}],"passport":{"id":8,"student_id":18,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":21,"submission_id":"675b0a3c9a0c8","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-12","tshirt_size":"small","gender":"M","nationality":"BELARUS","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test234@example.us","telephone":"6019521325","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-12T16:07:24.000000Z","updated_at":"2024-12-12T16:07:24.000000Z","parental_infos":[{"id":17,"student_id":21,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"},{"id":18,"student_id":21,"parent_type":"Mother","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}],"institution_details":{"id":9,"student_id":21,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"},"attachments":[{"id":49,"student_id":21,"attachment_type":"Certificate","file_path":"uploads\/675b0a3c9a0c8\/Screenshot_705.png","created_at":"2024-12-12T16:07:24.000000Z","updated_at":"2024-12-12T16:07:24.000000Z"},{"id":50,"student_id":21,"attachment_type":"Photo","file_path":"uploads\/675b0a3c9a0c8\/Screenshot_705.png","created_at":"2024-12-12T16:07:24.000000Z","updated_at":"2024-12-12T16:07:24.000000Z"},{"id":51,"student_id":21,"attachment_type":"Passport","file_path":"uploads\/675b0a3c9a0c8\/Screenshot_705.png","created_at":"2024-12-12T16:07:24.000000Z","updated_at":"2024-12-12T16:07:24.000000Z"},{"id":52,"student_id":21,"attachment_type":"Recommendation_Letter","file_path":"uploads\/675b0a3c9a0c8\/Screenshot_705.png","created_at":"2024-12-12T16:07:24.000000Z","updated_at":"2024-12-12T16:07:24.000000Z"},{"id":53,"student_id":21,"attachment_type":"Motivation_Letter","file_path":"uploads\/675b0a3c9a0c8\/Screenshot_705.png","created_at":"2024-12-12T16:07:24.000000Z","updated_at":"2024-12-12T16:07:24.000000Z"},{"id":54,"student_id":21,"attachment_type":"ConsentForm","file_path":"uploads\/675b0a3c9a0c8\/Screenshot_705.png","created_at":"2024-12-12T16:07:24.000000Z","updated_at":"2024-12-12T16:07:24.000000Z"}],"passport":{"id":9,"student_id":21,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":22,"submission_id":"677057aa789b2","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-28","tshirt_size":"small","gender":"M","nationality":"BELARUS","place_of_birth":"Egypt","home_address":"1600 Fake Street\r\nApartment 1","email":"test3455@example.us","telephone":"6019521325","outreach":"University&#39;s International Office","iban":"ibanTR","created_at":"2024-12-28T19:55:22.000000Z","updated_at":"2024-12-28T19:55:22.000000Z","parental_infos":[{"id":19,"student_id":22,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"05525952231"},{"id":20,"student_id":22,"parent_type":"Mother","full_name":"Meryem Elashry","email":"shouldtheone@gmail.com","telephone":"05525752231"}],"institution_details":{"id":10,"student_id":22,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test@example.us","telephone":"6019521325"},"attachments":[{"id":55,"student_id":22,"attachment_type":"Certificate","file_path":"uploads\/677057aa789b2\/Serif_Elashry_27_12_2024.pdf","created_at":"2024-12-28T19:55:22.000000Z","updated_at":"2024-12-28T19:55:22.000000Z"},{"id":56,"student_id":22,"attachment_type":"Photo","file_path":"uploads\/677057aa789b2\/Serif_Elashry_27_12_2024.pdf","created_at":"2024-12-28T19:55:22.000000Z","updated_at":"2024-12-28T19:55:22.000000Z"},{"id":57,"student_id":22,"attachment_type":"Passport","file_path":"uploads\/677057aa789b2\/Serif_Elashry_27_12_2024.pdf","created_at":"2024-12-28T19:55:22.000000Z","updated_at":"2024-12-28T19:55:22.000000Z"}],"passport":{"id":10,"student_id":22,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":23,"submission_id":"67716ebc06fea","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2025-01-07","tshirt_size":"small","gender":"M","nationality":"AFGHANISTAN","place_of_birth":"4","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"shouldtheone@gmail.com","telephone":"","outreach":"Newsletter","iban":"ibanTR","created_at":"2024-12-29T15:46:04.000000Z","updated_at":"2024-12-29T15:46:04.000000Z","parental_infos":[{"id":21,"student_id":23,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"AhmedBaroura@gmail.com","telephone":""},{"id":22,"student_id":23,"parent_type":"Mother","full_name":"\u015eER\u0130F ELASHRY","email":"SirinBaoura@gmail.com","telephone":""}],"institution_details":{"id":11,"student_id":23,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"istanbul@aydin.com","telephone":""},"attachments":[{"id":58,"student_id":23,"attachment_type":"Certificate","file_path":"uploads\/67716ebc06fea\/test.pdf","created_at":"2024-12-29T15:46:04.000000Z","updated_at":"2024-12-29T15:46:04.000000Z"},{"id":59,"student_id":23,"attachment_type":"Photo","file_path":"uploads\/67716ebc06fea\/test.pdf","created_at":"2024-12-29T15:46:04.000000Z","updated_at":"2024-12-29T15:46:04.000000Z"},{"id":60,"student_id":23,"attachment_type":"Passport","file_path":"uploads\/67716ebc06fea\/test.pdf","created_at":"2024-12-29T15:46:04.000000Z","updated_at":"2024-12-29T15:46:04.000000Z"}],"passport":{"id":11,"student_id":23,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":25,"submission_id":"67719119198ab","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123@example.us","telephone":"","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-29T18:12:41.000000Z","updated_at":"2024-12-29T18:12:41.000000Z","parental_infos":[{"id":23,"student_id":25,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":""},{"id":24,"student_id":25,"parent_type":"Mother","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":""}],"institution_details":{"id":12,"student_id":25,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":""},"attachments":[{"id":61,"student_id":25,"attachment_type":"Certificate","file_path":"uploads\/67719119198ab\/test.pdf","created_at":"2024-12-29T18:12:41.000000Z","updated_at":"2024-12-29T18:12:41.000000Z"},{"id":62,"student_id":25,"attachment_type":"Photo","file_path":"uploads\/67719119198ab\/test.pdf","created_at":"2024-12-29T18:12:41.000000Z","updated_at":"2024-12-29T18:12:41.000000Z"},{"id":63,"student_id":25,"attachment_type":"Passport","file_path":"uploads\/67719119198ab\/test.pdf","created_at":"2024-12-29T18:12:41.000000Z","updated_at":"2024-12-29T18:12:41.000000Z"}],"passport":{"id":12,"student_id":25,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":27,"submission_id":"67728616e37b8","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123324@example.us","telephone":"(840) 05525952231","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T11:37:59.000000Z","updated_at":"2024-12-30T11:37:59.000000Z","parental_infos":[{"id":25,"student_id":27,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"05525952231"},{"id":26,"student_id":27,"parent_type":"Mother","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"05525952231"}],"institution_details":{"id":13,"student_id":27,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test@example.us","telephone":"05525952231"},"attachments":[{"id":64,"student_id":27,"attachment_type":"Certificate","file_path":"uploads\/67728616e37b8\/test.pdf","created_at":"2024-12-30T11:37:59.000000Z","updated_at":"2024-12-30T11:37:59.000000Z"},{"id":65,"student_id":27,"attachment_type":"Photo","file_path":"uploads\/67728616e37b8\/test.pdf","created_at":"2024-12-30T11:37:59.000000Z","updated_at":"2024-12-30T11:37:59.000000Z"},{"id":66,"student_id":27,"attachment_type":"Passport","file_path":"uploads\/67728616e37b8\/test.pdf","created_at":"2024-12-30T11:37:59.000000Z","updated_at":"2024-12-30T11:37:59.000000Z"}],"passport":{"id":13,"student_id":27,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":29,"submission_id":"677287b273d76","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123324324234@example.us","telephone":"+(840) ","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T11:44:50.000000Z","updated_at":"2024-12-30T11:44:50.000000Z","parental_infos":[{"id":27,"student_id":29,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"+(840) "},{"id":28,"student_id":29,"parent_type":"Mother","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"+(840) "}],"institution_details":{"id":14,"student_id":29,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test@example.us","telephone":"+(840) "},"attachments":[{"id":67,"student_id":29,"attachment_type":"Certificate","file_path":"uploads\/677287b273d76\/test.pdf","created_at":"2024-12-30T11:44:50.000000Z","updated_at":"2024-12-30T11:44:50.000000Z"},{"id":68,"student_id":29,"attachment_type":"Photo","file_path":"uploads\/677287b273d76\/test.pdf","created_at":"2024-12-30T11:44:50.000000Z","updated_at":"2024-12-30T11:44:50.000000Z"},{"id":69,"student_id":29,"attachment_type":"Passport","file_path":"uploads\/677287b273d76\/test.pdf","created_at":"2024-12-30T11:44:50.000000Z","updated_at":"2024-12-30T11:44:50.000000Z"}],"passport":{"id":14,"student_id":29,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":31,"submission_id":"6772881fa56c9","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123312324324234@example.us","telephone":"+(1) 05525952231","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T11:46:39.000000Z","updated_at":"2024-12-30T11:46:39.000000Z","parental_infos":[{"id":29,"student_id":31,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"+(1) 05525952231"},{"id":30,"student_id":31,"parent_type":"Mother","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"+(1) 05525952231"}],"institution_details":{"id":15,"student_id":31,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test@example.us","telephone":"+(1) 05525952231"},"attachments":[{"id":70,"student_id":31,"attachment_type":"Certificate","file_path":"uploads\/6772881fa56c9\/test.pdf","created_at":"2024-12-30T11:46:39.000000Z","updated_at":"2024-12-30T11:46:39.000000Z"},{"id":71,"student_id":31,"attachment_type":"Photo","file_path":"uploads\/6772881fa56c9\/test.pdf","created_at":"2024-12-30T11:46:39.000000Z","updated_at":"2024-12-30T11:46:39.000000Z"},{"id":72,"student_id":31,"attachment_type":"Passport","file_path":"uploads\/6772881fa56c9\/test.pdf","created_at":"2024-12-30T11:46:39.000000Z","updated_at":"2024-12-30T11:46:39.000000Z"}],"passport":{"id":15,"student_id":31,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":32,"submission_id":"6772890be9300","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"tesad@example.us","telephone":"+() 05525952231","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T11:50:36.000000Z","updated_at":"2024-12-30T11:50:36.000000Z","parental_infos":[{"id":31,"student_id":32,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"+() 05525952231"},{"id":32,"student_id":32,"parent_type":"Mother","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"+() 05525952231"}],"institution_details":{"id":16,"student_id":32,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test@example.us","telephone":"+() 05525952231"},"attachments":[{"id":73,"student_id":32,"attachment_type":"Certificate","file_path":"uploads\/6772890be9300\/test.pdf","created_at":"2024-12-30T11:50:36.000000Z","updated_at":"2024-12-30T11:50:36.000000Z"},{"id":74,"student_id":32,"attachment_type":"Photo","file_path":"uploads\/6772890be9300\/test.pdf","created_at":"2024-12-30T11:50:36.000000Z","updated_at":"2024-12-30T11:50:36.000000Z"},{"id":75,"student_id":32,"attachment_type":"Passport","file_path":"uploads\/6772890be9300\/test.pdf","created_at":"2024-12-30T11:50:36.000000Z","updated_at":"2024-12-30T11:50:36.000000Z"}],"passport":{"id":16,"student_id":32,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":33,"submission_id":"67728940e6602","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"tesad1@example.us","telephone":"+() 05525952231","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T11:51:29.000000Z","updated_at":"2024-12-30T11:51:29.000000Z","parental_infos":[{"id":33,"student_id":33,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"+() 05525952231"},{"id":34,"student_id":33,"parent_type":"Mother","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"+() 05525952231"}],"institution_details":{"id":17,"student_id":33,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test@example.us","telephone":"+() 05525952231"},"attachments":[{"id":76,"student_id":33,"attachment_type":"Certificate","file_path":"uploads\/67728940e6602\/test.pdf","created_at":"2024-12-30T11:51:29.000000Z","updated_at":"2024-12-30T11:51:29.000000Z"},{"id":77,"student_id":33,"attachment_type":"Photo","file_path":"uploads\/67728940e6602\/test.pdf","created_at":"2024-12-30T11:51:29.000000Z","updated_at":"2024-12-30T11:51:29.000000Z"},{"id":78,"student_id":33,"attachment_type":"Passport","file_path":"uploads\/67728940e6602\/test.pdf","created_at":"2024-12-30T11:51:29.000000Z","updated_at":"2024-12-30T11:51:29.000000Z"}],"passport":{"id":17,"student_id":33,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":34,"submission_id":"677289df2f759","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"tesad1asd@example.us","telephone":"+() 05525952231","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T11:54:07.000000Z","updated_at":"2024-12-30T11:54:07.000000Z","parental_infos":[{"id":35,"student_id":34,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"+() 05525952231"},{"id":36,"student_id":34,"parent_type":"Mother","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"+() 05525952231"}],"institution_details":{"id":18,"student_id":34,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test@example.us","telephone":"+(1) 05525952231"},"attachments":[{"id":79,"student_id":34,"attachment_type":"Certificate","file_path":"uploads\/677289df2f759\/test.pdf","created_at":"2024-12-30T11:54:07.000000Z","updated_at":"2024-12-30T11:54:07.000000Z"},{"id":80,"student_id":34,"attachment_type":"Photo","file_path":"uploads\/677289df2f759\/test.pdf","created_at":"2024-12-30T11:54:07.000000Z","updated_at":"2024-12-30T11:54:07.000000Z"},{"id":81,"student_id":34,"attachment_type":"Passport","file_path":"uploads\/677289df2f759\/test.pdf","created_at":"2024-12-30T11:54:07.000000Z","updated_at":"2024-12-30T11:54:07.000000Z"}],"passport":{"id":18,"student_id":34,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":35,"submission_id":"67728c02ac1fc","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T12:03:14.000000Z","updated_at":"2024-12-30T12:03:14.000000Z","parental_infos":[{"id":37,"student_id":35,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"},{"id":38,"student_id":35,"parent_type":"Mother","full_name":"Juan Francisco Garc\u00eda Flores","email":"ejemplo@ejemplo.mx","telephone":"+(52) 5553428400"}],"institution_details":{"id":19,"student_id":35,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+() 6019521325"},"attachments":[{"id":82,"student_id":35,"attachment_type":"Certificate","file_path":"uploads\/67728c02ac1fc\/test.pdf","created_at":"2024-12-30T12:03:14.000000Z","updated_at":"2024-12-30T12:03:14.000000Z"},{"id":83,"student_id":35,"attachment_type":"Photo","file_path":"uploads\/67728c02ac1fc\/test.pdf","created_at":"2024-12-30T12:03:14.000000Z","updated_at":"2024-12-30T12:03:14.000000Z"},{"id":84,"student_id":35,"attachment_type":"Passport","file_path":"uploads\/67728c02ac1fc\/test.pdf","created_at":"2024-12-30T12:03:14.000000Z","updated_at":"2024-12-30T12:03:14.000000Z"}],"passport":{"id":19,"student_id":35,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":37,"submission_id":"6772f0f8dc2ad","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T19:14:00.000000Z","updated_at":"2024-12-30T19:14:00.000000Z","parental_infos":[{"id":39,"student_id":37,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"},{"id":40,"student_id":37,"parent_type":"Mother","full_name":"Juan Francisco Garc\u00eda Flores","email":"ejemplo@ejemplo.mx","telephone":"+(52) 5553428400"}],"institution_details":{"id":20,"student_id":37,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+() 601-952-1325"},"attachments":[{"id":85,"student_id":37,"attachment_type":"Certificate","file_path":"uploads\/6772f0f8dc2ad\/test.pdf","created_at":"2024-12-30T19:14:00.000000Z","updated_at":"2024-12-30T19:14:00.000000Z"},{"id":86,"student_id":37,"attachment_type":"Photo","file_path":"uploads\/6772f0f8dc2ad\/test.pdf","created_at":"2024-12-30T19:14:01.000000Z","updated_at":"2024-12-30T19:14:01.000000Z"},{"id":87,"student_id":37,"attachment_type":"Passport","file_path":"uploads\/6772f0f8dc2ad\/test.pdf","created_at":"2024-12-30T19:14:01.000000Z","updated_at":"2024-12-30T19:14:01.000000Z"}],"passport":{"id":20,"student_id":37,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":39,"submission_id":"6772f15a98f1f","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T19:15:38.000000Z","updated_at":"2024-12-30T19:15:38.000000Z","parental_infos":[{"id":41,"student_id":39,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"},{"id":42,"student_id":39,"parent_type":"Mother","full_name":"Juan Francisco Garc\u00eda Flores","email":"ejemplo@ejemplo.mx","telephone":"+(52) 5553428400"}],"institution_details":{"id":21,"student_id":39,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+(93) 601-952-1325"},"attachments":[{"id":88,"student_id":39,"attachment_type":"Certificate","file_path":"uploads\/6772f15a98f1f\/test.pdf","created_at":"2024-12-30T19:15:38.000000Z","updated_at":"2024-12-30T19:15:38.000000Z"},{"id":89,"student_id":39,"attachment_type":"Photo","file_path":"uploads\/6772f15a98f1f\/test.pdf","created_at":"2024-12-30T19:15:38.000000Z","updated_at":"2024-12-30T19:15:38.000000Z"},{"id":90,"student_id":39,"attachment_type":"Passport","file_path":"uploads\/6772f15a98f1f\/test.pdf","created_at":"2024-12-30T19:15:38.000000Z","updated_at":"2024-12-30T19:15:38.000000Z"}],"passport":{"id":21,"student_id":39,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":41,"submission_id":"6772f1c899bd9","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T19:17:28.000000Z","updated_at":"2024-12-30T19:17:28.000000Z","parental_infos":[{"id":43,"student_id":41,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"},{"id":44,"student_id":41,"parent_type":"Mother","full_name":"Juan Francisco Garc\u00eda Flores","email":"ejemplo@ejemplo.mx","telephone":"+(52) 5553428400"}],"institution_details":{"id":22,"student_id":41,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"Invalid telephone number"},"attachments":[{"id":91,"student_id":41,"attachment_type":"Certificate","file_path":"uploads\/6772f1c899bd9\/test.pdf","created_at":"2024-12-30T19:17:28.000000Z","updated_at":"2024-12-30T19:17:28.000000Z"},{"id":92,"student_id":41,"attachment_type":"Photo","file_path":"uploads\/6772f1c899bd9\/test.pdf","created_at":"2024-12-30T19:17:28.000000Z","updated_at":"2024-12-30T19:17:28.000000Z"},{"id":93,"student_id":41,"attachment_type":"Passport","file_path":"uploads\/6772f1c899bd9\/test.pdf","created_at":"2024-12-30T19:17:28.000000Z","updated_at":"2024-12-30T19:17:28.000000Z"}],"passport":{"id":22,"student_id":41,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":42,"submission_id":"6772f28f1636e","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsad@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T19:20:47.000000Z","updated_at":"2024-12-30T19:20:47.000000Z","parental_infos":[{"id":45,"student_id":42,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"},{"id":46,"student_id":42,"parent_type":"Mother","full_name":"Juan Francisco Garc\u00eda Flores","email":"ejemplo@ejemplo.mx","telephone":"+(52) 5553428400"}],"institution_details":{"id":23,"student_id":42,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+(90) 053-302-522-31-"},"attachments":[{"id":94,"student_id":42,"attachment_type":"Certificate","file_path":"uploads\/6772f28f1636e\/test.pdf","created_at":"2024-12-30T19:20:47.000000Z","updated_at":"2024-12-30T19:20:47.000000Z"},{"id":95,"student_id":42,"attachment_type":"Photo","file_path":"uploads\/6772f28f1636e\/test.pdf","created_at":"2024-12-30T19:20:47.000000Z","updated_at":"2024-12-30T19:20:47.000000Z"},{"id":96,"student_id":42,"attachment_type":"Passport","file_path":"uploads\/6772f28f1636e\/test.pdf","created_at":"2024-12-30T19:20:47.000000Z","updated_at":"2024-12-30T19:20:47.000000Z"}],"passport":{"id":23,"student_id":42,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":43,"submission_id":"6772f69240a20","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T19:37:54.000000Z","updated_at":"2024-12-30T19:37:54.000000Z","parental_infos":[{"id":47,"student_id":43,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"},{"id":48,"student_id":43,"parent_type":"Mother","full_name":"Juan Francisco Garc\u00eda Flores","email":"ejemplo@ejemplo.mx","telephone":"+(52) 5553428400"}],"institution_details":{"id":24,"student_id":43,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":null},"attachments":[{"id":97,"student_id":43,"attachment_type":"Certificate","file_path":"uploads\/6772f69240a20\/test.pdf","created_at":"2024-12-30T19:37:54.000000Z","updated_at":"2024-12-30T19:37:54.000000Z"},{"id":98,"student_id":43,"attachment_type":"Photo","file_path":"uploads\/6772f69240a20\/test.pdf","created_at":"2024-12-30T19:37:54.000000Z","updated_at":"2024-12-30T19:37:54.000000Z"},{"id":99,"student_id":43,"attachment_type":"Passport","file_path":"uploads\/6772f69240a20\/test.pdf","created_at":"2024-12-30T19:37:54.000000Z","updated_at":"2024-12-30T19:37:54.000000Z"}],"passport":{"id":24,"student_id":43,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":44,"submission_id":"6772f6ba0aba9","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T19:38:34.000000Z","updated_at":"2024-12-30T19:38:34.000000Z","parental_infos":[{"id":49,"student_id":44,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"},{"id":50,"student_id":44,"parent_type":"Mother","full_name":"Juan Francisco Garc\u00eda Flores","email":"ejemplo@ejemplo.mx","telephone":"+(52) 5553428400"}],"institution_details":{"id":25,"student_id":44,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+(90) 0533 0252 231"},"attachments":[{"id":100,"student_id":44,"attachment_type":"Certificate","file_path":"uploads\/6772f6ba0aba9\/test.pdf","created_at":"2024-12-30T19:38:34.000000Z","updated_at":"2024-12-30T19:38:34.000000Z"},{"id":101,"student_id":44,"attachment_type":"Photo","file_path":"uploads\/6772f6ba0aba9\/test.pdf","created_at":"2024-12-30T19:38:34.000000Z","updated_at":"2024-12-30T19:38:34.000000Z"},{"id":102,"student_id":44,"attachment_type":"Passport","file_path":"uploads\/6772f6ba0aba9\/test.pdf","created_at":"2024-12-30T19:38:34.000000Z","updated_at":"2024-12-30T19:38:34.000000Z"}],"passport":{"id":25,"student_id":44,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":45,"submission_id":"6772f70b292c1","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T19:39:55.000000Z","updated_at":"2024-12-30T19:39:55.000000Z","parental_infos":[{"id":51,"student_id":45,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"},{"id":52,"student_id":45,"parent_type":"Mother","full_name":"Juan Francisco Garc\u00eda Flores","email":"ejemplo@ejemplo.mx","telephone":"+(52) 5553428400"}],"institution_details":{"id":26,"student_id":45,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+(90) 5330-2522-31-"},"attachments":[{"id":103,"student_id":45,"attachment_type":"Certificate","file_path":"uploads\/6772f70b292c1\/test.pdf","created_at":"2024-12-30T19:39:55.000000Z","updated_at":"2024-12-30T19:39:55.000000Z"},{"id":104,"student_id":45,"attachment_type":"Photo","file_path":"uploads\/6772f70b292c1\/test.pdf","created_at":"2024-12-30T19:39:55.000000Z","updated_at":"2024-12-30T19:39:55.000000Z"},{"id":105,"student_id":45,"attachment_type":"Passport","file_path":"uploads\/6772f70b292c1\/test.pdf","created_at":"2024-12-30T19:39:55.000000Z","updated_at":"2024-12-30T19:39:55.000000Z"}],"passport":{"id":26,"student_id":45,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":46,"submission_id":"6772f9631e438","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T19:49:55.000000Z","updated_at":"2024-12-30T19:49:55.000000Z","parental_infos":[{"id":53,"student_id":46,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"},{"id":54,"student_id":46,"parent_type":"Mother","full_name":"Juan Francisco Garc\u00eda Flores","email":"ejemplo@ejemplo.mx","telephone":"+(52) 5553428400"}],"institution_details":{"id":27,"student_id":46,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+(90) 5330 2522 31"},"attachments":[{"id":106,"student_id":46,"attachment_type":"Certificate","file_path":"uploads\/6772f9631e438\/test.pdf","created_at":"2024-12-30T19:49:55.000000Z","updated_at":"2024-12-30T19:49:55.000000Z"},{"id":107,"student_id":46,"attachment_type":"Photo","file_path":"uploads\/6772f9631e438\/test.pdf","created_at":"2024-12-30T19:49:55.000000Z","updated_at":"2024-12-30T19:49:55.000000Z"},{"id":108,"student_id":46,"attachment_type":"Passport","file_path":"uploads\/6772f9631e438\/test.pdf","created_at":"2024-12-30T19:49:55.000000Z","updated_at":"2024-12-30T19:49:55.000000Z"}],"passport":{"id":27,"student_id":46,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}},{"id":47,"submission_id":"6772f9c40bd89","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR","created_at":"2024-12-30T19:51:32.000000Z","updated_at":"2024-12-30T19:51:32.000000Z","parental_infos":[{"id":55,"student_id":47,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"},{"id":56,"student_id":47,"parent_type":"Mother","full_name":"Juan Francisco Garc\u00eda Flores","email":"ejemplo@ejemplo.mx","telephone":"+(52) 5553428400"}],"institution_details":{"id":28,"student_id":47,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+(90) 533 025 2231"},"attachments":[{"id":109,"student_id":47,"attachment_type":"Certificate","file_path":"uploads\/6772f9c40bd89\/test.pdf","created_at":"2024-12-30T19:51:32.000000Z","updated_at":"2024-12-30T19:51:32.000000Z"},{"id":110,"student_id":47,"attachment_type":"Photo","file_path":"uploads\/6772f9c40bd89\/test.pdf","created_at":"2024-12-30T19:51:32.000000Z","updated_at":"2024-12-30T19:51:32.000000Z"},{"id":111,"student_id":47,"attachment_type":"Passport","file_path":"uploads\/6772f9c40bd89\/test.pdf","created_at":"2024-12-30T19:51:32.000000Z","updated_at":"2024-12-30T19:51:32.000000Z"}],"passport":{"id":28,"student_id":47,"passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028"}}]
+2024-12-30 20:53:12 - Student ID: 1 - Attachments: null
+2024-12-30 20:53:12 - Student ID: 1 - Parental Infos: null
+2024-12-30 20:53:12 - Student ID: 1 - Institution Details: null
+2024-12-30 20:53:12 - Student ID: 3 - Attachments: null
+2024-12-30 20:53:12 - Student ID: 3 - Parental Infos: null
+2024-12-30 20:53:12 - Student ID: 3 - Institution Details: null
+2024-12-30 20:53:12 - Student ID: 4 - Attachments: null
+2024-12-30 20:53:12 - Student ID: 4 - Parental Infos: null
+2024-12-30 20:53:12 - Student ID: 4 - Institution Details: null
+2024-12-30 20:53:12 - Student ID: 5 - Attachments: null
+2024-12-30 20:53:12 - Student ID: 5 - Parental Infos: null
+2024-12-30 20:53:12 - Student ID: 5 - Institution Details: null
+2024-12-30 20:53:12 - Student ID: 6 - Attachments: {"id":1,"student_id":6,"attachment_type":"Certificate","file_path":"uploads\/675a1a9ea4d6a\/1630562221811.jpg","created_at":"2024-12-12 00:05:02","updated_at":"2024-12-12 00:05:02"}
+2024-12-30 20:53:12 - Student ID: 6 - Parental Infos: {"id":1,"student_id":6,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 6 - Institution Details: {"id":1,"student_id":6,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 7 - Attachments: {"id":7,"student_id":7,"attachment_type":"Certificate","file_path":"uploads\/675a957441dc4\/1630562221811.jpg","created_at":"2024-12-12 08:49:08","updated_at":"2024-12-12 08:49:08"}
+2024-12-30 20:53:12 - Student ID: 7 - Parental Infos: {"id":3,"student_id":7,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 7 - Institution Details: {"id":2,"student_id":7,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 9 - Attachments: {"id":13,"student_id":9,"attachment_type":"Certificate","file_path":"uploads\/675ad7541320e\/1630562221811.jpg","created_at":"2024-12-12 13:30:12","updated_at":"2024-12-12 13:30:12"}
+2024-12-30 20:53:12 - Student ID: 9 - Parental Infos: {"id":5,"student_id":9,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 9 - Institution Details: {"id":3,"student_id":9,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 11 - Attachments: {"id":19,"student_id":11,"attachment_type":"Certificate","file_path":"uploads\/675ad7c16b3cd\/1630562221811.jpg","created_at":"2024-12-12 13:32:01","updated_at":"2024-12-12 13:32:01"}
+2024-12-30 20:53:12 - Student ID: 11 - Parental Infos: {"id":7,"student_id":11,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 11 - Institution Details: {"id":4,"student_id":11,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 14 - Attachments: {"id":25,"student_id":14,"attachment_type":"Certificate","file_path":"uploads\/675ad8013acda\/1630562221811.jpg","created_at":"2024-12-12 13:33:05","updated_at":"2024-12-12 13:33:05"}
+2024-12-30 20:53:12 - Student ID: 14 - Parental Infos: {"id":9,"student_id":14,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 14 - Institution Details: {"id":5,"student_id":14,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 15 - Attachments: {"id":31,"student_id":15,"attachment_type":"Certificate","file_path":"uploads\/675ad862b994c\/1630562221811.jpg","created_at":"2024-12-12 13:34:42","updated_at":"2024-12-12 13:34:42"}
+2024-12-30 20:53:12 - Student ID: 15 - Parental Infos: {"id":11,"student_id":15,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 15 - Institution Details: {"id":6,"student_id":15,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 17 - Attachments: {"id":37,"student_id":17,"attachment_type":"Certificate","file_path":"uploads\/675ad8e766889\/1630562221811.jpg","created_at":"2024-12-12 13:36:55","updated_at":"2024-12-12 13:36:55"}
+2024-12-30 20:53:12 - Student ID: 17 - Parental Infos: {"id":13,"student_id":17,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 17 - Institution Details: {"id":7,"student_id":17,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 18 - Attachments: {"id":43,"student_id":18,"attachment_type":"Certificate","file_path":"uploads\/675ad92112085\/1630562221811.jpg","created_at":"2024-12-12 13:37:53","updated_at":"2024-12-12 13:37:53"}
+2024-12-30 20:53:12 - Student ID: 18 - Parental Infos: {"id":15,"student_id":18,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 18 - Institution Details: {"id":8,"student_id":18,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 21 - Attachments: {"id":49,"student_id":21,"attachment_type":"Certificate","file_path":"uploads\/675b0a3c9a0c8\/Screenshot_705.png","created_at":"2024-12-12 17:07:24","updated_at":"2024-12-12 17:07:24"}
+2024-12-30 20:53:12 - Student ID: 21 - Parental Infos: {"id":17,"student_id":21,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 21 - Institution Details: {"id":9,"student_id":21,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 22 - Attachments: {"id":55,"student_id":22,"attachment_type":"Certificate","file_path":"uploads\/677057aa789b2\/Serif_Elashry_27_12_2024.pdf","created_at":"2024-12-28 20:55:22","updated_at":"2024-12-28 20:55:22"}
+2024-12-30 20:53:12 - Student ID: 22 - Parental Infos: {"id":19,"student_id":22,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"05525952231"}
+2024-12-30 20:53:12 - Student ID: 22 - Institution Details: {"id":10,"student_id":22,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test@example.us","telephone":"6019521325"}
+2024-12-30 20:53:12 - Student ID: 23 - Attachments: {"id":58,"student_id":23,"attachment_type":"Certificate","file_path":"uploads\/67716ebc06fea\/test.pdf","created_at":"2024-12-29 16:46:04","updated_at":"2024-12-29 16:46:04"}
+2024-12-30 20:53:12 - Student ID: 23 - Parental Infos: {"id":21,"student_id":23,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"AhmedBaroura@gmail.com","telephone":""}
+2024-12-30 20:53:12 - Student ID: 23 - Institution Details: {"id":11,"student_id":23,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"istanbul@aydin.com","telephone":""}
+2024-12-30 20:53:12 - Student ID: 25 - Attachments: {"id":61,"student_id":25,"attachment_type":"Certificate","file_path":"uploads\/67719119198ab\/test.pdf","created_at":"2024-12-29 19:12:41","updated_at":"2024-12-29 19:12:41"}
+2024-12-30 20:53:12 - Student ID: 25 - Parental Infos: {"id":23,"student_id":25,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":""}
+2024-12-30 20:53:12 - Student ID: 25 - Institution Details: {"id":12,"student_id":25,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"1600 Fake Street\r\nApartment 1","email":"test@example.us","telephone":""}
+2024-12-30 20:53:12 - Student ID: 27 - Attachments: {"id":64,"student_id":27,"attachment_type":"Certificate","file_path":"uploads\/67728616e37b8\/test.pdf","created_at":"2024-12-30 12:37:59","updated_at":"2024-12-30 12:37:59"}
+2024-12-30 20:53:12 - Student ID: 27 - Parental Infos: {"id":25,"student_id":27,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"05525952231"}
+2024-12-30 20:53:12 - Student ID: 27 - Institution Details: {"id":13,"student_id":27,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test@example.us","telephone":"05525952231"}
+2024-12-30 20:53:12 - Student ID: 29 - Attachments: {"id":67,"student_id":29,"attachment_type":"Certificate","file_path":"uploads\/677287b273d76\/test.pdf","created_at":"2024-12-30 12:44:50","updated_at":"2024-12-30 12:44:50"}
+2024-12-30 20:53:12 - Student ID: 29 - Parental Infos: {"id":27,"student_id":29,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"+(840) "}
+2024-12-30 20:53:12 - Student ID: 29 - Institution Details: {"id":14,"student_id":29,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test@example.us","telephone":"+(840) "}
+2024-12-30 20:53:12 - Student ID: 31 - Attachments: {"id":70,"student_id":31,"attachment_type":"Certificate","file_path":"uploads\/6772881fa56c9\/test.pdf","created_at":"2024-12-30 12:46:39","updated_at":"2024-12-30 12:46:39"}
+2024-12-30 20:53:12 - Student ID: 31 - Parental Infos: {"id":29,"student_id":31,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"+(1) 05525952231"}
+2024-12-30 20:53:12 - Student ID: 31 - Institution Details: {"id":15,"student_id":31,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test@example.us","telephone":"+(1) 05525952231"}
+2024-12-30 20:53:12 - Student ID: 32 - Attachments: {"id":73,"student_id":32,"attachment_type":"Certificate","file_path":"uploads\/6772890be9300\/test.pdf","created_at":"2024-12-30 12:50:36","updated_at":"2024-12-30 12:50:36"}
+2024-12-30 20:53:12 - Student ID: 32 - Parental Infos: {"id":31,"student_id":32,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"+() 05525952231"}
+2024-12-30 20:53:12 - Student ID: 32 - Institution Details: {"id":16,"student_id":32,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test@example.us","telephone":"+() 05525952231"}
+2024-12-30 20:53:12 - Student ID: 33 - Attachments: {"id":76,"student_id":33,"attachment_type":"Certificate","file_path":"uploads\/67728940e6602\/test.pdf","created_at":"2024-12-30 12:51:29","updated_at":"2024-12-30 12:51:29"}
+2024-12-30 20:53:12 - Student ID: 33 - Parental Infos: {"id":33,"student_id":33,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"+() 05525952231"}
+2024-12-30 20:53:12 - Student ID: 33 - Institution Details: {"id":17,"student_id":33,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test@example.us","telephone":"+() 05525952231"}
+2024-12-30 20:53:12 - Student ID: 34 - Attachments: {"id":79,"student_id":34,"attachment_type":"Certificate","file_path":"uploads\/677289df2f759\/test.pdf","created_at":"2024-12-30 12:54:07","updated_at":"2024-12-30 12:54:07"}
+2024-12-30 20:53:12 - Student ID: 34 - Parental Infos: {"id":35,"student_id":34,"parent_type":"Father","full_name":"\u015eER\u0130F ELASHRY","email":"test@example.us","telephone":"+() 05525952231"}
+2024-12-30 20:53:12 - Student ID: 34 - Institution Details: {"id":18,"student_id":34,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test@example.us","telephone":"+(1) 05525952231"}
+2024-12-30 20:53:12 - Student ID: 35 - Attachments: {"id":82,"student_id":35,"attachment_type":"Certificate","file_path":"uploads\/67728c02ac1fc\/test.pdf","created_at":"2024-12-30 13:03:14","updated_at":"2024-12-30 13:03:14"}
+2024-12-30 20:53:12 - Student ID: 35 - Parental Infos: {"id":37,"student_id":35,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"}
+2024-12-30 20:53:12 - Student ID: 35 - Institution Details: {"id":19,"student_id":35,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+() 6019521325"}
+2024-12-30 20:53:12 - Student ID: 37 - Attachments: {"id":85,"student_id":37,"attachment_type":"Certificate","file_path":"uploads\/6772f0f8dc2ad\/test.pdf","created_at":"2024-12-30 20:14:00","updated_at":"2024-12-30 20:14:00"}
+2024-12-30 20:53:12 - Student ID: 37 - Parental Infos: {"id":39,"student_id":37,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"}
+2024-12-30 20:53:12 - Student ID: 37 - Institution Details: {"id":20,"student_id":37,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+() 601-952-1325"}
+2024-12-30 20:53:12 - Student ID: 39 - Attachments: {"id":88,"student_id":39,"attachment_type":"Certificate","file_path":"uploads\/6772f15a98f1f\/test.pdf","created_at":"2024-12-30 20:15:38","updated_at":"2024-12-30 20:15:38"}
+2024-12-30 20:53:12 - Student ID: 39 - Parental Infos: {"id":41,"student_id":39,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"}
+2024-12-30 20:53:12 - Student ID: 39 - Institution Details: {"id":21,"student_id":39,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+(93) 601-952-1325"}
+2024-12-30 20:53:12 - Student ID: 41 - Attachments: {"id":91,"student_id":41,"attachment_type":"Certificate","file_path":"uploads\/6772f1c899bd9\/test.pdf","created_at":"2024-12-30 20:17:28","updated_at":"2024-12-30 20:17:28"}
+2024-12-30 20:53:12 - Student ID: 41 - Parental Infos: {"id":43,"student_id":41,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"}
+2024-12-30 20:53:12 - Student ID: 41 - Institution Details: {"id":22,"student_id":41,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"Invalid telephone number"}
+2024-12-30 20:53:12 - Student ID: 42 - Attachments: {"id":94,"student_id":42,"attachment_type":"Certificate","file_path":"uploads\/6772f28f1636e\/test.pdf","created_at":"2024-12-30 20:20:47","updated_at":"2024-12-30 20:20:47"}
+2024-12-30 20:53:12 - Student ID: 42 - Parental Infos: {"id":45,"student_id":42,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"}
+2024-12-30 20:53:12 - Student ID: 42 - Institution Details: {"id":23,"student_id":42,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+(90) 053-302-522-31-"}
+2024-12-30 20:53:12 - Student ID: 43 - Attachments: {"id":97,"student_id":43,"attachment_type":"Certificate","file_path":"uploads\/6772f69240a20\/test.pdf","created_at":"2024-12-30 20:37:54","updated_at":"2024-12-30 20:37:54"}
+2024-12-30 20:53:12 - Student ID: 43 - Parental Infos: {"id":47,"student_id":43,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"}
+2024-12-30 20:53:12 - Student ID: 43 - Institution Details: {"id":24,"student_id":43,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":null}
+2024-12-30 20:53:12 - Student ID: 44 - Attachments: {"id":100,"student_id":44,"attachment_type":"Certificate","file_path":"uploads\/6772f6ba0aba9\/test.pdf","created_at":"2024-12-30 20:38:34","updated_at":"2024-12-30 20:38:34"}
+2024-12-30 20:53:12 - Student ID: 44 - Parental Infos: {"id":49,"student_id":44,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"}
+2024-12-30 20:53:12 - Student ID: 44 - Institution Details: {"id":25,"student_id":44,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+(90) 0533 0252 231"}
+2024-12-30 20:53:12 - Student ID: 45 - Attachments: {"id":103,"student_id":45,"attachment_type":"Certificate","file_path":"uploads\/6772f70b292c1\/test.pdf","created_at":"2024-12-30 20:39:55","updated_at":"2024-12-30 20:39:55"}
+2024-12-30 20:53:12 - Student ID: 45 - Parental Infos: {"id":51,"student_id":45,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"}
+2024-12-30 20:53:12 - Student ID: 45 - Institution Details: {"id":26,"student_id":45,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+(90) 5330-2522-31-"}
+2024-12-30 20:53:12 - Student ID: 46 - Attachments: {"id":106,"student_id":46,"attachment_type":"Certificate","file_path":"uploads\/6772f9631e438\/test.pdf","created_at":"2024-12-30 20:49:55","updated_at":"2024-12-30 20:49:55"}
+2024-12-30 20:53:12 - Student ID: 46 - Parental Infos: {"id":53,"student_id":46,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"}
+2024-12-30 20:53:12 - Student ID: 46 - Institution Details: {"id":27,"student_id":46,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+(90) 5330 2522 31"}
+2024-12-30 20:53:12 - Student ID: 47 - Attachments: {"id":109,"student_id":47,"attachment_type":"Certificate","file_path":"uploads\/6772f9c40bd89\/test.pdf","created_at":"2024-12-30 20:51:32","updated_at":"2024-12-30 20:51:32"}
+2024-12-30 20:53:12 - Student ID: 47 - Parental Infos: {"id":55,"student_id":47,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 6019521325"}
+2024-12-30 20:53:12 - Student ID: 47 - Institution Details: {"id":28,"student_id":47,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+(90) 533 025 2231"}
+2024-12-30 20:54:44 - Request URI: /submitApplication
+2024-12-30 20:54:44 - Request method: POST
+2024-12-30 20:54:44 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd12@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"5330252231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:54:44 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpAA12.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpAA13.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpAA14.tmp","error":0,"size":158327}}
+2024-12-30 20:54:44 - Processing form submission...
+2024-12-30 20:54:44 - Retrieving country name for nationality value: 4
+2024-12-30 20:54:44 - Retrieving country name for nationality value: 4
+2024-12-30 20:54:44 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:54:44 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:54:44 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:54:44 - Retrieving country Dial Code for nationality value: 792
+2024-12-30 20:54:44 - Creating new student with data: {"submission_id":"6772fa8448006","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd12@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:54:44 - New student created successfully with ID: 48
+2024-12-30 20:54:44 - Student created with ID: 48
+2024-12-30 20:54:44 - Student associated with program ID: 1
+2024-12-30 20:54:44 - Parental info added for: father
+2024-12-30 20:54:44 - Parental info added for: mother
+2024-12-30 20:54:44 - Institution details added for student ID: 48
+2024-12-30 20:54:44 - legal information details added for student ID: 48
+2024-12-30 20:54:44 - Attachment uploaded successfully for type: Certificate
+2024-12-30 20:54:44 - Attachment uploaded successfully for type: Photo
+2024-12-30 20:54:44 - Attachment uploaded successfully for type: Passport
+2024-12-30 20:54:44 - Preparing to send notification email...
+2024-12-30 20:54:44 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpAA12.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpAA13.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpAA14.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 20:54:44 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772fa8448006/test.pdf
+2024-12-30 20:54:44 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772fa8448006/test.pdf
+2024-12-30 20:54:44 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772fa8448006/test.pdf
+2024-12-30 20:54:44 - Empty file path for attachment type: recommendation_letter
+2024-12-30 20:54:44 - Empty file path for attachment type: motivation_letter
+2024-12-30 20:54:44 - Empty file path for attachment type: consent_form
+2024-12-30 20:54:44 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772fa8448006/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772fa8448006/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772fa8448006/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 20:54:47 - Notification email sent successfully.
+2024-12-30 20:54:47 - Form submission completed successfully.
+2024-12-30 20:55:22 - Request URI: /submitApplication
+2024-12-30 20:55:22 - Request method: POST
+2024-12-30 20:55:22 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd1212@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"500252231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:55:22 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php40B8.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php40B9.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php40BA.tmp","error":0,"size":158327}}
+2024-12-30 20:55:22 - Processing form submission...
+2024-12-30 20:55:22 - Retrieving country name for nationality value: 4
+2024-12-30 20:55:22 - Retrieving country name for nationality value: 4
+2024-12-30 20:55:22 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:55:22 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:55:22 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:55:22 - Retrieving country Dial Code for nationality value: 792
+2024-12-30 20:55:22 - Creating new student with data: {"submission_id":"6772faaad30cc","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd1212@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:55:22 - New student created successfully with ID: 49
+2024-12-30 20:55:22 - Student created with ID: 49
+2024-12-30 20:55:22 - Student associated with program ID: 1
+2024-12-30 20:55:22 - Parental info added for: father
+2024-12-30 20:55:22 - Parental info added for: mother
+2024-12-30 20:55:22 - Institution details added for student ID: 49
+2024-12-30 20:55:22 - legal information details added for student ID: 49
+2024-12-30 20:55:22 - Attachment uploaded successfully for type: Certificate
+2024-12-30 20:55:22 - Attachment uploaded successfully for type: Photo
+2024-12-30 20:55:22 - Attachment uploaded successfully for type: Passport
+2024-12-30 20:55:22 - Preparing to send notification email...
+2024-12-30 20:55:22 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php40B8.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php40B9.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php40BA.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 20:55:22 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772faaad30cc/test.pdf
+2024-12-30 20:55:22 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772faaad30cc/test.pdf
+2024-12-30 20:55:22 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772faaad30cc/test.pdf
+2024-12-30 20:55:22 - Empty file path for attachment type: recommendation_letter
+2024-12-30 20:55:22 - Empty file path for attachment type: motivation_letter
+2024-12-30 20:55:22 - Empty file path for attachment type: consent_form
+2024-12-30 20:55:22 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772faaad30cc/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772faaad30cc/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772faaad30cc/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 20:55:26 - Notification email sent successfully.
+2024-12-30 20:55:26 - Form submission completed successfully.
+2024-12-30 20:56:50 - Request URI: /submitApplication
+2024-12-30 20:56:50 - Request method: POST
+2024-12-30 20:56:50 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd1212@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"53302522311","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:56:50 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php98F8.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php98F9.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php98FA.tmp","error":0,"size":158327}}
+2024-12-30 20:56:50 - Processing form submission...
+2024-12-30 20:56:50 - Retrieving country name for nationality value: 4
+2024-12-30 20:56:51 - Retrieving country name for nationality value: 4
+2024-12-30 20:56:51 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:56:51 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:56:51 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:56:51 - Retrieving country Dial Code for nationality value: 792
+2024-12-30 20:56:51 - Creating new student with data: {"submission_id":"6772fb02effac","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd1212@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:56:51 - ERROR creating new student: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test12313asdasdasdsadasdasdasdasdasd1212@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (6772fb02effac, Jon Stewart Doe, 2024-12-05, small, M, Afghanistan, Afghanistan, 1600 Fake Street
+Apartment 1, test12313asdasdasdsadasdasdasdasdasd1212@example.us, +(93) 6019521325, Social Media, ibanTR, 2024-12-30 20:56:51, 2024-12-30 20:56:51))
+2024-12-30 20:56:51 - ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test12313asdasdasdsadasdasdasdasdasd1212@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (6772fb02effac, Jon Stewart Doe, 2024-12-05, small, M, Afghanistan, Afghanistan, 1600 Fake Street
+Apartment 1, test12313asdasdasdsadasdasdasdasdasd1212@example.us, +(93) 6019521325, Social Media, ibanTR, 2024-12-30 20:56:51, 2024-12-30 20:56:51))
+2024-12-30 20:57:06 - Request URI: /submitApplication
+2024-12-30 20:57:06 - Request method: POST
+2024-12-30 20:57:06 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd121212@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"53302522311","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 20:57:06 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpD6FE.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpD6FF.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpD700.tmp","error":0,"size":158327}}
+2024-12-30 20:57:06 - Processing form submission...
+2024-12-30 20:57:06 - Retrieving country name for nationality value: 4
+2024-12-30 20:57:06 - Retrieving country name for nationality value: 4
+2024-12-30 20:57:06 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:57:06 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 20:57:06 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 20:57:06 - Retrieving country Dial Code for nationality value: 792
+2024-12-30 20:57:06 - Creating new student with data: {"submission_id":"6772fb12d3a91","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd121212@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 20:57:06 - New student created successfully with ID: 51
+2024-12-30 20:57:06 - Student created with ID: 51
+2024-12-30 20:57:06 - Student associated with program ID: 1
+2024-12-30 20:57:06 - Parental info added for: father
+2024-12-30 20:57:06 - Parental info added for: mother
+2024-12-30 20:57:06 - Institution details added for student ID: 51
+2024-12-30 20:57:06 - legal information details added for student ID: 51
+2024-12-30 20:57:06 - Attachment uploaded successfully for type: Certificate
+2024-12-30 20:57:06 - Attachment uploaded successfully for type: Photo
+2024-12-30 20:57:06 - Attachment uploaded successfully for type: Passport
+2024-12-30 20:57:06 - Preparing to send notification email...
+2024-12-30 20:57:06 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpD6FE.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpD6FF.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpD700.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 20:57:06 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772fb12d3a91/test.pdf
+2024-12-30 20:57:06 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772fb12d3a91/test.pdf
+2024-12-30 20:57:06 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772fb12d3a91/test.pdf
+2024-12-30 20:57:06 - Empty file path for attachment type: recommendation_letter
+2024-12-30 20:57:06 - Empty file path for attachment type: motivation_letter
+2024-12-30 20:57:06 - Empty file path for attachment type: consent_form
+2024-12-30 20:57:06 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772fb12d3a91/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772fb12d3a91/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772fb12d3a91/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 20:57:09 - Notification email sent successfully.
+2024-12-30 20:57:09 - Form submission completed successfully.
+2024-12-30 21:00:45 - Request URI: /submitApplication
+2024-12-30 21:00:45 - Request method: POST
+2024-12-30 21:00:45 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd12121212@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"serif","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 21:00:45 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php2DAD.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php2DAE.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php2DAF.tmp","error":0,"size":158327}}
+2024-12-30 21:00:45 - Processing form submission...
+2024-12-30 21:00:45 - Retrieving country name for nationality value: 4
+2024-12-30 21:00:45 - Retrieving country name for nationality value: 4
+2024-12-30 21:00:45 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 21:00:45 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 21:00:45 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 21:00:45 - Retrieving country Dial Code for nationality value: 792
+2024-12-30 21:00:45 - Creating new student with data: {"submission_id":"6772fbeda2b8e","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd12121212@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 21:00:45 - New student created successfully with ID: 52
+2024-12-30 21:00:45 - Student created with ID: 52
+2024-12-30 21:00:45 - Student associated with program ID: 1
+2024-12-30 21:00:45 - Parental info added for: father
+2024-12-30 21:00:45 - Parental info added for: mother
+2024-12-30 21:00:45 - Institution details added for student ID: 52
+2024-12-30 21:00:45 - legal information details added for student ID: 52
+2024-12-30 21:00:45 - Attachment uploaded successfully for type: Certificate
+2024-12-30 21:00:45 - Attachment uploaded successfully for type: Photo
+2024-12-30 21:00:45 - Attachment uploaded successfully for type: Passport
+2024-12-30 21:00:45 - Preparing to send notification email...
+2024-12-30 21:00:45 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php2DAD.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php2DAE.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php2DAF.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 21:00:45 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772fbeda2b8e/test.pdf
+2024-12-30 21:00:45 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772fbeda2b8e/test.pdf
+2024-12-30 21:00:45 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772fbeda2b8e/test.pdf
+2024-12-30 21:00:45 - Empty file path for attachment type: recommendation_letter
+2024-12-30 21:00:45 - Empty file path for attachment type: motivation_letter
+2024-12-30 21:00:45 - Empty file path for attachment type: consent_form
+2024-12-30 21:00:45 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772fbeda2b8e/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772fbeda2b8e/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772fbeda2b8e/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 21:00:48 - Notification email sent successfully.
+2024-12-30 21:00:48 - Form submission completed successfully.
+2024-12-30 21:08:33 - Request URI: /submitApplication
+2024-12-30 21:08:33 - Request method: POST
+2024-12-30 21:08:33 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd12121212123@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"5330252231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 21:08:33 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php51F0.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php51F1.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php51F2.tmp","error":0,"size":158327}}
+2024-12-30 21:08:33 - Processing form submission...
+2024-12-30 21:08:33 - Retrieving country name for nationality value: 4
+2024-12-30 21:08:33 - Retrieving country name for nationality value: 4
+2024-12-30 21:08:33 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 21:08:33 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 21:08:33 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 21:08:33 - Retrieving country Dial Code for nationality value: 792
+2024-12-30 21:08:33 - Creating new student with data: {"submission_id":"6772fdc1aa67c","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd12121212123@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 21:08:33 - New student created successfully with ID: 53
+2024-12-30 21:08:33 - Student created with ID: 53
+2024-12-30 21:08:33 - Student associated with program ID: 1
+2024-12-30 21:08:33 - Parental info added for: father
+2024-12-30 21:08:33 - Parental info added for: mother
+2024-12-30 21:08:33 - Institution details added for student ID: 53
+2024-12-30 21:08:33 - legal information details added for student ID: 53
+2024-12-30 21:08:33 - Attachment uploaded successfully for type: Certificate
+2024-12-30 21:08:33 - Attachment uploaded successfully for type: Photo
+2024-12-30 21:08:33 - Attachment uploaded successfully for type: Passport
+2024-12-30 21:08:33 - Preparing to send notification email...
+2024-12-30 21:08:33 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php51F0.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php51F1.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php51F2.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 21:08:33 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772fdc1aa67c/test.pdf
+2024-12-30 21:08:33 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772fdc1aa67c/test.pdf
+2024-12-30 21:08:33 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772fdc1aa67c/test.pdf
+2024-12-30 21:08:33 - Empty file path for attachment type: recommendation_letter
+2024-12-30 21:08:33 - Empty file path for attachment type: motivation_letter
+2024-12-30 21:08:33 - Empty file path for attachment type: consent_form
+2024-12-30 21:08:33 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772fdc1aa67c/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772fdc1aa67c/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772fdc1aa67c/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 21:08:39 - Notification email sent successfully.
+2024-12-30 21:08:39 - Form submission completed successfully.
+2024-12-30 21:16:45 - Request URI: /submitApplication
+2024-12-30 21:16:45 - Request method: POST
+2024-12-30 21:16:45 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd12121212123123@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"792","institution_telephone":"5330252231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 21:16:45 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpD3B3.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpD3B4.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpD3B5.tmp","error":0,"size":158327}}
+2024-12-30 21:16:45 - Processing form submission...
+2024-12-30 21:16:45 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 21:16:45 - Retrieving country name for nationality value: 4
+2024-12-30 21:16:45 - Retrieving country name for nationality value: 4
+2024-12-30 21:16:45 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 21:16:45 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 21:16:45 - Retrieving country Dial Code for nationality value: 792
+2024-12-30 21:16:45 - Creating new student with data: {"submission_id":"6772ffada9211","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313asdasdasdsadasdasdasdasdasd12121212123123@example.us","telephone":"+(93) 601 952 1325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 21:16:45 - New student created successfully with ID: 54
+2024-12-30 21:16:45 - Student created with ID: 54
+2024-12-30 21:16:45 - Student associated with program ID: 1
+2024-12-30 21:16:45 - Parental info added for: father
+2024-12-30 21:16:45 - Parental info added for: mother
+2024-12-30 21:16:45 - Institution details added for student ID: 54
+2024-12-30 21:16:45 - legal information details added for student ID: 54
+2024-12-30 21:16:45 - Attachment uploaded successfully for type: Certificate
+2024-12-30 21:16:45 - Attachment uploaded successfully for type: Photo
+2024-12-30 21:16:45 - Attachment uploaded successfully for type: Passport
+2024-12-30 21:16:45 - Preparing to send notification email...
+2024-12-30 21:16:45 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpD3B3.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpD3B4.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpD3B5.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 21:16:45 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772ffada9211/test.pdf
+2024-12-30 21:16:45 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772ffada9211/test.pdf
+2024-12-30 21:16:45 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772ffada9211/test.pdf
+2024-12-30 21:16:45 - Empty file path for attachment type: recommendation_letter
+2024-12-30 21:16:45 - Empty file path for attachment type: motivation_letter
+2024-12-30 21:16:45 - Empty file path for attachment type: consent_form
+2024-12-30 21:16:45 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772ffada9211/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772ffada9211/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772ffada9211/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 21:16:51 - Notification email sent successfully.
+2024-12-30 21:16:51 - Form submission completed successfully.
