@@ -3,7 +3,7 @@
         'name' => 'shoul/unesco-php',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '4be79723d30378034dbdc673eb7fbb83e90eaea7',
+        'reference' => 'b5b0cf7b1ff9344fedbf0c6b5e76c1de0338071f',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -268,7 +268,7 @@
         'shoul/unesco-php' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '4be79723d30378034dbdc673eb7fbb83e90eaea7',
+            'reference' => 'b5b0cf7b1ff9344fedbf0c6b5e76c1de0338071f',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

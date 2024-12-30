@@ -20,15 +20,14 @@
             <div class="right-section3">
                 <label for="phone-number">Telephone</label>
                 <div class="phone-input-wrapper">
-                    <select id="country-code" name="country_code" class="country-code-select">
-                        <option value="+1" data-country="us">+1 (USA)</option>
-                        <option value="+44" data-country="gb">+44 (UK)</option>
-                        <option value="+90" data-country="tr">+90 (Turkey)</option>
-                        <option value="+91" data-country="in">+91 (India)</option>
-                        <option value="+61" data-country="au">+61 (Australia)</option>
-                        <!-- Add more options -->
+                    <select id="country-code" name="telephone_country_code" class="country-code-select">
+                        <?php foreach ($dials as $dial): ?>
+                            <option value="<?= htmlspecialchars($dial['M49']) ?>">
+                            +<?= htmlspecialchars($dial['Dial'], ENT_QUOTES, 'UTF-8') ?> (<?= htmlspecialchars($dial['official_name_en'], ENT_QUOTES, 'UTF-8') ?>)
+                            </option>
+                        <?php endforeach; ?>
                     </select>
-                    <input type="tel" id="phone-number" name="telephone1" class="phone-number-input" placeholder="Enter your phone number" required>
+                    <input type="tel" id="phone-number" name="telephone" class="phone-number-input" placeholder="Enter your phone number" required>
                 </div>
             </div>
         </div>

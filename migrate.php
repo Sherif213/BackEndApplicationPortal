@@ -152,6 +152,36 @@ try {
     } else {
         echo "Table 'student_program' already exists.\n";
     }
+
+    if (!Capsule::schema()->hasTable('country_codes')) {
+        Capsule::schema()->create('country_codes', function ($table) {
+            $table->string('Dial', 20)->nullable();
+            $table->char('ISO3166_1_Alpha_3', 3)->nullable();
+            $table->integer('ISO3166_1_numeric')->nullable();
+            $table->char('ISO3166_1_Alpha_2', 2)->nullable();
+            $table->string('ISO4217_currency_name', 50)->nullable();
+            $table->string('UNTERM_English_Short', 100)->nullable();
+            $table->char('ISO4217_currency_alphabetic_code', 7)->nullable();
+            $table->integer('ISO4217_currency_numeric_code')->nullable();
+            $table->integer('M49')->nullable();
+            $table->integer('Sub_region_Code')->nullable();
+            $table->integer('Region_Code')->nullable();
+            $table->string('Intermediate_Region_Name')->nullable();
+            $table->string('UNTERM_English_Formal', 200)->nullable();
+            $table->string('official_name_en', 200)->nullable();
+            $table->string('ISO4217_currency_country_name', 100)->nullable();
+            $table->string('Region_Name', 50)->nullable();
+            $table->string('Sub_region_Name', 50)->nullable();
+            $table->string('Capital', 50)->nullable();
+            $table->char('Continent', 2)->nullable();
+            $table->string('TLD', 10)->nullable();
+            $table->integer('Geoname_ID')->nullable();
+            $table->string('CLDR_display_name', 100)->nullable();
+        });
+        echo "Country Codes table migration completed successfully.\n";
+    } else {
+        echo "Table 'country_codes' already exists.\n";
+    }
     
 
 } catch (\Exception $e) {

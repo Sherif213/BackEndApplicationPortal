@@ -1,0 +1,254 @@
+Dial,ISO3166-1-Alpha-3,ISO3166-1-numeric,ISO3166-1-Alpha-2,ISO4217-currency_name,UNTERM English Short,ISO4217-currency_alphabetic_code,ISO4217-currency_numeric_code,M49,Sub-region Code,Region Code,Intermediate Region Name,UNTERM English Formal,official_name_en,ISO4217-currency_country_name,Region Name,Sub-region Name,Capital,Continent,TLD,Geoname ID,CLDR display name
+93,AFG,4,AF,Afghani,Afghanistan,AFN,971,4,34,142,NULL,the Islamic Republic of Afghanistan,Afghanistan,AFGHANISTAN,Asia,Southern Asia,Kabul,AS,.af,1149361,Afghanistan
+358,ALA,248,AX,Euro,NULL,EUR,978,248,154,150,NULL,NULL,Åland Islands,ÅLAND ISLANDS,Europe,Northern Europe,Mariehamn,EU,.ax,661882,Kepulauan Aland
+355,ALB,8,AL,Lek,Albania,ALL,8,8,39,150,NULL,the Republic of Albania,Albania,ALBANIA,Europe,Southern Europe,Tirana,EU,.al,783754,Albania
+213,DZA,12,DZ,Algerian Dinar,Algeria,DZD,12,12,15,2,NULL,the People's Democratic Republic of Algeria,Algeria,ALGERIA,Africa,Northern Africa,Algiers,AF,.dz,2589581,Algeria
+1-684,ASM,16,AS,US Dollar,NULL,USD,840,16,61,9,NULL,NULL,American Samoa,AMERICAN SAMOA,Oceania,Polynesia,Pago Pago,OC,.as,5880801,Samoa Amerika
+376,AND,20,AD,Euro,Andorra,EUR,978,20,39,150,NULL,the Principality of Andorra,Andorra,ANDORRA,Europe,Southern Europe,Andorra la Vella,EU,.ad,3041565,Andorra
+244,AGO,24,AO,Kwanza,Angola,AOA,973,24,202,2,Middle Africa,the Republic of Angola,Angola,ANGOLA,Africa,Sub-Saharan Africa,Luanda,AF,.ao,3351879,Angola
+1-264,AIA,660,AI,East Caribbean Dollar,NULL,XCD,951,660,419,19,Caribbean,NULL,Anguilla,ANGUILLA,Americas,Latin America and the Caribbean,The Valley,NULL,.ai,3573511,Anguilla
+672,ATA,10,AQ,No universal currency,NULL,NULL,NULL,10,NULL,NULL,NULL,NULL,Antarctica,ANTARCTICA,NULL,NULL,NULL,AN,.aq,6697173,Antartika
+1-268,ATG,28,AG,East Caribbean Dollar,Antigua and Barbuda,XCD,951,28,419,19,Caribbean,Antigua and Barbuda,Antigua and Barbuda,ANTIGUA AND BARBUDA,Americas,Latin America and the Caribbean,St. John's,NULL,.ag,3576396,Antigua dan Barbuda
+54,ARG,32,AR,Argentine Peso,Argentina,ARS,32,32,419,19,South America,the Argentine Republic,Argentina,ARGENTINA,Americas,Latin America and the Caribbean,Buenos Aires,SA,.ar,3865483,Argentina
+374,ARM,51,AM,Armenian Dram,Armenia,AMD,51,51,145,142,NULL,the Republic of Armenia,Armenia,ARMENIA,Asia,Western Asia,Yerevan,AS,.am,174982,Armenia
+297,ABW,533,AW,Aruban Florin,NULL,AWG,533,533,419,19,Caribbean,NULL,Aruba,ARUBA,Americas,Latin America and the Caribbean,Oranjestad,NULL,.aw,3577279,Aruba
+61,AUS,36,AU,Australian Dollar,Australia,AUD,36,36,53,9,NULL,Australia,Australia,AUSTRALIA,Oceania,Australia and New Zealand,Canberra,OC,.au,2077456,Australia
+43,AUT,40,AT,Euro,Austria,EUR,978,40,155,150,NULL,the Republic of Austria,Austria,AUSTRIA,Europe,Western Europe,Vienna,EU,.at,2782113,Austria
+994,AZE,31,AZ,Azerbaijan Manat,Azerbaijan,AZN,944,31,145,142,NULL,the Republic of Azerbaijan,Azerbaijan,AZERBAIJAN,Asia,Western Asia,Baku,AS,.az,587116,Azerbaijan
+1-242,BHS,44,BS,Bahamian Dollar,Bahamas (the),BSD,44,44,419,19,Caribbean,the Commonwealth of the Bahamas,Bahamas,BAHAMAS,Americas,Latin America and the Caribbean,Nassau,NULL,.bs,3572887,Bahamas
+973,BHR,48,BH,Bahraini Dinar,Bahrain,BHD,48,48,145,142,NULL,the Kingdom of Bahrain,Bahrain,BAHRAIN,Asia,Western Asia,Manama,AS,.bh,290291,Bahrain
+880,BGD,50,BD,Taka,Bangladesh,BDT,50,50,34,142,NULL,the People's Republic of Bangladesh,Bangladesh,BANGLADESH,Asia,Southern Asia,Dhaka,AS,.bd,1210997,Bangladesh
+1-246,BRB,52,BB,Barbados Dollar,Barbados,BBD,52,52,419,19,Caribbean,Barbados,Barbados,BARBADOS,Americas,Latin America and the Caribbean,Bridgetown,NULL,.bb,3374084,Barbados
+375,BLR,112,BY,Belarusian Ruble,Belarus,BYN,933,112,151,150,NULL,the Republic of Belarus,Belarus,BELARUS,Europe,Eastern Europe,Minsk,EU,.by,630336,Belarus
+32,BEL,56,BE,Euro,Belgium,EUR,978,56,155,150,NULL,the Kingdom of Belgium,Belgium,BELGIUM,Europe,Western Europe,Brussels,EU,.be,2802361,Belgium
+501,BLZ,84,BZ,Belize Dollar,Belize,BZD,84,84,419,19,Central America,Belize,Belize,BELIZE,Americas,Latin America and the Caribbean,Belmopan,NULL,.bz,3582678,Belize
+229,BEN,204,BJ,CFA Franc BCEAO,Benin,XOF,952,204,202,2,Western Africa,the Republic of Benin,Benin,BENIN,Africa,Sub-Saharan Africa,Porto-Novo,AF,.bj,2395170,Benin
+1-441,BMU,60,BM,Bermudian Dollar,NULL,BMD,60,60,21,19,NULL,NULL,Bermuda,BERMUDA,Americas,Northern America,Hamilton,NULL,.bm,3573345,Bermuda
+975,BTN,64,BT,"Indian Rupee,Ngultrum",Bhutan,"INR,BTN",356064,64,34,142,NULL,the Kingdom of Bhutan,Bhutan,BHUTAN,Asia,Southern Asia,Thimphu,AS,.bt,1252634,Bhutan
+591,BOL,68,BO,Boliviano,Bolivia (Plurinational State of),BOB,68,68,419,19,South America,the Plurinational State of Bolivia,Bolivia (Plurinational State of),BOLIVIA (PLURINATIONAL STATE OF),Americas,Latin America and the Caribbean,Sucre,SA,.bo,3923057,Bolivia
+599,BES,535,BQ,US Dollar,NULL,USD,840,535,419,19,Caribbean,NULL,"Bonaire, Sint Eustatius and Saba","BONAIRE, SINT EUSTATIUS AND SABA",Americas,Latin America and the Caribbean,NULL,NULL,.bq,7626844,Belanda Caribbean
+387,BIH,70,BA,Convertible Mark,Bosnia and Herzegovina,BAM,977,70,39,150,NULL,Bosnia and Herzegovina,Bosnia and Herzegovina,BOSNIA AND HERZEGOVINA,Europe,Southern Europe,Sarajevo,EU,.ba,3277605,Bosnia dan Herzegovina
+267,BWA,72,BW,Pula,Botswana,BWP,72,72,202,2,Southern Africa,the Republic of Botswana,Botswana,BOTSWANA,Africa,Sub-Saharan Africa,Gaborone,AF,.bw,933860,Botswana
+47,BVT,74,BV,Norwegian Krone,NULL,NOK,578,74,419,19,South America,NULL,Bouvet Island,BOUVET ISLAND,Americas,Latin America and the Caribbean,NULL,AN,.bv,3371123,Pulau Bouvet
+55,BRA,76,BR,Brazilian Real,Brazil,BRL,986,76,419,19,South America,the Federative Republic of Brazil,Brazil,BRAZIL,Americas,Latin America and the Caribbean,Brasilia,SA,.br,3469034,Brazil
+246,IOT,86,IO,US Dollar,NULL,USD,840,86,202,2,Eastern Africa,NULL,British Indian Ocean Territory,BRITISH INDIAN OCEAN TERRITORY,Africa,Sub-Saharan Africa,Diego Garcia,AS,.io,1282588,Wilayah Lautan Hindi British
+1-284,VGB,92,VG,US Dollar,NULL,USD,840,92,419,19,Caribbean,NULL,British Virgin Islands,VIRGIN ISLANDS (BRITISH),Americas,Latin America and the Caribbean,Road Town,NULL,.vg,3577718,Kepulauan Virgin British
+673,BRN,96,BN,Brunei Dollar,Brunei Darussalam,BND,96,96,35,142,NULL,Brunei Darussalam,Brunei Darussalam,BRUNEI DARUSSALAM,Asia,South-eastern Asia,Bandar Seri Begawan,AS,.bn,1820814,Brunei
+359,BGR,100,BG,Bulgarian Lev,Bulgaria,BGN,975,100,151,150,NULL,the Republic of Bulgaria,Bulgaria,BULGARIA,Europe,Eastern Europe,Sofia,EU,.bg,732800,Bulgaria
+226,BFA,854,BF,CFA Franc BCEAO,Burkina Faso,XOF,952,854,202,2,Western Africa,Burkina Faso,Burkina Faso,BURKINA FASO,Africa,Sub-Saharan Africa,Ouagadougou,AF,.bf,2361809,Burkina Faso
+257,BDI,108,BI,Burundi Franc,Burundi,BIF,108,108,202,2,Eastern Africa,the Republic of Burundi,Burundi,BURUNDI,Africa,Sub-Saharan Africa,Gitega,AF,.bi,433561,Burundi
+238,CPV,132,CV,Cabo Verde Escudo,Cabo Verde,CVE,132,132,202,2,Western Africa,the Republic of Cabo Verde,Cabo Verde,CABO VERDE,Africa,Sub-Saharan Africa,Praia,AF,.cv,3374766,Cape Verde
+855,KHM,116,KH,Riel,Cambodia,KHR,116,116,35,142,NULL,the Kingdom of Cambodia,Cambodia,CAMBODIA,Asia,South-eastern Asia,Phnom Penh,AS,.kh,1831722,Kemboja
+237,CMR,120,CM,CFA Franc BEAC,Cameroon,XAF,950,120,202,2,Middle Africa,the Republic of Cameroon,Cameroon,CAMEROON,Africa,Sub-Saharan Africa,Yaounde,AF,.cm,2233387,Cameroon
+1,CAN,124,CA,Canadian Dollar,Canada,CAD,124,124,21,19,NULL,Canada,Canada,CANADA,Americas,Northern America,Ottawa,NULL,.ca,6251999,Kanada
+1-345,CYM,136,KY,Cayman Islands Dollar,NULL,KYD,136,136,419,19,Caribbean,NULL,Cayman Islands,CAYMAN ISLANDS,Americas,Latin America and the Caribbean,George Town,NULL,.ky,3580718,Kepulauan Cayman
+236,CAF,140,CF,CFA Franc BEAC,Central African Republic (the),XAF,950,140,202,2,Middle Africa,the Central African Republic,Central African Republic,CENTRAL AFRICAN REPUBLIC,Africa,Sub-Saharan Africa,Bangui,AF,.cf,239880,Republik Afrika Tengah
+235,TCD,148,TD,CFA Franc BEAC,Chad,XAF,950,148,202,2,Middle Africa,the Republic of Chad,Chad,CHAD,Africa,Sub-Saharan Africa,N'Djamena,AF,.td,2434508,Chad
+56,CHL,152,CL,Chilean Peso,Chile,CLP,152,152,419,19,South America,the Republic of Chile,Chile,CHILE,Americas,Latin America and the Caribbean,Santiago,SA,.cl,3895114,Chile
+86,CHN,156,CN,Yuan Renminbi,China,CNY,156,156,30,142,NULL,the People's Republic of China,China,CHINA,Asia,Eastern Asia,Beijing,AS,.cn,1814991,China
+852,HKG,344,HK,Hong Kong Dollar,NULL,HKD,344,344,30,142,NULL,NULL,"China, Hong Kong Special Administrative Region",HONG KONG,Asia,Eastern Asia,Hong Kong,AS,.hk,1819730,Hong Kong
+853,MAC,446,MO,Pataca,NULL,MOP,446,446,30,142,NULL,NULL,"China, Macao Special Administrative Region",MACAO,Asia,Eastern Asia,Macao,AS,.mo,1821275,Macau
+61,CXR,162,CX,Australian Dollar,NULL,AUD,36,162,53,9,NULL,NULL,Christmas Island,CHRISTMAS ISLAND,Oceania,Australia and New Zealand,Flying Fish Cove,OC,.cx,2078138,Pulau Krismas
+61,CCK,166,CC,Australian Dollar,NULL,AUD,36,166,53,9,NULL,NULL,Cocos (Keeling) Islands,COCOS (KEELING) ISLANDS,Oceania,Australia and New Zealand,West Island,AS,.cc,1547376,Kepulauan Cocos (Keeling)
+57,COL,170,CO,Colombian Peso,Colombia,COP,170,170,419,19,South America,the Republic of Colombia,Colombia,COLOMBIA,Americas,Latin America and the Caribbean,Bogota,SA,.co,3686110,Colombia
+269,COM,174,KM,Comorian Franc,Comoros (the),KMF,174,174,202,2,Eastern Africa,the Union of the Comoros,Comoros,COMOROS,Africa,Sub-Saharan Africa,Moroni,AF,.km,921929,Comoros
+242,COG,178,CG,CFA Franc BEAC,Congo (the),XAF,950,178,202,2,Middle Africa,the Republic of the Congo,Congo,CONGO,Africa,Sub-Saharan Africa,Brazzaville,AF,.cg,2260494,Congo - Brazzaville
+682,COK,184,CK,New Zealand Dollar,Cook Islands (the) **,NZD,554,184,61,9,NULL,the Cook Islands **,Cook Islands,COOK ISLANDS,Oceania,Polynesia,Avarua,OC,.ck,1899402,Kepulauan Cook
+506,CRI,188,CR,Costa Rican Colon,Costa Rica,CRC,188,188,419,19,Central America,the Republic of Costa Rica,Costa Rica,COSTA RICA,Americas,Latin America and the Caribbean,San Jose,NULL,.cr,3624060,Costa Rica
+385,HRV,191,HR,Euro,Croatia,EUR,978,191,39,150,NULL,the Republic of Croatia,Croatia,CROATIA,Europe,Southern Europe,Zagreb,EU,.hr,3202326,Croatia
+53,CUB,192,CU,"Cuban Peso,Peso Convertible",Cuba,"CUP,CUC",192931,192,419,19,Caribbean,the Republic of Cuba,Cuba,CUBA,Americas,Latin America and the Caribbean,Havana,NULL,.cu,3562981,Cuba
+599,CUW,531,CW,Netherlands Antillean Guilder,NULL,ANG,532,531,419,19,Caribbean,NULL,Curaçao,CURAÇAO,Americas,Latin America and the Caribbean,Willemstad,NULL,.cw,7626836,Curacao
+357,CYP,196,CY,Euro,Cyprus,EUR,978,196,145,142,NULL,the Republic of Cyprus,Cyprus,CYPRUS,Asia,Western Asia,Nicosia,EU,.cy,146669,Cyprus
+420,CZE,203,CZ,Czech Koruna,Czechia,CZK,203,203,151,150,NULL,the Czech Republic,Czechia,CZECHIA,Europe,Eastern Europe,Prague,EU,.cz,3077311,Czechia
+850,PRK,408,KP,North Korean Won,Democratic People's Republic of Korea (the),KPW,408,408,30,142,NULL,the Democratic People's Republic of Korea,Democratic People's Republic of Korea,KOREA (THE DEMOCRATIC PEOPLE’S REPUBLIC OF),Asia,Eastern Asia,Pyongyang,AS,.kp,1873107,Korea Utara
+243,COD,180,CD,Congolese Franc,Democratic Republic of the Congo (the),CDF,976,180,202,2,Middle Africa,the Democratic Republic of the Congo,Democratic Republic of the Congo,CONGO (THE DEMOCRATIC REPUBLIC OF THE),Africa,Sub-Saharan Africa,Kinshasa,AF,.cd,203312,Congo - Kinshasa
+45,DNK,208,DK,Danish Krone,Denmark,DKK,208,208,154,150,NULL,the Kingdom of Denmark,Denmark,DENMARK,Europe,Northern Europe,Copenhagen,EU,.dk,2623032,Denmark
+45,DNK,208,DK,Danish Krone,Denmark,DKK,208,208,154,150,NULL,the Kingdom of Denmark,Denmark,DENMARK,Europe,Northern Europe,Copenhagen,EU,.dk,2623032,Denmark
+253,DJI,262,DJ,Djibouti Franc,Djibouti,DJF,262,262,202,2,Eastern Africa,the Republic of Djibouti,Djibouti,DJIBOUTI,Africa,Sub-Saharan Africa,Djibouti,AF,.dj,223816,Djibouti
+1-767,DMA,212,DM,East Caribbean Dollar,Dominica,XCD,951,212,419,19,Caribbean,the Commonwealth of Dominica,Dominica,DOMINICA,Americas,Latin America and the Caribbean,Roseau,NULL,.dm,3575830,Dominica
+"1-809,1-829,1-849",DOM,214,DO,Dominican Peso,Dominican Republic (the),DOP,214,214,419,19,Caribbean,the Dominican Republic,Dominican Republic,DOMINICAN REPUBLIC,Americas,Latin America and the Caribbean,Santo Domingo,NULL,.do,3508796,Republik Dominica
+593,ECU,218,EC,US Dollar,Ecuador,USD,840,218,419,19,South America,the Republic of Ecuador,Ecuador,ECUADOR,Americas,Latin America and the Caribbean,Quito,SA,.ec,3658394,Ecuador
+20,EGY,818,EG,Egyptian Pound,Egypt,EGP,818,818,15,2,NULL,the Arab Republic of Egypt,Egypt,EGYPT,Africa,Northern Africa,Cairo,AF,.eg,357994,Mesir
+503,SLV,222,SV,"El Salvador Colon,US Dollar",El Salvador,"SVC,USD",222840,222,419,19,Central America,the Republic of El Salvador,El Salvador,EL SALVADOR,Americas,Latin America and the Caribbean,San Salvador,NULL,.sv,3585968,El Salvador
+240,GNQ,226,GQ,CFA Franc BEAC,Equatorial Guinea,XAF,950,226,202,2,Middle Africa,the Republic of Equatorial Guinea,Equatorial Guinea,EQUATORIAL GUINEA,Africa,Sub-Saharan Africa,Malabo,AF,.gq,2309096,Guinea Khatulistiwa
+291,ERI,232,ER,Nakfa,Eritrea,ERN,232,232,202,2,Eastern Africa,the State of Eritrea,Eritrea,ERITREA,Africa,Sub-Saharan Africa,Asmara,AF,.er,338010,Eritrea
+372,EST,233,EE,Euro,Estonia,EUR,978,233,154,150,NULL,the Republic of Estonia,Estonia,ESTONIA,Europe,Northern Europe,Tallinn,EU,.ee,453733,Estonia
+268,SWZ,748,SZ,Lilangeni,Eswatini,SZL,748,748,202,2,Southern Africa,the Kingdom of Eswatini,Eswatini,ESWATINI,Africa,Sub-Saharan Africa,Mbabane,AF,.sz,934841,Eswatini
+251,ETH,231,ET,Ethiopian Birr,Ethiopia,ETB,230,231,202,2,Eastern Africa,the Federal Democratic Republic of Ethiopia,Ethiopia,ETHIOPIA,Africa,Sub-Saharan Africa,Addis Ababa,AF,.et,337996,Ethiopia
+500,FLK,238,FK,Falkland Islands Pound,NULL,FKP,238,238,419,19,South America,NULL,Falkland Islands,FALKLAND ISLANDS [MALVINAS],Americas,Latin America and the Caribbean,Stanley,SA,.fk,3474414,Kepulauan Falkland
+298,FRO,234,FO,Danish Krone,NULL,DKK,208,234,154,150,NULL,NULL,Faroe Islands,FAROE ISLANDS,Europe,Northern Europe,Torshavn,EU,.fo,2622320,Kepulauan Faroe
+679,FJI,242,FJ,Fiji Dollar,Fiji,FJD,242,242,54,9,NULL,the Republic of Fiji,Fiji,FIJI,Oceania,Melanesia,Suva,OC,.fj,2205218,Fiji
+358,FIN,246,FI,Euro,Finland,EUR,978,246,154,150,NULL,the Republic of Finland,Finland,FINLAND,Europe,Northern Europe,Helsinki,EU,.fi,660013,Finland
+33,FRA,250,FR,Euro,France,EUR,978,250,155,150,NULL,the French Republic,France,FRANCE,Europe,Western Europe,Paris,EU,.fr,3017382,Perancis
+594,GUF,254,GF,Euro,NULL,EUR,978,254,419,19,South America,NULL,French Guiana,FRENCH GUIANA,Americas,Latin America and the Caribbean,Cayenne,SA,.gf,3381670,Guiana Perancis
+689,PYF,258,PF,CFP Franc,NULL,XPF,953,258,61,9,NULL,NULL,French Polynesia,FRENCH POLYNESIA,Oceania,Polynesia,Papeete,OC,.pf,4030656,Polinesia Perancis
+262,ATF,260,TF,Euro,NULL,EUR,978,260,202,2,Eastern Africa,NULL,French Southern Territories,FRENCH SOUTHERN TERRITORIES,Africa,Sub-Saharan Africa,Port-aux-Francais,AN,.tf,1546748,Wilayah Selatan Perancis
+241,GAB,266,GA,CFA Franc BEAC,Gabon,XAF,950,266,202,2,Middle Africa,the Gabonese Republic,Gabon,GABON,Africa,Sub-Saharan Africa,Libreville,AF,.ga,2400553,Gabon
+220,GMB,270,GM,Dalasi,Gambia (the),GMD,270,270,202,2,Western Africa,the Republic of the Gambia,Gambia,GAMBIA,Africa,Sub-Saharan Africa,Banjul,AF,.gm,2413451,Gambia
+995,GEO,268,GE,Lari,Georgia,GEL,981,268,145,142,NULL,Georgia,Georgia,GEORGIA,Asia,Western Asia,Tbilisi,AS,.ge,614540,Georgia
+49,DEU,276,DE,Euro,Germany,EUR,978,276,155,150,NULL,the Federal Republic of Germany,Germany,GERMANY,Europe,Western Europe,Berlin,EU,.de,2921044,Jerman
+233,GHA,288,GH,Ghana Cedi,Ghana,GHS,936,288,202,2,Western Africa,the Republic of Ghana,Ghana,GHANA,Africa,Sub-Saharan Africa,Accra,AF,.gh,2300660,Ghana
+350,GIB,292,GI,Gibraltar Pound,NULL,GIP,292,292,39,150,NULL,NULL,Gibraltar,GIBRALTAR,Europe,Southern Europe,Gibraltar,EU,.gi,2411586,Gibraltar
+30,GRC,300,GR,Euro,Greece,EUR,978,300,39,150,NULL,the Hellenic Republic,Greece,GREECE,Europe,Southern Europe,Athens,EU,.gr,390903,Greece
+299,GRL,304,GL,Danish Krone,NULL,DKK,208,304,21,19,NULL,NULL,Greenland,GREENLAND,Americas,Northern America,Nuuk,NULL,.gl,3425505,Greenland
+1-473,GRD,308,GD,East Caribbean Dollar,Grenada,XCD,951,308,419,19,Caribbean,Grenada,Grenada,GRENADA,Americas,Latin America and the Caribbean,St. George's,NULL,.gd,3580239,Grenada
+590,GLP,312,GP,Euro,NULL,EUR,978,312,419,19,Caribbean,NULL,Guadeloupe,GUADELOUPE,Americas,Latin America and the Caribbean,Basse-Terre,NULL,.gp,3579143,Guadeloupe
+1-671,GUM,316,GU,US Dollar,NULL,USD,840,316,57,9,NULL,NULL,Guam,GUAM,Oceania,Micronesia,Hagatna,OC,.gu,4043988,Guam
+502,GTM,320,GT,Quetzal,Guatemala,GTQ,320,320,419,19,Central America,the Republic of Guatemala,Guatemala,GUATEMALA,Americas,Latin America and the Caribbean,Guatemala City,NULL,.gt,3595528,Guatemala
+44,GGY,831,GG,Pound Sterling,NULL,GBP,826,831,154,150,NULL,NULL,Guernsey,GUERNSEY,Europe,Northern Europe,St Peter Port,EU,.gg,3042362,Guernsey
+224,GIN,324,GN,Guinean Franc,Guinea,GNF,324,324,202,2,Western Africa,the Republic of Guinea,Guinea,GUINEA,Africa,Sub-Saharan Africa,Conakry,AF,.gn,2420477,Guinea
+245,GNB,624,GW,CFA Franc BCEAO,Guinea-Bissau,XOF,952,624,202,2,Western Africa,the Republic of Guinea-Bissau,Guinea-Bissau,GUINEA-BISSAU,Africa,Sub-Saharan Africa,Bissau,AF,.gw,2372248,Guinea Bissau
+592,GUY,328,GY,Guyana Dollar,Guyana,GYD,328,328,419,19,South America,the Co-operative Republic of Guyana,Guyana,GUYANA,Americas,Latin America and the Caribbean,Georgetown,SA,.gy,3378535,Guyana
+509,HTI,332,HT,"Gourde,US Dollar",Haiti,"HTG,USD",332840,332,419,19,Caribbean,the Republic of Haiti,Haiti,HAITI,Americas,Latin America and the Caribbean,Port-au-Prince,NULL,.ht,3723988,Haiti
+672,HMD,334,HM,Australian Dollar,NULL,AUD,36,334,53,9,NULL,NULL,Heard Island and McDonald Islands,HEARD ISLAND AND MCDONALD ISLANDS,Oceania,Australia and New Zealand,NULL,AN,.hm,1547314,Kepulauan Heard & McDonald
+39-06,VAT,336,VA,Euro,Holy See (the) *,EUR,978,336,39,150,NULL,the Holy See *,Holy See,HOLY SEE,Europe,Southern Europe,Vatican City,EU,.va,3164670,Kota Vatican
+504,HND,340,HN,Lempira,Honduras,HNL,340,340,419,19,Central America,the Republic of Honduras,Honduras,HONDURAS,Americas,Latin America and the Caribbean,Tegucigalpa,NULL,.hn,3608932,Honduras
+36,HUN,348,HU,Forint,Hungary,HUF,348,348,151,150,NULL,Hungary,Hungary,HUNGARY,Europe,Eastern Europe,Budapest,EU,.hu,719819,Hungary
+354,ISL,352,IS,Iceland Krona,Iceland,ISK,352,352,154,150,NULL,the Republic of Iceland,Iceland,ICELAND,Europe,Northern Europe,Reykjavik,EU,.is,2629691,Iceland
+91,IND,356,IN,Indian Rupee,India,INR,356,356,34,142,NULL,the Republic of India,India,INDIA,Asia,Southern Asia,New Delhi,AS,.in,1269750,India
+62,IDN,360,ID,Rupiah,Indonesia,IDR,360,360,35,142,NULL,the Republic of Indonesia,Indonesia,INDONESIA,Asia,South-eastern Asia,Jakarta,AS,.id,1643084,Indonesia
+98,IRN,364,IR,Iranian Rial,Iran (Islamic Republic of),IRR,364,364,34,142,NULL,the Islamic Republic of Iran,Iran (Islamic Republic of),IRAN (ISLAMIC REPUBLIC OF),Asia,Southern Asia,Tehran,AS,.ir,130758,Iran
+964,IRQ,368,IQ,Iraqi Dinar,Iraq,IQD,368,368,145,142,NULL,the Republic of Iraq,Iraq,IRAQ,Asia,Western Asia,Baghdad,AS,.iq,99237,Iraq
+353,IRL,372,IE,Euro,Ireland,EUR,978,372,154,150,NULL,Ireland,Ireland,IRELAND,Europe,Northern Europe,Dublin,EU,.ie,2963597,Ireland
+44,IMN,833,IM,Pound Sterling,NULL,GBP,826,833,154,150,NULL,NULL,Isle of Man,ISLE OF MAN,Europe,Northern Europe,Douglas,EU,.im,3042225,Isle of Man
+972,ISR,376,IL,New Israeli Sheqel,Israel,ILS,376,376,145,142,NULL,the State of Israel,Israel,ISRAEL,Asia,Western Asia,Jerusalem,AS,.il,294640,Israel
+39,ITA,380,IT,Euro,Italy,EUR,978,380,39,150,NULL,the Republic of Italy,Italy,ITALY,Europe,Southern Europe,Rome,EU,.it,3175395,Itali
+225,CIV,384,CI,CFA Franc BCEAO,NULL,XOF,952,384,202,2,Western Africa,NULL,Ivory Coast,CÔTE D'IVOIRE,Africa,Sub-Saharan Africa,Yamoussoukro,AF,.ci,2287781,Cote d’Ivoire
+1-876,JAM,388,JM,Jamaican Dollar,Jamaica,JMD,388,388,419,19,Caribbean,Jamaica,Jamaica,JAMAICA,Americas,Latin America and the Caribbean,Kingston,NULL,.jm,3489940,Jamaica
+81,JPN,392,JP,Yen,Japan,JPY,392,392,30,142,NULL,Japan,Japan,JAPAN,Asia,Eastern Asia,Tokyo,AS,.jp,1861060,Jepun
+44,JEY,832,JE,Pound Sterling,NULL,GBP,826,832,154,150,NULL,NULL,Jersey,JERSEY,Europe,Northern Europe,Saint Helier,EU,.je,3042142,Jersey
+962,JOR,400,JO,Jordanian Dinar,Jordan,JOD,400,400,145,142,NULL,the Hashemite Kingdom of Jordan,Jordan,JORDAN,Asia,Western Asia,Amman,AS,.jo,248816,Jordan
+7,KAZ,398,KZ,Tenge,Kazakhstan,KZT,398,398,143,142,NULL,the Republic of Kazakhstan,Kazakhstan,KAZAKHSTAN,Asia,Central Asia,Nur-Sultan,AS,.kz,1522867,Kazakhstan
+254,KEN,404,KE,Kenyan Shilling,Kenya,KES,404,404,202,2,Eastern Africa,the Republic of Kenya,Kenya,KENYA,Africa,Sub-Saharan Africa,Nairobi,AF,.ke,192950,Kenya
+686,KIR,296,KI,Australian Dollar,Kiribati,AUD,36,296,57,9,NULL,the Republic of Kiribati,Kiribati,KIRIBATI,Oceania,Micronesia,Tarawa,OC,.ki,4030945,Kiribati
+965,KWT,414,KW,Kuwaiti Dinar,Kuwait,KWD,414,414,145,142,NULL,the State of Kuwait,Kuwait,KUWAIT,Asia,Western Asia,Kuwait City,AS,.kw,285570,Kuwait
+996,KGZ,417,KG,Som,Kyrgyzstan,KGS,417,417,143,142,NULL,the Kyrgyz Republic,Kyrgyzstan,KYRGYZSTAN,Asia,Central Asia,Bishkek,AS,.kg,1527747,Kyrgyzstan
+856,LAO,418,LA,Lao Kip,Lao People's Democratic Republic (the),LAK,418,418,35,142,NULL,the Lao People's Democratic Republic,Lao People's Democratic Republic,LAO PEOPLE’S DEMOCRATIC REPUBLIC,Asia,South-eastern Asia,Vientiane,AS,.la,1655842,Laos
+371,LVA,428,LV,Euro,Latvia,EUR,978,428,154,150,NULL,the Republic of Latvia,Latvia,LATVIA,Europe,Northern Europe,Riga,EU,.lv,458258,Latvia
+961,LBN,422,LB,Lebanese Pound,Lebanon,LBP,422,422,145,142,NULL,the Lebanese Republic,Lebanon,LEBANON,Asia,Western Asia,Beirut,AS,.lb,272103,Lubnan
+266,LSO,426,LS,"Loti,Rand",Lesotho,"LSL,ZAR",426710,426,202,2,Southern Africa,the Kingdom of Lesotho,Lesotho,LESOTHO,Africa,Sub-Saharan Africa,Maseru,AF,.ls,932692,Lesotho
+231,LBR,430,LR,Liberian Dollar,Liberia,LRD,430,430,202,2,Western Africa,the Republic of Liberia,Liberia,LIBERIA,Africa,Sub-Saharan Africa,Monrovia,AF,.lr,2275384,Liberia
+218,LBY,434,LY,Libyan Dinar,Libya,LYD,434,434,15,2,NULL,the State of Libya,Libya,LIBYA,Africa,Northern Africa,Tripoli,AF,.ly,2215636,Libya
+423,LIE,438,LI,Swiss Franc,Liechtenstein,CHF,756,438,155,150,NULL,the Principality of Liechtenstein,Liechtenstein,LIECHTENSTEIN,Europe,Western Europe,Vaduz,EU,.li,3042058,Liechtenstein
+370,LTU,440,LT,Euro,Lithuania,EUR,978,440,154,150,NULL,the Republic of Lithuania,Lithuania,LITHUANIA,Europe,Northern Europe,Vilnius,EU,.lt,597427,Lithuania
+352,LUX,442,LU,Euro,Luxembourg,EUR,978,442,155,150,NULL,the Grand Duchy of Luxembourg,Luxembourg,LUXEMBOURG,Europe,Western Europe,Luxembourg,EU,.lu,2960313,Luxembourg
+261,MDG,450,MG,Malagasy Ariary,Madagascar,MGA,969,450,202,2,Eastern Africa,the Republic of Madagascar,Madagascar,MADAGASCAR,Africa,Sub-Saharan Africa,Antananarivo,AF,.mg,1062947,Madagaskar
+265,MWI,454,MW,Malawi Kwacha,Malawi,MWK,454,454,202,2,Eastern Africa,the Republic of Malawi,Malawi,MALAWI,Africa,Sub-Saharan Africa,Lilongwe,AF,.mw,927384,Malawi
+60,MYS,458,MY,Malaysian Ringgit,Malaysia,MYR,458,458,35,142,NULL,Malaysia,Malaysia,MALAYSIA,Asia,South-eastern Asia,Kuala Lumpur,AS,.my,1733045,Malaysia
+960,MDV,462,MV,Rufiyaa,Maldives,MVR,462,462,34,142,NULL,the Republic of Maldives,Maldives,MALDIVES,Asia,Southern Asia,Male,AS,.mv,1282028,Maldives
+223,MLI,466,ML,CFA Franc BCEAO,Mali,XOF,952,466,202,2,Western Africa,the Republic of Mali,Mali,MALI,Africa,Sub-Saharan Africa,Bamako,AF,.ml,2453866,Mali
+356,MLT,470,MT,Euro,Malta,EUR,978,470,39,150,NULL,the Republic of Malta,Malta,MALTA,Europe,Southern Europe,Valletta,EU,.mt,2562770,Malta
+692,MHL,584,MH,US Dollar,Marshall Islands (the),USD,840,584,57,9,NULL,the Republic of the Marshall Islands,Marshall Islands,MARSHALL ISLANDS,Oceania,Micronesia,Majuro,OC,.mh,2080185,Kepulauan Marshall
+596,MTQ,474,MQ,Euro,NULL,EUR,978,474,419,19,Caribbean,NULL,Martinique,MARTINIQUE,Americas,Latin America and the Caribbean,Fort-de-France,NULL,.mq,3570311,Martinique
+222,MRT,478,MR,Ouguiya,Mauritania,MRU,929,478,202,2,Western Africa,the Islamic Republic of Mauritania,Mauritania,MAURITANIA,Africa,Sub-Saharan Africa,Nouakchott,AF,.mr,2378080,Mauritania
+230,MUS,480,MU,Mauritius Rupee,Mauritius,MUR,480,480,202,2,Eastern Africa,the Republic of Mauritius,Mauritius,MAURITIUS,Africa,Sub-Saharan Africa,Port Louis,AF,.mu,934292,Mauritius
+262,MYT,175,YT,Euro,NULL,EUR,978,175,202,2,Eastern Africa,NULL,Mayotte,MAYOTTE,Africa,Sub-Saharan Africa,Mamoudzou,AF,.yt,1024031,Mayotte
+52,MEX,484,MX,Mexican Peso,Mexico,MXN,484,484,419,19,Central America,the United Mexican States,Mexico,MEXICO,Americas,Latin America and the Caribbean,Mexico City,NULL,.mx,3996063,Mexico
+691,FSM,583,FM,US Dollar,Micronesia (Federated States of),USD,840,583,57,9,NULL,the Federated States of Micronesia,Micronesia (Federated States of),MICRONESIA (FEDERATED STATES OF),Oceania,Micronesia,Palikir,OC,.fm,2081918,Micronesia
+377,MCO,492,MC,Euro,Monaco,EUR,978,492,155,150,NULL,the Principality of Monaco,Monaco,MONACO,Europe,Western Europe,Monaco,EU,.mc,2993457,Monaco
+976,MNG,496,MN,Tugrik,Mongolia,MNT,496,496,30,142,NULL,Mongolia,Mongolia,MONGOLIA,Asia,Eastern Asia,Ulaanbaatar,AS,.mn,2029969,Mongolia
+382,MNE,499,ME,Euro,Montenegro,EUR,978,499,39,150,NULL,Montenegro,Montenegro,MONTENEGRO,Europe,Southern Europe,Podgorica,EU,.me,3194884,Montenegro
+1-664,MSR,500,MS,East Caribbean Dollar,NULL,XCD,951,500,419,19,Caribbean,NULL,Montserrat,MONTSERRAT,Americas,Latin America and the Caribbean,Plymouth,NULL,.ms,3578097,Montserrat
+212,MAR,504,MA,Moroccan Dirham,Morocco,MAD,504,504,15,2,NULL,the Kingdom of Morocco,Morocco,MOROCCO,Africa,Northern Africa,Rabat,AF,.ma,2542007,Maghribi
+258,MOZ,508,MZ,Mozambique Metical,Mozambique,MZN,943,508,202,2,Eastern Africa,the Republic of Mozambique,Mozambique,MOZAMBIQUE,Africa,Sub-Saharan Africa,Maputo,AF,.mz,1036973,Mozambique
+95,MMR,104,MM,Kyat,Myanmar,MMK,104,104,35,142,NULL,the Republic of the Union of Myanmar,Myanmar,MYANMAR,Asia,South-eastern Asia,Nay Pyi Taw,AS,.mm,1327865,Myanmar (Burma)
+264,NAM,516,NULL,"Namibia Dollar,Rand",Namibia,"NAD,ZAR",516710,516,202,2,Southern Africa,the Republic of Namibia,Namibia,NAMIBIA,Africa,Sub-Saharan Africa,Windhoek,AF,.na,3355338,Namibia
+674,NRU,520,NR,Australian Dollar,Nauru,AUD,36,520,57,9,NULL,the Republic of Nauru,Nauru,NAURU,Oceania,Micronesia,Yaren,OC,.nr,2110425,Nauru
+977,NPL,524,NP,Nepalese Rupee,Nepal,NPR,524,524,34,142,NULL,Nepal,Nepal,NEPAL,Asia,Southern Asia,Kathmandu,AS,.np,1282988,Nepal
+31,NLD,528,NL,Euro,Netherlands (the),EUR,978,528,155,150,NULL,the Kingdom of the Netherlands,Netherlands,NETHERLANDS,Europe,Western Europe,Amsterdam,EU,.nl,2750405,Belanda
+31,NLD,528,NL,Euro,Netherlands (the),EUR,978,528,155,150,NULL,the Kingdom of the Netherlands,Netherlands,NETHERLANDS,Europe,Western Europe,Amsterdam,EU,.nl,2750405,Belanda
+687,NCL,540,NC,CFP Franc,NULL,XPF,953,540,54,9,NULL,NULL,New Caledonia,NEW CALEDONIA,Oceania,Melanesia,Noumea,OC,.nc,2139685,New Caledonia
+64,NZL,554,NZ,New Zealand Dollar,New Zealand,NZD,554,554,53,9,NULL,New Zealand,New Zealand,NEW ZEALAND,Oceania,Australia and New Zealand,Wellington,OC,.nz,2186224,New Zealand
+505,NIC,558,NI,Cordoba Oro,Nicaragua,NIO,558,558,419,19,Central America,the Republic of Nicaragua,Nicaragua,NICARAGUA,Americas,Latin America and the Caribbean,Managua,NULL,.ni,3617476,Nicaragua
+227,NER,562,NE,CFA Franc BCEAO,Niger (the),XOF,952,562,202,2,Western Africa,the Republic of the Niger,Niger,NIGER,Africa,Sub-Saharan Africa,Niamey,AF,.ne,2440476,Niger
+234,NGA,566,NG,Naira,Nigeria,NGN,566,566,202,2,Western Africa,the Federal Republic of Nigeria,Nigeria,NIGERIA,Africa,Sub-Saharan Africa,Abuja,AF,.ng,2328926,Nigeria
+683,NIU,570,NU,New Zealand Dollar,Niue **,NZD,554,570,61,9,NULL,Niue **,Niue,NIUE,Oceania,Polynesia,Alofi,OC,.nu,4036232,Niue
+672,NFK,574,NF,Australian Dollar,NULL,AUD,36,574,53,9,NULL,NULL,Norfolk Island,NORFOLK ISLAND,Oceania,Australia and New Zealand,Kingston,OC,.nf,2155115,Pulau Norfolk
+1-670,MNP,580,MP,US Dollar,NULL,USD,840,580,57,9,NULL,NULL,Northern Mariana Islands,NORTHERN MARIANA ISLANDS,Oceania,Micronesia,Saipan,OC,.mp,4041468,Kepulauan Mariana Utara
+389,MKD,807,MK,Denar,North Macedonia,MKD,807,807,39,150,NULL,the Republic of North Macedonia,North Macedonia,NORTH MACEDONIA,Europe,Southern Europe,Skopje,EU,.mk,718075,Macedonia Utara
+47,NOR,578,NO,Norwegian Krone,Norway,NOK,578,578,154,150,NULL,the Kingdom of Norway,Norway,NORWAY,Europe,Northern Europe,Oslo,EU,.no,3144096,Norway
+968,OMN,512,OM,Rial Omani,Oman,OMR,512,512,145,142,NULL,the Sultanate of Oman,Oman,OMAN,Asia,Western Asia,Muscat,AS,.om,286963,Oman
+92,PAK,586,PK,Pakistan Rupee,Pakistan,PKR,586,586,34,142,NULL,the Islamic Republic of Pakistan,Pakistan,PAKISTAN,Asia,Southern Asia,Islamabad,AS,.pk,1168579,Pakistan
+680,PLW,585,PW,US Dollar,Palau,USD,840,585,57,9,NULL,the Republic of Palau,Palau,PALAU,Oceania,Micronesia,Melekeok,OC,.pw,1559582,Palau
+507,PAN,591,PA,"Balboa,US Dollar",Panama,"PAB,USD",590840,591,419,19,Central America,the Republic of Panama,Panama,PANAMA,Americas,Latin America and the Caribbean,Panama City,NULL,.pa,3703430,Panama
+675,PNG,598,PG,Kina,Papua New Guinea,PGK,598,598,54,9,NULL,the Independent State of Papua New Guinea,Papua New Guinea,PAPUA NEW GUINEA,Oceania,Melanesia,Port Moresby,OC,.pg,2088628,Papua New Guinea
+595,PRY,600,PY,Guarani,Paraguay,PYG,600,600,419,19,South America,the Republic of Paraguay,Paraguay,PARAGUAY,Americas,Latin America and the Caribbean,Asuncion,SA,.py,3437598,Paraguay
+51,PER,604,PE,Sol,Peru,PEN,604,604,419,19,South America,the Republic of Peru,Peru,PERU,Americas,Latin America and the Caribbean,Lima,SA,.pe,3932488,Peru
+63,PHL,608,PH,Philippine Peso,Philippines (the),PHP,608,608,35,142,NULL,the Republic of the Philippines,Philippines,PHILIPPINES,Asia,South-eastern Asia,Manila,AS,.ph,1694008,Filipina
+870,PCN,612,PN,New Zealand Dollar,NULL,NZD,554,612,61,9,NULL,NULL,Pitcairn,PITCAIRN,Oceania,Polynesia,Adamstown,OC,.pn,4030699,Kepulauan Pitcairn
+48,POL,616,PL,Zloty,Poland,PLN,985,616,151,150,NULL,the Republic of Poland,Poland,POLAND,Europe,Eastern Europe,Warsaw,EU,.pl,798544,Poland
+351,PRT,620,PT,Euro,Portugal,EUR,978,620,39,150,NULL,the Portuguese Republic,Portugal,PORTUGAL,Europe,Southern Europe,Lisbon,EU,.pt,2264397,Portugal
+1,PRI,630,PR,US Dollar,NULL,USD,840,630,419,19,Caribbean,NULL,Puerto Rico,PUERTO RICO,Americas,Latin America and the Caribbean,San Juan,NULL,.pr,4566966,Puerto Rico
+974,QAT,634,QA,Qatari Rial,Qatar,QAR,634,634,145,142,NULL,the State of Qatar,Qatar,QATAR,Asia,Western Asia,Doha,AS,.qa,289688,Qatar
+82,KOR,410,KR,Won,Republic of Korea (the),KRW,410,410,30,142,NULL,the Republic of Korea,Republic of Korea,KOREA (THE REPUBLIC OF),Asia,Eastern Asia,Seoul,AS,.kr,1835841,Korea Selatan
+373,MDA,498,MD,Moldovan Leu,Republic of Moldova (the),MDL,498,498,151,150,NULL,the Republic of Moldova,Republic of Moldova,MOLDOVA (THE REPUBLIC OF),Europe,Eastern Europe,Chisinau,EU,.md,617790,Moldova
+262,REU,638,RE,Euro,NULL,EUR,978,638,202,2,Eastern Africa,NULL,Réunion,RÉUNION,Africa,Sub-Saharan Africa,Saint-Denis,AF,.re,935317,Reunion
+40,ROU,642,RO,Romanian Leu,Romania,RON,946,642,151,150,NULL,Romania,Romania,ROMANIA,Europe,Eastern Europe,Bucharest,EU,.ro,798549,Romania
+7,RUS,643,RU,Russian Ruble,Russian Federation (the),RUB,643,643,151,150,NULL,the Russian Federation,Russian Federation,RUSSIAN FEDERATION,Europe,Eastern Europe,Moscow,EU,.ru,2017370,Rusia
+250,RWA,646,RW,Rwanda Franc,Rwanda,RWF,646,646,202,2,Eastern Africa,the Republic of Rwanda,Rwanda,RWANDA,Africa,Sub-Saharan Africa,Kigali,AF,.rw,49518,Rwanda
+590,BLM,652,BL,Euro,NULL,EUR,978,652,419,19,Caribbean,NULL,Saint Barthélemy,SAINT BARTHÉLEMY,Americas,Latin America and the Caribbean,Gustavia,NULL,.gp,3578476,St. Barthelemy
+290 n,SHN,654,SH,Saint Helena Pound,NULL,SHP,654,654,202,2,Western Africa,NULL,Saint Helena,"SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA",Africa,Sub-Saharan Africa,Jamestown,AF,.sh,3370751,Saint Helena
+1-869,KNA,659,KN,East Caribbean Dollar,Saint Kitts and Nevis,XCD,951,659,419,19,Caribbean,Saint Kitts and Nevis,Saint Kitts and Nevis,SAINT KITTS AND NEVIS,Americas,Latin America and the Caribbean,Basseterre,NULL,.kn,3575174,Saint Kitts dan Nevis
+1-758,LCA,662,LC,East Caribbean Dollar,Saint Lucia,XCD,951,662,419,19,Caribbean,Saint Lucia,Saint Lucia,SAINT LUCIA,Americas,Latin America and the Caribbean,Castries,NULL,.lc,3576468,Saint Lucia
+590,MAF,663,MF,Euro,NULL,EUR,978,663,419,19,Caribbean,NULL,Saint Martin (French Part),SAINT MARTIN (FRENCH PART),Americas,Latin America and the Caribbean,Marigot,NULL,.gp,3578421,Saint Martin
+508,SPM,666,PM,Euro,NULL,EUR,978,666,21,19,NULL,NULL,Saint Pierre and Miquelon,SAINT PIERRE AND MIQUELON,Americas,Northern America,Saint-Pierre,NULL,.pm,3424932,Saint Pierre dan Miquelon
+1-784,VCT,670,VC,East Caribbean Dollar,Saint Vincent and the Grenadines,XCD,951,670,419,19,Caribbean,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,SAINT VINCENT AND THE GRENADINES,Americas,Latin America and the Caribbean,Kingstown,NULL,.vc,3577815,Saint Vincent dan Grenadines
+685,WSM,882,WS,Tala,Samoa,WST,882,882,61,9,NULL,the Independent State of Samoa,Samoa,SAMOA,Oceania,Polynesia,Apia,OC,.ws,4034894,Samoa
+378,SMR,674,SM,Euro,San Marino,EUR,978,674,39,150,NULL,the Republic of San Marino,San Marino,SAN MARINO,Europe,Southern Europe,San Marino,EU,.sm,3168068,San Marino
+239,STP,678,ST,Dobra,Sao Tome and Principe,STN,930,678,202,2,Middle Africa,the Democratic Republic of Sao Tome and Principe,Sao Tome and Principe,SAO TOME AND PRINCIPE,Africa,Sub-Saharan Africa,Sao Tome,AF,.st,2410758,Sao Tome dan Principe
+966,SAU,682,SA,Saudi Riyal,Saudi Arabia,SAR,682,682,145,142,NULL,the Kingdom of Saudi Arabia,Saudi Arabia,SAUDI ARABIA,Asia,Western Asia,Riyadh,AS,.sa,102358,Arab Saudi
+221,SEN,686,SN,CFA Franc BCEAO,Senegal,XOF,952,686,202,2,Western Africa,the Republic of Senegal,Senegal,SENEGAL,Africa,Sub-Saharan Africa,Dakar,AF,.sn,2245662,Senegal
+381 p,SRB,688,RS,Serbian Dinar,Serbia,RSD,941,688,39,150,NULL,the Republic of Serbia,Serbia,SERBIA,Europe,Southern Europe,Belgrade,EU,.rs,6290252,Serbia
+248,SYC,690,SC,Seychelles Rupee,Seychelles,SCR,690,690,202,2,Eastern Africa,the Republic of Seychelles,Seychelles,SEYCHELLES,Africa,Sub-Saharan Africa,Victoria,AF,.sc,241170,Seychelles
+248,SYC,690,SC,Seychelles Rupee,Seychelles,SCR,690,690,202,2,Eastern Africa,the Republic of Seychelles,Seychelles,SEYCHELLES,Africa,Sub-Saharan Africa,Victoria,AF,.sc,241170,Seychelles
+232,SLE,694,SL,Leone,Sierra Leone,SLE,925,694,202,2,Western Africa,the Republic of Sierra Leone,Sierra Leone,SIERRA LEONE,Africa,Sub-Saharan Africa,Freetown,AF,.sl,2403846,Sierra Leone
+65,SGP,702,SG,Singapore Dollar,Singapore,SGD,702,702,35,142,NULL,the Republic of Singapore,Singapore,SINGAPORE,Asia,South-eastern Asia,Singapore,AS,.sg,1880251,Singapura
+1-721,SXM,534,SX,Netherlands Antillean Guilder,NULL,ANG,532,534,419,19,Caribbean,NULL,Sint Maarten (Dutch part),SINT MAARTEN (DUTCH PART),Americas,Latin America and the Caribbean,Philipsburg,NULL,.sx,7609695,Sint Maarten
+421,SVK,703,SK,Euro,Slovakia,EUR,978,703,151,150,NULL,the Slovak Republic,Slovakia,SLOVAKIA,Europe,Eastern Europe,Bratislava,EU,.sk,3057568,Slovakia
+386,SVN,705,SI,Euro,Slovenia,EUR,978,705,39,150,NULL,the Republic of Slovenia,Slovenia,SLOVENIA,Europe,Southern Europe,Ljubljana,EU,.si,3190538,Slovenia
+677,SLB,90,SB,Solomon Islands Dollar,Solomon Islands,SBD,90,90,54,9,NULL,Solomon Islands,Solomon Islands,SOLOMON ISLANDS,Oceania,Melanesia,Honiara,OC,.sb,2103350,Kepulauan Solomon
+252,SOM,706,SO,Somali Shilling,Somalia,SOS,706,706,202,2,Eastern Africa,the Federal Republic of Somalia,Somalia,SOMALIA,Africa,Sub-Saharan Africa,Mogadishu,AF,.so,51537,Somalia
+27,ZAF,710,ZA,Rand,South Africa,ZAR,710,710,202,2,Southern Africa,the Republic of South Africa,South Africa,SOUTH AFRICA,Africa,Sub-Saharan Africa,Pretoria,AF,.za,953987,Afrika Selatan
+500,SGS,239,GS,No universal currency,NULL,NULL,NULL,239,419,19,South America,NULL,South Georgia and the South Sandwich Islands,SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS,Americas,Latin America and the Caribbean,Grytviken,AN,.gs,3474415,Kepulauan Georgia Selatan & Sandwich Selatan
+211,SSD,728,SS,South Sudanese Pound,South Sudan,SSP,728,728,202,2,Eastern Africa,the Republic of South Sudan,South Sudan,SOUTH SUDAN,Africa,Sub-Saharan Africa,Juba,AF,.ss,7909807,Sudan Selatan
+34,ESP,724,ES,Euro,Spain,EUR,978,724,39,150,NULL,the Kingdom of Spain,Spain,SPAIN,Europe,Southern Europe,Madrid,EU,.es,2510769,Sepanyol
+94,LKA,144,LK,Sri Lanka Rupee,Sri Lanka,LKR,144,144,34,142,NULL,the Democratic Socialist Republic of Sri Lanka,Sri Lanka,SRI LANKA,Asia,Southern Asia,Colombo,AS,.lk,1227603,Sri Lanka
+970,PSE,275,PS,No universal currency,State of Palestine (the) *,NULL,NULL,275,145,142,NULL,the State of Palestine *,State of Palestine,"PALESTINE, STATE OF",Asia,Western Asia,East Jerusalem,AS,.ps,6254930,Palestin
+249,SDN,729,SD,Sudanese Pound,Sudan (the),SDG,938,729,15,2,NULL,the Republic of the Sudan,Sudan,SUDAN,Africa,Northern Africa,Khartoum,AF,.sd,366755,Sudan
+597,SUR,740,SR,Surinam Dollar,Suriname,SRD,968,740,419,19,South America,the Republic of Suriname,Suriname,SURINAME,Americas,Latin America and the Caribbean,Paramaribo,SA,.sr,3382998,Surinam
+47,SJM,744,SJ,Norwegian Krone,NULL,NOK,578,744,154,150,NULL,NULL,Svalbard and Jan Mayen Islands,SVALBARD AND JAN MAYEN,Europe,Northern Europe,Longyearbyen,EU,.sj,607072,Svalbard dan Jan Mayen
+46,SWE,752,SE,Swedish Krona,Sweden,SEK,752,752,154,150,NULL,the Kingdom of Sweden,Sweden,SWEDEN,Europe,Northern Europe,Stockholm,EU,.se,2661886,Sweden
+41,CHE,756,CH,Swiss Franc,Switzerland,CHF,756,756,155,150,NULL,the Swiss Confederation,Switzerland,SWITZERLAND,Europe,Western Europe,Bern,EU,.ch,2658434,Switzerland
+963,SYR,760,SY,Syrian Pound,Syrian Arab Republic (the),SYP,760,760,145,142,NULL,the Syrian Arab Republic,Syrian Arab Republic,SYRIAN ARAB REPUBLIC,Asia,Western Asia,Damascus,AS,.sy,163843,Syria
+886,TWN,158,TW,New Taiwan Dollar,NULL,TWD,901,158,30,142,NULL,NULL,Taiwan,TAIWAN (PROVINCE OF CHINA),Asia,Eastern Asia,Taipei,AS,.tw,1668284,Taiwan
+992,TJK,762,TJ,Somoni,Tajikistan,TJS,972,762,143,142,NULL,the Republic of Tajikistan,Tajikistan,TAJIKISTAN,Asia,Central Asia,Dushanbe,AS,.tj,1220409,Tajikistan
+66,THA,764,TH,Baht,Thailand,THB,764,764,35,142,NULL,the Kingdom of Thailand,Thailand,THAILAND,Asia,South-eastern Asia,Bangkok,AS,.th,1605651,Thailand
+670,TLS,626,TL,US Dollar,Timor-Leste,USD,840,626,35,142,NULL,the Democratic Republic of Timor-Leste,Timor-Leste,TIMOR-LESTE,Asia,South-eastern Asia,Dili,OC,.tl,1966436,Timor-Leste
+228,TGO,768,TG,CFA Franc BCEAO,Togo,XOF,952,768,202,2,Western Africa,the Togolese Republic,Togo,TOGO,Africa,Sub-Saharan Africa,Lome,AF,.tg,2363686,Togo
+690,TKL,772,TK,New Zealand Dollar,NULL,NZD,554,772,61,9,NULL,NULL,Tokelau,TOKELAU,Oceania,Polynesia,NULL,OC,.tk,4031074,Tokelau
+676,TON,776,TO,Pa’anga,Tonga,TOP,776,776,61,9,NULL,the Kingdom of Tonga,Tonga,TONGA,Oceania,Polynesia,Nuku'alofa,OC,.to,4032283,Tonga
+1-868,TTO,780,TT,Trinidad and Tobago Dollar,Trinidad and Tobago,TTD,780,780,419,19,Caribbean,the Republic of Trinidad and Tobago,Trinidad and Tobago,TRINIDAD AND TOBAGO,Americas,Latin America and the Caribbean,Port of Spain,NULL,.tt,3573591,Trinidad dan Tobago
+216,TUN,788,TN,Tunisian Dinar,Tunisia,TND,788,788,15,2,NULL,the Republic of Tunisia,Tunisia,TUNISIA,Africa,Northern Africa,Tunis,AF,.tn,2464461,Tunisia
+90,TUR,792,TR,Turkish Lira,Turkey,TRY,949,792,145,142,NULL,the Republic of Turkey,Turkey,TÜRK?YE,Asia,Western Asia,Ankara,AS,.tr,298795,Turkiye
+993,TKM,795,TM,Turkmenistan New Manat,Turkmenistan,TMT,934,795,143,142,NULL,Turkmenistan,Turkmenistan,TURKMENISTAN,Asia,Central Asia,Ashgabat,AS,.tm,1218197,Turkmenistan
+1-649,TCA,796,TC,US Dollar,NULL,USD,840,796,419,19,Caribbean,NULL,Turks and Caicos Islands,TURKS AND CAICOS ISLANDS,Americas,Latin America and the Caribbean,Cockburn Town,NULL,.tc,3576916,Kepulauan Turks dan Caicos
+688,TUV,798,TV,Australian Dollar,Tuvalu,AUD,36,798,61,9,NULL,Tuvalu,Tuvalu,TUVALU,Oceania,Polynesia,Funafuti,OC,.tv,2110297,Tuvalu
+256,UGA,800,UG,Uganda Shilling,Uganda,UGX,800,800,202,2,Eastern Africa,the Republic of Uganda,Uganda,UGANDA,Africa,Sub-Saharan Africa,Kampala,AF,.ug,226074,Uganda
+380,UKR,804,UA,Hryvnia,Ukraine,UAH,980,804,151,150,NULL,Ukraine,Ukraine,UKRAINE,Europe,Eastern Europe,Kyiv,EU,.ua,690791,Ukraine
+971,ARE,784,AE,UAE Dirham,United Arab Emirates (the),AED,784,784,145,142,NULL,the United Arab Emirates,United Arab Emirates,UNITED ARAB EMIRATES,Asia,Western Asia,Abu Dhabi,AS,.ae,290557,Emiriah Arab Bersatu
+44,GBR,826,GB,Pound Sterling,United Kingdom of Great Britain and Northern Ireland (the),GBP,826,826,154,150,NULL,the United Kingdom of Great Britain and Northern Ireland,United Kingdom of Great Britain and Northern Ireland,UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND,Europe,Northern Europe,London,EU,.uk,2635167,UK
+255,TZA,834,TZ,Tanzanian Shilling,United Republic of Tanzania (the),TZS,834,834,202,2,Eastern Africa,the United Republic of Tanzania,United Republic of Tanzania,"TANZANIA, UNITED REPUBLIC OF",Africa,Sub-Saharan Africa,Dodoma,AF,.tz,149590,Tanzania
+ ,UMI,581,UM,US Dollar,NULL,USD,840,581,57,9,NULL,NULL,United States Minor Outlying Islands,UNITED STATES MINOR OUTLYING ISLANDS,Oceania,Micronesia,NULL,OC,.um,5854968,Kepulauan Terpencil A.S.
+1,USA,840,US,US Dollar,United States of America (the),USD,840,840,21,19,NULL,the United States of America,United States of America,UNITED STATES OF AMERICA,Americas,Northern America,Washington,NULL,.us,6252001,A.S
+1-340,VIR,850,VI,US Dollar,NULL,USD,840,850,419,19,Caribbean,NULL,United States Virgin Islands,VIRGIN ISLANDS (U.S.),Americas,Latin America and the Caribbean,Charlotte Amalie,NULL,.vi,4796775,Kepulauan Virgin A.S.
+598,URY,858,UY,"Peso Uruguayo,Unidad Previsional",Uruguay,"UYU,UYW",858927,858,419,19,South America,the Eastern Republic of Uruguay,Uruguay,URUGUAY,Americas,Latin America and the Caribbean,Montevideo,SA,.uy,3439705,Uruguay
+998,UZB,860,UZ,Uzbekistan Sum,Uzbekistan,UZS,860,860,143,142,NULL,the Republic of Uzbekistan,Uzbekistan,UZBEKISTAN,Asia,Central Asia,Tashkent,AS,.uz,1512440,Uzbekistan
+678,VUT,548,VU,Vatu,Vanuatu,VUV,548,548,54,9,NULL,the Republic of Vanuatu,Vanuatu,VANUATU,Oceania,Melanesia,Port Vila,OC,.vu,2134431,Vanuatu
+58,VEN,862,VE,"Bolívar Soberano,Bolívar Soberano",Venezuela (Bolivarian Republic of),"VES,VED",928926,862,419,19,South America,the Bolivarian Republic of Venezuela,Venezuela (Bolivarian Republic of),VENEZUELA (BOLIVARIAN REPUBLIC OF),Americas,Latin America and the Caribbean,Caracas,SA,.ve,3625428,Venezuela
+84,VNM,704,VN,Dong,Viet Nam,VND,704,704,35,142,NULL,the Socialist Republic of Viet Nam,Viet Nam,VIET NAM,Asia,South-eastern Asia,Hanoi,AS,.vn,1562822,Vietnam
+681,WLF,876,WF,CFP Franc,NULL,XPF,953,876,61,9,NULL,NULL,Wallis and Futuna Islands,WALLIS AND FUTUNA,Oceania,Polynesia,Mata Utu,OC,.wf,4034749,Wallis dan Futuna
+212,ESH,732,EH,Moroccan Dirham,NULL,MAD,504,732,15,2,NULL,NULL,Western Sahara,WESTERN SAHARA,Africa,Northern Africa,El-Aaiun,AF,.eh,2461445,Sahara Barat
+212,ESH,732,EH,Moroccan Dirham,NULL,MAD,504,732,15,2,NULL,NULL,Western Sahara,WESTERN SAHARA,Africa,Northern Africa,El-Aaiun,AF,.eh,2461445,Sahara Barat
+967,YEM,887,YE,Yemeni Rial,Yemen,YER,886,887,145,142,NULL,the Republic of Yemen,Yemen,YEMEN,Asia,Western Asia,Sanaa,AS,.ye,69543,Yaman
+260,ZMB,894,ZM,Zambian Kwacha,Zambia,ZMW,967,894,202,2,Eastern Africa,the Republic of Zambia,Zambia,ZAMBIA,Africa,Sub-Saharan Africa,Lusaka,AF,.zm,895949,Zambia
+263,ZWE,716,ZW,Zimbabwe Gold,Zimbabwe,ZWG,924,716,202,2,Eastern Africa,the Republic of Zimbabwe,Zimbabwe,ZIMBABWE,Africa,Sub-Saharan Africa,Harare,AF,.zw,878675,Zimbabwe
