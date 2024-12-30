@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             'place_of_birth' => getCountryName($_POST['place_of_birth']),
             'home_address' => filter_var($_POST['home_address'], FILTER_SANITIZE_STRING),
             'email' => filter_var($_POST['email'], FILTER_SANITIZE_EMAIL),
-            'telephone' => filter_var($_POST['telephone'], FILTER_SANITIZE_STRING),
+            'telephone' => sprintf('+(%s) %s', getDialCode($_POST['telephone_country_code']), filter_var($_POST['telephone'], FILTER_SANITIZE_STRING)),
             'outreach' => filter_var($_POST['outreach'], FILTER_SANITIZE_STRING),
             'iban' => filter_var($_POST['iban'], FILTER_SANITIZE_STRING),
         ];
@@ -70,12 +70,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             'father' => [
                 'full_name' => filter_var($_POST['fathers_full_name'], FILTER_SANITIZE_STRING),
                 'email' => filter_var($_POST['fathers_email'], FILTER_SANITIZE_EMAIL),
-                'telephone' => filter_var($_POST['fathers_telephone'], FILTER_SANITIZE_STRING),
+                'telephone' => sprintf('+(%s) %s', getDialCode($_POST['fathers_telephone_country_code']), filter_var($_POST['fathers_telephone'], FILTER_SANITIZE_STRING)),
             ],
             'mother' => [
                 'full_name' => filter_var($_POST['mothers_full_name'], FILTER_SANITIZE_STRING),
                 'email' => filter_var($_POST['mothers_email'], FILTER_SANITIZE_EMAIL),
-                'telephone' => filter_var($_POST['mothers_telephone'], FILTER_SANITIZE_STRING),
+                'telephone' =>  sprintf('+(%s) %s', getDialCode($_POST['mothers_telephone_country_code']), filter_var($_POST['mothers_telephone'], FILTER_SANITIZE_STRING)),
             ],
         ];
         $legal_information = [
@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             'course' => isset($_POST['course']) ? filter_var($_POST['course'], FILTER_SANITIZE_STRING) : null, // Handle optional course
             'address' => filter_var($_POST['institution_address'], FILTER_SANITIZE_STRING),
             'email' => filter_var($_POST['institution_email'], FILTER_SANITIZE_EMAIL),
-            'telephone' => filter_var($_POST['institution_telephone'], FILTER_SANITIZE_STRING),
+            'telephone' =>  sprintf('+(%s) %s',getDialCode($_POST['institution_country_code']) , filter_var($_POST['institution_telephone'], FILTER_SANITIZE_STRING)),
         ];
 
         $attachmentData = [

@@ -1,0 +1,559 @@
+2024-12-30 12:37:41 - Request URI: /submitApplication
+2024-12-30 12:37:41 - Request method: POST
+2024-12-30 12:37:41 - POST data: {"program_id":"1","first_name":"\u015eER\u0130F ELASHRY","Nationality":"4","date_of_birth":"2024-12-02","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123@example.us","country_code":"840","telephone":"05525952231","fathers_full_name":"\u015eER\u0130F ELASHRY","fathers_email":"test@example.us","fathers_telephone":"05525952231","mothers_full_name":"\u015eER\u0130F ELASHRY","mothers_email":"test@example.us","mothers_telephone":"05525952231","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","institution_email":"test@example.us","institution_telephone":"05525952231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 12:37:41 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php9A88.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php9A89.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php9A8A.tmp","error":0,"size":158327}}
+2024-12-30 12:37:41 - Processing form submission...
+2024-12-30 12:37:41 - Retrieving country name for nationality value: 4
+2024-12-30 12:37:41 - Retrieving country name for nationality value: 4
+2024-12-30 12:37:41 - Creating new student with data: {"submission_id":"6772860574748","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123@example.us","telephone":"(840) 05525952231","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 12:37:41 - ERROR creating new student: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test123123@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (6772860574748, ŞERİF ELASHRY, 2024-12-02, small, M, Afghanistan, Afghanistan, KAYABAŞI MAH. KAYAŞEHİR BULVARI No: 55E/48, test123123@example.us, (840) 05525952231, Social Media, ibanTR, 2024-12-30 12:37:41, 2024-12-30 12:37:41))
+2024-12-30 12:37:41 - ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test123123@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (6772860574748, ŞERİF ELASHRY, 2024-12-02, small, M, Afghanistan, Afghanistan, KAYABAŞI MAH. KAYAŞEHİR BULVARI No: 55E/48, test123123@example.us, (840) 05525952231, Social Media, ibanTR, 2024-12-30 12:37:41, 2024-12-30 12:37:41))
+2024-12-30 12:37:58 - Request URI: /submitApplication
+2024-12-30 12:37:58 - Request method: POST
+2024-12-30 12:37:58 - POST data: {"program_id":"1","first_name":"\u015eER\u0130F ELASHRY","Nationality":"4","date_of_birth":"2024-12-02","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123324@example.us","country_code":"840","telephone":"05525952231","fathers_full_name":"\u015eER\u0130F ELASHRY","fathers_email":"test@example.us","fathers_telephone":"05525952231","mothers_full_name":"\u015eER\u0130F ELASHRY","mothers_email":"test@example.us","mothers_telephone":"05525952231","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","institution_email":"test@example.us","institution_telephone":"05525952231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 12:37:58 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpDEB8.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpDEB9.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpDEBA.tmp","error":0,"size":158327}}
+2024-12-30 12:37:58 - Processing form submission...
+2024-12-30 12:37:58 - Retrieving country name for nationality value: 4
+2024-12-30 12:37:58 - Retrieving country name for nationality value: 4
+2024-12-30 12:37:58 - Creating new student with data: {"submission_id":"67728616e37b8","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123324@example.us","telephone":"(840) 05525952231","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 12:37:59 - New student created successfully with ID: 27
+2024-12-30 12:37:59 - Student created with ID: 27
+2024-12-30 12:37:59 - Student associated with program ID: 1
+2024-12-30 12:37:59 - Parental info added for: father
+2024-12-30 12:37:59 - Parental info added for: mother
+2024-12-30 12:37:59 - Institution details added for student ID: 27
+2024-12-30 12:37:59 - legal information details added for student ID: 27
+2024-12-30 12:37:59 - Attachment uploaded successfully for type: Certificate
+2024-12-30 12:37:59 - Attachment uploaded successfully for type: Photo
+2024-12-30 12:37:59 - Attachment uploaded successfully for type: Passport
+2024-12-30 12:37:59 - Preparing to send notification email...
+2024-12-30 12:37:59 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpDEB8.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpDEB9.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpDEBA.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 12:37:59 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/67728616e37b8/test.pdf
+2024-12-30 12:37:59 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/67728616e37b8/test.pdf
+2024-12-30 12:37:59 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/67728616e37b8/test.pdf
+2024-12-30 12:37:59 - Empty file path for attachment type: recommendation_letter
+2024-12-30 12:37:59 - Empty file path for attachment type: motivation_letter
+2024-12-30 12:37:59 - Empty file path for attachment type: consent_form
+2024-12-30 12:37:59 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/67728616e37b8/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/67728616e37b8/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/67728616e37b8/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 12:38:06 - Notification email sent successfully.
+2024-12-30 12:38:06 - Form submission completed successfully.
+2024-12-30 12:44:38 - Request URI: /submitApplication
+2024-12-30 12:44:38 - Request method: POST
+2024-12-30 12:44:38 - POST data: {"program_id":"1","first_name":"\u015eER\u0130F ELASHRY","Nationality":"4","date_of_birth":"2024-12-02","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123324@example.us","country_code":"840","telephone":"05525952231","fathers_full_name":"\u015eER\u0130F ELASHRY","fathers_email":"test@example.us","fathers_telephone":"05525952231","mothers_full_name":"\u015eER\u0130F ELASHRY","mothers_email":"test@example.us","mothers_telephone":"05525952231","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","institution_email":"test@example.us","institution_telephone":"05525952231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 12:44:38 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpF841.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpF842.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpF853.tmp","error":0,"size":158327}}
+2024-12-30 12:44:38 - Processing form submission...
+2024-12-30 12:44:38 - Retrieving country name for nationality value: 4
+2024-12-30 12:44:38 - Retrieving country name for nationality value: 4
+2024-12-30 12:44:38 - Retrieving country Dial Code for nationality value: 05525952231
+2024-12-30 12:44:38 - Retrieving country Dial Code for nationality value: 05525952231
+2024-12-30 12:44:38 - Retrieving country Dial Code for nationality value: 05525952231
+2024-12-30 12:44:38 - Retrieving country Dial Code for nationality value: 05525952231
+2024-12-30 12:44:38 - Creating new student with data: {"submission_id":"677287a6a79c1","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123324@example.us","telephone":"+(840) ","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 12:44:38 - ERROR creating new student: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test123123324@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (677287a6a79c1, ŞERİF ELASHRY, 2024-12-02, small, M, Afghanistan, Afghanistan, KAYABAŞI MAH. KAYAŞEHİR BULVARI No: 55E/48, test123123324@example.us, +(840) , Social Media, ibanTR, 2024-12-30 12:44:38, 2024-12-30 12:44:38))
+2024-12-30 12:44:38 - ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test123123324@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (677287a6a79c1, ŞERİF ELASHRY, 2024-12-02, small, M, Afghanistan, Afghanistan, KAYABAŞI MAH. KAYAŞEHİR BULVARI No: 55E/48, test123123324@example.us, +(840) , Social Media, ibanTR, 2024-12-30 12:44:38, 2024-12-30 12:44:38))
+2024-12-30 12:44:50 - Request URI: /submitApplication
+2024-12-30 12:44:50 - Request method: POST
+2024-12-30 12:44:50 - POST data: {"program_id":"1","first_name":"\u015eER\u0130F ELASHRY","Nationality":"4","date_of_birth":"2024-12-02","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123324324234@example.us","country_code":"840","telephone":"05525952231","fathers_full_name":"\u015eER\u0130F ELASHRY","fathers_email":"test@example.us","fathers_telephone":"05525952231","mothers_full_name":"\u015eER\u0130F ELASHRY","mothers_email":"test@example.us","mothers_telephone":"05525952231","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","institution_email":"test@example.us","institution_telephone":"05525952231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 12:44:50 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php2659.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php265A.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php265B.tmp","error":0,"size":158327}}
+2024-12-30 12:44:50 - Processing form submission...
+2024-12-30 12:44:50 - Retrieving country name for nationality value: 4
+2024-12-30 12:44:50 - Retrieving country name for nationality value: 4
+2024-12-30 12:44:50 - Retrieving country Dial Code for nationality value: 05525952231
+2024-12-30 12:44:50 - Retrieving country Dial Code for nationality value: 05525952231
+2024-12-30 12:44:50 - Retrieving country Dial Code for nationality value: 05525952231
+2024-12-30 12:44:50 - Retrieving country Dial Code for nationality value: 05525952231
+2024-12-30 12:44:50 - Creating new student with data: {"submission_id":"677287b273d76","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123324324234@example.us","telephone":"+(840) ","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 12:44:50 - New student created successfully with ID: 29
+2024-12-30 12:44:50 - Student created with ID: 29
+2024-12-30 12:44:50 - Student associated with program ID: 1
+2024-12-30 12:44:50 - Parental info added for: father
+2024-12-30 12:44:50 - Parental info added for: mother
+2024-12-30 12:44:50 - Institution details added for student ID: 29
+2024-12-30 12:44:50 - legal information details added for student ID: 29
+2024-12-30 12:44:50 - Attachment uploaded successfully for type: Certificate
+2024-12-30 12:44:50 - Attachment uploaded successfully for type: Photo
+2024-12-30 12:44:50 - Attachment uploaded successfully for type: Passport
+2024-12-30 12:44:50 - Preparing to send notification email...
+2024-12-30 12:44:50 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php2659.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php265A.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php265B.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 12:44:50 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/677287b273d76/test.pdf
+2024-12-30 12:44:50 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/677287b273d76/test.pdf
+2024-12-30 12:44:50 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/677287b273d76/test.pdf
+2024-12-30 12:44:50 - Empty file path for attachment type: recommendation_letter
+2024-12-30 12:44:50 - Empty file path for attachment type: motivation_letter
+2024-12-30 12:44:50 - Empty file path for attachment type: consent_form
+2024-12-30 12:44:50 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/677287b273d76/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/677287b273d76/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/677287b273d76/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 12:44:53 - Notification email sent successfully.
+2024-12-30 12:44:53 - Form submission completed successfully.
+2024-12-30 12:46:31 - Request URI: /submitApplication
+2024-12-30 12:46:31 - Request method: POST
+2024-12-30 12:46:31 - POST data: {"program_id":"1","first_name":"\u015eER\u0130F ELASHRY","Nationality":"4","date_of_birth":"2024-12-02","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123324324234@example.us","country_code":"840","telephone":"05525952231","fathers_full_name":"\u015eER\u0130F ELASHRY","fathers_email":"test@example.us","fathers_telephone":"05525952231","mothers_full_name":"\u015eER\u0130F ELASHRY","mothers_email":"test@example.us","mothers_telephone":"05525952231","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","institution_email":"test@example.us","institution_telephone":"05525952231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 12:46:31 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpAF2E.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpAF3F.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpAF40.tmp","error":0,"size":158327}}
+2024-12-30 12:46:31 - Processing form submission...
+2024-12-30 12:46:31 - Retrieving country name for nationality value: 4
+2024-12-30 12:46:31 - Retrieving country name for nationality value: 4
+2024-12-30 12:46:31 - Retrieving country Dial Code for nationality value: 840
+2024-12-30 12:46:31 - Retrieving country Dial Code for nationality value: 840
+2024-12-30 12:46:31 - Retrieving country Dial Code for nationality value: 840
+2024-12-30 12:46:31 - Retrieving country Dial Code for nationality value: 840
+2024-12-30 12:46:31 - Creating new student with data: {"submission_id":"67728817097f5","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123324324234@example.us","telephone":"+(1) 05525952231","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 12:46:31 - ERROR creating new student: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test123123324324234@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (67728817097f5, ŞERİF ELASHRY, 2024-12-02, small, M, Afghanistan, Afghanistan, KAYABAŞI MAH. KAYAŞEHİR BULVARI No: 55E/48, test123123324324234@example.us, +(1) 05525952231, Social Media, ibanTR, 2024-12-30 12:46:31, 2024-12-30 12:46:31))
+2024-12-30 12:46:31 - ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test123123324324234@example.us' for key 'students.students_email_unique' (Connection: default, SQL: insert into `students` (`submission_id`, `first_name`, `date_of_birth`, `tshirt_size`, `gender`, `nationality`, `place_of_birth`, `home_address`, `email`, `telephone`, `outreach`, `iban`, `updated_at`, `created_at`) values (67728817097f5, ŞERİF ELASHRY, 2024-12-02, small, M, Afghanistan, Afghanistan, KAYABAŞI MAH. KAYAŞEHİR BULVARI No: 55E/48, test123123324324234@example.us, +(1) 05525952231, Social Media, ibanTR, 2024-12-30 12:46:31, 2024-12-30 12:46:31))
+2024-12-30 12:46:39 - Request URI: /submitApplication
+2024-12-30 12:46:39 - Request method: POST
+2024-12-30 12:46:39 - POST data: {"program_id":"1","first_name":"\u015eER\u0130F ELASHRY","Nationality":"4","date_of_birth":"2024-12-02","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123312324324234@example.us","country_code":"840","telephone":"05525952231","fathers_full_name":"\u015eER\u0130F ELASHRY","fathers_email":"test@example.us","fathers_telephone":"05525952231","mothers_full_name":"\u015eER\u0130F ELASHRY","mothers_email":"test@example.us","mothers_telephone":"05525952231","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","institution_email":"test@example.us","institution_telephone":"05525952231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 12:46:39 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpD0F2.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpD0F3.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpD0F4.tmp","error":0,"size":158327}}
+2024-12-30 12:46:39 - Processing form submission...
+2024-12-30 12:46:39 - Retrieving country name for nationality value: 4
+2024-12-30 12:46:39 - Retrieving country name for nationality value: 4
+2024-12-30 12:46:39 - Retrieving country Dial Code for nationality value: 840
+2024-12-30 12:46:39 - Retrieving country Dial Code for nationality value: 840
+2024-12-30 12:46:39 - Retrieving country Dial Code for nationality value: 840
+2024-12-30 12:46:39 - Retrieving country Dial Code for nationality value: 840
+2024-12-30 12:46:39 - Creating new student with data: {"submission_id":"6772881fa56c9","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"test123123312324324234@example.us","telephone":"+(1) 05525952231","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 12:46:39 - New student created successfully with ID: 31
+2024-12-30 12:46:39 - Student created with ID: 31
+2024-12-30 12:46:39 - Student associated with program ID: 1
+2024-12-30 12:46:39 - Parental info added for: father
+2024-12-30 12:46:39 - Parental info added for: mother
+2024-12-30 12:46:39 - Institution details added for student ID: 31
+2024-12-30 12:46:39 - legal information details added for student ID: 31
+2024-12-30 12:46:39 - Attachment uploaded successfully for type: Certificate
+2024-12-30 12:46:39 - Attachment uploaded successfully for type: Photo
+2024-12-30 12:46:39 - Attachment uploaded successfully for type: Passport
+2024-12-30 12:46:39 - Preparing to send notification email...
+2024-12-30 12:46:39 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpD0F2.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpD0F3.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpD0F4.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 12:46:39 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772881fa56c9/test.pdf
+2024-12-30 12:46:39 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772881fa56c9/test.pdf
+2024-12-30 12:46:39 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772881fa56c9/test.pdf
+2024-12-30 12:46:39 - Empty file path for attachment type: recommendation_letter
+2024-12-30 12:46:39 - Empty file path for attachment type: motivation_letter
+2024-12-30 12:46:39 - Empty file path for attachment type: consent_form
+2024-12-30 12:46:39 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772881fa56c9/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772881fa56c9/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772881fa56c9/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 12:46:43 - Notification email sent successfully.
+2024-12-30 12:46:43 - Form submission completed successfully.
+2024-12-30 12:50:35 - Request URI: /submitApplication
+2024-12-30 12:50:35 - Request method: POST
+2024-12-30 12:50:35 - POST data: {"program_id":"1","first_name":"\u015eER\u0130F ELASHRY","Nationality":"4","date_of_birth":"2024-12-02","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"tesad@example.us","country_code":"840","telephone":"05525952231","fathers_full_name":"\u015eER\u0130F ELASHRY","fathers_email":"test@example.us","fathers_telephone":"05525952231","mothers_full_name":"\u015eER\u0130F ELASHRY","mothers_email":"test@example.us","mothers_telephone":"05525952231","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","institution_email":"test@example.us","institution_telephone":"05525952231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 12:50:35 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php6BDF.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php6BE0.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php6BF0.tmp","error":0,"size":158327}}
+2024-12-30 12:50:35 - Processing form submission...
+2024-12-30 12:50:35 - Retrieving country name for nationality value: 4
+2024-12-30 12:50:35 - Retrieving country name for nationality value: 4
+2024-12-30 12:50:35 - Retrieving country Dial Code for nationality value: 
+2024-12-30 12:50:35 - Retrieving country Dial Code for nationality value: 
+2024-12-30 12:50:35 - Retrieving country Dial Code for nationality value: 
+2024-12-30 12:50:35 - Retrieving country Dial Code for nationality value: 
+2024-12-30 12:50:35 - Creating new student with data: {"submission_id":"6772890be9300","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"tesad@example.us","telephone":"+() 05525952231","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 12:50:36 - New student created successfully with ID: 32
+2024-12-30 12:50:36 - Student created with ID: 32
+2024-12-30 12:50:36 - Student associated with program ID: 1
+2024-12-30 12:50:36 - Parental info added for: father
+2024-12-30 12:50:36 - Parental info added for: mother
+2024-12-30 12:50:36 - Institution details added for student ID: 32
+2024-12-30 12:50:36 - legal information details added for student ID: 32
+2024-12-30 12:50:36 - Attachment uploaded successfully for type: Certificate
+2024-12-30 12:50:36 - Attachment uploaded successfully for type: Photo
+2024-12-30 12:50:36 - Attachment uploaded successfully for type: Passport
+2024-12-30 12:50:36 - Preparing to send notification email...
+2024-12-30 12:50:36 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php6BDF.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php6BE0.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php6BF0.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 12:50:36 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/6772890be9300/test.pdf
+2024-12-30 12:50:36 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/6772890be9300/test.pdf
+2024-12-30 12:50:36 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/6772890be9300/test.pdf
+2024-12-30 12:50:36 - Empty file path for attachment type: recommendation_letter
+2024-12-30 12:50:36 - Empty file path for attachment type: motivation_letter
+2024-12-30 12:50:36 - Empty file path for attachment type: consent_form
+2024-12-30 12:50:36 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/6772890be9300/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/6772890be9300/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/6772890be9300/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 12:50:39 - Notification email sent successfully.
+2024-12-30 12:50:39 - Form submission completed successfully.
+2024-12-30 12:51:28 - Request URI: /submitApplication
+2024-12-30 12:51:28 - Request method: POST
+2024-12-30 12:51:28 - POST data: {"program_id":"1","first_name":"\u015eER\u0130F ELASHRY","Nationality":"4","date_of_birth":"2024-12-02","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"tesad1@example.us","country_code":"840","telephone":"05525952231","fathers_full_name":"\u015eER\u0130F ELASHRY","fathers_email":"test@example.us","fathers_telephone":"05525952231","mothers_full_name":"\u015eER\u0130F ELASHRY","mothers_email":"test@example.us","mothers_telephone":"05525952231","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","institution_email":"test@example.us","institution_telephone":"05525952231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 12:51:28 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php3AEA.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php3AEB.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\php3AEC.tmp","error":0,"size":158327}}
+2024-12-30 12:51:28 - Processing form submission...
+2024-12-30 12:51:28 - Retrieving country name for nationality value: 4
+2024-12-30 12:51:28 - Retrieving country name for nationality value: 4
+2024-12-30 12:51:28 - Retrieving country Dial Code for nationality value: 
+2024-12-30 12:51:28 - Retrieving country Dial Code for nationality value: 
+2024-12-30 12:51:28 - Retrieving country Dial Code for nationality value: 
+2024-12-30 12:51:28 - Retrieving country Dial Code for nationality value: 
+2024-12-30 12:51:28 - Creating new student with data: {"submission_id":"67728940e6602","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"tesad1@example.us","telephone":"+() 05525952231","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 12:51:29 - New student created successfully with ID: 33
+2024-12-30 12:51:29 - Student created with ID: 33
+2024-12-30 12:51:29 - Student associated with program ID: 1
+2024-12-30 12:51:29 - Parental info added for: father
+2024-12-30 12:51:29 - Parental info added for: mother
+2024-12-30 12:51:29 - Institution details added for student ID: 33
+2024-12-30 12:51:29 - legal information details added for student ID: 33
+2024-12-30 12:51:29 - Attachment uploaded successfully for type: Certificate
+2024-12-30 12:51:29 - Attachment uploaded successfully for type: Photo
+2024-12-30 12:51:29 - Attachment uploaded successfully for type: Passport
+2024-12-30 12:51:29 - Preparing to send notification email...
+2024-12-30 12:51:29 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php3AEA.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php3AEB.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php3AEC.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 12:51:29 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/67728940e6602/test.pdf
+2024-12-30 12:51:29 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/67728940e6602/test.pdf
+2024-12-30 12:51:29 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/67728940e6602/test.pdf
+2024-12-30 12:51:29 - Empty file path for attachment type: recommendation_letter
+2024-12-30 12:51:29 - Empty file path for attachment type: motivation_letter
+2024-12-30 12:51:29 - Empty file path for attachment type: consent_form
+2024-12-30 12:51:29 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/67728940e6602/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/67728940e6602/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/67728940e6602/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 12:51:33 - Notification email sent successfully.
+2024-12-30 12:51:33 - Form submission completed successfully.
+2024-12-30 12:54:07 - Request URI: /submitApplication
+2024-12-30 12:54:07 - Request method: POST
+2024-12-30 12:54:07 - POST data: {"program_id":"1","first_name":"\u015eER\u0130F ELASHRY","Nationality":"4","date_of_birth":"2024-12-02","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"tesad1asd@example.us","country_code":"840","telephone":"05525952231","fathers_full_name":"\u015eER\u0130F ELASHRY","fathers_email":"test@example.us","fathers_telephone":"05525952231","mothers_full_name":"\u015eER\u0130F ELASHRY","mothers_email":"test@example.us","mothers_telephone":"05525952231","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","institution_email":"test@example.us","institution_telephone":"05525952231","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 12:54:07 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpA517.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpA518.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpA519.tmp","error":0,"size":158327}}
+2024-12-30 12:54:07 - Processing form submission...
+2024-12-30 12:54:07 - Retrieving country name for nationality value: 4
+2024-12-30 12:54:07 - Retrieving country name for nationality value: 4
+2024-12-30 12:54:07 - Retrieving country Dial Code for nationality value: 
+2024-12-30 12:54:07 - Retrieving country Dial Code for nationality value: 
+2024-12-30 12:54:07 - Retrieving country Dial Code for nationality value: 
+2024-12-30 12:54:07 - Retrieving country Dial Code for nationality value: 840
+2024-12-30 12:54:07 - Creating new student with data: {"submission_id":"677289df2f759","first_name":"\u015eER\u0130F ELASHRY","date_of_birth":"2024-12-02","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"KAYABA\u015eI MAH. KAYA\u015eEH\u0130R BULVARI No: 55E\/48","email":"tesad1asd@example.us","telephone":"+() 05525952231","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 12:54:07 - New student created successfully with ID: 34
+2024-12-30 12:54:07 - Student created with ID: 34
+2024-12-30 12:54:07 - Student associated with program ID: 1
+2024-12-30 12:54:07 - Parental info added for: father
+2024-12-30 12:54:07 - Parental info added for: mother
+2024-12-30 12:54:07 - Institution details added for student ID: 34
+2024-12-30 12:54:07 - legal information details added for student ID: 34
+2024-12-30 12:54:07 - Attachment uploaded successfully for type: Certificate
+2024-12-30 12:54:07 - Attachment uploaded successfully for type: Photo
+2024-12-30 12:54:07 - Attachment uploaded successfully for type: Passport
+2024-12-30 12:54:07 - Preparing to send notification email...
+2024-12-30 12:54:07 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpA517.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpA518.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpA519.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 12:54:07 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/677289df2f759/test.pdf
+2024-12-30 12:54:07 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/677289df2f759/test.pdf
+2024-12-30 12:54:07 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/677289df2f759/test.pdf
+2024-12-30 12:54:07 - Empty file path for attachment type: recommendation_letter
+2024-12-30 12:54:07 - Empty file path for attachment type: motivation_letter
+2024-12-30 12:54:07 - Empty file path for attachment type: consent_form
+2024-12-30 12:54:07 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/677289df2f759/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/677289df2f759/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/677289df2f759/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 12:54:10 - Notification email sent successfully.
+2024-12-30 12:54:10 - Form submission completed successfully.
+2024-12-30 13:03:14 - Request URI: /submitApplication
+2024-12-30 13:03:14 - Request method: POST
+2024-12-30 13:03:14 - POST data: {"program_id":"1","first_name":"Jon Stewart Doe","Nationality":"4","date_of_birth":"2024-12-05","place_of_birth":"4","tshirt_size":"small","gender":"male","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313@example.us","telephone_country_code":"4","telephone":"6019521325","fathers_full_name":"Jon Stewart Doe","fathers_email":"test@example.us","fathers_telephone_country_code":"4","fathers_telephone":"6019521325","mothers_full_name":"Juan Francisco Garc\u00eda Flores","mothers_email":"ejemplo@ejemplo.mx","mothers_telephone_country_code":"484","mothers_telephone":"5553428400","passport_name":"\u015eER\u0130F ELASHRY","given_place":"Egypt","passport_number":"A105484","expiry_date":"2028","institution_name":"shouldtheone","department":"asfasfasf","institution_address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","institution_email":"test@example.us","institution_country_code":"4","institution_telephone":"6019521325","iban":"ibanTR","outreach":"Social Media"}
+2024-12-30 13:03:14 - FILES data: {"student_certificate":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpFFAE.tmp","error":0,"size":158327},"photo":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpFFAF.tmp","error":0,"size":158327},"passport_copy":{"name":"test.pdf","full_path":"test.pdf","type":"application\/pdf","tmp_name":"C:\\xampp\\tmp\\phpFFB0.tmp","error":0,"size":158327}}
+2024-12-30 13:03:14 - Processing form submission...
+2024-12-30 13:03:14 - Retrieving country name for nationality value: 4
+2024-12-30 13:03:14 - Retrieving country name for nationality value: 4
+2024-12-30 13:03:14 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 13:03:14 - Retrieving country Dial Code for nationality value: 4
+2024-12-30 13:03:14 - Retrieving country Dial Code for nationality value: 484
+2024-12-30 13:03:14 - Retrieving country Dial Code for nationality value: 
+2024-12-30 13:03:14 - Creating new student with data: {"submission_id":"67728c02ac1fc","first_name":"Jon Stewart Doe","date_of_birth":"2024-12-05","tshirt_size":"small","gender":"M","nationality":"Afghanistan","place_of_birth":"Afghanistan","home_address":"1600 Fake Street\r\nApartment 1","email":"test12313@example.us","telephone":"+(93) 6019521325","outreach":"Social Media","iban":"ibanTR"}
+2024-12-30 13:03:14 - New student created successfully with ID: 35
+2024-12-30 13:03:14 - Student created with ID: 35
+2024-12-30 13:03:14 - Student associated with program ID: 1
+2024-12-30 13:03:14 - Parental info added for: father
+2024-12-30 13:03:14 - Parental info added for: mother
+2024-12-30 13:03:14 - Institution details added for student ID: 35
+2024-12-30 13:03:14 - legal information details added for student ID: 35
+2024-12-30 13:03:14 - Attachment uploaded successfully for type: Certificate
+2024-12-30 13:03:14 - Attachment uploaded successfully for type: Photo
+2024-12-30 13:03:14 - Attachment uploaded successfully for type: Passport
+2024-12-30 13:03:14 - Preparing to send notification email...
+2024-12-30 13:03:14 - Attachments Data: Array
+(
+    [student_certificate] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpFFAE.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [photo] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpFFAF.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [passport_copy] => Array
+        (
+            [name] => test.pdf
+            [full_path] => test.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpFFB0.tmp
+            [error] => 0
+            [size] => 158327
+        )
+
+    [recommendation_letter] => 
+    [motivation_letter] => 
+    [consent_form] => 
+)
+
+2024-12-30 13:03:14 - Attachment processed: Type=student_certificate, Path=http://localhost:3000/uploads/67728c02ac1fc/test.pdf
+2024-12-30 13:03:14 - Attachment processed: Type=photo, Path=http://localhost:3000/uploads/67728c02ac1fc/test.pdf
+2024-12-30 13:03:14 - Attachment processed: Type=passport_copy, Path=http://localhost:3000/uploads/67728c02ac1fc/test.pdf
+2024-12-30 13:03:14 - Empty file path for attachment type: recommendation_letter
+2024-12-30 13:03:14 - Empty file path for attachment type: motivation_letter
+2024-12-30 13:03:14 - Empty file path for attachment type: consent_form
+2024-12-30 13:03:14 - Generated File Links: Array
+(
+    [student_certificate] => <a href="http://localhost:3000/uploads/67728c02ac1fc/test.pdf" target="_blank">test.pdf</a>
+    [photo] => <a href="http://localhost:3000/uploads/67728c02ac1fc/test.pdf" target="_blank">test.pdf</a>
+    [passport_copy] => <a href="http://localhost:3000/uploads/67728c02ac1fc/test.pdf" target="_blank">test.pdf</a>
+)
+
+2024-12-30 13:03:18 - Notification email sent successfully.
+2024-12-30 13:03:18 - Form submission completed successfully.

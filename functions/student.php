@@ -59,7 +59,7 @@ function getDial(){
         $dials = Database::getConnection()
             ->table('country_codes')
             ->select('M49','Dial', 'official_name_en')
-            ->orderBy('Dial')
+            ->orderBy('official_name_en')
             ->get()
             ->toArray();
 

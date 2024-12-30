@@ -17,7 +17,7 @@
             <div class="right-section4">
             <label for="phone-number">Telephone</label>
                 <div class="phone-input-wrapper">
-                    <select id="country-code" name="country_code" class="country-code-select">
+                    <select id="country-code" name="fathers_telephone_country_code" class="country-code-select">
                         <?php foreach ($dials as $dial): ?>
                             <option value="<?= htmlspecialchars($dial['M49']) ?>">
                             +<?= htmlspecialchars($dial['Dial'], ENT_QUOTES, 'UTF-8') ?> (<?= htmlspecialchars($dial['official_name_en'], ENT_QUOTES, 'UTF-8') ?>)
@@ -43,7 +43,7 @@
             <div class="right-section4">
             <label for="phone-number">Telephone</label>
                 <div class="phone-input-wrapper">
-                    <select id="country-code" name="country_code" class="country-code-select">
+                    <select id="country-code" name="mothers_telephone_country_code" class="country-code-select">
                         <?php foreach ($dials as $dial): ?>
                             <option value="<?= htmlspecialchars($dial['M49']) ?>">
                             +<?= htmlspecialchars($dial['Dial'], ENT_QUOTES, 'UTF-8') ?> (<?= htmlspecialchars($dial['official_name_en'], ENT_QUOTES, 'UTF-8') ?>)
