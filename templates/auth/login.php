@@ -52,7 +52,7 @@
                 </div>
 
                 <input type="submit" value="Log In" class="btn btn-block btn-primary">
-                <input type="submit" value="Register" class="btn btn-block btn-secondary">
+                <a href="register.php" class="btn btn-block btn-danger" role="button" id='button_link'>Register</a>
 
               </form>
             </div>
