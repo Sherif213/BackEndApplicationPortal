@@ -22,7 +22,7 @@
   
 
   <div class="half">
-    <div class="bg order-1 order-md-2" style="background-image: url('../../images/loginPage.jpg'); background-position: center;"></div>
+    <div class="bg order-1 order-md-2" style="background-image: url('../../images/register.jpg'); background-position: center;"></div>
     <div class="contents order-2 order-md-1">
 
       <div class="container">
@@ -30,29 +30,21 @@
           <div class="col-md-6">
             <div class="form-block">
               <div class="text-center mb-5">
-              <h3>Login to <strong>UNESCO IAU</strong></h3>
-              <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
+              <h3>Enter New Password</h3>
               </div>
               <form action="#" method="post">
                 <div class="form-group first">
-                  <label for="username">Username</label>
-                  <input type="text" class="form-control" placeholder="your-email@gmail.com" id="username">
-                </div>
-                <div class="form-group last mb-3">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" placeholder="Your Password" id="password">
+                  <label for="password">New Password</label>
+                  <input type="password" class="form-control"  id="password">
                 </div>
                 
-                <div class="d-sm-flex mb-5 align-items-center">
-                  <label class="control control--checkbox mb-3 mb-sm-0"><span class="caption">Remember me</span>
-                    <input type="checkbox" checked="checked"/>
-                    <div class="control__indicator"></div>
-                  </label>
-                  <span class="ml-auto"><a href="forget_password.php" class="forgot-pass">Forgot Password</a></span> 
+                <div class="form-group first">
+                  <label for="confirmPassword">Confirm Password</label>
+                  <input type="password" class="form-control"  id="confirmPassword">
                 </div>
 
-                <input type="submit" value="Log In" class="btn btn-block btn-primary">
-                <a href="register.php" class="btn btn-block btn-danger" role="button" id='button_link'>Register</a>
+                <input type="submit" value="Confirm" class="btn btn-block btn-primary" style='margin-top:30px'>
+
 
               </form>
             </div>
