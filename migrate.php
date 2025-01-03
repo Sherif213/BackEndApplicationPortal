@@ -152,7 +152,39 @@ try {
     } else {
         echo "Table 'student_program' already exists.\n";
     }
+    if (!Capsule::schema()->hasTable('users')) {
+        Capsule::schema()->create('users', function ($table) {
+            $table->increments('id'); // Primary key
+            $table->string('registeration_id')->unique();
+            $table->string('username')->unique();
+            $table->string('first_name');
+            $table->string('last_name');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->enum('role', ['admin', 'user', 'editor'])->default('user'); // Example roles
+            $table->timestamps(); // Created at and updated at timestamps
+        });
+        echo "Users table migration completed successfully.\n";
+    } else {
+        echo "Table 'users' already exists.\n";
+    }
 
+    // Create 'user_student_submissions' table
+    if (!Capsule::schema()->hasTable('user_student_submissions')) {
+        Capsule::schema()->create('user_student_submissions', function ($table) {
+            $table->increments('id'); // Primary key
+            $table->unsignedInteger('user_id'); // Foreign key to users table
+            $table->unsignedInteger('student_submission_id'); // Foreign key to students table
+            $table->timestamps(); // Created at and updated at timestamps
+
+            // Foreign key constraints
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('student_submission_id')->references('id')->on('students')->onDelete('cascade');
+        });
+        echo "User Student Submissions table migration completed successfully.\n";
+    } else {
+        echo "Table 'user_student_submissions' already exists.\n";
+    }
     if (!Capsule::schema()->hasTable('country_codes')) {
         Capsule::schema()->create('country_codes', function ($table) {
             $table->string('Dial', 20)->nullable();

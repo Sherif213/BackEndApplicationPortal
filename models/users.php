@@ -20,5 +20,7 @@ class User extends Model {
 
     public $timestamps = true; 
 
-   
+    public function submissions() {
+        return $this->hasMany(UserStudentSubmission::class, 'user_id');
+    }
 }
