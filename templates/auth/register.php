@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -31,31 +32,34 @@
             <div class="form-block">
               <div class="text-center mb-5">
               <h3>Register to <strong>UNESCO IAU</strong></h3>
-              <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
+              
               </div>
-              <form action="#" method="post">
+              <form action="submit_registeration.php" method="post">
                 <div class="form-group first">
                   <label for="username">Username</label>
-                  <input type="text" class="form-control" placeholder="your-email@gmail.com" id="username">
+                  <input type="text" class="form-control" placeholder="your-email@gmail.com" id="username" name ="username">
+                  <span id="username-error" style="color: red; display: none;"></span>
                 </div>
                 <div class="twoSection">
                     <div class="twoSectionSector">
                         <label for="FirstName">First Name</label>
-                        <input type="text" class="form-control" placeholder="john" id="username">
+                        <input type="text" class="form-control" placeholder="john" id="first_name" name="first_name">
                     </div>
                     <div class="twoSectionSector">
                         <label for="LastName">Last Name</label>
-                        <input type="text" class="form-control" placeholder="Doe" id="username">
+                        <input type="text" class="form-control" placeholder="Doe" id="last_name" name="last_name">
                     </div>
                 </div>
                 
                 <div class="form-group first">
                   <label for="email">Email</label>
-                  <input type="email" class="form-control" placeholder="example@example.ex" id="username">
+                  <input type="email" class="form-control" placeholder="example@example.ex" id="email" name = "email">
+                  <span id="email-error" style="color: red; display: none;"></span>
                 </div>
                 <div class="form-group last mb-3">
                   <label for="password">Password</label>
-                  <input type="password" class="form-control" placeholder="Your Password" id="password">
+                  <input type="password" class="form-control" placeholder="Your Password" id="password" name="password">
+                  <span id="password-error" style="color: red; display: none;"></span>
                 </div>
                 
                 <div class="d-sm-flex mb-5 align-items-center">
@@ -78,7 +82,78 @@
 
     
   </div>
-    
+  <script>
+        $(document).ready(function() {
+        // Regex patterns
+        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        var usernameRegex = /^[a-zA-Z0-9_]{5,15}$/;  // 5 to 15 characters, letters, numbers, and underscores
+        var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; // At least 8 chars, 1 upper, 1 lower, 1 number, 1 special char
+
+        // Real-time email validation
+        $('#email').on('input', function() {
+            var email = $(this).val();
+            if (!emailRegex.test(email)) {
+                $('#email-error').text('Please enter a valid email address.').show();
+            } else {
+                $('#email-error').hide();
+                // Check if email already exists via AJAX
+                $.ajax({
+                    url: 'info_validation.php',
+                    type: 'POST',
+                    data: { email: email },
+                    success: function(response) {
+                        var result = JSON.parse(response);
+                        if (result.status === 'error') {
+                            $('#email-error').text(result.message).show();
+                        } else {
+                            $('#email-error').text(result.message).hide();
+                        }
+                    },
+                    error: function() {
+                        $('#email-error').text('An error occurred.').show();
+                    }
+                });
+            }
+        });
+
+        // Real-time username validation
+        $('#username').on('input', function() {
+            var username = $(this).val();
+            if (!usernameRegex.test(username)) {
+                $('#username-error').text('Username must be 5-15 characters and can only contain letters, numbers, and underscores.').show();
+            } else {
+                $('#username-error').hide();
+                // Check if username already exists via AJAX
+                $.ajax({
+                    url: 'info_validation.php',
+                    type: 'POST',
+                    data: { username: username },
+                    success: function(response) {
+                        var result = JSON.parse(response);
+                        if (result.status === 'error') {
+                            $('#username-error').text(result.message).show();
+                        } else {
+                            $('#username-error').text(result.message).hide();
+                        }
+                    },
+                    error: function() {
+                        $('#username-error').text('An error occurred.').show();
+                    }
+                });
+            }
+        });
+
+        // Real-time password validation
+        $('#password').on('input', function() {
+            var password = $(this).val();
+            if (!passwordRegex.test(password)) {
+                $('#password-error').text('Password must be at least 8 characters long, with at least one uppercase letter, one number, and one special character.').show();
+            } else {
+                $('#password-error').hide();
+            }
+        });
+    });
+    </script>
     
 
     <script src="js/jquery-3.3.1.min.js"></script>

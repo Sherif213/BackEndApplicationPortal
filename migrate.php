@@ -154,15 +154,15 @@ try {
     }
     if (!Capsule::schema()->hasTable('users')) {
         Capsule::schema()->create('users', function ($table) {
-            $table->increments('id'); // Primary key
+            $table->increments('id'); 
             $table->string('registeration_id')->unique();
             $table->string('username')->unique();
             $table->string('first_name');
             $table->string('last_name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->enum('role', ['admin', 'user', 'editor'])->default('user'); // Example roles
-            $table->timestamps(); // Created at and updated at timestamps
+            $table->enum('role', ['admin', 'user', 'editor'])->default('user'); 
+            $table->timestamps(); 
         });
         echo "Users table migration completed successfully.\n";
     } else {
