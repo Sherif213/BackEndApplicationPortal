@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $_SESSION['success'] = "Registration successful!";
         WriteToLog('User registration successful: ' . $email);
-        header('Location: login.php');
+        header('Location: success_registeration.php');
         exit();
 
     } catch (Exception $e) {

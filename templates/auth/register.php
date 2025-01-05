@@ -37,17 +37,19 @@
               <form action="submit_registeration.php" method="post">
                 <div class="form-group first">
                   <label for="username">Username</label>
-                  <input type="text" class="form-control" placeholder="your-email@gmail.com" id="username" name ="username">
+                  <input type="text" class="form-control" placeholder="ExpiredOnion_Tar" id="username" name ="username">
                   <span id="username-error" style="color: red; display: none;"></span>
                 </div>
                 <div class="twoSection">
                     <div class="twoSectionSector">
                         <label for="FirstName">First Name</label>
                         <input type="text" class="form-control" placeholder="john" id="first_name" name="first_name">
+                        <span id="first-name-error" style="color: red; display: none;"></span>
                     </div>
                     <div class="twoSectionSector">
                         <label for="LastName">Last Name</label>
                         <input type="text" class="form-control" placeholder="Doe" id="last_name" name="last_name">
+                        <span id="last-name-error" style="color: red; display: none;"></span>
                     </div>
                 </div>
                 
@@ -88,6 +90,7 @@
         var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         var usernameRegex = /^[a-zA-Z0-9_]{5,15}$/;  // 5 to 15 characters, letters, numbers, and underscores
         var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; // At least 8 chars, 1 upper, 1 lower, 1 number, 1 special char
+        var nameRegex = /^[A-Za-z]+$/;
 
         // Real-time email validation
         $('#email').on('input', function() {
@@ -150,6 +153,25 @@
                 $('#password-error').text('Password must be at least 8 characters long, with at least one uppercase letter, one number, and one special character.').show();
             } else {
                 $('#password-error').hide();
+            }
+        });
+
+        $('#first_name').on('input', function() {
+            var firstName = $(this).val();
+            if (!nameRegex.test(firstName)) {
+                $('#first-name-error').text('Only Letters Allowed.').show();
+            } else {
+                $('#first-name-error').hide();
+            }
+        });
+
+        // Real-time last name validation
+        $('#last_name').on('input', function() {
+            var lastName = $(this).val();
+            if (!nameRegex.test(lastName)) {
+                $('#last-name-error').text('Only Letters Allowed.').show();
+            } else {
+                $('#last-name-error').hide();
             }
         });
     });

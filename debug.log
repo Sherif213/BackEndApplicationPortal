@@ -2371,3 +2371,18 @@ Apartment 1, test12313asdasdasdsadasdasdasdasdasd1212@example.us, +(93) 60195213
 2025-01-04 23:30:50 - Starting user registration process.
 2025-01-04 23:30:50 - Sanitized input data: {"username":"tomioka048","first_name":"Serif","last_name":"Elashry","email":"elashrySerif@gmail.com"}
 2025-01-04 23:30:50 - User registration successful: elashrySerif@gmail.com
+2025-01-05 00:32:19 - Starting user registration process.
+2025-01-05 00:32:19 - Sanitized input data: {"username":"NB152","first_name":"Serif","last_name":"Elashry","email":"shouldtheone@outlook.com"}
+2025-01-05 00:32:19 - User registration successful: shouldtheone@outlook.com
+2025-01-05 00:34:08 - Starting user registration process.
+2025-01-05 00:34:08 - Sanitized input data: {"username":"tomioka04732","first_name":"\u015eER\u0130F","last_name":"ELASHRY","email":"shouldtheone2@gmail.com"}
+2025-01-05 00:34:09 - User registration successful: shouldtheone2@gmail.com
+2025-01-05 00:49:27 - Starting user registration process.
+2025-01-05 00:49:27 - Sanitized input data: {"username":"Ahmed213","first_name":"Ahmed","last_name":"Mohamed","email":"shouldtheone@mail.ru"}
+2025-01-05 00:49:28 - User registration successful: shouldtheone@mail.ru
+2025-01-05 00:58:07 - Starting user registration process.
+2025-01-05 00:58:07 - Sanitized input data: {"username":"Natalia","first_name":"Natalia","last_name":"Kaminska","email":"shouldtheone3@gmail.com"}
+2025-01-05 00:58:07 - User registration successful: shouldtheone3@gmail.com
+2025-01-05 01:03:34 - Starting user registration process.
+2025-01-05 01:03:34 - Sanitized input data: {"username":"tomioka047","first_name":"13213213","last_name":"","email":""}
+2025-01-05 01:03:34 - Error during registration: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tomioka047' for key 'users.users_username_unique' (Connection: default, SQL: insert into `users` (`registeration_id`, `username`, `first_name`, `last_name`, `email`, `password`, `role`, `updated_at`, `created_at`) values (6779cc56a75db, tomioka047, 13213213, , , $2y$10$nuUakJcTrXMGqfKfgvnkiOBlTLjYDkd88xLgibYU7.ZYyFvIllkXi, user, 2025-01-05 01:03:34, 2025-01-05 01:03:34))
