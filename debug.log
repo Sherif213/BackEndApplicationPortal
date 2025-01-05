@@ -2386,3 +2386,48 @@ Apartment 1, test12313asdasdasdsadasdasdasdasdasd1212@example.us, +(93) 60195213
 2025-01-05 01:03:34 - Starting user registration process.
 2025-01-05 01:03:34 - Sanitized input data: {"username":"tomioka047","first_name":"13213213","last_name":"","email":""}
 2025-01-05 01:03:34 - Error during registration: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tomioka047' for key 'users.users_username_unique' (Connection: default, SQL: insert into `users` (`registeration_id`, `username`, `first_name`, `last_name`, `email`, `password`, `role`, `updated_at`, `created_at`) values (6779cc56a75db, tomioka047, 13213213, , , $2y$10$nuUakJcTrXMGqfKfgvnkiOBlTLjYDkd88xLgibYU7.ZYyFvIllkXi, user, 2025-01-05 01:03:34, 2025-01-05 01:03:34))
+2025-01-05 13:32:04 - Starting user registration process.
+2025-01-05 13:32:04 - Sanitized input data: {"username":"tomioka047","first_name":"asda213","last_name":"sdad","email":""}
+2025-01-05 13:32:04 - Error during registration: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tomioka047' for key 'users.users_username_unique' (Connection: default, SQL: insert into `users` (`registeration_id`, `username`, `first_name`, `last_name`, `email`, `password`, `role`, `updated_at`, `created_at`) values (677a7bc4bb15b, tomioka047, asda213, sdad, , $2y$10$cnusJC0QET00zAvpS1JYWurLpD83YYwjlO11oIabztzUeiP8i0ZAC, user, 2025-01-05 13:32:04, 2025-01-05 13:32:04))
+2025-01-05 13:32:07 - Starting user registration process.
+2025-01-05 13:32:08 - Sanitized input data: {"username":"tomioka047","first_name":"","last_name":"","email":""}
+2025-01-05 13:32:08 - Error during registration: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tomioka047' for key 'users.users_username_unique' (Connection: default, SQL: insert into `users` (`registeration_id`, `username`, `first_name`, `last_name`, `email`, `password`, `role`, `updated_at`, `created_at`) values (677a7bc80d493, tomioka047, , , , $2y$10$VwiRzjc5zfybW/V1V52z0uB1Jx8AKvgxkgUPeQ72LLCPMPK1bPn0e, user, 2025-01-05 13:32:08, 2025-01-05 13:32:08))
+2025-01-05 13:33:07 - Starting user registration process.
+2025-01-05 13:33:07 - Sanitized input data: {"username":"tomioka047sa","first_name":"Serif","last_name":"Elashry","email":"elashrySerifs@gmail.com"}
+2025-01-05 13:33:07 - User registration successful: elashrySerifs@gmail.com
+2025-01-05 13:33:18 - Starting user registration process.
+2025-01-05 13:33:18 - Sanitized input data: {"username":"asd","first_name":"Serif","last_name":"Elashry","email":"elashrySerifs@gmail.com"}
+2025-01-05 13:33:18 - Email already exists: elashrySerifs@gmail.com
+2025-01-05 13:33:18 - Starting user registration process.
+2025-01-05 13:33:18 - Sanitized input data: {"username":"","first_name":"","last_name":"","email":""}
+2025-01-05 13:33:18 - User registration successful: 
+2025-01-05 13:34:12 - Starting user registration process.
+2025-01-05 13:34:12 - Sanitized input data: {"username":"asd","first_name":"","last_name":"","email":""}
+2025-01-05 13:34:12 - Email already exists: 
+2025-01-05 13:34:23 - Starting user registration process.
+2025-01-05 13:34:23 - Sanitized input data: {"username":"","first_name":"","last_name":"","email":""}
+2025-01-05 13:34:23 - Email already exists: 
+2025-01-05 13:34:23 - Starting user registration process.
+2025-01-05 13:34:24 - Sanitized input data: {"username":"","first_name":"","last_name":"","email":""}
+2025-01-05 13:34:24 - Email already exists: 
+2025-01-05 13:38:56 - Starting user registration process.
+2025-01-05 13:38:56 - Sanitized input data: {"username":"tomioka047","first_name":"Serif","last_name":"Elashry","email":"elashrySerif@gmail.com"}
+2025-01-05 13:38:56 - Email already exists: elashrySerif@gmail.com
+2025-01-05 13:40:47 - Starting user registration process.
+2025-01-05 13:40:47 - Sanitized input data: {"username":"tomioka047","first_name":"","last_name":"","email":""}
+2025-01-05 13:40:47 - Email already exists: 
+2025-01-05 13:40:50 - Starting user registration process.
+2025-01-05 13:40:50 - Sanitized input data: {"username":"tomioka047","first_name":"","last_name":"","email":""}
+2025-01-05 13:40:50 - Email already exists: 
+2025-01-05 13:41:33 - Starting user registration process.
+2025-01-05 13:41:33 - Sanitized input data: {"username":"tomioka047","first_name":"","last_name":"","email":""}
+2025-01-05 13:41:33 - Email already exists: 
+2025-01-05 13:44:28 - Starting user registration process.
+2025-01-05 13:44:28 - Sanitized input data: {"username":"tomioka047","first_name":"","last_name":"","email":""}
+2025-01-05 13:44:28 - Email already exists: 
+2025-01-05 13:44:36 - Starting user registration process.
+2025-01-05 13:44:36 - Sanitized input data: {"username":"asdasd","first_name":"Ashraf","last_name":"Elashry","email":"elashrySerifss@gmail.com"}
+2025-01-05 13:44:36 - User registration successful: elashrySerifss@gmail.com
+2025-01-05 14:00:46 - Starting user registration process.
+2025-01-05 14:00:46 - Sanitized input data: {"username":"tomioka047saas","first_name":"Sherif","last_name":"Mohamed","email":"shouldtheoneasd@gmail.com"}
+2025-01-05 14:00:46 - User registration successful: shouldtheoneasd@gmail.com
