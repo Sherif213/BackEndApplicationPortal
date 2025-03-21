@@ -55,7 +55,9 @@ h2 {
 .half .bg {
   background-size: cover;
   background-position: center; }
-
+.invalid-field {
+    border: 2px solid red;
+}
 .half a {
   color: #888;
   text-decoration: underline; }

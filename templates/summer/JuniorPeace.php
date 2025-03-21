@@ -43,12 +43,12 @@ session_start();
                     <div class="section" style="min-height: 48%;">
                         <h3>PROGRAM DATES</h3>
                         <div class="programDatesContent">
-                            <p>Arrival of International Participants: <strong>4th August</strong>.<span>&#9992;</span>
+                            <p>Arrival of International Participants: <strong>5th July</strong>.<span>&#9992;</span>
                             </p>
-                            <p>Orientation Day: <strong>5th August</strong> </p>
-                            <p>Program Courses and activities: <strong>6th August till 15th August</strong></p>
-                            <p>Closing Ceremony: <strong>16th August</strong></p>
-                            <p>Departure of International Participants: <strong>17th August</strong></p>
+                            <p>Orientation Day: <strong>6th July</strong> </p>
+                            <p>Program Courses and activities: <strong>6th July till 19th July</strong></p>
+                            <p>Closing Ceremony: <strong>19th July</strong></p>
+                            <p>Departure of International Participants: <strong>20th July</strong></p>
                         </div>
                     </div>
                     <!-- Payment Method Section -->

@@ -2314,3 +2314,120 @@ Apartment 1, test12313asdasdasdsadasdasdasdasdasd1212@example.us, +(93) 60195213
 2024-12-31 07:47:49 - Student ID: 54 - Attachments: {"id":127,"student_id":54,"attachment_type":"Certificate","file_path":"uploads\/6772ffada9211\/test.pdf","created_at":"2024-12-30 21:16:45","updated_at":"2024-12-30 21:16:45"}
 2024-12-31 07:47:49 - Student ID: 54 - Parental Infos: {"id":67,"student_id":54,"parent_type":"Father","full_name":"Jon Stewart Doe","email":"test@example.us","telephone":"+(93) 601 952 1325"}
 2024-12-31 07:47:49 - Student ID: 54 - Institution Details: {"id":34,"student_id":54,"institution_name":"shouldtheone","department":"asfasfasf","course":null,"address":"C. Falsa 445\r\nPiso 2, Apartamento 1\r\nEntre calle Volc\u00e1n y calle Montes Blancos, cerca de la estaci\u00f3n de metro","email":"test@example.us","telephone":"+(90) 533 025 2231"}
+2025-01-04 17:58:45 - Starting user registration process.
+2025-01-04 17:58:45 - Sanitized input data: {"username":"tomioka047","first_name":"\u015eER\u0130F","last_name":"ELASHRY","email":"shouldtheone@gmail.com"}
+2025-01-04 17:58:45 - Error during registration: SQLSTATE[HY000]: General error: 1364 Field 'registeration_id' doesn't have a default value (Connection: default, SQL: insert into `users` (`username`, `first_name`, `last_name`, `email`, `password`, `role`, `updated_at`, `created_at`) values (tomioka047, ŞERİF, ELASHRY, shouldtheone@gmail.com, $2y$10$WSkyuxDm8AwSufatS69wx.C9ST6OipCCRM1uG8rM35BEBYkJ.rdF2, user, 2025-01-04 17:58:45, 2025-01-04 17:58:45))
+2025-01-04 17:59:52 - Starting user registration process.
+2025-01-04 17:59:52 - Sanitized input data: {"username":"tomioka047","first_name":"\u015eER\u0130F","last_name":"ELASHRY","email":"shouldtheone@gmail.com"}
+2025-01-04 17:59:53 - User registration successful: shouldtheone@gmail.com
+2025-01-04 19:18:36 - Starting user registration process.
+2025-01-04 19:18:36 - Sanitized input data: {"username":"tomioka047","first_name":"\u015eER\u0130F","last_name":"ELASHRY","email":"shouldtheone@gmail.com"}
+2025-01-04 19:18:36 - Email already exists: shouldtheone@gmail.com
+2025-01-04 19:22:24 - Starting user registration process.
+2025-01-04 19:22:24 - Sanitized input data: {"username":"tomioka047","first_name":"\u015eER\u0130F","last_name":"ELASHRY","email":"shouldtheone@gmail.com"}
+2025-01-04 19:22:24 - Email already exists: shouldtheone@gmail.com
+2025-01-04 19:24:06 - Starting user registration process.
+2025-01-04 19:24:06 - Sanitized input data: {"username":"tomioka047","first_name":"\u015eER\u0130F","last_name":"ELASHRY","email":"shouldtheone@gmail.com"}
+2025-01-04 19:24:06 - Email already exists: shouldtheone@gmail.com
+2025-01-04 19:24:10 - Starting user registration process.
+2025-01-04 19:24:10 - Sanitized input data: {"username":"tomioka047","first_name":"\u015eER\u0130F","last_name":"ELASHRY","email":"shouldtheone@gmail.com"}
+2025-01-04 19:24:10 - Email already exists: shouldtheone@gmail.com
+2025-01-04 19:54:44 - Starting user registration process.
+2025-01-04 19:54:44 - Sanitized input data: {"username":"tomioka047","first_name":"\u015eER\u0130F","last_name":"ELASHRY","email":"shouldtheone@gmail.com"}
+2025-01-04 19:54:44 - Email already exists: shouldtheone@gmail.com
+2025-01-04 20:23:05 - Starting user registration process.
+2025-01-04 20:23:06 - Sanitized input data: {"username":"tomioka047","first_name":"\u015eER\u0130F","last_name":"ELASHRY","email":"abonar213@gmail.com"}
+2025-01-04 20:23:06 - Error during registration: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tomioka047' for key 'users.users_username_unique' (Connection: default, SQL: insert into `users` (`registeration_id`, `username`, `first_name`, `last_name`, `email`, `password`, `role`, `updated_at`, `created_at`) values (67798a9a20860, tomioka047, ŞERİF, ELASHRY, abonar213@gmail.com, $2y$10$Hq/5Yar2SFHWN5lv8XD7R.be.5TSSAqIyifvrh3a3fyPjG0D9awBO, user, 2025-01-04 20:23:06, 2025-01-04 20:23:06))
+2025-01-04 20:24:54 - Starting user registration process.
+2025-01-04 20:24:54 - Sanitized input data: {"username":"Husam_sini","first_name":"Husam","last_name":"Alqam","email":"husamcar300@gmail.com"}
+2025-01-04 20:24:54 - User registration successful: husamcar300@gmail.com
+2025-01-04 20:34:18 - Starting user registration process.
+2025-01-04 20:34:18 - Sanitized input data: {"username":"tomioka047","first_name":"","last_name":"","email":"husamcar300@gmail.com"}
+2025-01-04 20:34:18 - Email already exists: husamcar300@gmail.com
+2025-01-04 20:34:19 - Starting user registration process.
+2025-01-04 20:34:19 - Sanitized input data: {"username":"tomioka047","first_name":"","last_name":"","email":""}
+2025-01-04 20:34:19 - Error during registration: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tomioka047' for key 'users.users_username_unique' (Connection: default, SQL: insert into `users` (`registeration_id`, `username`, `first_name`, `last_name`, `email`, `password`, `role`, `updated_at`, `created_at`) values (67798d3b7a95f, tomioka047, , , , $2y$10$SHR3topQlq8FTiLmCvIkcunHFGC01wCbHwqkq9.Iw1W8zq6ouekpa, user, 2025-01-04 20:34:19, 2025-01-04 20:34:19))
+2025-01-04 23:12:11 - Starting user registration process.
+2025-01-04 23:12:11 - Sanitized input data: {"username":"tomioka047","first_name":"","last_name":"","email":"shouldtheone@gmail.com"}
+2025-01-04 23:12:11 - Email already exists: shouldtheone@gmail.com
+2025-01-04 23:12:14 - Starting user registration process.
+2025-01-04 23:12:14 - Sanitized input data: {"username":"tomioka047","first_name":"\u015eER\u0130F","last_name":"ELASHRY","email":"shouldtheone@gmail.com"}
+2025-01-04 23:12:14 - Email already exists: shouldtheone@gmail.com
+2025-01-04 23:12:27 - Starting user registration process.
+2025-01-04 23:12:27 - Sanitized input data: {"username":"tomioka047","first_name":"\u015eER\u0130F","last_name":"ELASHRY","email":"shouldtheone@gmail.com"}
+2025-01-04 23:12:27 - Email already exists: shouldtheone@gmail.com
+2025-01-04 23:12:42 - Starting user registration process.
+2025-01-04 23:12:42 - Sanitized input data: {"username":"tomioka047","first_name":"\u015eER\u0130F","last_name":"ELASHRY","email":""}
+2025-01-04 23:12:42 - Error during registration: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tomioka047' for key 'users.users_username_unique' (Connection: default, SQL: insert into `users` (`registeration_id`, `username`, `first_name`, `last_name`, `email`, `password`, `role`, `updated_at`, `created_at`) values (6779b25a38f30, tomioka047, ŞERİF, ELASHRY, , $2y$10$4exLaD7R9HM9f0VHlZsfTuzuVItnHu3Cp4TWC/y0WkVFYIGHqAASW, user, 2025-01-04 23:12:42, 2025-01-04 23:12:42))
+2025-01-04 23:13:01 - Starting user registration process.
+2025-01-04 23:13:01 - Sanitized input data: {"username":"tomioka047","first_name":"\u015eER\u0130F","last_name":"ELASHRY","email":"shouldtheone@gmail.com"}
+2025-01-04 23:13:01 - Email already exists: shouldtheone@gmail.com
+2025-01-04 23:16:22 - Starting user registration process.
+2025-01-04 23:16:22 - Sanitized input data: {"username":"Husam_sini","first_name":"\u015eER\u0130F","last_name":"ELASHRY","email":"shouldtheone@gmail.com"}
+2025-01-04 23:16:22 - Email already exists: shouldtheone@gmail.com
+2025-01-04 23:18:39 - Starting user registration process.
+2025-01-04 23:18:39 - Sanitized input data: {"username":"tomioka047","first_name":"","last_name":"","email":""}
+2025-01-04 23:18:39 - Error during registration: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tomioka047' for key 'users.users_username_unique' (Connection: default, SQL: insert into `users` (`registeration_id`, `username`, `first_name`, `last_name`, `email`, `password`, `role`, `updated_at`, `created_at`) values (6779b3bfbed90, tomioka047, , , , $2y$10$FONOJvOqWu2N4T7mgrDUs.lHb6.MkBJOCdFGEAV94YsOw4v7rC5Iy, user, 2025-01-04 23:18:39, 2025-01-04 23:18:39))
+2025-01-04 23:30:50 - Starting user registration process.
+2025-01-04 23:30:50 - Sanitized input data: {"username":"tomioka048","first_name":"Serif","last_name":"Elashry","email":"elashrySerif@gmail.com"}
+2025-01-04 23:30:50 - User registration successful: elashrySerif@gmail.com
+2025-01-05 00:32:19 - Starting user registration process.
+2025-01-05 00:32:19 - Sanitized input data: {"username":"NB152","first_name":"Serif","last_name":"Elashry","email":"shouldtheone@outlook.com"}
+2025-01-05 00:32:19 - User registration successful: shouldtheone@outlook.com
+2025-01-05 00:34:08 - Starting user registration process.
+2025-01-05 00:34:08 - Sanitized input data: {"username":"tomioka04732","first_name":"\u015eER\u0130F","last_name":"ELASHRY","email":"shouldtheone2@gmail.com"}
+2025-01-05 00:34:09 - User registration successful: shouldtheone2@gmail.com
+2025-01-05 00:49:27 - Starting user registration process.
+2025-01-05 00:49:27 - Sanitized input data: {"username":"Ahmed213","first_name":"Ahmed","last_name":"Mohamed","email":"shouldtheone@mail.ru"}
+2025-01-05 00:49:28 - User registration successful: shouldtheone@mail.ru
+2025-01-05 00:58:07 - Starting user registration process.
+2025-01-05 00:58:07 - Sanitized input data: {"username":"Natalia","first_name":"Natalia","last_name":"Kaminska","email":"shouldtheone3@gmail.com"}
+2025-01-05 00:58:07 - User registration successful: shouldtheone3@gmail.com
+2025-01-05 01:03:34 - Starting user registration process.
+2025-01-05 01:03:34 - Sanitized input data: {"username":"tomioka047","first_name":"13213213","last_name":"","email":""}
+2025-01-05 01:03:34 - Error during registration: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tomioka047' for key 'users.users_username_unique' (Connection: default, SQL: insert into `users` (`registeration_id`, `username`, `first_name`, `last_name`, `email`, `password`, `role`, `updated_at`, `created_at`) values (6779cc56a75db, tomioka047, 13213213, , , $2y$10$nuUakJcTrXMGqfKfgvnkiOBlTLjYDkd88xLgibYU7.ZYyFvIllkXi, user, 2025-01-05 01:03:34, 2025-01-05 01:03:34))
+2025-01-05 13:32:04 - Starting user registration process.
+2025-01-05 13:32:04 - Sanitized input data: {"username":"tomioka047","first_name":"asda213","last_name":"sdad","email":""}
+2025-01-05 13:32:04 - Error during registration: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tomioka047' for key 'users.users_username_unique' (Connection: default, SQL: insert into `users` (`registeration_id`, `username`, `first_name`, `last_name`, `email`, `password`, `role`, `updated_at`, `created_at`) values (677a7bc4bb15b, tomioka047, asda213, sdad, , $2y$10$cnusJC0QET00zAvpS1JYWurLpD83YYwjlO11oIabztzUeiP8i0ZAC, user, 2025-01-05 13:32:04, 2025-01-05 13:32:04))
+2025-01-05 13:32:07 - Starting user registration process.
+2025-01-05 13:32:08 - Sanitized input data: {"username":"tomioka047","first_name":"","last_name":"","email":""}
+2025-01-05 13:32:08 - Error during registration: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tomioka047' for key 'users.users_username_unique' (Connection: default, SQL: insert into `users` (`registeration_id`, `username`, `first_name`, `last_name`, `email`, `password`, `role`, `updated_at`, `created_at`) values (677a7bc80d493, tomioka047, , , , $2y$10$VwiRzjc5zfybW/V1V52z0uB1Jx8AKvgxkgUPeQ72LLCPMPK1bPn0e, user, 2025-01-05 13:32:08, 2025-01-05 13:32:08))
+2025-01-05 13:33:07 - Starting user registration process.
+2025-01-05 13:33:07 - Sanitized input data: {"username":"tomioka047sa","first_name":"Serif","last_name":"Elashry","email":"elashrySerifs@gmail.com"}
+2025-01-05 13:33:07 - User registration successful: elashrySerifs@gmail.com
+2025-01-05 13:33:18 - Starting user registration process.
+2025-01-05 13:33:18 - Sanitized input data: {"username":"asd","first_name":"Serif","last_name":"Elashry","email":"elashrySerifs@gmail.com"}
+2025-01-05 13:33:18 - Email already exists: elashrySerifs@gmail.com
+2025-01-05 13:33:18 - Starting user registration process.
+2025-01-05 13:33:18 - Sanitized input data: {"username":"","first_name":"","last_name":"","email":""}
+2025-01-05 13:33:18 - User registration successful: 
+2025-01-05 13:34:12 - Starting user registration process.
+2025-01-05 13:34:12 - Sanitized input data: {"username":"asd","first_name":"","last_name":"","email":""}
+2025-01-05 13:34:12 - Email already exists: 
+2025-01-05 13:34:23 - Starting user registration process.
+2025-01-05 13:34:23 - Sanitized input data: {"username":"","first_name":"","last_name":"","email":""}
+2025-01-05 13:34:23 - Email already exists: 
+2025-01-05 13:34:23 - Starting user registration process.
+2025-01-05 13:34:24 - Sanitized input data: {"username":"","first_name":"","last_name":"","email":""}
+2025-01-05 13:34:24 - Email already exists: 
+2025-01-05 13:38:56 - Starting user registration process.
+2025-01-05 13:38:56 - Sanitized input data: {"username":"tomioka047","first_name":"Serif","last_name":"Elashry","email":"elashrySerif@gmail.com"}
+2025-01-05 13:38:56 - Email already exists: elashrySerif@gmail.com
+2025-01-05 13:40:47 - Starting user registration process.
+2025-01-05 13:40:47 - Sanitized input data: {"username":"tomioka047","first_name":"","last_name":"","email":""}
+2025-01-05 13:40:47 - Email already exists: 
+2025-01-05 13:40:50 - Starting user registration process.
+2025-01-05 13:40:50 - Sanitized input data: {"username":"tomioka047","first_name":"","last_name":"","email":""}
+2025-01-05 13:40:50 - Email already exists: 
+2025-01-05 13:41:33 - Starting user registration process.
+2025-01-05 13:41:33 - Sanitized input data: {"username":"tomioka047","first_name":"","last_name":"","email":""}
+2025-01-05 13:41:33 - Email already exists: 
+2025-01-05 13:44:28 - Starting user registration process.
+2025-01-05 13:44:28 - Sanitized input data: {"username":"tomioka047","first_name":"","last_name":"","email":""}
+2025-01-05 13:44:28 - Email already exists: 
+2025-01-05 13:44:36 - Starting user registration process.
+2025-01-05 13:44:36 - Sanitized input data: {"username":"asdasd","first_name":"Ashraf","last_name":"Elashry","email":"elashrySerifss@gmail.com"}
+2025-01-05 13:44:36 - User registration successful: elashrySerifss@gmail.com
+2025-01-05 14:00:46 - Starting user registration process.
+2025-01-05 14:00:46 - Sanitized input data: {"username":"tomioka047saas","first_name":"Sherif","last_name":"Mohamed","email":"shouldtheoneasd@gmail.com"}
+2025-01-05 14:00:46 - User registration successful: shouldtheoneasd@gmail.com
