@@ -49,8 +49,7 @@
                 <div class="buttons">
                     <a href="/unescoPeaceProgramInfo" class="button" id="Peace">Junior Peace</a>
                     <a href="/unescoSummerProgramInfo" class="button" id="Diplomacy">Summer Diplomacy</a>
-                    <a href="/unescoMedicalProgramInfo" class="button" id="Medical">Summer Medical</a>
-                    <a href="/unescoDentalProgramInfo" class="button" id="Dental">Summer Dental</a>
+                    <a href="/unescoAcademicWritingPublicationCampFormApplication" class="button" id="Academic_Writing_Publication_Camp">Academic Writing and Publication Camp</a>
                 </div>
             </div>
 

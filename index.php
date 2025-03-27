@@ -66,6 +66,10 @@ $routes = [
     'unescoWinterDiplomacyProgramInfo' => 'templates/winter/winterDiplomacyPolicy.php',
     'winterDiplomacyFormApplication' => 'templates/winter/WinterDiplomacy.php',
 
+    //ACADEMIC WRITING AND PUBLICATION CAMP
+    'unescoAcademicWritingPublicationCampInfo' => 'templates/other_programs/writing_publication_camp_policy.php',
+    'unescoAcademicWritingPublicationCampFormApplication' => 'templates/other_programs/writing_publication_camp_form.php',
+
     //SUCCESS AND ERROR PAGES
     'SuccessfulRegisteration' => 'templates/others/signUpSuccessful.php',
     'error' => 'templates/others/error404.php',
