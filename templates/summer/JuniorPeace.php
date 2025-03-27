@@ -78,7 +78,7 @@ session_start();
                     <div class="section" style="min-height: 22.5%;">
                         <h3>REGISTRATION DEADLINES</h3>
                         <div class="programDatesContent">
-                            <p>Registration Deadline: <strong>25th July</strong></p>
+                            <p>Registration Deadline: <strong>1st June</strong></p>
                         </div>
                     </div>
                     <!-- Courses Section -->
